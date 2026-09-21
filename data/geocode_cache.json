@@ -11589,5 +11589,236 @@
  },
  "Hospital de Pediatria J P Garrahan, CABA, Argentina": {},
  "Hospital de Pediatria J P Garrahan, Argentina": {},
- "Techint Group, Buenos Aires, Argentina": {}
+ "Techint Group, Buenos Aires, Argentina": {},
+ "Techint Group, Argentina": {},
+ "Texas A&M University, Texas, United States": {
+  "lat": 30.6108618,
+  "lon": -96.3520606,
+  "display_name": "Texas A&M University, 400, Bizzell Street, College Station, Brazos County, Texas, 77843, United States",
+  "country": "United States",
+  "country_code": "US"
+ },
+ "Berkeley Lab, California, United States": {
+  "lat": 37.8759255,
+  "lon": -122.2501086,
+  "display_name": "Berkeley Lab Guest House, Lawrence Road, Berkeley, Alameda County, California, 94720, United States",
+  "country": "United States",
+  "country_code": "US"
+ },
+ "Superconducting Super Collider Laboratory (SSCL), Texas, United States": {},
+ "Superconducting Super Collider Laboratory (SSCL), United States": {},
+ "Molten Metal Technology (MMT), Massachusetts, United States": {},
+ "Molten Metal Technology (MMT), United States": {},
+ "Fermilab, Illinois, United States": {
+  "lat": 41.8332023,
+  "lon": -88.2653684,
+  "display_name": "Fermilab, Batavia Township, Kane County, Illinois, United States",
+  "country": "United States",
+  "country_code": "US"
+ },
+ "CENTRO ATÓMICO BARILOCHE, Provincia de Río Negro, Argentina": {
+  "lat": -41.1200731,
+  "lon": -71.4147157,
+  "display_name": "CNEA - Centro Atómico Bariloche, 9500, Francisco de Biedma, Perito Moreno, San Carlos de Bariloche, Municipio de San Carlos de Bariloche, Departamento Bariloche, Río Negro, 8400, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "voestalpine Böhler Welding, Centro Industrial Garin": {},
+ "CONUAR Combustibles Nucleares Argentinos SA, Centro Atómico Ezeiza": {},
+ "Fundición San Cayetano S.A., Provincia de Buenos Aires, Argentina": {},
+ "Fundición San Cayetano S.A., Argentina": {},
+ "DPI - Del Plata Ingeniería, Provincia de Buenos Aires, Argentina": {},
+ "DPI - Del Plata Ingeniería, Argentina": {},
+ "Organismo Argentino de Acreditación, Argentina": {},
+ "VERNASSA, Provincia de Buenos Aires, Argentina": {},
+ "VERNASSA, Argentina": {},
+ "HOSPITAL BASE VALDIVIA, Región de Los Ríos, Chile": {},
+ "HOSPITAL BASE VALDIVIA, Chile": {},
+ "Exultt, Provincia de Buenos Aires, Argentina": {},
+ "Exultt, Argentina": {},
+ "ZoomAgri, Buenos Aires, Argentina": {},
+ "Ciena, Buenos Aires, Argentina": {},
+ "Ciena, Argentina": {},
+ "Santander Tecnología Argentina, Argentina": {},
+ "FOHAMA ELECTROMECANICA S.R.L., Buenos Aires, Argentina": {},
+ "FOHAMA ELECTROMECANICA S.R.L., Argentina": {},
+ "TECSUD, Buenos Aires, Argentina": {},
+ "TECSUD, Argentina": {},
+ "Puna Mining S.A., Salta, Argentina": {},
+ "Puna Mining S.A., Argentina": {},
+ "INTEMA CoMP, Argentina": {},
+ "INSTYTUT CHEMII I TECHNIKI JADROWEJ, Mazovia, Poland": {
+  "lat": 52.1957397,
+  "lon": 20.9161733,
+  "display_name": "Instytut Chemii i Techniki Jądrowej, Stare Włochy, Włochy, Warszawa, województwo mazowieckie, Polska",
+  "country": "Polska",
+  "country_code": "PL"
+ },
+ "CENTRAL NORTE SRL, Provincia de Buenos Aires, Argentina": {},
+ "CENTRAL NORTE SRL, Argentina": {},
+ "Farmacity, Provincia de Buenos Aires, Argentina": {
+  "lat": -34.585053,
+  "lon": -58.5965386,
+  "display_name": "Farmacity, 954 - Avenida Presidente Juan Domingo Perón, Martín Coronado, Partido de Tres de Febrero, Buenos Aires, 1682, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "SUR CONTACT CENTER, Córdoba, Argentina": {},
+ "SUR CONTACT CENTER, Argentina": {},
+ "Grupo V/N, Córdoba, Argentina": {},
+ "Grupo V/N, Argentina": {
+  "lat": -26.9353499,
+  "lon": -55.1209275,
+  "display_name": "Papel Misionero - Grupo Arcor, Municipio de Puerto Leoni, Departamento Libertador General San Martín, Misiones, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "Smart Fran, Córdoba, Argentina": {},
+ "Smart Fran, Argentina": {},
+ "Telecom Argentina, Córdoba, Argentina": {
+  "lat": -33.1229076,
+  "lon": -64.3478392,
+  "display_name": "Telecom Argentina, Sobremonte, Microcentro, Río Cuarto, Municipio de Río Cuarto, Pedanía Río Cuarto, Departamento Río Cuarto, Córdoba, X5800, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "GZZ-BI, Argentina": {},
+ "Several Companies & Organizations, Argentina": {},
+ "PBMR, Centurion, South Africa": {},
+ "PBMR, South Africa": {},
+ "NECSA, Pelindaba, South Africa": {
+  "lat": -25.7993644,
+  "lon": 27.9146514,
+  "display_name": "Necsa Visitor Centre, Acacia Drive, Pelindaba Research Reactor, Pelindaba, Madibeng Ward 29, Broederstroom, Madibeng Local Municipality, Bojanala Platinum District Municipality, North West, 0240, South Africa",
+  "country": "South Africa",
+  "country_code": "ZA"
+ },
+ "STL (Steenkampskraal Thorium Limited), Centurion, South Africa": {},
+ "STL (Steenkampskraal Thorium Limited), South Africa": {},
+ "Self-Employed, Córdoba, Argentina": {},
+ "Self-Employed, Argentina": {},
+ "Universidad Nacional del Comahue, Bariloche, Argentina": {
+  "lat": -41.1450338,
+  "lon": -71.3161202,
+  "display_name": "Universidad Nacional del Comahue, 1250, Quintral, Jardín Botánico, San Carlos de Bariloche, Municipio de San Carlos de Bariloche, Departamento Bariloche, Río Negro, 8400, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "Argentine National Atomic Energy Commission (CNEA), Argentina": {},
+ "CN, Bariloche, Argentina": {
+  "lat": -41.1334781,
+  "lon": -71.3101474,
+  "display_name": "San Carlos de Bariloche, Municipio de San Carlos de Bariloche, Departamento Bariloche, Río Negro, 8400, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "Andercol Grupo Orbis, Antioquia, Colombia": {},
+ "Andercol Grupo Orbis, Colombia": {},
+ "Conhintec SAS, Medellín": {},
+ "Grupo Minero Bonanza, Colombia": {},
+ "Université de Technologie de Compiègne (UTC), Picardy, France": {},
+ "Université de Technologie de Compiègne (UTC), France": {},
+ "Instituto de fisica conicet, Santa Fe, Argentina": {},
+ "Instituto de fisica conicet, Argentina": {},
+ "CEA, Marcoule - Centrale nucléaire Phénix": {},
+ "Argonne National Laboratory, Illinois, United States": {
+  "lat": 41.709141,
+  "lon": -87.9786195,
+  "display_name": "Argonne National Laboratory, 9700, Cass Avenue, Argonne Park, Lemont, DuPage County, Illinois, 60439, United States",
+  "country": "United States",
+  "country_code": "US"
+ },
+ "EDF, CNPE Tricastin": {},
+ "BUCO, Buenos Aires, Argentina": {},
+ "BUCO, Argentina": {},
+ "Escuela Técnica Roberto Rocca Campana, Provincia de Buenos Aires, Argentina": {
+  "lat": -34.2016097,
+  "lon": -58.9393784,
+  "display_name": "Escuela Técnica Roberto Rocca, 2525, Colectora Sur, Siderca, Santa Florentina, Campana, Partido de Campana, Buenos Aires, 2804, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "Agroindustria S.R.L., Córdoba, Argentina": {},
+ "Agroindustria S.R.L., Argentina": {},
+ "Universidad Nacional de Entre Ríos, Entre Ríos, Argentina": {
+  "lat": -32.4841312,
+  "lon": -58.231284,
+  "display_name": "Universidad Nacional de Entre Rios, María Eva Duarte de Perón, Concepción del Uruguay, Distrito Molino, Departamento Uruguay, Entre Ríos, E3260FTD, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "Terragene, Santa Fe, Argentina": {},
+ "Terragene, Argentina": {},
+ "UNLOCK, Provincia de Río Negro, Argentina": {},
+ "UNLOCK, Argentina": {},
+ "Supermercados Todo, Provincia de Río Negro, Argentina": {
+  "lat": -41.0554823,
+  "lon": -71.4883673,
+  "display_name": "Supermercados Todo, Avenida del Campanario, Zona 1, Villa Campanario, San Carlos de Bariloche, Municipio de San Carlos de Bariloche, Departamento Bariloche, Río Negro, 8400, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "Hotel Tres Reyes, Provincia de Río Negro, Argentina": {
+  "lat": -41.132998,
+  "lon": -71.307977,
+  "display_name": "Hotel Tres Reyes, 135, Avenida 12 de Octubre, Centro, San Carlos de Bariloche, Municipio de San Carlos de Bariloche, Departamento Bariloche, Río Negro, 8400, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "Valentina Bonitos, Argentina": {},
+ "Universidad Nacional del Nordeste, Chaco, Argentina": {
+  "lat": -27.4641807,
+  "lon": -58.9841506,
+  "display_name": "Campus Resistencia Universidad Nacional del Nordeste, Avenida Las Heras, Resistencia, Municipio de Resistencia, Departamento San Fernando, Chaco, H3504BHB, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "Instituto Balserio, Provincia de Río Negro, Argentina": {},
+ "Instituto Balserio, Argentina": {},
+ "Facultad de Ciencias Exactas y Naturales, UBA, Buenos Aires, Argentina": {},
+ "Comisión Nacional de Energía Atómica, Instrumentation and dosimetry division": {},
+ "Instituto de Tecnología Nuclear Dan Beninson, prov. de Buenos Aires, Argentina": {},
+ "Instituto de Tecnología Nuclear Dan Beninson, Argentina": {
+  "lat": -34.8237929,
+  "lon": -58.5763722,
+  "display_name": "Instituto de Tecnología Nuclear Dan Beninson, Presbítero Juan González y Aragón, Aeropuerto Internacional Ezeiza, Partido de Ezeiza, Buenos Aires, B1802, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "Universidad de Ezeiza, Buenos Aires province, Argentina": {
+  "lat": -34.7893525,
+  "lon": -58.5238292,
+  "display_name": "Universidad de Ezeiza, Alfonsina Storni, Barrio Uno, Aeropuerto Internacional Ezeiza, Partido de Ezeiza, Buenos Aires, B1802, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "Universidad Nacional de La Matanza, Provincia de Buenos Aires, Argentina": {
+  "lat": -34.6671767,
+  "lon": -58.5664009,
+  "display_name": "Universidad Nacional de La Matanza, Páez, Villa Don Bosco, Ramos Mejía, Partido de La Matanza, Buenos Aires, 1754, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "BairesDev, Buenos Aires, Argentina": {},
+ "BairesDev, Argentina": {},
+ "Facultad de Ingeniería UNLP, Provincia de Buenos Aires, Argentina": {},
+ "Facultad de Ingeniería UNLP, Argentina": {},
+ "Infa S.A., Provincia del Chubut, Argentina": {
+  "lat": -42.7459994,
+  "lon": -65.0479174,
+  "display_name": "INFA S.A., Rifleros del Chubut, Parque Industrial Pesado, Municipio de Puerto Madryn, Departamento Biedma, Chubut, U9120, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "Invensys - Acquired by Schneider Electric, Buenos Aires, Argentina": {},
+ "Invensys - Acquired by Schneider Electric, Argentina": {},
+ "CNEA, Centro Atómico Bariloche, Argentina": {},
+ "Meitner Energy, Сан-Карлос-де-Барилоче": {},
+ "Universidad Nacional de Villa Mercedes, San Luis, Argentina": {
+  "lat": -33.6726201,
+  "lon": -65.4877557,
+  "display_name": "Universidad Nacional de Villa Mercedes, Juan Llerena, Los Poetas, Municipio de Villa Mercedes, General Pedernera, San Luis, D5730, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ }
 }

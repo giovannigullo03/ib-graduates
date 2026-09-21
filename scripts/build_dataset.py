@@ -1142,6 +1142,45 @@ def _canonicalise_employers(idx):
           f"{folded} people onto a canonical spelling")
 
 
+def _backfill_stop_coords(idx):
+    """Give un-geocoded career stops the coordinates of the same institution
+    resolved elsewhere in the dataset.
+
+    Nominatim often fails on a bare institution name with no city attached
+    ("CONICET", "Instituto Balseiro"), yet those very places are already
+    resolved as somebody's current employer. Rather than spend more lookups on
+    names we have already placed, copy across by canonical name. Only
+    institution-precision locations are reused: a city- or country-level
+    fallback carries deliberate jitter and would put the stop in the wrong spot.
+    """
+    known: dict = {}
+    for rec in idx.values():
+        if (rec["employer_name"] and rec["lat"] is not None
+                and rec.get("loc_precision") == "institution"):
+            known.setdefault(_inst_key(rec["employer_name"]),
+                             (rec["lat"], rec["lon"],
+                              rec["employer_city"], rec["employer_country"]))
+    for rec in idx.values():
+        for s in rec["career"]:
+            if s.get("lat") is not None and s.get("institution"):
+                known.setdefault(_inst_key(s["institution"]),
+                                 (s["lat"], s["lon"], s.get("city"), s.get("country")))
+
+    filled = 0
+    for rec in idx.values():
+        for s in rec["career"]:
+            if s.get("lat") is not None or not s.get("institution"):
+                continue
+            hit = known.get(_inst_key(s["institution"]))
+            if not hit:
+                continue
+            s["lat"], s["lon"] = hit[0], hit[1]
+            s["city"] = s.get("city") or hit[2]
+            s["country"] = s.get("country") or hit[3]
+            filled += 1
+    print(f"  backfilled {filled} career stops from institutions already located")
+
+
 def _nice_role(rec):
     occ = sorted(rec["occupations"])  # sorted -> deterministic across builds
     for pref in ("professor", "physicist", "researcher", "university teacher", "engineer"):
@@ -1280,6 +1319,8 @@ def build():
     # after geocoding: both spellings resolve to the same place anyway, and the
     # cache means nothing is re-fetched
     _canonicalise_employers(idx)
+    # needs the canonical names, so it runs after the fold
+    _backfill_stop_coords(idx)
 
     # ---- finalise records --------------------------------------------------#
     out = []
