@@ -47,6 +47,7 @@ const state = {
   facets: Object.fromEntries(FACETS.map(f => [f.key, new Set()])),
   view: 'map',
   sort: { key: 'name', dir: 1 },
+  selected: null,           // the person whose trajectory is drawn, if any
 };
 
 /* ------------------------------------------------------------------ */
@@ -132,7 +133,14 @@ function initMap() {
 }
 
 const IB_LATLON = [-41.1335, -71.4281];
-let pathLayer = null;
+
+/* The selected person's trajectory lives in its own layer attached straight to
+   the map — never to the cluster group. Marker popups used to carry it, but a
+   clustered marker is removed from the map as soon as you zoom out, which
+   closed the popup and took the whole trajectory with it exactly when you were
+   trying to see all of it. */
+let selectionLayer = null;
+const TRAJ = '#d64545';
 
 // Career stops with known coordinates, oldest first (IB itself is added as
 // the implicit starting point everywhere, so callers never need to include it).
@@ -148,37 +156,131 @@ function stopLabel(c) {
   return esc(c.institution) + esc(yr);
 }
 
+// Every point the trajectory should pass through: Balseiro, then each dated
+// stop with coordinates, then where they are now.
+function trajectoryPoints(p) {
+  const stops = trajectoryStops(p);
+  const pts = [IB_LATLON, ...stops.map(s => [s.lat, s.lon])];
+  if (p.lat != null && p.lon != null) {
+    const last = pts[pts.length - 1];
+    if (last[0] !== p.lat || last[1] !== p.lon) pts.push([p.lat, p.lon]);
+  }
+  return { stops, pts };
+}
+
 function markerFor(p) {
   const abroad = p.country && p.country !== 'Argentina';
   const inferred = p.confidence === 'inferred';
+  const selected = state.selected === p;
   const m = L.circleMarker([p.lat, p.lon], {
-    radius: inferred ? 5 : 6,
-    weight: 1.5,
-    color: abroad ? '#c98432' : '#3f6fae',
+    radius: selected ? 8 : (inferred ? 5 : 6),
+    weight: selected ? 3 : 1.5,
+    color: selected ? TRAJ : (abroad ? '#c98432' : '#3f6fae'),
     fillColor: abroad ? '#e0a458' : '#6c9bd1',
     fillOpacity: inferred ? 0.25 : 0.85,
   });
-  m.bindPopup(popupHtml(p), { minWidth: 250 });
-  m.on('popupopen', () => {
-    if (pathLayer) map.removeLayer(pathLayer);
-    const stops = trajectoryStops(p);
-    const points = [IB_LATLON, ...stops.map(s => [s.lat, s.lon])];
-    const last = points[points.length - 1];
-    if (last[0] !== p.lat || last[1] !== p.lon) points.push([p.lat, p.lon]);
-    const layers = [L.polyline(points, {
-      color: '#d64545', weight: 1.5, opacity: 0.6, dashArray: '4 4',
-    })];
-    stops.forEach(s => layers.push(
-      L.circleMarker([s.lat, s.lon], {
-        radius: 4, weight: 1, color: '#d64545', fillColor: '#f2a6a6', fillOpacity: 0.9,
-      }).bindTooltip(stopLabel(s), { direction: 'top', sticky: true })
-    ));
-    pathLayer = L.layerGroup(layers).addTo(map);
-  });
-  m.on('popupclose', () => {
-    if (pathLayer) { map.removeLayer(pathLayer); pathLayer = null; }
-  });
+  m.bindTooltip(p.name, { direction: 'top', offset: [0, -4] });
+  m.on('click', () => selectPerson(p, { fit: false }));
   return m;
+}
+
+/* ------------------------------------------------------------------ */
+/* selection — trajectory + detail panel                               */
+/* ------------------------------------------------------------------ */
+function drawSelection(p) {
+  if (selectionLayer) { map.removeLayer(selectionLayer); selectionLayer = null; }
+  if (!p) return;
+  const { stops, pts } = trajectoryPoints(p);
+  const layers = [];
+
+  if (pts.length > 1) {
+    // a dark halo under the line keeps it readable over both map themes
+    layers.push(L.polyline(pts, { color: '#000', opacity: 0.2, weight: 6, interactive: false }));
+    layers.push(L.polyline(pts, {
+      color: TRAJ, weight: 2.5, opacity: 0.95, dashArray: '7 5', interactive: false,
+    }));
+  }
+
+  layers.push(L.circleMarker(IB_LATLON, {
+    radius: 6, weight: 2, color: '#a51f1f', fillColor: TRAJ, fillOpacity: 0.95,
+  }).bindTooltip('Instituto Balseiro — where the trajectory starts', { direction: 'top' }));
+
+  stops.forEach(s => layers.push(
+    L.circleMarker([s.lat, s.lon], {
+      radius: 5, weight: 1.5, color: TRAJ, fillColor: '#f2a6a6', fillOpacity: 0.95,
+    }).bindTooltip(stopLabel(s), { direction: 'top', sticky: true })
+  ));
+
+  if (p.lat != null && p.lon != null) {
+    layers.push(L.circleMarker([p.lat, p.lon], {
+      radius: 9, weight: 3, color: TRAJ, fillColor: '#fff', fillOpacity: 0.95,
+    }).bindTooltip(`${esc(p.name)} — now`, { direction: 'top' }));
+  }
+
+  selectionLayer = L.layerGroup(layers).addTo(map);
+}
+
+function fitSelection(p) {
+  if (!p) return;
+  const { pts } = trajectoryPoints(p);
+  // keep the framed trajectory clear of the detail panel on the right
+  const panel = document.getElementById('selection');
+  const wide = window.innerWidth > 820 && panel && !panel.hidden;
+  const opts = {
+    maxZoom: 8,
+    paddingTopLeft: [30, 30],
+    paddingBottomRight: [wide ? panel.offsetWidth + 30 : 30, 30],
+  };
+  if (pts.length > 1) map.fitBounds(L.latLngBounds(pts), opts);
+  else if (pts.length === 1) map.setView(pts[0], 5);
+}
+
+function renderSelectionPanel(p) {
+  const host = document.getElementById('selection');
+  if (!p) { host.hidden = true; host.innerHTML = ''; return; }
+  const { pts } = trajectoryPoints(p);
+  const traceable = pts.length > 1;
+  host.hidden = false;
+  host.innerHTML = `
+    <div class="sel-head">
+      <button class="sel-fit" type="button" ${traceable ? '' : 'disabled'}
+        title="${traceable ? 'Zoom the map to the whole trajectory'
+                           : 'No mapped trajectory for this person'}">⤢ Fit trajectory</button>
+      <button class="sel-close" type="button" title="Clear selection">✕</button>
+    </div>
+    <div class="sel-body">${popupHtml(p)}</div>
+    ${traceable ? '' : `<p class="sel-note">No dated career stops with coordinates —
+      only their current location is on the map.</p>`}`;
+  host.querySelector('.sel-close').addEventListener('click', clearSelection);
+  const fit = host.querySelector('.sel-fit');
+  if (traceable) fit.addEventListener('click', () => fitSelection(p));
+}
+
+function selectPerson(p, { fit = true } = {}) {
+  state.selected = p;
+  drawSelection(p);
+  renderSelectionPanel(p);
+  if (state.view !== 'map') setView('map');
+  // redraw markers so the selected one is emphasised
+  cluster.clearLayers();
+  cluster.addLayers(filtered(null).filter(x => x.located).map(markerFor));
+  // setView('map') calls invalidateSize on a timer; fit after it settles
+  if (fit) setTimeout(() => fitSelection(p), 90);
+  document.querySelectorAll('.people tr.sel').forEach(tr => tr.classList.remove('sel'));
+  const row = document.querySelector(`.people tr[data-name="${cssEscape(p.name)}"]`);
+  if (row) row.classList.add('sel');
+}
+
+function clearSelection() {
+  state.selected = null;
+  drawSelection(null);
+  renderSelectionPanel(null);
+  document.querySelectorAll('.people tr.sel').forEach(tr => tr.classList.remove('sel'));
+  refresh();
+}
+
+function cssEscape(s) {
+  return String(s).replace(/["\\]/g, '\\$&');
 }
 
 function esc(s) {
@@ -418,6 +520,9 @@ function wireControls() {
   document.getElementById('reset').addEventListener('click', () => {
     state.q = ''; search.value = '';
     state.region = 'all';
+    state.selected = null;
+    drawSelection(null);
+    renderSelectionPanel(null);
     state.mappedOnly = false;
     state.includeInferred = false;
     document.querySelector('#mapped-only input').checked = false;
@@ -452,6 +557,14 @@ function setView(v) {
 function refresh() {
   const res = filtered(null);
   const located = res.filter(p => p.located);
+
+  // a selection that the current filters exclude would leave an orphan
+  // trajectory on the map with nothing to explain it
+  if (state.selected && !res.includes(state.selected)) {
+    state.selected = null;
+    drawSelection(null);
+    renderSelectionPanel(null);
+  }
 
   cluster.clearLayers();
   cluster.addLayers(located.map(markerFor));
@@ -692,8 +805,11 @@ function renderList() {
     const loc = [p.city, p.country].filter(Boolean).join(', ') || '—';
     const tag = p.country === 'Argentina' ? 'tag-ar' : (p.country ? 'tag-abroad' : '');
     const link = p.wikipedia || (p.orcid ? ORCID_BASE + p.orcid : (p.urls && p.urls[0])) || p.wikidata;
-    return `<tr>
-      <td class="nm">${link ? `<a href="${esc(link)}" target="_blank" rel="noopener">${esc(p.name)}</a>` : esc(p.name)}</td>
+    const stops = trajectoryPoints(p).pts.length;
+    const trail = stops > 1 ? `<span class="row-trail" title="${stops} mapped stops">↗</span>` : '';
+    return `<tr data-name="${esc(p.name)}" class="${state.selected === p ? 'sel' : ''}"
+        title="Show on the map">
+      <td class="nm">${link ? `<a href="${esc(link)}" target="_blank" rel="noopener">${esc(p.name)}</a>` : esc(p.name)}${trail}</td>
       <td class="subtle">${esc(p.role || p.description || '—')}</td>
       <td>${esc(p.employer || '—')}</td>
       <td class="${tag}">${esc(loc)}</td>
@@ -715,4 +831,15 @@ function renderList() {
     state.sort = { key: k, dir: state.sort.key === k ? -state.sort.dir : 1 };
     renderList();
   }));
+
+  // Clicking a row jumps to the map with that person's trajectory drawn and
+  // framed. The name is still a plain external link, so let it through.
+  const byName = new Map(rows.map(p => [p.name, p]));
+  document.querySelector('.people tbody').addEventListener('click', e => {
+    if (e.target.closest('a')) return;
+    const tr = e.target.closest('tr');
+    if (!tr) return;
+    const p = byName.get(tr.dataset.name);
+    if (p) selectPerson(p, { fit: true });
+  });
 }
