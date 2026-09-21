@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Balseiro Alumni Atlas</title>
+  <meta name="description" content="Where graduates of Instituto Balseiro (Bariloche, Argentina) live and work — an interactive map for exploring career paths, employers and destinations." />
+
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.min.css" />
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.Default.min.css" />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div id="app">
+    <header id="topbar">
+      <div class="brand">
+        <img class="mark" src="logo.png" alt="Instituto Balseiro" />
+        <div>
+          <h1>Balseiro Alumni Atlas</h1>
+          <p class="tagline">Where Instituto&nbsp;Balseiro graduates ended up.</p>
+        </div>
+      </div>
+      <div id="headline-stats" class="headline-stats"></div>
+      <button id="about-toggle" class="ghost-btn" type="button">About</button>
+    </header>
+
+    <div id="about-panel" class="about-panel" hidden></div>
+
+    <div id="layout">
+      <aside id="sidebar">
+        <div class="search-wrap">
+          <input id="search" type="search" placeholder="Search name, employer, topic…"
+                 autocomplete="off" spellcheck="false" />
+        </div>
+
+        <div class="quick-toggle" id="region-toggle">
+          <button data-region="all" class="active" type="button">Everywhere</button>
+          <button data-region="ar" type="button">Argentina</button>
+          <button data-region="abroad" type="button">Abroad</button>
+        </div>
+
+        <label class="opt inline-toggle" id="mapped-only">
+          <input type="checkbox" />
+          <span class="opt-label">Only people placed on the map</span>
+        </label>
+        <label class="opt inline-toggle" id="include-inferred">
+          <input type="checkbox" />
+          <span class="opt-label">Include inferred (OpenAlex-only) entries</span>
+        </label>
+
+        <div id="facets"></div>
+
+        <button id="reset" class="reset-btn" type="button">Reset all filters</button>
+      </aside>
+
+      <main id="main">
+        <div id="view-tabs" class="view-tabs">
+          <button data-view="map" class="active" type="button">Map</button>
+          <button data-view="insights" type="button">Insights</button>
+          <button data-view="list" type="button">List</button>
+          <span id="result-count" class="result-count"></span>
+        </div>
+
+        <section id="view-map" class="view">
+          <div id="map"></div>
+          <div id="legend" class="legend">
+            <span><i class="dot ar"></i> In Argentina</span>
+            <span><i class="dot abroad"></i> Abroad</span>
+            <span><i class="dot home"></i> Instituto Balseiro</span>
+            <span><i class="dot faint"></i> Inferred (unconfirmed)</span>
+          </div>
+          <p id="unmapped-note" class="unmapped-note"></p>
+        </section>
+
+        <section id="view-insights" class="view" hidden></section>
+
+        <section id="view-list" class="view" hidden>
+          <div id="list-container"></div>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/leaflet.markercluster.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

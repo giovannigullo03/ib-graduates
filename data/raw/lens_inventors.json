@@ -1,0 +1,586 @@
+[
+ {
+  "name": "Florido Pablo",
+  "employer": "INVAP",
+  "country_code": "AR",
+  "country": "Argentina",
+  "via_applicant": "INVAP",
+  "patent_count": 8
+ },
+ {
+  "name": "Carlevaris Rodolfo",
+  "employer": "INVAP",
+  "country_code": "AR",
+  "country": "Argentina",
+  "via_applicant": "INVAP",
+  "patent_count": 6
+ },
+ {
+  "name": "Patrignani Alberto",
+  "employer": "INVAP",
+  "country_code": "AR",
+  "country": "Argentina",
+  "via_applicant": "INVAP",
+  "patent_count": 3
+ },
+ {
+  "name": "Carella Eduardo",
+  "employer": "INVAP",
+  "country_code": null,
+  "country": null,
+  "via_applicant": "INVAP",
+  "patent_count": 3
+ },
+ {
+  "name": "Pablo Florido",
+  "employer": "INVAP",
+  "country_code": "AR",
+  "country": "Argentina",
+  "via_applicant": "INVAP",
+  "patent_count": 3
+ },
+ {
+  "name": "Cibils Roberto M",
+  "employer": "INVAP",
+  "country_code": "AR",
+  "country": "Argentina",
+  "via_applicant": "INVAP",
+  "patent_count": 3
+ },
+ {
+  "name": "Cibils Roberto Manuel",
+  "employer": "INVAP",
+  "country_code": "AR",
+  "country": "Argentina",
+  "via_applicant": "INVAP",
+  "patent_count": 2
+ },
+ {
+  "name": "Rodolfo Raul Carlevaris",
+  "employer": "INVAP",
+  "country_code": "AR",
+  "country": "Argentina",
+  "via_applicant": "INVAP",
+  "patent_count": 2
+ },
+ {
+  "name": "Roberto M Cibils",
+  "employer": "INVAP",
+  "country_code": "AR",
+  "country": "Argentina",
+  "via_applicant": "INVAP",
+  "patent_count": 2
+ },
+ {
+  "name": "Cirimello Roberto Omar",
+  "employer": "INVAP",
+  "country_code": null,
+  "country": null,
+  "via_applicant": "INVAP",
+  "patent_count": 2
+ },
+ {
+  "name": "Tamanini Hector Federico",
+  "employer": "INVAP",
+  "country_code": null,
+  "country": null,
+  "via_applicant": "INVAP",
+  "patent_count": 2
+ },
+ {
+  "name": "Martinez Roberto Laureano",
+  "employer": "INVAP",
+  "country_code": null,
+  "country": null,
+  "via_applicant": "INVAP",
+  "patent_count": 2
+ },
+ {
+  "name": "Balzaretti Daniel Eduardo",
+  "employer": "INVAP",
+  "country_code": null,
+  "country": null,
+  "via_applicant": "INVAP",
+  "patent_count": 2
+ },
+ {
+  "name": "Eduardo Nassif",
+  "employer": "INVAP",
+  "country_code": "AR",
+  "country": "Argentina",
+  "via_applicant": "INVAP",
+  "patent_count": 2
+ },
+ {
+  "name": "Nassif Eduardo",
+  "employer": "INVAP",
+  "country_code": "AR",
+  "country": "Argentina",
+  "via_applicant": "INVAP",
+  "patent_count": 2
+ },
+ {
+  "name": "Argüelles Manuel",
+  "employer": "INVAP",
+  "country_code": "AR",
+  "country": "Argentina",
+  "via_applicant": "INVAP",
+  "patent_count": 2
+ },
+ {
+  "name": "Fernandez Baldis Federico",
+  "employer": "INVAP",
+  "country_code": "AR",
+  "country": "Argentina",
+  "via_applicant": "INVAP",
+  "patent_count": 2
+ },
+ {
+  "name": "Cibils Roberto",
+  "employer": "INVAP",
+  "country_code": "AR",
+  "country": "Argentina",
+  "via_applicant": "INVAP",
+  "patent_count": 2
+ },
+ {
+  "name": "Garcia-Garcia Hector",
+  "employer": "CONICET",
+  "country_code": "US",
+  "country": "United States",
+  "via_applicant": "Consejo Nacional de Investigaciones Cientificas y Tecnicas",
+  "patent_count": 2
+ },
+ {
+  "name": "Blanco Pablo Javier",
+  "employer": "CONICET",
+  "country_code": "BR",
+  "country": "Brazil",
+  "via_applicant": "Consejo Nacional de Investigaciones Cientificas y Tecnicas",
+  "patent_count": 2
+ },
+ {
+  "name": "Bulant Carlos Alberto",
+  "employer": "CONICET",
+  "country_code": "AR",
+  "country": "Argentina",
+  "via_applicant": "Consejo Nacional de Investigaciones Cientificas y Tecnicas",
+  "patent_count": 2
+ },
+ {
+  "name": "Robert Ladislas",
+  "employer": "INVAP",
+  "country_code": null,
+  "country": null,
+  "via_applicant": "INVAP",
+  "patent_count": 1
+ },
+ {
+  "name": "Inventeur A Renonce A Etre Mentionne",
+  "employer": "INVAP",
+  "country_code": null,
+  "country": null,
+  "via_applicant": "INVAP",
+  "patent_count": 1
+ },
+ {
+  "name": "Eduardo Juanico Luis",
+  "employer": "INVAP",
+  "country_code": null,
+  "country": null,
+  "via_applicant": "INVAP",
+  "patent_count": 1
+ },
+ {
+  "name": "Carlos Hugo Mendiondo",
+  "employer": "INVAP",
+  "country_code": "AR",
+  "country": "Argentina",
+  "via_applicant": "INVAP",
+  "patent_count": 1
+ },
+ {
+  "name": "Clarisa Mocciaro",
+  "employer": "INVAP",
+  "country_code": "AR",
+  "country": "Argentina",
+  "via_applicant": "INVAP",
+  "patent_count": 1
+ },
+ {
+  "name": "Horacio Abadias",
+  "employer": "INVAP",
+  "country_code": "AR",
+  "country": "Argentina",
+  "via_applicant": "INVAP",
+  "patent_count": 1
+ },
+ {
+  "name": "Gabriel Ignacio Horowitz",
+  "employer": "INVAP",
+  "country_code": "AR",
+  "country": "Argentina",
+  "via_applicant": "INVAP",
+  "patent_count": 1
+ },
+ {
+  "name": "Santilli Fernando",
+  "employer": "INVAP",
+  "country_code": "AR",
+  "country": "Argentina",
+  "via_applicant": "INVAP",
+  "patent_count": 1
+ },
+ {
+  "name": "Wird Spaeter Genannt Werden",
+  "employer": "INVAP",
+  "country_code": null,
+  "country": null,
+  "via_applicant": "INVAP",
+  "patent_count": 1
+ },
+ {
+  "name": "D'Amato Eduardo",
+  "employer": "INVAP",
+  "country_code": "AR",
+  "country": "Argentina",
+  "via_applicant": "INVAP",
+  "patent_count": 1
+ },
+ {
+  "name": "Acosta Eduardo",
+  "employer": "INVAP",
+  "country_code": "AR",
+  "country": "Argentina",
+  "via_applicant": "INVAP",
+  "patent_count": 1
+ },
+ {
+  "name": "Luis Eduardo Juanico",
+  "employer": "INVAP",
+  "country_code": "AR",
+  "country": "Argentina",
+  "via_applicant": "INVAP",
+  "patent_count": 1
+ },
+ {
+  "name": "Verzicht Des Erfinders Auf Nennung",
+  "employer": "INVAP",
+  "country_code": null,
+  "country": null,
+  "via_applicant": "INVAP",
+  "patent_count": 1
+ },
+ {
+  "name": "Ricardo Sagarzazu",
+  "employer": "INVAP",
+  "country_code": "AR",
+  "country": "Argentina",
+  "via_applicant": "INVAP",
+  "patent_count": 1
+ },
+ {
+  "name": "Cirimello Roberto O",
+  "employer": "INVAP",
+  "country_code": null,
+  "country": null,
+  "via_applicant": "INVAP",
+  "patent_count": 1
+ },
+ {
+  "name": "Tamanini Hector F",
+  "employer": "INVAP",
+  "country_code": null,
+  "country": null,
+  "via_applicant": "INVAP",
+  "patent_count": 1
+ },
+ {
+  "name": "Martinez Roberto L",
+  "employer": "INVAP",
+  "country_code": null,
+  "country": null,
+  "via_applicant": "INVAP",
+  "patent_count": 1
+ },
+ {
+  "name": "Balzaretti Daniel E",
+  "employer": "INVAP",
+  "country_code": null,
+  "country": null,
+  "via_applicant": "INVAP",
+  "patent_count": 1
+ },
+ {
+  "name": "Mendoza Patricio",
+  "employer": "INVAP",
+  "country_code": "AR",
+  "country": "Argentina",
+  "via_applicant": "INVAP",
+  "patent_count": 1
+ },
+ {
+  "name": "Rosito Carlos",
+  "employer": "INVAP",
+  "country_code": "AR",
+  "country": "Argentina",
+  "via_applicant": "INVAP",
+  "patent_count": 1
+ },
+ {
+  "name": "Azcarate Laura",
+  "employer": "INVAP",
+  "country_code": "AR",
+  "country": "Argentina",
+  "via_applicant": "INVAP",
+  "patent_count": 1
+ },
+ {
+  "name": "Codnia Jorge",
+  "employer": "INVAP",
+  "country_code": "AR",
+  "country": "Argentina",
+  "via_applicant": "INVAP",
+  "patent_count": 1
+ },
+ {
+  "name": "Belokurow Alejandro",
+  "employer": "INVAP",
+  "country_code": "AR",
+  "country": "Argentina",
+  "via_applicant": "INVAP",
+  "patent_count": 1
+ },
+ {
+  "name": "Santos Eduardo",
+  "employer": "INVAP",
+  "country_code": "AR",
+  "country": "Argentina",
+  "via_applicant": "INVAP",
+  "patent_count": 1
+ },
+ {
+  "name": "Mocciaro Clarisa",
+  "employer": "INVAP",
+  "country_code": "AR",
+  "country": "Argentina",
+  "via_applicant": "INVAP",
+  "patent_count": 1
+ },
+ {
+  "name": "Mendiondo Carlos H",
+  "employer": "INVAP",
+  "country_code": "AR",
+  "country": "Argentina",
+  "via_applicant": "INVAP",
+  "patent_count": 1
+ },
+ {
+  "name": "Horowitz Gabriel I",
+  "employer": "INVAP",
+  "country_code": "AR",
+  "country": "Argentina",
+  "via_applicant": "INVAP",
+  "patent_count": 1
+ },
+ {
+  "name": "Carlevaris Rodolfo R",
+  "employer": "INVAP",
+  "country_code": "AR",
+  "country": "Argentina",
+  "via_applicant": "INVAP",
+  "patent_count": 1
+ },
+ {
+  "name": "Abadias Horacio",
+  "employer": "INVAP",
+  "country_code": "AR",
+  "country": "Argentina",
+  "via_applicant": "INVAP",
+  "patent_count": 1
+ },
+ {
+  "name": "Eduardo Damato",
+  "employer": "INVAP",
+  "country_code": "AR",
+  "country": "Argentina",
+  "via_applicant": "INVAP",
+  "patent_count": 1
+ },
+ {
+  "name": "Orticelli Juan Carlos",
+  "employer": "INVAP",
+  "country_code": "AR",
+  "country": "Argentina",
+  "via_applicant": "INVAP",
+  "patent_count": 1
+ },
+ {
+  "name": "Salvatore Marcelo",
+  "employer": "INVAP",
+  "country_code": "AR",
+  "country": "Argentina",
+  "via_applicant": "INVAP",
+  "patent_count": 1
+ },
+ {
+  "name": "Cirimello Roberto",
+  "employer": "INVAP",
+  "country_code": "AR",
+  "country": "Argentina",
+  "via_applicant": "INVAP",
+  "patent_count": 1
+ },
+ {
+  "name": "Bevilacqua Arturo",
+  "employer": "INVAP",
+  "country_code": "AR",
+  "country": "Argentina",
+  "via_applicant": "INVAP",
+  "patent_count": 1
+ },
+ {
+  "name": "Ausas Jose",
+  "employer": "INVAP",
+  "country_code": "AR",
+  "country": "Argentina",
+  "via_applicant": "INVAP",
+  "patent_count": 1
+ },
+ {
+  "name": "Federico Fernandez Baldis",
+  "employer": "INVAP",
+  "country_code": "AR",
+  "country": "Argentina",
+  "via_applicant": "INVAP",
+  "patent_count": 1
+ },
+ {
+  "name": "Manuel Argelles",
+  "employer": "INVAP",
+  "country_code": "AR",
+  "country": "Argentina",
+  "via_applicant": "INVAP",
+  "patent_count": 1
+ },
+ {
+  "name": "Florido Pablo Carlos",
+  "employer": "INVAP",
+  "country_code": "AR",
+  "country": "Argentina",
+  "via_applicant": "INVAP",
+  "patent_count": 1
+ },
+ {
+  "name": "Dr Juanico Luis",
+  "employer": "INVAP",
+  "country_code": "AR",
+  "country": "Argentina",
+  "via_applicant": "INVAP",
+  "patent_count": 1
+ },
+ {
+  "name": "Ing Weder Pablo",
+  "employer": "INVAP",
+  "country_code": "AR",
+  "country": "Argentina",
+  "via_applicant": "INVAP",
+  "patent_count": 1
+ },
+ {
+  "name": "Ducos Martin",
+  "employer": "INVAP",
+  "country_code": "AR",
+  "country": "Argentina",
+  "via_applicant": "INVAP",
+  "patent_count": 1
+ },
+ {
+  "name": "Dalceggio Jos Luis",
+  "employer": "INVAP",
+  "country_code": "AR",
+  "country": "Argentina",
+  "via_applicant": "INVAP",
+  "patent_count": 1
+ },
+ {
+  "name": "Hernan Americo Peretti Hollemaert",
+  "employer": "Comisión Nacional de Energía Atómica (CNEA)",
+  "country_code": null,
+  "country": null,
+  "via_applicant": "Comision Nacional de Energia Atomica",
+  "patent_count": 1
+ },
+ {
+  "name": "Juan Carlos Bolcich",
+  "employer": "Comisión Nacional de Energía Atómica (CNEA)",
+  "country_code": null,
+  "country": null,
+  "via_applicant": "Comision Nacional de Energia Atomica",
+  "patent_count": 1
+ },
+ {
+  "name": "Manfred H.F.P. Ahlers",
+  "employer": "Comisión Nacional de Energía Atómica (CNEA)",
+  "country_code": null,
+  "country": null,
+  "via_applicant": "Comision Nacional de Energia Atomica",
+  "patent_count": 1
+ },
+ {
+  "name": "Conrado F. Varotto",
+  "employer": "Comisión Nacional de Energía Atómica (CNEA)",
+  "country_code": null,
+  "country": null,
+  "via_applicant": "Comision Nacional de Energia Atomica",
+  "patent_count": 1
+ },
+ {
+  "name": "Roberto Pascual",
+  "employer": "Comisión Nacional de Energía Atómica (CNEA)",
+  "country_code": null,
+  "country": null,
+  "via_applicant": "Comision Nacional de Energia Atomica",
+  "patent_count": 1
+ },
+ {
+  "name": "Rio Negro San Carlos Bariloche",
+  "employer": "Comisión Nacional de Energía Atómica (CNEA)",
+  "country_code": null,
+  "country": null,
+  "via_applicant": "Comision Nacional de Energia Atomica",
+  "patent_count": 1
+ },
+ {
+  "name": "Miguel Angel Audero",
+  "employer": "Comisión Nacional de Energía Atómica (CNEA)",
+  "country_code": null,
+  "country": null,
+  "via_applicant": "Comision Nacional de Energia Atomica",
+  "patent_count": 1
+ },
+ {
+  "name": "Daniel I. Vassallo",
+  "employer": "Comisión Nacional de Energía Atómica (CNEA)",
+  "country_code": null,
+  "country": null,
+  "via_applicant": "Comision Nacional de Energia Atomica",
+  "patent_count": 1
+ },
+ {
+  "name": "Hector Jose, Comodoro Rivadavia, Chubut Ruffo",
+  "employer": "Comisión Nacional de Energía Atómica (CNEA)",
+  "country_code": null,
+  "country": null,
+  "via_applicant": "Comision Nacional de Energia Atomica",
+  "patent_count": 1
+ },
+ {
+  "name": "Lujan Hugo Daniel",
+  "employer": "CONICET",
+  "country_code": null,
+  "country": null,
+  "via_applicant": "Consejo Nacional de Investigaciones Cientificas y Tecnicas",
+  "patent_count": 1
+ }
+]

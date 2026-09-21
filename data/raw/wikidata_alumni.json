@@ -1,0 +1,4432 @@
+[
+ {
+  "source": "wikidata",
+  "id": "Q90306823",
+  "name": "A Chacoma",
+  "description": "researcher (ORCID 0000-0002-9879-494X)",
+  "relations": [
+   "educated_at"
+  ],
+  "is_alumnus": true,
+  "birth_year": null,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "researcher"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "Facultad de Matemática, Astronomía y Física (Universidad Nacional de Córdoba)",
+    "lat": -31.43805556,
+    "lon": -64.19333333,
+    "country": "Argentina"
+   },
+   {
+    "name": "Institute for Cross-Disciplinary Physics and Complex Systems",
+    "lat": 39.636725,
+    "lon": 2.648863888,
+    "country": "Spain"
+   }
+  ],
+  "orcid": "0000-0002-9879-494X",
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q90306823"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q50683293",
+  "name": "Adriana Cristina Serquis",
+  "description": "Argentine physicist",
+  "relations": [
+   "educated_at"
+  ],
+  "is_alumnus": true,
+  "birth_year": 1967,
+  "death_year": null,
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Adriana%20Serquis%20%28mincyt%29.jpg",
+  "occupations": [
+   "researcher",
+   "physicist"
+  ],
+  "fields": [
+   "nanotechnology",
+   "materials science",
+   "energy development"
+  ],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "National Scientific and Technical Research Council",
+    "lat": -34.582567006,
+    "lon": -58.429000761,
+    "country": "Argentina"
+   },
+   {
+    "name": "National University of Río Negro",
+    "lat": -39.09543,
+    "lon": -67.09478,
+    "country": "Argentina"
+   },
+   {
+    "name": "National Atomic Energy Commission",
+    "lat": -34.53944444,
+    "lon": -58.46527778,
+    "country": "Argentina"
+   }
+  ],
+  "orcid": "0000-0003-1499-4782",
+  "scholar_id": "yUiCsi4AAAAJ",
+  "wikipedia": "https://en.wikipedia.org/wiki/Adriana_Cristina_Serquis",
+  "wikidata_url": "http://www.wikidata.org/entity/Q50683293"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q63663850",
+  "name": "Adriana Moreo",
+  "description": "Argentine-American physicist",
+  "relations": [
+   "educated_at"
+  ],
+  "is_alumnus": true,
+  "birth_year": null,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "researcher",
+   "physicist"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "University of Tennessee",
+    "lat": 35.9517,
+    "lon": -83.93,
+    "country": "United States"
+   },
+   {
+    "name": "Florida State University",
+    "lat": 30.441666666,
+    "lon": -84.295,
+    "country": "United States"
+   },
+   {
+    "name": "Oak Ridge National Laboratory",
+    "lat": 35.933333,
+    "lon": -84.316667,
+    "country": "United States"
+   }
+  ],
+  "orcid": "0000-0002-6685-045X",
+  "scholar_id": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Adriana_Moreo",
+  "wikidata_url": "http://www.wikidata.org/entity/Q63663850"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q109302889",
+  "name": "Adrián René Lugo",
+  "description": "Argentine physicist",
+  "relations": [
+   "educated_at"
+  ],
+  "is_alumnus": true,
+  "birth_year": null,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "physicist"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "National Scientific and Technical Research Council",
+    "lat": -34.582567006,
+    "lon": -58.429000761,
+    "country": "Argentina"
+   },
+   {
+    "name": "Faculty of Exact Sciences UNLP",
+    "lat": -34.907963706,
+    "lon": -57.942105804,
+    "country": "Argentina"
+   },
+   {
+    "name": "National University of La Plata",
+    "lat": -34.91296944,
+    "lon": -57.95135556,
+    "country": "Argentina"
+   },
+   {
+    "name": "Centro Científico Tecnológico - La Plata",
+    "lat": -34.923742,
+    "lon": -57.940077,
+    "country": "Argentina"
+   }
+  ],
+  "orcid": "0000-0001-5766-6506",
+  "scholar_id": "QPZvsDAAAAAJ",
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q109302889"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q5663506",
+  "name": "Alberto Rojo",
+  "description": "Argentinian guitarist",
+  "relations": [
+   "educated_at"
+  ],
+  "is_alumnus": true,
+  "birth_year": 1960,
+  "death_year": null,
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Alberto%20Rojo%20en%20el%20Teatro%20del%20Viejo%20Mercado.jpg",
+  "occupations": [
+   "guitarist",
+   "university teacher",
+   "musician",
+   "physicist",
+   "composer"
+  ],
+  "fields": [
+   "physics",
+   "music"
+  ],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "University of Buenos Aires",
+    "lat": -34.599722222,
+    "lon": -58.373055555,
+    "country": "Argentina"
+   },
+   {
+    "name": "University of Michigan",
+    "lat": 42.276944444,
+    "lon": -83.738055555,
+    "country": "United States"
+   },
+   {
+    "name": "University of Chicago",
+    "lat": 41.789722222,
+    "lon": -87.599722222,
+    "country": "United States"
+   }
+  ],
+  "orcid": null,
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q5663506"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q61051791",
+  "name": "Aldo F Craievich",
+  "description": "researcher ORCID ID = 0000-0002-5103-0248",
+  "relations": [
+   "educated_at"
+  ],
+  "is_alumnus": true,
+  "birth_year": null,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "researcher"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "São Carlos Institute of Physics at the University of São Paulo",
+    "lat": -22.008836,
+    "lon": -47.897867,
+    "country": "Brazil"
+   }
+  ],
+  "orcid": "0000-0002-5103-0248",
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q61051791"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q19501892",
+  "name": "Aldo R. Boccaccini",
+  "description": "Italian-Argentine nuclear engineer and materials scientist (1962-)",
+  "relations": [
+   "educated_at"
+  ],
+  "is_alumnus": true,
+  "birth_year": 1962,
+  "death_year": null,
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Aldo%20Boccaccini.jpg",
+  "occupations": [
+   "materials scientist",
+   "nuclear engineer",
+   "university teacher"
+  ],
+  "fields": [
+   "condensed matter physics",
+   "tissue engineering"
+  ],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "University of Birmingham",
+    "lat": 52.450555555,
+    "lon": -1.930555555,
+    "country": "United Kingdom"
+   },
+   {
+    "name": "Imperial College London",
+    "lat": 51.498308,
+    "lon": -0.176882,
+    "country": "United Kingdom"
+   },
+   {
+    "name": "University of California, San Diego",
+    "lat": 32.878888888,
+    "lon": -117.236111111,
+    "country": "United States"
+   },
+   {
+    "name": "University of Erlangen–Nuremberg",
+    "lat": 49.600717498,
+    "lon": 11.00472236,
+    "country": "Germany"
+   }
+  ],
+  "orcid": "0000-0002-7377-2955",
+  "scholar_id": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Aldo_R._Boccaccini",
+  "wikidata_url": "http://www.wikidata.org/entity/Q19501892"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q56561619",
+  "name": "Alejandro B Kolton",
+  "description": "researcher",
+  "relations": [
+   "educated_at"
+  ],
+  "is_alumnus": true,
+  "birth_year": null,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "researcher"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "Centro Científico Tecnológico - Santa Fe",
+    "lat": -31.639778,
+    "lon": -60.666611,
+    "country": "Argentina"
+   }
+  ],
+  "orcid": "0000-0002-9050-5859",
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q56561619"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q74385290",
+  "name": "Alejandro Butera",
+  "description": "researcher",
+  "relations": [
+   "educated_at"
+  ],
+  "is_alumnus": true,
+  "birth_year": null,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "researcher"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "National Atomic Energy Commission",
+    "lat": -34.53944444,
+    "lon": -58.46527778,
+    "country": "Argentina"
+   },
+   {
+    "name": "Universidad Nacional de Cuyo",
+    "lat": -32.880433333,
+    "lon": -68.877733333,
+    "country": "Argentina"
+   },
+   {
+    "name": "Centro Científico Tecnológico - Patagonia Norte",
+    "lat": -41.136112,
+    "lon": -71.339255,
+    "country": "Argentina"
+   }
+  ],
+  "orcid": "0000-0003-2466-8972",
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q74385290"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q51532903",
+  "name": "Alejandro R. Goñi",
+  "description": "researcher",
+  "relations": [
+   "educated_at"
+  ],
+  "is_alumnus": true,
+  "birth_year": null,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "researcher"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "Technische Universität Berlin",
+    "lat": 52.511944444,
+    "lon": 13.326388888,
+    "country": "Germany"
+   }
+  ],
+  "orcid": "0000-0002-1193-3063",
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q51532903"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q82899634",
+  "name": "Alexander David Hernandez Nieves",
+  "description": "researcher",
+  "relations": [
+   "educated_at"
+  ],
+  "is_alumnus": true,
+  "birth_year": null,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "researcher"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "Bariloche Atomic Centre",
+    "lat": -41.12025,
+    "lon": -71.41476,
+    "country": "Argentina"
+   }
+  ],
+  "orcid": "0000-0001-5345-4522",
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q82899634"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q114672158",
+  "name": "Ana Celia Mota",
+  "description": "Argentinian-American physicist and professor emeritus at ETH Zurich",
+  "relations": [
+   "educated_at"
+  ],
+  "is_alumnus": true,
+  "birth_year": 1935,
+  "death_year": null,
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/ETH-BIB-Mota%2C%20Ana%20Celia%20%281935-%29-Portr%2016774.tif",
+  "occupations": [
+   "university teacher",
+   "physicist"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "Universitas Studii Coloniensis",
+    "lat": null,
+    "lon": null,
+    "country": "Germany"
+   },
+   {
+    "name": "University of California, San Diego",
+    "lat": 32.878888888,
+    "lon": -117.236111111,
+    "country": "United States"
+   },
+   {
+    "name": "ETH Zurich",
+    "lat": 47.37645,
+    "lon": 8.54785,
+    "country": "Switzerland"
+   }
+  ],
+  "orcid": null,
+  "scholar_id": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Ana_Celia_Mota",
+  "wikidata_url": "http://www.wikidata.org/entity/Q114672158"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q87975153",
+  "name": "Armando Aligia",
+  "description": "researcher",
+  "relations": [
+   "employer"
+  ],
+  "is_alumnus": false,
+  "birth_year": null,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "researcher"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "Balseiro Institute",
+    "lat": -41.165833333,
+    "lon": -71.444166666,
+    "country": "Argentina"
+   }
+  ],
+  "orcid": "0000-0001-9647-3926",
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q87975153"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q43955621",
+  "name": "Arturo López Dávalos",
+  "description": "Argentinian physicist",
+  "relations": [
+   "educated_at",
+   "employer"
+  ],
+  "is_alumnus": true,
+  "birth_year": 1937,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "theoretical physicist",
+   "university teacher",
+   "physicist",
+   "writer"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "National University of Salta",
+    "lat": -24.72711,
+    "lon": -65.40921,
+    "country": "Argentina"
+   },
+   {
+    "name": "National University of Río Negro",
+    "lat": -39.09543,
+    "lon": -67.09478,
+    "country": "Argentina"
+   },
+   {
+    "name": "Balseiro Institute",
+    "lat": -41.165833333,
+    "lon": -71.444166666,
+    "country": "Argentina"
+   },
+   {
+    "name": "Grenoble Alpes University",
+    "lat": 45.193055555,
+    "lon": 5.766944444,
+    "country": "France"
+   },
+   {
+    "name": "University of Geneva",
+    "lat": 46.19899,
+    "lon": 6.14446,
+    "country": "Switzerland"
+   }
+  ],
+  "orcid": null,
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q43955621"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q43115378",
+  "name": "Aurélia Chenu",
+  "description": "researcher",
+  "relations": [
+   "employer"
+  ],
+  "is_alumnus": false,
+  "birth_year": null,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "researcher"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "Balseiro Institute",
+    "lat": -41.165833333,
+    "lon": -71.444166666,
+    "country": "Argentina"
+   },
+   {
+    "name": "Massachusetts Institute of Technology",
+    "lat": 42.359722222,
+    "lon": -71.091944444,
+    "country": "United States"
+   },
+   {
+    "name": "Los Alamos National Laboratory",
+    "lat": 35.87555556,
+    "lon": -106.32416667,
+    "country": "United States"
+   },
+   {
+    "name": "University of Toronto",
+    "lat": 43.662917,
+    "lon": -79.395746,
+    "country": "Canada"
+   },
+   {
+    "name": "Donostia International Physics Center",
+    "lat": 43.30561111,
+    "lon": -2.01061389,
+    "country": "Spain"
+   }
+  ],
+  "orcid": "0000-0002-4461-8289",
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q43115378"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q91304079",
+  "name": "Belen Olivares",
+  "description": "researcher (ORCID 0000-0001-6950-8433)",
+  "relations": [
+   "educated_at"
+  ],
+  "is_alumnus": true,
+  "birth_year": null,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "researcher"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "Universidad del Desarrollo",
+    "lat": -36.821455,
+    "lon": -73.036546944,
+    "country": "Chile"
+   },
+   {
+    "name": "Universidad del Desarrollo",
+    "lat": -33.391611703,
+    "lon": -70.50113104,
+    "country": "Chile"
+   }
+  ],
+  "orcid": "0000-0001-6950-8433",
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q91304079"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q60300998",
+  "name": "Boris Maiorov",
+  "description": "researcher ORCID ID = 0000-0003-1885-0436",
+  "relations": [
+   "educated_at"
+  ],
+  "is_alumnus": true,
+  "birth_year": null,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "researcher"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "Los Alamos National Laboratory",
+    "lat": 35.87555556,
+    "lon": -106.32416667,
+    "country": "United States"
+   }
+  ],
+  "orcid": "0000-0003-1885-0436",
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q60300998"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q113998411",
+  "name": "Carlos Balseiro",
+  "description": "Argentine physicist",
+  "relations": [
+   "educated_at",
+   "employer"
+  ],
+  "is_alumnus": true,
+  "birth_year": 1951,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "university teacher",
+   "physicist"
+  ],
+  "fields": [
+   "condensed matter physics"
+  ],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "Balseiro Institute",
+    "lat": -41.165833333,
+    "lon": -71.444166666,
+    "country": "Argentina"
+   }
+  ],
+  "orcid": null,
+  "scholar_id": "LOnEnZEAAAAJ",
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q113998411"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q83112029",
+  "name": "Carlos Büsser",
+  "description": "researcher",
+  "relations": [
+   "educated_at"
+  ],
+  "is_alumnus": true,
+  "birth_year": null,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "researcher"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "University of Wyoming",
+    "lat": 41.313055555,
+    "lon": -105.581388888,
+    "country": "United States"
+   },
+   {
+    "name": "Ludwig-Maximilians-Universität München",
+    "lat": 48.150833333,
+    "lon": 11.580277777,
+    "country": "Germany"
+   }
+  ],
+  "orcid": "0000-0002-0353-7490",
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q83112029"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q61515975",
+  "name": "Carlos Celedón",
+  "description": "researcher ORCID ID = 0000-0003-0604-0751",
+  "relations": [
+   "educated_at"
+  ],
+  "is_alumnus": true,
+  "birth_year": null,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "researcher"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "Federico Santa María Technical University",
+    "lat": -33.035021,
+    "lon": -71.595079,
+    "country": "Chile"
+   }
+  ],
+  "orcid": "0000-0003-0604-0751",
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q61515975"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q113991164",
+  "name": "Carlos Luengo",
+  "description": "Argentine physicist",
+  "relations": [
+   "educated_at"
+  ],
+  "is_alumnus": true,
+  "birth_year": null,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "university teacher",
+   "physicist"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "University of California, San Diego",
+    "lat": 32.878888888,
+    "lon": -117.236111111,
+    "country": "United States"
+   }
+  ],
+  "orcid": null,
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q113991164"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q86935638",
+  "name": "Cesar Clauser",
+  "description": "researcher",
+  "relations": [
+   "educated_at",
+   "employer"
+  ],
+  "is_alumnus": true,
+  "birth_year": null,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "researcher"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "Balseiro Institute",
+    "lat": -41.165833333,
+    "lon": -71.444166666,
+    "country": "Argentina"
+   },
+   {
+    "name": "Princeton Plasma Physics Laboratory",
+    "lat": 40.348825,
+    "lon": -74.602183,
+    "country": "United States"
+   },
+   {
+    "name": "Lehigh University",
+    "lat": 40.607167,
+    "lon": -75.379,
+    "country": "United States"
+   }
+  ],
+  "orcid": "0000-0002-2597-5061",
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q86935638"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q84425044",
+  "name": "Claudia A Trejo Soto",
+  "description": "researcher",
+  "relations": [
+   "educated_at"
+  ],
+  "is_alumnus": true,
+  "birth_year": null,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "researcher"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "Pontifical Catholic University of Valparaíso",
+    "lat": -33.0447,
+    "lon": -71.6056,
+    "country": "Chile"
+   }
+  ],
+  "orcid": "0000-0003-0267-3359",
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q84425044"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q45931545",
+  "name": "Claudio J. Tessone",
+  "description": "researcher",
+  "relations": [
+   "educated_at"
+  ],
+  "is_alumnus": true,
+  "birth_year": null,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "researcher"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "University of Zurich",
+    "lat": 47.374722222,
+    "lon": 8.548333333,
+    "country": "Switzerland"
+   },
+   {
+    "name": "ETH Zurich",
+    "lat": 47.37645,
+    "lon": 8.54785,
+    "country": "Switzerland"
+   }
+  ],
+  "orcid": "0000-0001-7733-6221",
+  "scholar_id": "RAGOVXgAAAAJ",
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q45931545"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q8349929",
+  "name": "Conrado F. Varotto",
+  "description": "Argentinian physicist",
+  "relations": [
+   "educated_at"
+  ],
+  "is_alumnus": true,
+  "birth_year": 1941,
+  "death_year": null,
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Conrado%20Varotto%20%28cropped%29.jpg",
+  "occupations": [
+   "physicist"
+  ],
+  "fields": [
+   "physics"
+  ],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "Comisión Nacional de Actividades Espaciales",
+    "lat": null,
+    "lon": null,
+    "country": "Argentina"
+   }
+  ],
+  "orcid": null,
+  "scholar_id": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Conrado_Varotto",
+  "wikidata_url": "http://www.wikidata.org/entity/Q8349929"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q89508584",
+  "name": "Cristian Batista",
+  "description": "researcher",
+  "relations": [
+   "educated_at"
+  ],
+  "is_alumnus": true,
+  "birth_year": null,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "researcher"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "University of Tennessee System",
+    "lat": null,
+    "lon": null,
+    "country": "United States"
+   }
+  ],
+  "orcid": "0000-0003-1667-3667",
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q89508584"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q58253868",
+  "name": "Daniel Badagnani",
+  "description": "researcher, ORCID id # 0000-0001-9766-4222",
+  "relations": [
+   "educated_at"
+  ],
+  "is_alumnus": true,
+  "birth_year": null,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "researcher"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [],
+  "orcid": "0000-0001-9766-4222",
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q58253868"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q51019031",
+  "name": "Daniel Domínguez",
+  "description": "researcher",
+  "relations": [
+   "educated_at",
+   "employer"
+  ],
+  "is_alumnus": true,
+  "birth_year": null,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "researcher"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "Bariloche Atomic Centre",
+    "lat": -41.12025,
+    "lon": -71.41476,
+    "country": "Argentina"
+   },
+   {
+    "name": "Balseiro Institute",
+    "lat": -41.165833333,
+    "lon": -71.444166666,
+    "country": "Argentina"
+   },
+   {
+    "name": "Los Alamos National Laboratory",
+    "lat": 35.87555556,
+    "lon": -106.32416667,
+    "country": "United States"
+   },
+   {
+    "name": "Northeastern University",
+    "lat": 42.34,
+    "lon": -71.088333333,
+    "country": "United States"
+   }
+  ],
+  "orcid": "0000-0002-6204-0150",
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q51019031"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q104795855",
+  "name": "Diego Pérez-Morelo",
+  "description": "researcher",
+  "relations": [
+   "educated_at",
+   "employer"
+  ],
+  "is_alumnus": true,
+  "birth_year": null,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "researcher"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "Balseiro Institute",
+    "lat": -41.165833333,
+    "lon": -71.444166666,
+    "country": "Argentina"
+   },
+   {
+    "name": "University of Maryland",
+    "lat": 38.988055555,
+    "lon": -76.9425,
+    "country": "United States"
+   },
+   {
+    "name": "Boston University",
+    "lat": 42.348888888,
+    "lon": -71.100277777,
+    "country": "United States"
+   },
+   {
+    "name": "Center for Nanoscale Science and Technology",
+    "lat": 39.132115,
+    "lon": -77.214911,
+    "country": "United States"
+   }
+  ],
+  "orcid": "0000-0001-5914-5392",
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q104795855"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q58315387",
+  "name": "Diego Ravignani",
+  "description": "researcher",
+  "relations": [
+   "educated_at"
+  ],
+  "is_alumnus": true,
+  "birth_year": null,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "researcher"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "Accenture",
+    "lat": 53.34361,
+    "lon": -6.23889,
+    "country": "Ireland"
+   }
+  ],
+  "orcid": "0000-0001-7410-8522",
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q58315387"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q29018060",
+  "name": "Dimitri Agüero",
+  "description": "Argentinian composer",
+  "relations": [
+   "educated_at"
+  ],
+  "is_alumnus": true,
+  "birth_year": 1959,
+  "death_year": null,
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Dimitri%20Ag%C3%BCero.png",
+  "occupations": [
+   "nuclear engineer",
+   "conductor",
+   "composer"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [],
+  "orcid": null,
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q29018060"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q99365173",
+  "name": "Dimitri Chafatinos",
+  "description": "researcher",
+  "relations": [
+   "educated_at",
+   "employer"
+  ],
+  "is_alumnus": true,
+  "birth_year": null,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "researcher"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "Balseiro Institute",
+    "lat": -41.165833333,
+    "lon": -71.444166666,
+    "country": "Argentina"
+   }
+  ],
+  "orcid": "0000-0001-8481-8958",
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q99365173"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q62026055",
+  "name": "Elbio Dagotto",
+  "description": "condensed matter physicist at Oak Ridge National Lab and the University of Tennessee at Knoxville",
+  "relations": [
+   "educated_at"
+  ],
+  "is_alumnus": true,
+  "birth_year": 1959,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "university teacher",
+   "physicist"
+  ],
+  "fields": [
+   "physics",
+   "particle physics",
+   "nanoparticle",
+   "material property"
+  ],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "University of Tennessee",
+    "lat": 35.9517,
+    "lon": -83.93,
+    "country": "United States"
+   },
+   {
+    "name": "Florida State University",
+    "lat": 30.441666666,
+    "lon": -84.295,
+    "country": "United States"
+   },
+   {
+    "name": "Oak Ridge National Laboratory",
+    "lat": 35.933333,
+    "lon": -84.316667,
+    "country": "United States"
+   }
+  ],
+  "orcid": null,
+  "scholar_id": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Elbio_Dagotto",
+  "wikidata_url": "http://www.wikidata.org/entity/Q62026055"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q59695805",
+  "name": "Emiliano Pérez Ipiña",
+  "description": "researcher ORCID ID = 0000-0002-1664-0411",
+  "relations": [
+   "educated_at"
+  ],
+  "is_alumnus": true,
+  "birth_year": null,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "researcher"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "University of Buenos Aires",
+    "lat": -34.599722222,
+    "lon": -58.373055555,
+    "country": "Argentina"
+   },
+   {
+    "name": "University of Nice Sophia Antipolis",
+    "lat": 43.717,
+    "lon": 7.2665,
+    "country": "France"
+   }
+  ],
+  "orcid": "0000-0002-1664-0411",
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q59695805"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q73252370",
+  "name": "Enrique N. Miranda",
+  "description": "researcher",
+  "relations": [
+   "educated_at"
+  ],
+  "is_alumnus": true,
+  "birth_year": null,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "researcher"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "National Scientific and Technical Research Council",
+    "lat": -34.582567006,
+    "lon": -58.429000761,
+    "country": "Argentina"
+   }
+  ],
+  "orcid": "0000-0001-5793-534X",
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q73252370"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q43066809",
+  "name": "Eugenia Zelaya",
+  "description": "researcher",
+  "relations": [
+   "educated_at"
+  ],
+  "is_alumnus": true,
+  "birth_year": null,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "researcher"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "National Scientific and Technical Research Council",
+    "lat": -34.582567006,
+    "lon": -58.429000761,
+    "country": "Argentina"
+   }
+  ],
+  "orcid": "0000-0001-7664-8936",
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q43066809"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q5423212",
+  "name": "Ezequiel Di Paolo",
+  "description": "research professor from Spain",
+  "relations": [
+   "educated_at",
+   "employer"
+  ],
+  "is_alumnus": true,
+  "birth_year": 1970,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "cognitive scientist",
+   "university teacher",
+   "scientist"
+  ],
+  "fields": [
+   "robotics"
+  ],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "Balseiro Institute",
+    "lat": -41.165833333,
+    "lon": -71.444166666,
+    "country": "Argentina"
+   },
+   {
+    "name": "University of Sussex",
+    "lat": 50.865277777,
+    "lon": -0.085555555,
+    "country": "United Kingdom"
+   },
+   {
+    "name": "Ikerbasque",
+    "lat": null,
+    "lon": null,
+    "country": "Spain"
+   }
+  ],
+  "orcid": "0000-0002-3296-5021",
+  "scholar_id": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Ezequiel_Di_Paolo",
+  "wikidata_url": "http://www.wikidata.org/entity/Q5423212"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q20434957",
+  "name": "Felix Rey",
+  "description": "researcher",
+  "relations": [
+   "educated_at"
+  ],
+  "is_alumnus": true,
+  "birth_year": 1957,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "researcher"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "Pasteur Institute",
+    "lat": 48.840278,
+    "lon": 2.311111,
+    "country": "France"
+   },
+   {
+    "name": "Délégation Ile-de-France Gif-sur-Yvette (DR4)",
+    "lat": 48.704,
+    "lon": 2.132255,
+    "country": "France"
+   }
+  ],
+  "orcid": "0000-0002-9953-7988",
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q20434957"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q99549751",
+  "name": "Fernando A Reboredo",
+  "description": "researcher",
+  "relations": [
+   "employer"
+  ],
+  "is_alumnus": false,
+  "birth_year": null,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "researcher"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "Balseiro Institute",
+    "lat": -41.165833333,
+    "lon": -71.444166666,
+    "country": "Argentina"
+   },
+   {
+    "name": "Vanderbilt University",
+    "lat": 36.1475,
+    "lon": -86.8025,
+    "country": "United States"
+   },
+   {
+    "name": "National Laboratory of the Rockies",
+    "lat": 39.7406,
+    "lon": -105.156,
+    "country": "United States"
+   },
+   {
+    "name": "Oak Ridge National Laboratory",
+    "lat": 35.933333,
+    "lon": -84.316667,
+    "country": "United States"
+   },
+   {
+    "name": "Lawrence Livermore National Laboratory",
+    "lat": 37.686,
+    "lon": -121.7095,
+    "country": "United States"
+   }
+  ],
+  "orcid": "0000-0003-1900-3888",
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q99549751"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q90631348",
+  "name": "Florencia Malamud",
+  "description": "researcher",
+  "relations": [
+   "educated_at"
+  ],
+  "is_alumnus": true,
+  "birth_year": null,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "researcher"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "Universidad Nacional de Cuyo",
+    "lat": -32.880433333,
+    "lon": -68.877733333,
+    "country": "Argentina"
+   },
+   {
+    "name": "Paul Scherrer Institute",
+    "lat": 47.536111111,
+    "lon": 8.222777777,
+    "country": "Switzerland"
+   },
+   {
+    "name": "Centro Científico Tecnológico - Patagonia Norte",
+    "lat": -41.136112,
+    "lon": -71.339255,
+    "country": "Argentina"
+   }
+  ],
+  "orcid": "0000-0003-4987-2419",
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q90631348"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q107458512",
+  "name": "Fran Bubani",
+  "description": "researcher",
+  "relations": [
+   "educated_at"
+  ],
+  "is_alumnus": true,
+  "birth_year": 1980,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "researcher",
+   "university teacher"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [],
+  "orcid": null,
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q107458512"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q89085064",
+  "name": "Francisco Oscar Navarrete",
+  "description": "researcher",
+  "relations": [
+   "educated_at",
+   "employer"
+  ],
+  "is_alumnus": true,
+  "birth_year": null,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "docent",
+   "researcher"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "Universidad Nacional del Comahue",
+    "lat": -38.9403,
+    "lon": -68.0558,
+    "country": "Argentina"
+   },
+   {
+    "name": "Balseiro Institute",
+    "lat": -41.165833333,
+    "lon": -71.444166666,
+    "country": "Argentina"
+   },
+   {
+    "name": "University of Rostock",
+    "lat": 54.088133333,
+    "lon": 12.133372222,
+    "country": "Germany"
+   },
+   {
+    "name": "Kansas State University",
+    "lat": 39.191666666,
+    "lon": -96.580833333,
+    "country": "United States"
+   }
+  ],
+  "orcid": "0000-0003-4759-4005",
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q89085064"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q139790058",
+  "name": "Gerardo Ortiz",
+  "description": "physics researcher",
+  "relations": [
+   "educated_at"
+  ],
+  "is_alumnus": true,
+  "birth_year": null,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "university teacher",
+   "physicist"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "Indiana University Bloomington",
+    "lat": 39.167222,
+    "lon": -86.521389,
+    "country": "United States"
+   }
+  ],
+  "orcid": null,
+  "scholar_id": "YHOi2GEAAAAJ",
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q139790058"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q50233333",
+  "name": "Gonzalo A. Alvarez",
+  "description": "researcher",
+  "relations": [
+   "employer"
+  ],
+  "is_alumnus": false,
+  "birth_year": null,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "researcher"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "Weizmann Institute of Science",
+    "lat": 31.9075,
+    "lon": 34.809166666,
+    "country": "Israel"
+   },
+   {
+    "name": "National Scientific and Technical Research Council",
+    "lat": -34.582567006,
+    "lon": -58.429000761,
+    "country": "Argentina"
+   },
+   {
+    "name": "Bariloche Atomic Centre",
+    "lat": -41.12025,
+    "lon": -71.41476,
+    "country": "Argentina"
+   },
+   {
+    "name": "Balseiro Institute",
+    "lat": -41.165833333,
+    "lon": -71.444166666,
+    "country": "Argentina"
+   },
+   {
+    "name": "Technische Universität Dortmund Fakultät Physik",
+    "lat": null,
+    "lon": null,
+    "country": "Germany"
+   }
+  ],
+  "orcid": "0000-0002-7328-357X",
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q50233333"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q118926044",
+  "name": "Griselda Garcia Alimenti",
+  "description": "researcher",
+  "relations": [
+   "educated_at"
+  ],
+  "is_alumnus": true,
+  "birth_year": null,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "researcher",
+   "physicist"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [],
+  "orcid": null,
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q118926044"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q481486",
+  "name": "Guido Beck",
+  "description": "German physicist (1903-1988)",
+  "relations": [
+   "employer"
+  ],
+  "is_alumnus": false,
+  "birth_year": 1903,
+  "death_year": 1988,
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/DE%20Guido%20Beck%20physicist.jpg",
+  "occupations": [
+   "university teacher",
+   "physicist"
+  ],
+  "fields": [
+   "physics",
+   "theoretical physics",
+   "philosophy of science"
+  ],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "Balseiro Institute",
+    "lat": -41.165833333,
+    "lon": -71.444166666,
+    "country": "Argentina"
+   },
+   {
+    "name": "Odesa University",
+    "lat": 46.48764,
+    "lon": 30.73095,
+    "country": "Ukraine"
+   },
+   {
+    "name": "Centro Brasileiro de Pesquisas Físicas",
+    "lat": -22.95398611,
+    "lon": -43.17370833,
+    "country": "Brazil"
+   },
+   {
+    "name": "University of São Paulo",
+    "lat": -23.5613991,
+    "lon": -46.7307891,
+    "country": "Brazil"
+   }
+  ],
+  "orcid": null,
+  "scholar_id": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Guido_Beck",
+  "wikidata_url": "http://www.wikidata.org/entity/Q481486"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q60181259",
+  "name": "Guillermo Rozas",
+  "description": "researcher ORCID ID = 0000-0001-5912-0646",
+  "relations": [
+   "educated_at",
+   "employer"
+  ],
+  "is_alumnus": true,
+  "birth_year": null,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "researcher"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "National Scientific and Technical Research Council",
+    "lat": -34.582567006,
+    "lon": -58.429000761,
+    "country": "Argentina"
+   },
+   {
+    "name": "National Atomic Energy Commission",
+    "lat": -34.53944444,
+    "lon": -58.46527778,
+    "country": "Argentina"
+   },
+   {
+    "name": "Balseiro Institute",
+    "lat": -41.165833333,
+    "lon": -71.444166666,
+    "country": "Argentina"
+   },
+   {
+    "name": "Paul Drude Institute for Solid State Electronics",
+    "lat": 52.5131,
+    "lon": 13.3956,
+    "country": "Germany"
+   }
+  ],
+  "orcid": "0000-0001-5912-0646",
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q60181259"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q102418151",
+  "name": "Gunther Schöck",
+  "description": "Dr. rer. nat. Universität Stuttgart 1954",
+  "relations": [
+   "employer"
+  ],
+  "is_alumnus": false,
+  "birth_year": 1928,
+  "death_year": 2015,
+  "image": null,
+  "occupations": [
+   "university teacher",
+   "physicist"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "National Atomic Energy Commission",
+    "lat": -34.53944444,
+    "lon": -58.46527778,
+    "country": "Argentina"
+   },
+   {
+    "name": "Balseiro Institute",
+    "lat": -41.165833333,
+    "lon": -71.444166666,
+    "country": "Argentina"
+   },
+   {
+    "name": "University of Vienna",
+    "lat": 48.213055555,
+    "lon": 16.359722222,
+    "country": "Austria"
+   },
+   {
+    "name": "Westinghouse Research Laboratories",
+    "lat": null,
+    "lon": null,
+    "country": "United States"
+   },
+   {
+    "name": "General Atomics",
+    "lat": null,
+    "lon": null,
+    "country": "United States"
+   }
+  ],
+  "orcid": null,
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q102418151"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q105646053",
+  "name": "Gustavo Gasaneo",
+  "description": "researcher",
+  "relations": [
+   "educated_at"
+  ],
+  "is_alumnus": true,
+  "birth_year": null,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "researcher"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "National Scientific and Technical Research Council",
+    "lat": -34.582567006,
+    "lon": -58.429000761,
+    "country": "Argentina"
+   },
+   {
+    "name": "Universidad Nacional del Sur",
+    "lat": -38.7014,
+    "lon": -62.2694,
+    "country": "Argentina"
+   }
+  ],
+  "orcid": "0000-0001-6200-2851",
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q105646053"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q30160381",
+  "name": "Gustavo Gennuso",
+  "description": "Argentinian politician",
+  "relations": [
+   "educated_at"
+  ],
+  "is_alumnus": true,
+  "birth_year": 1959,
+  "death_year": null,
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Acto%20Carga%20SAOCOM%201B%20%2861%29%20%28cropped%29.JPG",
+  "occupations": [
+   "politician"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [],
+  "orcid": null,
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q30160381"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q28113829",
+  "name": "Gustavo Sánchez Sarmiento",
+  "description": "Argentine physicist",
+  "relations": [
+   "educated_at"
+  ],
+  "is_alumnus": true,
+  "birth_year": 1947,
+  "death_year": 2016,
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Gustavo%20S%C3%A1nchez%20Sarmiento.png",
+  "occupations": [
+   "physicist"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "University of Buenos Aires",
+    "lat": -34.599722222,
+    "lon": -58.373055555,
+    "country": "Argentina"
+   }
+  ],
+  "orcid": null,
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q28113829"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q57093853",
+  "name": "H. Arnaldi",
+  "description": "researcher",
+  "relations": [
+   "employer"
+  ],
+  "is_alumnus": false,
+  "birth_year": null,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "researcher"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "National Atomic Energy Commission",
+    "lat": -34.53944444,
+    "lon": -58.46527778,
+    "country": "Argentina"
+   },
+   {
+    "name": "Balseiro Institute",
+    "lat": -41.165833333,
+    "lon": -71.444166666,
+    "country": "Argentina"
+   }
+  ],
+  "orcid": "0000-0002-2370-4014",
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q57093853"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q89405509",
+  "name": "Hector Pablo Ojeda Collado",
+  "description": "researcher",
+  "relations": [
+   "educated_at"
+  ],
+  "is_alumnus": true,
+  "birth_year": null,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "researcher"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [],
+  "orcid": "0000-0002-1818-5854",
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q89405509"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q30512777",
+  "name": "Hernan Asorey",
+  "description": "researcher",
+  "relations": [
+   "educated_at",
+   "employer"
+  ],
+  "is_alumnus": true,
+  "birth_year": null,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "researcher"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "Universidad Industrial de Santander",
+    "lat": null,
+    "lon": null,
+    "country": "Colombia"
+   },
+   {
+    "name": "National Scientific and Technical Research Council",
+    "lat": -34.582567006,
+    "lon": -58.429000761,
+    "country": "Argentina"
+   },
+   {
+    "name": "National University of Río Negro",
+    "lat": -39.09543,
+    "lon": -67.09478,
+    "country": "Argentina"
+   },
+   {
+    "name": "National Atomic Energy Commission",
+    "lat": -34.53944444,
+    "lon": -58.46527778,
+    "country": "Argentina"
+   },
+   {
+    "name": "Balseiro Institute",
+    "lat": -41.165833333,
+    "lon": -71.444166666,
+    "country": "Argentina"
+   },
+   {
+    "name": "Universidad Nacional de Cuyo",
+    "lat": -32.880433333,
+    "lon": -68.877733333,
+    "country": "Argentina"
+   },
+   {
+    "name": "Instituto de Tecnologías en Detección y Astropartículas",
+    "lat": -34.5720297,
+    "lon": -58.5118666,
+    "country": "Argentina"
+   },
+   {
+    "name": "Instituto de Tecnologías en Detección y Astropartículas",
+    "lat": -34.594267,
+    "lon": -58.428501,
+    "country": "Argentina"
+   }
+  ],
+  "orcid": "0000-0002-4559-8785",
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q30512777"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q21011387",
+  "name": "Horacio Casini",
+  "description": "Argentine physicist",
+  "relations": [
+   "employer"
+  ],
+  "is_alumnus": false,
+  "birth_year": 1970,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "university teacher"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "Bariloche Atomic Centre",
+    "lat": -41.12025,
+    "lon": -71.41476,
+    "country": "Argentina"
+   },
+   {
+    "name": "Balseiro Institute",
+    "lat": -41.165833333,
+    "lon": -71.444166666,
+    "country": "Argentina"
+   },
+   {
+    "name": "Northwestern University",
+    "lat": 42.0564594,
+    "lon": -87.675267,
+    "country": "United States"
+   }
+  ],
+  "orcid": null,
+  "scholar_id": "fzWNklkAAAAJ",
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q21011387"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q61758376",
+  "name": "Hugo Soul",
+  "description": "researcher ORCID ID = 0000-0001-9466-661X",
+  "relations": [
+   "educated_at",
+   "employer"
+  ],
+  "is_alumnus": true,
+  "birth_year": null,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "researcher"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "Bariloche Atomic Centre",
+    "lat": -41.12025,
+    "lon": -71.41476,
+    "country": "Argentina"
+   },
+   {
+    "name": "Balseiro Institute",
+    "lat": -41.165833333,
+    "lon": -71.444166666,
+    "country": "Argentina"
+   }
+  ],
+  "orcid": "0000-0001-9466-661X",
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q61758376"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q89474457",
+  "name": "Javier Briatico",
+  "description": "researcher",
+  "relations": [
+   "educated_at"
+  ],
+  "is_alumnus": true,
+  "birth_year": null,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "researcher"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "Laboratoire Albert Fert",
+    "lat": 48.7158,
+    "lon": 2.20344,
+    "country": "France"
+   },
+   {
+    "name": "Délégation Ile-de-France Gif-sur-Yvette (DR4)",
+    "lat": 48.704,
+    "lon": 2.132255,
+    "country": "France"
+   }
+  ],
+  "orcid": "0000-0001-8620-4968",
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q89474457"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q84760572",
+  "name": "Javier Curiale",
+  "description": "researcher",
+  "relations": [
+   "educated_at"
+  ],
+  "is_alumnus": true,
+  "birth_year": null,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "researcher"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "National Atomic Energy Commission",
+    "lat": -34.53944444,
+    "lon": -58.46527778,
+    "country": "Argentina"
+   },
+   {
+    "name": "Laboratoire de Photonique et de Nanostructures",
+    "lat": 48.650181,
+    "lon": 2.228733,
+    "country": "France"
+   },
+   {
+    "name": "Laboratory of Solid State Physics",
+    "lat": 48.7071,
+    "lon": 2.17933,
+    "country": "France"
+   },
+   {
+    "name": "Centre de nanosciences et de nanotechnologies",
+    "lat": 48.7122,
+    "lon": 2.1963,
+    "country": "France"
+   }
+  ],
+  "orcid": "0000-0001-6403-3213",
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q84760572"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q58819506",
+  "name": "Javier D. Fuhr",
+  "description": "researcher ORCID ID = 0000-0002-2640-4842",
+  "relations": [
+   "educated_at"
+  ],
+  "is_alumnus": true,
+  "birth_year": null,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "researcher"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "National Scientific and Technical Research Council",
+    "lat": -34.582567006,
+    "lon": -58.429000761,
+    "country": "Argentina"
+   }
+  ],
+  "orcid": "0000-0002-2640-4842",
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q58819506"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q74356232",
+  "name": "Javier Luzuriaga",
+  "description": "researcher",
+  "relations": [
+   "educated_at"
+  ],
+  "is_alumnus": true,
+  "birth_year": null,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "researcher"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "Bariloche Atomic Centre",
+    "lat": -41.12025,
+    "lon": -71.41476,
+    "country": "Argentina"
+   }
+  ],
+  "orcid": "0000-0001-8430-8747",
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q74356232"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q30504231",
+  "name": "Jorge G. Russo",
+  "description": "researcher",
+  "relations": [
+   "educated_at"
+  ],
+  "is_alumnus": true,
+  "birth_year": null,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "researcher"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [],
+  "orcid": "0000-0002-3023-1833",
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q30504231"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q60160337",
+  "name": "Jorge O Sofo",
+  "description": "physics researcher ORCID ID = 0000-0003-4513-3694",
+  "relations": [
+   "educated_at"
+  ],
+  "is_alumnus": true,
+  "birth_year": null,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "researcher"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "Pennsylvania State University",
+    "lat": 40.796111111,
+    "lon": -77.862777777,
+    "country": "United States"
+   }
+  ],
+  "orcid": "0000-0003-4513-3694",
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q60160337"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q1703906",
+  "name": "Jorge Pullin",
+  "description": "Argentine physicist",
+  "relations": [
+   "educated_at"
+  ],
+  "is_alumnus": true,
+  "birth_year": 1963,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "physicist"
+  ],
+  "fields": [
+   "physics"
+  ],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "Louisiana State University",
+    "lat": 30.4145,
+    "lon": -91.1783,
+    "country": "United States"
+   },
+   {
+    "name": "Pennsylvania State University",
+    "lat": 40.796111111,
+    "lon": -77.862777777,
+    "country": "United States"
+   },
+   {
+    "name": "American Physical Society",
+    "lat": 38.9716,
+    "lon": -76.9302,
+    "country": "United States"
+   },
+   {
+    "name": "University of Utah",
+    "lat": 40.764166666,
+    "lon": -111.846388888,
+    "country": "United States"
+   }
+  ],
+  "orcid": "0000-0001-8248-603X",
+  "scholar_id": "wlEcZjkAAAAJ",
+  "wikipedia": "https://en.wikipedia.org/wiki/Jorge_Pullin",
+  "wikidata_url": "http://www.wikidata.org/entity/Q1703906"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q59248639",
+  "name": "Jose Menendez",
+  "description": "researcher ORCID ID = 0000-0001-8739-9197",
+  "relations": [
+   "educated_at"
+  ],
+  "is_alumnus": true,
+  "birth_year": null,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "researcher"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "Arizona State University",
+    "lat": 33.423611111,
+    "lon": -111.935555555,
+    "country": "United States"
+   }
+  ],
+  "orcid": "0000-0001-8739-9197",
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q59248639"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q77828267",
+  "name": "Jose Rolando Granada",
+  "description": "researcher",
+  "relations": [
+   "educated_at"
+  ],
+  "is_alumnus": true,
+  "birth_year": null,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "researcher"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "National Atomic Energy Commission",
+    "lat": -34.53944444,
+    "lon": -58.46527778,
+    "country": "Argentina"
+   }
+  ],
+  "orcid": "0000-0003-0248-5243",
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q77828267"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q6291393",
+  "name": "José Antonio Balseiro",
+  "description": "Argentine physicist (1919-1962)",
+  "relations": [
+   "employer"
+  ],
+  "is_alumnus": false,
+  "birth_year": 1919,
+  "death_year": 1962,
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Jose%20A.%20Balseiro%20con%20Frondizi%2C%20Argentina%20%281960%29.jpg",
+  "occupations": [
+   "nuclear physicist",
+   "physicist"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "Balseiro Institute",
+    "lat": -41.165833333,
+    "lon": -71.444166666,
+    "country": "Argentina"
+   },
+   {
+    "name": "University of Buenos Aires",
+    "lat": -34.599722222,
+    "lon": -58.373055555,
+    "country": "Argentina"
+   }
+  ],
+  "orcid": null,
+  "scholar_id": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Jos%C3%A9_Antonio_Balseiro",
+  "wikidata_url": "http://www.wikidata.org/entity/Q6291393"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q63493625",
+  "name": "José Edelstein",
+  "description": "Argentine professor of theoretical physics",
+  "relations": [
+   "educated_at"
+  ],
+  "is_alumnus": true,
+  "birth_year": 1968,
+  "death_year": null,
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Jose%20edelstein-768x1024%20%281%29.jpg",
+  "occupations": [
+   "theoretical physicist",
+   "science communicator",
+   "researcher",
+   "physicist"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "University of Santiago de Compostela",
+    "lat": 42.8885225,
+    "lon": -8.5449726,
+    "country": "Spain"
+   }
+  ],
+  "orcid": null,
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q63493625"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q58810472",
+  "name": "José Lorenzana",
+  "description": "researcher ORCID ID = 0000-0001-7426-2570",
+  "relations": [
+   "educated_at"
+  ],
+  "is_alumnus": true,
+  "birth_year": null,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "researcher"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "Consiglio Nazionale delle Ricerche",
+    "lat": null,
+    "lon": null,
+    "country": "Italy"
+   }
+  ],
+  "orcid": "0000-0001-7426-2570",
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q58810472"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q59662169",
+  "name": "Juan Carlos Rojas Sánchez",
+  "description": "Peruvian physicist",
+  "relations": [
+   "educated_at"
+  ],
+  "is_alumnus": true,
+  "birth_year": null,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "researcher",
+   "physicist"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [],
+  "orcid": "0000-0001-7044-2785",
+  "scholar_id": "n59i7yUAAAAJ",
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q59662169"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q58924685",
+  "name": "Juan Jose Zarate",
+  "description": "researcher ORCID ID = 0000-0001-9106-2394",
+  "relations": [
+   "educated_at"
+  ],
+  "is_alumnus": true,
+  "birth_year": null,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "researcher"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "École polytechnique fédérale de Lausanne",
+    "lat": 46.520277777,
+    "lon": 6.565555555,
+    "country": "Switzerland"
+   },
+   {
+    "name": "ETH Zurich",
+    "lat": 47.37645,
+    "lon": 8.54785,
+    "country": "Switzerland"
+   }
+  ],
+  "orcid": "0000-0001-9106-2394",
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q58924685"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q104746531",
+  "name": "Juan M Rosselló",
+  "description": "researcher",
+  "relations": [
+   "educated_at"
+  ],
+  "is_alumnus": true,
+  "birth_year": null,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "researcher"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "National Scientific and Technical Research Council",
+    "lat": -34.582567006,
+    "lon": -58.429000761,
+    "country": "Argentina"
+   },
+   {
+    "name": "University of Magdeburg",
+    "lat": 52.140305555,
+    "lon": 11.643194444,
+    "country": "Germany"
+   },
+   {
+    "name": "University of Göttingen",
+    "lat": 51.533979833,
+    "lon": 9.93792,
+    "country": "Germany"
+   },
+   {
+    "name": "University of Ljubljana",
+    "lat": 46.048888888,
+    "lon": 14.503888888,
+    "country": "Slovenia"
+   }
+  ],
+  "orcid": "0000-0001-7005-9452",
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q104746531"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q560811",
+  "name": "Juan Martín Maldacena",
+  "description": "Argentine physicist",
+  "relations": [
+   "educated_at"
+  ],
+  "is_alumnus": true,
+  "birth_year": 1968,
+  "death_year": null,
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/JuanMaldacena.jpg",
+  "occupations": [
+   "theoretical physicist",
+   "university teacher",
+   "physicist"
+  ],
+  "fields": [
+   "theoretical physics"
+  ],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "Institute for Advanced Study",
+    "lat": 40.331666666,
+    "lon": -74.667777777,
+    "country": "United States"
+   },
+   {
+    "name": "Rutgers University",
+    "lat": 40.501666666,
+    "lon": -74.448055555,
+    "country": "United States"
+   },
+   {
+    "name": "Princeton University",
+    "lat": 40.345277777,
+    "lon": -74.656111111,
+    "country": "United States"
+   },
+   {
+    "name": "Harvard University",
+    "lat": 42.374443888,
+    "lon": -71.116943888,
+    "country": "United States"
+   }
+  ],
+  "orcid": "0000-0002-9127-1687",
+  "scholar_id": "jbSdNFUAAAAJ",
+  "wikipedia": "https://en.wikipedia.org/wiki/Juan_Maldacena",
+  "wikidata_url": "http://www.wikidata.org/entity/Q560811"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q40250836",
+  "name": "Juan Pablo Carbajal",
+  "description": "researcher",
+  "relations": [
+   "educated_at"
+  ],
+  "is_alumnus": true,
+  "birth_year": null,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "researcher"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "ZHAW Zurich University of Applied Sciences",
+    "lat": 47.49694444,
+    "lon": 8.73,
+    "country": "Switzerland"
+   },
+   {
+    "name": "Eawag",
+    "lat": 47.403781,
+    "lon": 8.609558,
+    "country": "Switzerland"
+   },
+   {
+    "name": "Ghent University",
+    "lat": 51.043888888,
+    "lon": 3.726111111,
+    "country": "Belgium"
+   },
+   {
+    "name": "Ghent University",
+    "lat": 51.04702,
+    "lon": 3.72785,
+    "country": "Belgium"
+   }
+  ],
+  "orcid": "0000-0002-6556-1760",
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q40250836"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q92732901",
+  "name": "Juan Sebastian Reparaz",
+  "description": "researcher (ORCID 0000-0001-9679-0075)",
+  "relations": [
+   "educated_at"
+  ],
+  "is_alumnus": true,
+  "birth_year": null,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "researcher"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "Technische Universität Berlin",
+    "lat": 52.511944444,
+    "lon": 13.326388888,
+    "country": "Germany"
+   },
+   {
+    "name": "Institut de Ciència de Materials de Barcelona",
+    "lat": 41.501984,
+    "lon": 2.110217,
+    "country": "Spain"
+   },
+   {
+    "name": "Institute of Materials Science of Seville",
+    "lat": 37.389809,
+    "lon": -5.98493,
+    "country": "Spain"
+   },
+   {
+    "name": "Catalan Institute of Nanoscience and Nanotechnology",
+    "lat": 41.501230555,
+    "lon": 2.111752777,
+    "country": "Spain"
+   }
+  ],
+  "orcid": "0000-0001-9679-0075",
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q92732901"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q57556433",
+  "name": "Julio Guimpel",
+  "description": "researcher ORCID ID = 0000-0002-7528-7777",
+  "relations": [
+   "educated_at",
+   "employer"
+  ],
+  "is_alumnus": true,
+  "birth_year": null,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "researcher"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "Balseiro Institute",
+    "lat": -41.165833333,
+    "lon": -71.444166666,
+    "country": "Argentina"
+   }
+  ],
+  "orcid": "0000-0002-7528-7777",
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q57556433"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q54823855",
+  "name": "Karen Hallberg",
+  "description": "Argentinian physicist",
+  "relations": [
+   "educated_at",
+   "educated_at",
+   "educated_at",
+   "employer",
+   "employer",
+   "employer"
+  ],
+  "is_alumnus": true,
+  "birth_year": 1964,
+  "death_year": null,
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/2019%202%2011%20karen%20hallberg.jpg",
+  "occupations": [
+   "physicist"
+  ],
+  "fields": [
+   "physics"
+  ],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "Balseiro Institute",
+    "lat": -41.165833333,
+    "lon": -71.444166666,
+    "country": "Argentina"
+   },
+   {
+    "name": "Spanish National Research Council",
+    "lat": 40.44105,
+    "lon": -3.68635,
+    "country": "Spain"
+   }
+  ],
+  "orcid": "0000-0002-3469-7112",
+  "scholar_id": "hxhXpKsAAAAJ",
+  "wikipedia": "https://en.wikipedia.org/wiki/Karen_Hallberg",
+  "wikidata_url": "http://www.wikidata.org/entity/Q54823855"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q92453687",
+  "name": "L Antonio Benítez",
+  "description": "researcher",
+  "relations": [
+   "educated_at"
+  ],
+  "is_alumnus": true,
+  "birth_year": null,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "researcher"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [],
+  "orcid": "0000-0003-1049-4983",
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q92453687"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q74370677",
+  "name": "Laura B. Steren",
+  "description": "Argentine magnetician",
+  "relations": [
+   "educated_at"
+  ],
+  "is_alumnus": true,
+  "birth_year": null,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "university teacher",
+   "physicist"
+  ],
+  "fields": [
+   "magnetism"
+  ],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "National Scientific and Technical Research Council",
+    "lat": -34.582567006,
+    "lon": -58.429000761,
+    "country": "Argentina"
+   },
+   {
+    "name": "University of Buenos Aires",
+    "lat": -34.599722222,
+    "lon": -58.373055555,
+    "country": "Argentina"
+   }
+  ],
+  "orcid": "0000-0003-2224-9272",
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q74370677"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q83826546",
+  "name": "Laura Serkovic Loli",
+  "description": "Peruvian physicist",
+  "relations": [
+   "educated_at"
+  ],
+  "is_alumnus": true,
+  "birth_year": null,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "researcher",
+   "physicist"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "Bariloche Atomic Centre",
+    "lat": -41.12025,
+    "lon": -71.41476,
+    "country": "Argentina"
+   },
+   {
+    "name": "Institut Jean Lamour",
+    "lat": 48.6725,
+    "lon": 6.17112,
+    "country": "France"
+   },
+   {
+    "name": "CEA Saclay",
+    "lat": 48.719798,
+    "lon": 2.149123,
+    "country": "France"
+   },
+   {
+    "name": "Center for Materials Physics",
+    "lat": 43.30564663,
+    "lon": -2.00936079,
+    "country": "Spain"
+   }
+  ],
+  "orcid": "0000-0002-3155-2946",
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q83826546"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q96341563",
+  "name": "Leonardo Ayala",
+  "description": "researcher",
+  "relations": [
+   "educated_at"
+  ],
+  "is_alumnus": true,
+  "birth_year": 1994,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "researcher"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "German Cancer Research Center",
+    "lat": 49.41416667,
+    "lon": 8.6725,
+    "country": "Germany"
+   }
+  ],
+  "orcid": "0000-0002-3574-2085",
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q96341563"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q96286673",
+  "name": "Liliana V Mogni",
+  "description": "researcher",
+  "relations": [
+   "employer"
+  ],
+  "is_alumnus": false,
+  "birth_year": null,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "researcher"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "National Atomic Energy Commission",
+    "lat": -34.53944444,
+    "lon": -58.46527778,
+    "country": "Argentina"
+   },
+   {
+    "name": "Balseiro Institute",
+    "lat": -41.165833333,
+    "lon": -71.444166666,
+    "country": "Argentina"
+   }
+  ],
+  "orcid": "0000-0002-4665-9439",
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q96286673"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q84402981",
+  "name": "Ludwin Misael León Hilario",
+  "description": "Peruvian physicist",
+  "relations": [
+   "educated_at"
+  ],
+  "is_alumnus": true,
+  "birth_year": null,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "researcher",
+   "physicist"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "Universidad San Ignacio de Loyola",
+    "lat": -12.0725,
+    "lon": -76.9517,
+    "country": "Peru"
+   },
+   {
+    "name": "University of Lima",
+    "lat": -12.084761,
+    "lon": -76.970816,
+    "country": "Peru"
+   }
+  ],
+  "orcid": "0000-0003-1793-8102",
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q84402981"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q96344227",
+  "name": "Luis Avilés Félix",
+  "description": "Peruvian physicist",
+  "relations": [
+   "educated_at"
+  ],
+  "is_alumnus": true,
+  "birth_year": null,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "researcher",
+   "physicist"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "National Scientific and Technical Research Council",
+    "lat": -34.582567006,
+    "lon": -58.429000761,
+    "country": "Argentina"
+   },
+   {
+    "name": "Bariloche Atomic Centre",
+    "lat": -41.12025,
+    "lon": -71.41476,
+    "country": "Argentina"
+   },
+   {
+    "name": "Spintronique et Technologie des Composants",
+    "lat": 45.199215,
+    "lon": 5.708115,
+    "country": "France"
+   }
+  ],
+  "orcid": "0000-0003-3285-9891",
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q96344227"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q57112450",
+  "name": "Marcelo Ciappina",
+  "description": "researcher",
+  "relations": [
+   "educated_at"
+  ],
+  "is_alumnus": true,
+  "birth_year": null,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "researcher"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "FZU - Institute of Physics of the Czech Academy of Sciences",
+    "lat": null,
+    "lon": null,
+    "country": "Czech Republic"
+   }
+  ],
+  "orcid": "0000-0002-1123-6460",
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q57112450"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q57438757",
+  "name": "Marcelo Fama",
+  "description": "researcher",
+  "relations": [
+   "educated_at"
+  ],
+  "is_alumnus": true,
+  "birth_year": null,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "researcher"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "National Atomic Energy Commission",
+    "lat": -34.53944444,
+    "lon": -58.46527778,
+    "country": "Argentina"
+   },
+   {
+    "name": "University of Virginia",
+    "lat": 38.035555555,
+    "lon": -78.503333333,
+    "country": "United States"
+   }
+  ],
+  "orcid": "0000-0003-3476-4669",
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q57438757"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q47169020",
+  "name": "Marcelo Jaime",
+  "description": "physics researcher",
+  "relations": [
+   "educated_at"
+  ],
+  "is_alumnus": true,
+  "birth_year": null,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "researcher"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "University of Illinois Urbana-Champaign",
+    "lat": 40.110538888,
+    "lon": -88.228411111,
+    "country": "United States"
+   },
+   {
+    "name": "Los Alamos National Laboratory",
+    "lat": 35.87555556,
+    "lon": -106.32416667,
+    "country": "United States"
+   }
+  ],
+  "orcid": "0000-0001-5360-5220",
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q47169020"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q59703220",
+  "name": "Marcelo Néstor Kuperman",
+  "description": "researcher ORCID ID = 0000-0003-0935-7949",
+  "relations": [
+   "educated_at"
+  ],
+  "is_alumnus": true,
+  "birth_year": null,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "researcher"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "National Scientific and Technical Research Council",
+    "lat": -34.582567006,
+    "lon": -58.429000761,
+    "country": "Argentina"
+   }
+  ],
+  "orcid": "0000-0003-0935-7949",
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q59703220"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q62505311",
+  "name": "Marco Nizama",
+  "description": "researcher",
+  "relations": [
+   "educated_at"
+  ],
+  "is_alumnus": true,
+  "birth_year": null,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "researcher"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [],
+  "orcid": "0000-0002-4551-6161",
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q62505311"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q50809811",
+  "name": "Maria Fernandino",
+  "description": "researcher",
+  "relations": [
+   "educated_at"
+  ],
+  "is_alumnus": true,
+  "birth_year": 1976,
+  "death_year": null,
+  "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Maria%20Fernandino.jpg",
+  "occupations": [
+   "scientist"
+  ],
+  "fields": [
+   "fluid mechanics"
+  ],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "Norwegian University of Science and Technology",
+    "lat": 63.419444444,
+    "lon": 10.4025,
+    "country": "Norway"
+   }
+  ],
+  "orcid": "0000-0002-3482-6631",
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q50809811"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q73136133",
+  "name": "Maria Jose Sanchez",
+  "description": "researcher (ORCID 0000-0002-0382-8263)",
+  "relations": [
+   "employer"
+  ],
+  "is_alumnus": false,
+  "birth_year": null,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "researcher"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "National Scientific and Technical Research Council",
+    "lat": -34.582567006,
+    "lon": -58.429000761,
+    "country": "Argentina"
+   },
+   {
+    "name": "Bariloche Atomic Centre",
+    "lat": -41.12025,
+    "lon": -71.41476,
+    "country": "Argentina"
+   },
+   {
+    "name": "Balseiro Institute",
+    "lat": -41.165833333,
+    "lon": -71.444166666,
+    "country": "Argentina"
+   }
+  ],
+  "orcid": "0000-0002-0382-8263",
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q73136133"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q59695292",
+  "name": "Maria V Blanco",
+  "description": "researcher ORCID ID = 0000-0002-6736-7355",
+  "relations": [
+   "educated_at"
+  ],
+  "is_alumnus": true,
+  "birth_year": null,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "researcher"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "European Synchrotron Radiation Facility",
+    "lat": 45.208611111,
+    "lon": 5.69,
+    "country": "France"
+   },
+   {
+    "name": "Norwegian University of Science and Technology",
+    "lat": 63.419444444,
+    "lon": 10.4025,
+    "country": "Norway"
+   },
+   {
+    "name": "Faculty of Engineering",
+    "lat": null,
+    "lon": null,
+    "country": "Norway"
+   }
+  ],
+  "orcid": "0000-0002-6736-7355",
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q59695292"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q58809892",
+  "name": "Mariela Menghini",
+  "description": "condensed matter physicist at KU Leuven",
+  "relations": [
+   "educated_at"
+  ],
+  "is_alumnus": true,
+  "birth_year": null,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "physicist"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "Vrije Universiteit Amsterdam",
+    "lat": 52.3337568,
+    "lon": 4.8657199,
+    "country": "Netherlands"
+   },
+   {
+    "name": "Katholieke Universiteit Leuven",
+    "lat": null,
+    "lon": null,
+    "country": "Belgium"
+   },
+   {
+    "name": "IMDEA Nanoscience Institute",
+    "lat": 40.548787,
+    "lon": -3.6879,
+    "country": "Spain"
+   }
+  ],
+  "orcid": "0000-0002-1744-798X",
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q58809892"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q22669809",
+  "name": "Marina Huerta",
+  "description": "Argentinian theoretical physicist",
+  "relations": [
+   "employer"
+  ],
+  "is_alumnus": false,
+  "birth_year": 1969,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "researcher",
+   "physicist",
+   "teacher"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "Bariloche Atomic Centre",
+    "lat": -41.12025,
+    "lon": -71.41476,
+    "country": "Argentina"
+   },
+   {
+    "name": "Balseiro Institute",
+    "lat": -41.165833333,
+    "lon": -71.444166666,
+    "country": "Argentina"
+   }
+  ],
+  "orcid": null,
+  "scholar_id": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Marina_Huerta",
+  "wikidata_url": "http://www.wikidata.org/entity/Q22669809"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q60529034",
+  "name": "Mario Alberto Storti",
+  "description": "researcher ORCID ID = 0000-0001-5596-5457",
+  "relations": [
+   "educated_at"
+  ],
+  "is_alumnus": true,
+  "birth_year": null,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "researcher"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "Centro Científico Tecnológico - Santa Fe",
+    "lat": -31.639778,
+    "lon": -60.666611,
+    "country": "Argentina"
+   }
+  ],
+  "orcid": "0000-0001-5596-5457",
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q60529034"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q113991747",
+  "name": "Mario Eusebio Foglio",
+  "description": "Argentine physician",
+  "relations": [
+   "employer"
+  ],
+  "is_alumnus": false,
+  "birth_year": 1931,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "university teacher",
+   "physicist"
+  ],
+  "fields": [
+   "solid-state physics"
+  ],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "Balseiro Institute",
+    "lat": -41.165833333,
+    "lon": -71.444166666,
+    "country": "Argentina"
+   }
+  ],
+  "orcid": null,
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q113991747"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q90188642",
+  "name": "Marisel Di Pietro Martínez",
+  "description": "researcher",
+  "relations": [
+   "educated_at"
+  ],
+  "is_alumnus": true,
+  "birth_year": null,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "researcher"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "Max Planck Institute for Chemical Physics of Solids",
+    "lat": 51.0264,
+    "lon": 13.7186,
+    "country": "Germany"
+   },
+   {
+    "name": "CNRS, Délégation Alpes",
+    "lat": 45.203879,
+    "lon": 5.700268,
+    "country": "France"
+   }
+  ],
+  "orcid": "0000-0001-9270-0546",
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q90188642"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q84361518",
+  "name": "Martin E. Saleta",
+  "description": "researcher",
+  "relations": [
+   "educated_at",
+   "employer"
+  ],
+  "is_alumnus": true,
+  "birth_year": null,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "researcher"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "National Scientific and Technical Research Council",
+    "lat": -34.582567006,
+    "lon": -58.429000761,
+    "country": "Argentina"
+   },
+   {
+    "name": "Balseiro Institute",
+    "lat": -41.165833333,
+    "lon": -71.444166666,
+    "country": "Argentina"
+   },
+   {
+    "name": "Laboratório Nacional de Luz Síncrotron",
+    "lat": -22.80398056,
+    "lon": -47.05396667,
+    "country": "Brazil"
+   }
+  ],
+  "orcid": "0000-0002-5884-0171",
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q84361518"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q59056765",
+  "name": "Mary Luz Mojica Pisciotti",
+  "description": "researcher ORCID ID = 0000-0002-9827-1006",
+  "relations": [
+   "educated_at"
+  ],
+  "is_alumnus": true,
+  "birth_year": null,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "researcher",
+   "physicist"
+  ],
+  "fields": [
+   "physics",
+   "cardiology",
+   "medical imaging",
+   "medical physics"
+  ],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "International Clinical Research Center",
+    "lat": 49.190606,
+    "lon": 16.601714,
+    "country": "Czech Republic"
+   }
+  ],
+  "orcid": "0000-0002-9827-1006",
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q59056765"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q89273241",
+  "name": "María Arribére",
+  "description": "researcher",
+  "relations": [
+   "educated_at"
+  ],
+  "is_alumnus": true,
+  "birth_year": null,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "researcher"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "National Atomic Energy Commission",
+    "lat": -34.53944444,
+    "lon": -58.46527778,
+    "country": "Argentina"
+   }
+  ],
+  "orcid": "0000-0003-1137-8466",
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q89273241"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q59660137",
+  "name": "Miguel Abbate",
+  "description": "researcher at Universidade Federal do Paraná",
+  "relations": [
+   "educated_at"
+  ],
+  "is_alumnus": true,
+  "birth_year": null,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "researcher"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "Universidade Federal do Paraná",
+    "lat": -25.428888888,
+    "lon": -49.2675,
+    "country": "Brazil"
+   },
+   {
+    "name": "Universidade Federal do Paraná",
+    "lat": -25.4269081,
+    "lon": -49.2617658,
+    "country": "Brazil"
+   }
+  ],
+  "orcid": "0000-0001-9697-0922",
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q59660137"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q98224036",
+  "name": "Miguel Alejandro Mostafa",
+  "description": "particle physicist",
+  "relations": [
+   "educated_at"
+  ],
+  "is_alumnus": true,
+  "birth_year": null,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "researcher"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "University of Buenos Aires",
+    "lat": -34.599722222,
+    "lon": -58.373055555,
+    "country": "Argentina"
+   },
+   {
+    "name": "Colorado State University",
+    "lat": 40.574836111,
+    "lon": -105.080977777,
+    "country": "United States"
+   },
+   {
+    "name": "Pennsylvania State University",
+    "lat": 40.796111111,
+    "lon": -77.862777777,
+    "country": "United States"
+   },
+   {
+    "name": "University of Utah",
+    "lat": 40.764166666,
+    "lon": -111.846388888,
+    "country": "United States"
+   }
+  ],
+  "orcid": "0000-0002-7675-4656",
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q98224036"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q77889453",
+  "name": "Miguel Darío Sánchez",
+  "description": "researcher",
+  "relations": [
+   "educated_at"
+  ],
+  "is_alumnus": true,
+  "birth_year": null,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "researcher"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "Universidad Nacional del Sur",
+    "lat": -38.7014,
+    "lon": -62.2694,
+    "country": "Argentina"
+   }
+  ],
+  "orcid": "0000-0002-6519-1907",
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q77889453"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q59454029",
+  "name": "Pablo G. Lustemberg",
+  "description": "researcher",
+  "relations": [
+   "educated_at"
+  ],
+  "is_alumnus": true,
+  "birth_year": null,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "researcher"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "Institute of Physics Rosario",
+    "lat": -32.968878,
+    "lon": -60.624498,
+    "country": "Argentina"
+   },
+   {
+    "name": "Institute of Catalysis and Petrochemistry",
+    "lat": 40.542532,
+    "lon": -3.690032,
+    "country": "Spain"
+   }
+  ],
+  "orcid": "0000-0003-4058-4023",
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q59454029"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q56234791",
+  "name": "Pablo O Vaccaro",
+  "description": "researcher",
+  "relations": [
+   "educated_at"
+  ],
+  "is_alumnus": true,
+  "birth_year": null,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "researcher"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "Institut de Ciència de Materials de Barcelona",
+    "lat": 41.501984,
+    "lon": 2.110217,
+    "country": "Spain"
+   },
+   {
+    "name": "Catalan Institution for Research and Advanced Studies",
+    "lat": 41.3914165,
+    "lon": 2.1794467,
+    "country": "Spain"
+   },
+   {
+    "name": "ICFO",
+    "lat": 41.275469444,
+    "lon": 1.989619444,
+    "country": "Spain"
+   },
+   {
+    "name": "Sharp Corporation",
+    "lat": null,
+    "lon": null,
+    "country": "Japan"
+   }
+  ],
+  "orcid": "0000-0002-2625-6376",
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q56234791"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q89799287",
+  "name": "Paula Petrone",
+  "description": "researcher",
+  "relations": [
+   "educated_at"
+  ],
+  "is_alumnus": true,
+  "birth_year": null,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "researcher"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "Basel Institute for Immunology",
+    "lat": 47.562725,
+    "lon": 7.626143,
+    "country": null
+   },
+   {
+    "name": "Barcelona Institute for Global Health",
+    "lat": 41.390365,
+    "lon": 2.153341,
+    "country": "Spain"
+   }
+  ],
+  "orcid": "0000-0002-5030-1915",
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q89799287"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q88534997",
+  "name": "Peter Thieberger",
+  "description": "researcher",
+  "relations": [
+   "educated_at"
+  ],
+  "is_alumnus": true,
+  "birth_year": null,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "researcher"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "Brookhaven National Laboratory",
+    "lat": 40.873346,
+    "lon": -72.872057,
+    "country": "United States"
+   }
+  ],
+  "orcid": "0000-0002-2415-9812",
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q88534997"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q43289994",
+  "name": "Rafael Calvo",
+  "description": "researcher",
+  "relations": [
+   "educated_at"
+  ],
+  "is_alumnus": true,
+  "birth_year": null,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "researcher"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "National Scientific and Technical Research Council",
+    "lat": -34.582567006,
+    "lon": -58.429000761,
+    "country": "Argentina"
+   },
+   {
+    "name": "National University of the Littoral",
+    "lat": -31.63444444,
+    "lon": -60.70527778,
+    "country": "Argentina"
+   }
+  ],
+  "orcid": "0000-0003-2864-0467",
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q43289994"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q74372058",
+  "name": "Raul O. Barrachina",
+  "description": "researcher",
+  "relations": [
+   "educated_at",
+   "employer"
+  ],
+  "is_alumnus": true,
+  "birth_year": null,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "researcher"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "National Atomic Energy Commission",
+    "lat": -34.53944444,
+    "lon": -58.46527778,
+    "country": "Argentina"
+   },
+   {
+    "name": "Balseiro Institute",
+    "lat": -41.165833333,
+    "lon": -71.444166666,
+    "country": "Argentina"
+   },
+   {
+    "name": "University of Tennessee",
+    "lat": 35.9517,
+    "lon": -83.93,
+    "country": "United States"
+   },
+   {
+    "name": "Centro Científico Tecnológico - Patagonia Norte",
+    "lat": -41.136112,
+    "lon": -71.339255,
+    "country": "Argentina"
+   }
+  ],
+  "orcid": "0000-0002-2404-8311",
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q74372058"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q74378061",
+  "name": "Roberto Arce",
+  "description": "researcher",
+  "relations": [
+   "educated_at"
+  ],
+  "is_alumnus": true,
+  "birth_year": 1901,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "researcher"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "National University of the Littoral",
+    "lat": -31.63444444,
+    "lon": -60.70527778,
+    "country": "Argentina"
+   },
+   {
+    "name": "Centro Científico Tecnológico - Santa Fe",
+    "lat": -31.639778,
+    "lon": -60.666611,
+    "country": "Argentina"
+   }
+  ],
+  "orcid": "0000-0002-5232-3691",
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q74378061"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q100758658",
+  "name": "Roberto D Zysler",
+  "description": "researcher",
+  "relations": [
+   "educated_at",
+   "employer"
+  ],
+  "is_alumnus": true,
+  "birth_year": null,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "researcher"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "National Atomic Energy Commission",
+    "lat": -34.53944444,
+    "lon": -58.46527778,
+    "country": "Argentina"
+   },
+   {
+    "name": "Balseiro Institute",
+    "lat": -41.165833333,
+    "lon": -71.444166666,
+    "country": "Argentina"
+   },
+   {
+    "name": "Centro Científico Tecnológico - Patagonia Norte",
+    "lat": -41.136112,
+    "lon": -71.339255,
+    "country": "Argentina"
+   }
+  ],
+  "orcid": "0000-0003-0687-5898",
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q100758658"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q113998488",
+  "name": "Roberto Luzzi",
+  "description": "Argentine physicist",
+  "relations": [
+   "educated_at"
+  ],
+  "is_alumnus": true,
+  "birth_year": 1936,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "university teacher",
+   "physicist"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "University of Campinas",
+    "lat": -22.817222222,
+    "lon": -47.069444444,
+    "country": "Brazil"
+   }
+  ],
+  "orcid": null,
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q113998488"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q60977008",
+  "name": "Rodrigo Echeveste",
+  "description": "researcher ORCID ID = 0000-0002-6155-8679",
+  "relations": [
+   "educated_at"
+  ],
+  "is_alumnus": true,
+  "birth_year": 1987,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "researcher"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "Centro Científico Tecnológico - Santa Fe",
+    "lat": -31.639778,
+    "lon": -60.666611,
+    "country": "Argentina"
+   },
+   {
+    "name": "University of Cambridge",
+    "lat": 52.205355979,
+    "lon": 0.113157269,
+    "country": "United Kingdom"
+   }
+  ],
+  "orcid": "0000-0002-6155-8679",
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q60977008"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q63961453",
+  "name": "Román Rossi-Pool",
+  "description": "researcher",
+  "relations": [
+   "educated_at",
+   "employer"
+  ],
+  "is_alumnus": true,
+  "birth_year": null,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "researcher"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "Balseiro Institute",
+    "lat": -41.165833333,
+    "lon": -71.444166666,
+    "country": "Argentina"
+   },
+   {
+    "name": "Instituto de Fisiología Celular",
+    "lat": null,
+    "lon": null,
+    "country": "Mexico"
+   }
+  ],
+  "orcid": "0000-0001-8941-4311",
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q63961453"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q73844899",
+  "name": "Sebastian Bustingorry",
+  "description": "researcher",
+  "relations": [
+   "educated_at"
+  ],
+  "is_alumnus": true,
+  "birth_year": null,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "researcher"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "Bariloche Atomic Centre",
+    "lat": -41.12025,
+    "lon": -71.41476,
+    "country": "Argentina"
+   },
+   {
+    "name": "University of Geneva",
+    "lat": 46.19899,
+    "lon": 6.14446,
+    "country": "Switzerland"
+   }
+  ],
+  "orcid": "0000-0001-9521-9897",
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q73844899"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q43341949",
+  "name": "Sergio Ribeiro Guevara",
+  "description": "researcher",
+  "relations": [
+   "educated_at"
+  ],
+  "is_alumnus": true,
+  "birth_year": null,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "researcher"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "National Atomic Energy Commission",
+    "lat": -34.53944444,
+    "lon": -58.46527778,
+    "country": "Argentina"
+   }
+  ],
+  "orcid": "0000-0001-7203-7687",
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q43341949"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q102338026",
+  "name": "Veronica Beatriz Garea",
+  "description": "Ph.D. Rensselaer Polytechnic Institute 1998",
+  "relations": [
+   "educated_at"
+  ],
+  "is_alumnus": true,
+  "birth_year": null,
+  "death_year": null,
+  "image": null,
+  "occupations": [],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "National Scientific and Technical Research Council",
+    "lat": -34.582567006,
+    "lon": -58.429000761,
+    "country": "Argentina"
+   },
+   {
+    "name": "INVAP",
+    "lat": null,
+    "lon": null,
+    "country": "Argentina"
+   }
+  ],
+  "orcid": null,
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q102338026"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q137160650",
+  "name": "Verónica Grünfeld",
+  "description": "física argentina",
+  "relations": [
+   "educated_at"
+  ],
+  "is_alumnus": true,
+  "birth_year": 1935,
+  "death_year": 2017,
+  "image": null,
+  "occupations": [
+   "university teacher",
+   "physicist"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [],
+  "orcid": null,
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q137160650"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q77828269",
+  "name": "Victor H. Gillette",
+  "description": "researcher",
+  "relations": [
+   "educated_at"
+  ],
+  "is_alumnus": true,
+  "birth_year": null,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "researcher"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "University of Sharjah",
+    "lat": 25.2875,
+    "lon": 55.4769,
+    "country": "United Arab Emirates"
+   }
+  ],
+  "orcid": "0000-0003-0046-4158",
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q77828269"
+ },
+ {
+  "source": "wikidata",
+  "id": "Q104102968",
+  "name": "Yrina Viatela",
+  "description": "researcher",
+  "relations": [
+   "educated_at"
+  ],
+  "is_alumnus": true,
+  "birth_year": null,
+  "death_year": null,
+  "image": null,
+  "occupations": [
+   "researcher"
+  ],
+  "fields": [],
+  "degrees": [],
+  "employers": [
+   {
+    "name": "National Atomic Energy Commission",
+    "lat": -34.53944444,
+    "lon": -58.46527778,
+    "country": "Argentina"
+   }
+  ],
+  "orcid": "0000-0002-3910-1672",
+  "scholar_id": null,
+  "wikipedia": null,
+  "wikidata_url": "http://www.wikidata.org/entity/Q104102968"
+ }
+]

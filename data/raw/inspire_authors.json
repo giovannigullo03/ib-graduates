@@ -1,0 +1,4610 @@
+[
+ {
+  "name": "A. Di Donato",
+  "orcid": null,
+  "inspire_bai": "A.Di.Donato.1",
+  "current_institution": null,
+  "career": [],
+  "advisors": [],
+  "arxiv_categories": [],
+  "field_blob": ""
+ },
+ {
+  "name": "A. Fasciszewski",
+  "orcid": null,
+  "inspire_bai": "A.Fasciszewski.1",
+  "current_institution": null,
+  "career": [],
+  "advisors": [],
+  "arxiv_categories": [],
+  "field_blob": ""
+ },
+ {
+  "name": "A. Álvarez Fernández",
+  "orcid": null,
+  "inspire_bai": "A.A.Fernandez.1",
+  "current_institution": null,
+  "career": [],
+  "advisors": [],
+  "arxiv_categories": [],
+  "field_blob": ""
+ },
+ {
+  "name": "A.A. Aligia",
+  "orcid": null,
+  "inspire_bai": "A.A.Aligia.1",
+  "current_institution": null,
+  "career": [],
+  "advisors": [],
+  "arxiv_categories": [],
+  "field_blob": ""
+ },
+ {
+  "name": "A.Di Donato",
+  "orcid": null,
+  "inspire_bai": "A.D.Donato.1",
+  "current_institution": null,
+  "career": [],
+  "advisors": [],
+  "arxiv_categories": [],
+  "field_blob": ""
+ },
+ {
+  "name": "Adrian Rene Lugo",
+  "orcid": "0000-0001-5766-6506",
+  "inspire_bai": "A.R.Lugo.1",
+  "current_institution": {
+   "name": "La Plata U.",
+   "city": "La Plata",
+   "country": "Argentina",
+   "country_code": "AR",
+   "lat": -34.9173012,
+   "lon": -57.9501305
+  },
+  "career": [
+   {
+    "institution": "La Plata U.",
+    "start": "1995",
+    "end": null,
+    "current": true
+   },
+   {
+    "institution": "Buenos Aires , CONICET",
+    "start": "1995",
+    "end": null,
+    "current": true
+   },
+   {
+    "institution": "ICTP, Trieste",
+    "start": "1993",
+    "end": "1994",
+    "current": false
+   },
+   {
+    "institution": "Santiago de Compostela U.",
+    "start": "1990",
+    "end": "1992",
+    "current": false
+   },
+   {
+    "institution": "SISSA, Trieste",
+    "start": "1986",
+    "end": "1989",
+    "current": false
+   },
+   {
+    "institution": "Balseiro Inst., San Carlos de Bariloche",
+    "start": "1982",
+    "end": "1985",
+    "current": false
+   }
+  ],
+  "advisors": [
+   "Bonora, Loriano"
+  ],
+  "arxiv_categories": [
+   "hep-th"
+  ],
+  "field_blob": "string theory quantum gravity"
+ },
+ {
+  "name": "Adrián A. Budini",
+  "orcid": null,
+  "inspire_bai": "A.A.Budini.1",
+  "current_institution": null,
+  "career": [],
+  "advisors": [],
+  "arxiv_categories": [],
+  "field_blob": ""
+ },
+ {
+  "name": "Agustín Silva",
+  "orcid": "0000-0003-0800-5060",
+  "inspire_bai": "A.Silva.6",
+  "current_institution": {
+   "name": "Nijmegen U., IMAPP",
+   "city": "Nijmegen",
+   "country": "Netherlands",
+   "country_code": "NL",
+   "lat": 52.8780118,
+   "lon": 5.9984676
+  },
+  "career": [
+   {
+    "institution": "Nijmegen U., IMAPP",
+    "start": "2022",
+    "end": "2026",
+    "current": true
+   },
+   {
+    "institution": "Balseiro Inst., San Carlos de Bariloche",
+    "start": "2020",
+    "end": "2022",
+    "current": false
+   },
+   {
+    "institution": "Balseiro Inst., San Carlos de Bariloche",
+    "start": "2018",
+    "end": "2021",
+    "current": false
+   }
+  ],
+  "advisors": [
+   "Loll, Renate",
+   "Fosco, César Daniel"
+  ],
+  "arxiv_categories": [
+   "hep-th",
+   "gr-qc"
+  ],
+  "field_blob": "string theory quantum gravity general relativity gravitation"
+ },
+ {
+  "name": "Aitor Fernández García",
+  "orcid": "0000-0002-2782-8452",
+  "inspire_bai": "A.Fernandez.Garcia.1",
+  "current_institution": {
+   "name": "Balseiro Inst., San Carlos de Bariloche",
+   "city": "San Carlos de Bariloche",
+   "country": "Argentina",
+   "country_code": "AR",
+   "lat": null,
+   "lon": null
+  },
+  "career": [
+   {
+    "institution": "Balseiro Inst., San Carlos de Bariloche",
+    "start": "2023",
+    "end": null,
+    "current": true
+   },
+   {
+    "institution": "Balseiro Inst., San Carlos de Bariloche",
+    "start": "2021",
+    "end": "2023",
+    "current": false
+   },
+   {
+    "institution": "U. Basque Country, Leioa",
+    "start": "2016",
+    "end": "2021",
+    "current": false
+   }
+  ],
+  "advisors": [
+   "Fosco, César Daniel"
+  ],
+  "arxiv_categories": [
+   "hep-th",
+   "quant-ph"
+  ],
+  "field_blob": "string theory quantum gravity quantum information"
+ },
+ {
+  "name": "Alberto Etchegoyen",
+  "orcid": "0000-0001-6989-2404",
+  "inspire_bai": "A.Etchegoyen.1",
+  "current_institution": {
+   "name": "Buenos Aires, CONICET",
+   "city": "Buenos Aires",
+   "country": "Argentina",
+   "country_code": "AR",
+   "lat": -34.6243095,
+   "lon": -58.4506455
+  },
+  "career": [
+   {
+    "institution": "Buenos Aires, CONICET",
+    "start": "1989",
+    "end": null,
+    "current": true
+   },
+   {
+    "institution": "CNEA, Buenos Aires",
+    "start": "1977",
+    "end": null,
+    "current": false
+   }
+  ],
+  "advisors": [],
+  "arxiv_categories": [
+   "astro-ph"
+  ],
+  "field_blob": "astrophysics cosmology"
+ },
+ {
+  "name": "Alejandro Núñez Selin",
+  "orcid": null,
+  "inspire_bai": "A.N.Selin.1",
+  "current_institution": null,
+  "career": [],
+  "advisors": [],
+  "arxiv_categories": [],
+  "field_blob": ""
+ },
+ {
+  "name": "Alejo Nahuel Rossia",
+  "orcid": "0000-0002-9475-6356",
+  "inspire_bai": "Alejo.Nahuel.Rossia.1",
+  "current_institution": {
+   "name": "U. Padua, Dept. Phys. Astron.",
+   "city": "Padua",
+   "country": "Italy",
+   "country_code": "IT",
+   "lat": null,
+   "lon": null
+  },
+  "career": [
+   {
+    "institution": "U. Padua, Dept. Phys. Astron.",
+    "start": "2024",
+    "end": null,
+    "current": true
+   },
+   {
+    "institution": "Manchester U.",
+    "start": "2021",
+    "end": "2024",
+    "current": false
+   },
+   {
+    "institution": "Humboldt U., Berlin (main)",
+    "start": "2019",
+    "end": "2021",
+    "current": false
+   },
+   {
+    "institution": "DESY",
+    "start": "2018",
+    "end": "2021",
+    "current": false
+   },
+   {
+    "institution": "Balseiro Inst., San Carlos de Bariloche",
+    "start": "2016",
+    "end": "2017",
+    "current": false
+   },
+   {
+    "institution": "Balseiro Inst., San Carlos de Bariloche",
+    "start": "2014",
+    "end": "2016",
+    "current": false
+   },
+   {
+    "institution": "Río Cuarto Natl. U.",
+    "start": "2012",
+    "end": "2014",
+    "current": false
+   }
+  ],
+  "advisors": [
+   "Grojean, Christophe",
+   "Da Rold, Leandro"
+  ],
+  "arxiv_categories": [
+   "hep-ph"
+  ],
+  "field_blob": "particle physics phenomenology"
+ },
+ {
+  "name": "Ana Laura Gramajo",
+  "orcid": null,
+  "inspire_bai": "A.L.Gramajo.1",
+  "current_institution": null,
+  "career": [],
+  "advisors": [],
+  "arxiv_categories": [],
+  "field_blob": ""
+ },
+ {
+  "name": "Anderson Campos Fauth",
+  "orcid": "0000-0001-7239-0288",
+  "inspire_bai": "A.C.Fauth.1",
+  "current_institution": {
+   "name": "Campinas State U.",
+   "city": "Campinas",
+   "country": "Brazil",
+   "country_code": "BR",
+   "lat": -22.9063648,
+   "lon": -47.0615741
+  },
+  "career": [
+   {
+    "institution": "Campinas State U.",
+    "start": "1992",
+    "end": null,
+    "current": true
+   }
+  ],
+  "advisors": [],
+  "arxiv_categories": [
+   "astro-ph",
+   "hep-ex",
+   "physics"
+  ],
+  "field_blob": "astrophysics cosmology particle physics experiment physics"
+ },
+ {
+  "name": "Andres Daniel Perez",
+  "orcid": "0000-0002-9391-6047",
+  "inspire_bai": "A.D.Perez.1",
+  "current_institution": {
+   "name": "Balseiro Inst., San Carlos de Bariloche",
+   "city": "San Carlos de Bariloche",
+   "country": "Argentina",
+   "country_code": "AR",
+   "lat": null,
+   "lon": null
+  },
+  "career": [
+   {
+    "institution": "Balseiro Inst., San Carlos de Bariloche",
+    "start": "2025",
+    "end": null,
+    "current": true
+   },
+   {
+    "institution": "Madrid, IFT",
+    "start": "2022",
+    "end": "2025",
+    "current": false
+   },
+   {
+    "institution": "La Plata, IFLP",
+    "start": "2020",
+    "end": "2022",
+    "current": false
+   },
+   {
+    "institution": "Buenos Aires U.",
+    "start": "2015",
+    "end": "2020",
+    "current": false
+   }
+  ],
+  "advisors": [],
+  "arxiv_categories": [
+   "hep-ph"
+  ],
+  "field_blob": "particle physics phenomenology"
+ },
+ {
+  "name": "Andrus Giraldo",
+  "orcid": null,
+  "inspire_bai": "A.Giraldo.2",
+  "current_institution": null,
+  "career": [],
+  "advisors": [],
+  "arxiv_categories": [],
+  "field_blob": ""
+ },
+ {
+  "name": "Andrés Matías Boasso",
+  "orcid": "0009-0003-8998-9344",
+  "inspire_bai": "Andres.Boasso.1",
+  "current_institution": {
+   "name": "Balseiro Inst., San Carlos de Bariloche",
+   "city": "San Carlos de Bariloche",
+   "country": "Argentina",
+   "country_code": "AR",
+   "lat": null,
+   "lon": null
+  },
+  "career": [
+   {
+    "institution": "Balseiro Inst., San Carlos de Bariloche",
+    "start": "2025",
+    "end": null,
+    "current": true
+   },
+   {
+    "institution": "Balseiro Inst., San Carlos de Bariloche",
+    "start": "2023",
+    "end": "2024",
+    "current": false
+   }
+  ],
+  "advisors": [],
+  "arxiv_categories": [
+   "hep-ph",
+   "math-ph",
+   "gr-qc"
+  ],
+  "field_blob": "particle physics phenomenology mathematical physics general relativity gravitation"
+ },
+ {
+  "name": "Andrés Rivera",
+  "orcid": "0000-0002-6256-8545",
+  "inspire_bai": "A.Rivera.1",
+  "current_institution": {
+   "name": "Antioquia U.",
+   "city": "Medellin",
+   "country": "Colombia",
+   "country_code": "CO",
+   "lat": null,
+   "lon": null
+  },
+  "career": [
+   {
+    "institution": "Antioquia U.",
+    "start": "2018",
+    "end": null,
+    "current": true
+   },
+   {
+    "institution": "U. Brussels (main)",
+    "start": "2016",
+    "end": "2016",
+    "current": false
+   },
+   {
+    "institution": "Antioquia U.",
+    "start": "2014",
+    "end": "2017",
+    "current": false
+   },
+   {
+    "institution": "Balseiro Inst., San Carlos de Bariloche",
+    "start": "2008",
+    "end": "2010",
+    "current": false
+   }
+  ],
+  "advisors": [],
+  "arxiv_categories": [
+   "hep-ph"
+  ],
+  "field_blob": "particle physics phenomenology"
+ },
+ {
+  "name": "Benjamin Fuchs",
+  "orcid": null,
+  "inspire_bai": "B.Fuchs.1",
+  "current_institution": {
+   "name": "KIT, Karlsruhe",
+   "city": "Karlsruhe",
+   "country": "Germany",
+   "country_code": "DE",
+   "lat": 48.996,
+   "lon": 8.463
+  },
+  "career": [
+   {
+    "institution": "KIT, Karlsruhe",
+    "start": null,
+    "end": null,
+    "current": true
+   },
+   {
+    "institution": "Rio de Janeiro, CBPF",
+    "start": null,
+    "end": null,
+    "current": false
+   }
+  ],
+  "advisors": [],
+  "arxiv_categories": [],
+  "field_blob": ""
+ },
+ {
+  "name": "Blas Alascio",
+  "orcid": null,
+  "inspire_bai": "B.Alascio.1",
+  "current_institution": null,
+  "career": [],
+  "advisors": [],
+  "arxiv_categories": [],
+  "field_blob": ""
+ },
+ {
+  "name": "Bruno Cardin Guntsche",
+  "orcid": null,
+  "inspire_bai": "B.C.Guntsche.1",
+  "current_institution": null,
+  "career": [],
+  "advisors": [],
+  "arxiv_categories": [],
+  "field_blob": ""
+ },
+ {
+  "name": "C. Ccapa Ttira",
+  "orcid": null,
+  "inspire_bai": "C.Ccapa.Ttira.2",
+  "current_institution": null,
+  "career": [],
+  "advisors": [],
+  "arxiv_categories": [],
+  "field_blob": ""
+ },
+ {
+  "name": "C. Kristukat",
+  "orcid": null,
+  "inspire_bai": "C.Kristukat.1",
+  "current_institution": null,
+  "career": [],
+  "advisors": [],
+  "arxiv_categories": [],
+  "field_blob": ""
+ },
+ {
+  "name": "C.A. Balseiro",
+  "orcid": null,
+  "inspire_bai": "C.A.Balseiro.1",
+  "current_institution": null,
+  "career": [],
+  "advisors": [],
+  "arxiv_categories": [],
+  "field_blob": ""
+ },
+ {
+  "name": "Carlos E.M. Wagner",
+  "orcid": "0000-0001-6407-623X",
+  "inspire_bai": "Carlos.E.M.Wagner.1",
+  "current_institution": {
+   "name": "Argonne",
+   "city": "Argonne",
+   "country": "United States",
+   "country_code": "US",
+   "lat": 41.7105866,
+   "lon": -87.9831154
+  },
+  "career": [
+   {
+    "institution": "Argonne",
+    "start": "1999",
+    "end": null,
+    "current": true
+   },
+   {
+    "institution": "Chicago U.",
+    "start": "1999",
+    "end": null,
+    "current": true
+   },
+   {
+    "institution": "CERN",
+    "start": "1996",
+    "end": "1999",
+    "current": false
+   },
+   {
+    "institution": "CERN",
+    "start": "1993",
+    "end": "1996",
+    "current": false
+   },
+   {
+    "institution": "Munich, Max Planck Inst.",
+    "start": "1991",
+    "end": "1993",
+    "current": false
+   },
+   {
+    "institution": "Purdue U.",
+    "start": "1989",
+    "end": "1991",
+    "current": false
+   },
+   {
+    "institution": "Hamburg U.",
+    "start": "1987",
+    "end": "1989",
+    "current": false
+   },
+   {
+    "institution": "Centro Atomico Bariloche",
+    "start": "1985",
+    "end": "1987",
+    "current": false
+   },
+   {
+    "institution": "Balseiro Inst., San Carlos de Bariloche",
+    "start": "1982",
+    "end": "1985",
+    "current": false
+   }
+  ],
+  "advisors": [
+   "Montvay, Istvan"
+  ],
+  "arxiv_categories": [
+   "hep-ph"
+  ],
+  "field_blob": "particle physics phenomenology"
+ },
+ {
+  "name": "Carlos Federico Hojvat",
+  "orcid": "0000-0003-3323-3129",
+  "inspire_bai": "C.Hojvat.1",
+  "current_institution": {
+   "name": "Fermilab",
+   "city": "Batavia",
+   "country": "United States",
+   "country_code": "US",
+   "lat": 41.83891412803674,
+   "lon": -88.2610273361206
+  },
+  "career": [
+   {
+    "institution": "Fermilab",
+    "start": "1977",
+    "end": null,
+    "current": true
+   },
+   {
+    "institution": "British Columbia U.",
+    "start": "1963",
+    "end": "1967",
+    "current": false
+   },
+   {
+    "institution": "Balseiro Inst., San Carlos de Bariloche",
+    "start": "1958",
+    "end": "1962",
+    "current": false
+   }
+  ],
+  "advisors": [
+   "Jones, Garth"
+  ],
+  "arxiv_categories": [
+   "physics.acc-ph",
+   "astro-ph",
+   "hep-ex"
+  ],
+  "field_blob": "accelerator physics astrophysics cosmology particle physics experiment"
+ },
+ {
+  "name": "César Alfonso Agón",
+  "orcid": "0000-0002-8903-7074",
+  "inspire_bai": "Cesar.A.Agon.1",
+  "current_institution": {
+   "name": "Cartagena Politecnica U.",
+   "city": "Cartagena",
+   "country": "Spain",
+   "country_code": "ES",
+   "lat": null,
+   "lon": null
+  },
+  "career": [
+   {
+    "institution": "Cartagena Politecnica U.",
+    "start": "2025",
+    "end": null,
+    "current": true
+   },
+   {
+    "institution": "Utrecht U.",
+    "start": "2023",
+    "end": "2025",
+    "current": false
+   },
+   {
+    "institution": "Centro Atomico Bariloche",
+    "start": "2020",
+    "end": "2023",
+    "current": false
+   },
+   {
+    "institution": "YITP, Stony Brook",
+    "start": "2017",
+    "end": "2020",
+    "current": false
+   },
+   {
+    "institution": "Brandeis U.",
+    "start": "2012",
+    "end": "2017",
+    "current": false
+   },
+   {
+    "institution": "Mexico U., ICN",
+    "start": "2009",
+    "end": "2012",
+    "current": false
+   },
+   {
+    "institution": "Santander Industrial U.",
+    "start": "2004",
+    "end": "2009",
+    "current": false
+   }
+  ],
+  "advisors": [
+   "Headrick, Matthew Peter",
+   "Lawrence, Albion E."
+  ],
+  "arxiv_categories": [
+   "astro-ph",
+   "cond-mat",
+   "gr-qc",
+   "hep-th"
+  ],
+  "field_blob": "astrophysics cosmology condensed matter physics general relativity gravitation string theory quantum gravity"
+ },
+ {
+  "name": "César Daniel Fosco",
+  "orcid": null,
+  "inspire_bai": "C.D.Fosco.1",
+  "current_institution": {
+   "name": "Centro Atomico Bariloche",
+   "city": "Bariloche",
+   "country": "Argentina",
+   "country_code": "AR",
+   "lat": -34.7876585,
+   "lon": -58.6121593
+  },
+  "career": [
+   {
+    "institution": "Centro Atomico Bariloche",
+    "start": null,
+    "end": null,
+    "current": true
+   }
+  ],
+  "advisors": [],
+  "arxiv_categories": [
+   "hep-th",
+   "hep-lat"
+  ],
+  "field_blob": "string theory quantum gravity lattice field theory"
+ },
+ {
+  "name": "D.F. Grosz",
+  "orcid": null,
+  "inspire_bai": "D.F.Grosz.1",
+  "current_institution": null,
+  "career": [],
+  "advisors": [],
+  "arxiv_categories": [],
+  "field_blob": ""
+ },
+ {
+  "name": "Daniel Dominguez Vazquez",
+  "orcid": null,
+  "inspire_bai": "D.Dominguez.1",
+  "current_institution": {
+   "name": "Madrid, CIEMAT",
+   "city": "Madrid",
+   "country": "Spain",
+   "country_code": "ES",
+   "lat": 40.44965,
+   "lon": -3.725144
+  },
+  "career": [
+   {
+    "institution": "Madrid, CIEMAT",
+    "start": null,
+    "end": null,
+    "current": true
+   }
+  ],
+  "advisors": [],
+  "arxiv_categories": [
+   "hep-ex"
+  ],
+  "field_blob": "particle physics experiment"
+ },
+ {
+  "name": "Daniel Domínguez",
+  "orcid": null,
+  "inspire_bai": "D.Dominguez.3",
+  "current_institution": null,
+  "career": [],
+  "advisors": [],
+  "arxiv_categories": [],
+  "field_blob": ""
+ },
+ {
+  "name": "Daniela Domínguez Damiani",
+  "orcid": null,
+  "inspire_bai": "D.Dominguez.Damiani.1",
+  "current_institution": {
+   "name": "DESY",
+   "city": "Hamburg",
+   "country": "Germany",
+   "country_code": "DE",
+   "lat": 53.57328,
+   "lon": 9.88064
+  },
+  "career": [
+   {
+    "institution": "DESY",
+    "start": null,
+    "end": null,
+    "current": true
+   }
+  ],
+  "advisors": [],
+  "arxiv_categories": [],
+  "field_blob": ""
+ },
+ {
+  "name": "David D. Blanco",
+  "orcid": "0000-0003-0955-9399",
+  "inspire_bai": "D.Blanco.1",
+  "current_institution": {
+   "name": "Buenos Aires, CONICET",
+   "city": "Buenos Aires",
+   "country": "Argentina",
+   "country_code": "AR",
+   "lat": -34.6243095,
+   "lon": -58.4506455
+  },
+  "career": [
+   {
+    "institution": "Buenos Aires, CONICET",
+    "start": "2019",
+    "end": null,
+    "current": true
+   },
+   {
+    "institution": "U. Buenos Aires",
+    "start": "2018",
+    "end": null,
+    "current": true
+   },
+   {
+    "institution": "Buenos Aires, IAFE",
+    "start": "2016",
+    "end": "2018",
+    "current": false
+   },
+   {
+    "institution": "Balseiro Inst., San Carlos de Bariloche",
+    "start": "2011",
+    "end": "2016",
+    "current": false
+   },
+   {
+    "institution": "Balseiro Inst., San Carlos de Bariloche",
+    "start": "2010",
+    "end": "2010",
+    "current": false
+   },
+   {
+    "institution": "Balseiro Inst., San Carlos de Bariloche",
+    "start": "2007",
+    "end": "2009",
+    "current": false
+   }
+  ],
+  "advisors": [
+   "Casini, Horacio"
+  ],
+  "arxiv_categories": [
+   "hep-th"
+  ],
+  "field_blob": "string theory quantum gravity"
+ },
+ {
+  "name": "Davide Braga",
+  "orcid": "0000-0003-0907-480X",
+  "inspire_bai": "Davide.Braga.1",
+  "current_institution": {
+   "name": "Fermilab",
+   "city": "Batavia",
+   "country": "United States",
+   "country_code": "US",
+   "lat": 41.83891412803674,
+   "lon": -88.2610273361206
+  },
+  "career": [
+   {
+    "institution": "Fermilab",
+    "start": "2014",
+    "end": null,
+    "current": true
+   },
+   {
+    "institution": "Imperial Coll., London",
+    "start": null,
+    "end": "2016",
+    "current": false
+   },
+   {
+    "institution": "Rutherford",
+    "start": "2007",
+    "end": "2014",
+    "current": false
+   },
+   {
+    "institution": "Padua U.",
+    "start": null,
+    "end": "2006",
+    "current": false
+   }
+  ],
+  "advisors": [],
+  "arxiv_categories": [],
+  "field_blob": ""
+ },
+ {
+  "name": "Diego Harari",
+  "orcid": "0000-0002-7350-2488",
+  "inspire_bai": "Diego.D.Harari.1",
+  "current_institution": {
+   "name": "Centro Atomico Bariloche",
+   "city": "Bariloche",
+   "country": "Argentina",
+   "country_code": "AR",
+   "lat": -34.7876585,
+   "lon": -58.6121593
+  },
+  "career": [
+   {
+    "institution": "Centro Atomico Bariloche",
+    "start": "2004",
+    "end": null,
+    "current": true
+   },
+   {
+    "institution": "Buenos Aires U.",
+    "start": "1980",
+    "end": "1984",
+    "current": false
+   },
+   {
+    "institution": "Buenos Aires U.",
+    "start": "1974",
+    "end": "1979",
+    "current": false
+   }
+  ],
+  "advisors": [
+   "Castagnino, Mario"
+  ],
+  "arxiv_categories": [
+   "astro-ph"
+  ],
+  "field_blob": "astrophysics cosmology"
+ },
+ {
+  "name": "Diego Pontello",
+  "orcid": "0000-0002-5972-8392",
+  "inspire_bai": "D.Pontello.1",
+  "current_institution": {
+   "name": "SISSA, Trieste",
+   "city": "Trieste",
+   "country": "Italy",
+   "country_code": "IT",
+   "lat": 45.7027101,
+   "lon": 13.7202786
+  },
+  "career": [
+   {
+    "institution": "SISSA, Trieste",
+    "start": "2020",
+    "end": "2023",
+    "current": false
+   },
+   {
+    "institution": "Centro Atomico Bariloche",
+    "start": "2015",
+    "end": "2020",
+    "current": false
+   },
+   {
+    "institution": "Balseiro Inst., San Carlos de Bariloche",
+    "start": "2013",
+    "end": "2014",
+    "current": false
+   }
+  ],
+  "advisors": [
+   "Casini, Horacio"
+  ],
+  "arxiv_categories": [
+   "hep-th",
+   "math-ph",
+   "stat",
+   "quant-ph"
+  ],
+  "field_blob": "string theory quantum gravity mathematical physics stat quantum information"
+ },
+ {
+  "name": "E. Andres",
+  "orcid": null,
+  "inspire_bai": "E.Andres.2",
+  "current_institution": null,
+  "career": [],
+  "advisors": [],
+  "arxiv_categories": [],
+  "field_blob": ""
+ },
+ {
+  "name": "E.C. Andres",
+  "orcid": null,
+  "inspire_bai": "E.C.Andres.1",
+  "current_institution": null,
+  "career": [],
+  "advisors": [],
+  "arxiv_categories": [],
+  "field_blob": ""
+ },
+ {
+  "name": "Edith L. Losada",
+  "orcid": null,
+  "inspire_bai": "E.L.Losada.2",
+  "current_institution": null,
+  "career": [],
+  "advisors": [],
+  "arxiv_categories": [],
+  "field_blob": ""
+ },
+ {
+  "name": "Eduardo Paolini",
+  "orcid": null,
+  "inspire_bai": "E.Paolini.2",
+  "current_institution": null,
+  "career": [],
+  "advisors": [],
+  "arxiv_categories": [],
+  "field_blob": ""
+ },
+ {
+  "name": "Eduardo Testé Lino",
+  "orcid": "0000-0002-3635-5220",
+  "inspire_bai": "Eduardo.Teste.Lino.1",
+  "current_institution": {
+   "name": "Balseiro Inst., San Carlos de Bariloche",
+   "city": "San Carlos de Bariloche",
+   "country": "Argentina",
+   "country_code": "AR",
+   "lat": null,
+   "lon": null
+  },
+  "career": [
+   {
+    "institution": "Balseiro Inst., San Carlos de Bariloche",
+    "start": "2014",
+    "end": "2019",
+    "current": true
+   },
+   {
+    "institution": "Balseiro Inst., San Carlos de Bariloche",
+    "start": "2012",
+    "end": "2013",
+    "current": false
+   },
+   {
+    "institution": "Havana U.",
+    "start": "2005",
+    "end": "2010",
+    "current": false
+   }
+  ],
+  "advisors": [],
+  "arxiv_categories": [
+   "hep-th",
+   "gr-qc"
+  ],
+  "field_blob": "string theory quantum gravity general relativity gravitation"
+ },
+ {
+  "name": "Enzo Bavaro",
+  "orcid": null,
+  "inspire_bai": "E.Bavaro.1",
+  "current_institution": null,
+  "career": [],
+  "advisors": [],
+  "arxiv_categories": [],
+  "field_blob": ""
+ },
+ {
+  "name": "Esteban Roulet",
+  "orcid": "0000-0003-1478-9260",
+  "inspire_bai": "Esteban.Roulet.1",
+  "current_institution": {
+   "name": "Centro Atomico Bariloche",
+   "city": "Bariloche",
+   "country": "Argentina",
+   "country_code": "AR",
+   "lat": -34.7876585,
+   "lon": -58.6121593
+  },
+  "career": [
+   {
+    "institution": "Centro Atomico Bariloche",
+    "start": null,
+    "end": null,
+    "current": true
+   },
+   {
+    "institution": "SISSA, Trieste",
+    "start": "1986",
+    "end": "1990",
+    "current": false
+   },
+   {
+    "institution": "Buenos Aires U.",
+    "start": "1980",
+    "end": "1985",
+    "current": false
+   }
+  ],
+  "advisors": [
+   "Gelmini, Graciela B."
+  ],
+  "arxiv_categories": [
+   "astro-ph",
+   "hep-ph"
+  ],
+  "field_blob": "astrophysics cosmology particle physics phenomenology"
+ },
+ {
+  "name": "Ezequiel Lozano",
+  "orcid": null,
+  "inspire_bai": "E.Lozano.1",
+  "current_institution": null,
+  "career": [],
+  "advisors": [],
+  "arxiv_categories": [],
+  "field_blob": ""
+ },
+ {
+  "name": "Ezequiel N. Pozzo",
+  "orcid": null,
+  "inspire_bai": "E.N.Pozzo.1",
+  "current_institution": null,
+  "career": [],
+  "advisors": [],
+  "arxiv_categories": [],
+  "field_blob": ""
+ },
+ {
+  "name": "F. Navarrete",
+  "orcid": null,
+  "inspire_bai": "F.Navarrete.1",
+  "current_institution": null,
+  "career": [],
+  "advisors": [],
+  "arxiv_categories": [],
+  "field_blob": ""
+ },
+ {
+  "name": "Fabricio Pablo Alcalde Bessia",
+  "orcid": "0000-0001-6273-5246",
+  "inspire_bai": "F.P.Alcalde.Bessia.1",
+  "current_institution": {
+   "name": "Balseiro Inst., San Carlos de Bariloche",
+   "city": "San Carlos de Bariloche",
+   "country": "Argentina",
+   "country_code": "AR",
+   "lat": null,
+   "lon": null
+  },
+  "career": [
+   {
+    "institution": "Balseiro Inst., San Carlos de Bariloche",
+    "start": null,
+    "end": null,
+    "current": true
+   }
+  ],
+  "advisors": [],
+  "arxiv_categories": [],
+  "field_blob": ""
+ },
+ {
+  "name": "Farah Fahim Khalid",
+  "orcid": "0000-0003-1252-1447",
+  "inspire_bai": "F.F.Khalid.1",
+  "current_institution": {
+   "name": "Fermilab",
+   "city": "Batavia",
+   "country": "United States",
+   "country_code": "US",
+   "lat": 41.83891412803674,
+   "lon": -88.2610273361206
+  },
+  "career": [
+   {
+    "institution": "Unlisted",
+    "start": "2026",
+    "end": null,
+    "current": false
+   },
+   {
+    "institution": "Fermilab",
+    "start": "2019",
+    "end": "2026",
+    "current": true
+   },
+   {
+    "institution": "Northwestern U.",
+    "start": "2010",
+    "end": "2019",
+    "current": false
+   },
+   {
+    "institution": "Fermilab",
+    "start": "2009",
+    "end": "2010",
+    "current": false
+   },
+   {
+    "institution": "Open U., England",
+    "start": "2006",
+    "end": "2010",
+    "current": false
+   },
+   {
+    "institution": "Limerick, NIHE",
+    "start": "2003",
+    "end": "2005",
+    "current": false
+   },
+   {
+    "institution": "Limerick, NIHE",
+    "start": "2000",
+    "end": "2003",
+    "current": false
+   }
+  ],
+  "advisors": [],
+  "arxiv_categories": [
+   "physics.ins-det"
+  ],
+  "field_blob": "physics.ins-det"
+ },
+ {
+  "name": "Federico Lamagna",
+  "orcid": "0000-0003-1983-0453",
+  "inspire_bai": "F.Lamagna.1",
+  "current_institution": {
+   "name": "Balseiro Inst., San Carlos de Bariloche",
+   "city": "San Carlos de Bariloche",
+   "country": "Argentina",
+   "country_code": "AR",
+   "lat": null,
+   "lon": null
+  },
+  "career": [
+   {
+    "institution": "Balseiro Inst., San Carlos de Bariloche",
+    "start": null,
+    "end": null,
+    "current": true
+   },
+   {
+    "institution": "Buenos Aires, CONICET",
+    "start": null,
+    "end": null,
+    "current": true
+   },
+   {
+    "institution": "Centro Atomico Bariloche",
+    "start": null,
+    "end": null,
+    "current": true
+   }
+  ],
+  "advisors": [],
+  "arxiv_categories": [
+   "hep-ph"
+  ],
+  "field_blob": "particle physics phenomenology"
+ },
+ {
+  "name": "Francisco Diego Mazzitelli",
+  "orcid": null,
+  "inspire_bai": "F.D.Mazzitelli.1",
+  "current_institution": {
+   "name": "Buenos Aires, IAFE",
+   "city": "Buenos Aires",
+   "country": "Argentina",
+   "country_code": "AR",
+   "lat": -34.6036844,
+   "lon": -58.3815591
+  },
+  "career": [
+   {
+    "institution": "Buenos Aires, IAFE",
+    "start": null,
+    "end": null,
+    "current": true
+   }
+  ],
+  "advisors": [],
+  "arxiv_categories": [],
+  "field_blob": ""
+ },
+ {
+  "name": "Francisco Divi",
+  "orcid": "0009-0009-9268-721X",
+  "inspire_bai": "Francisco.Jose.Divi.1",
+  "current_institution": {
+   "name": "Perimeter Inst. Theor. Phys.",
+   "city": "Waterloo",
+   "country": "Canada",
+   "country_code": "CA",
+   "lat": 43.465684,
+   "lon": -80.525983
+  },
+  "career": [
+   {
+    "institution": "Perimeter Inst. Theor. Phys.",
+    "start": "2026",
+    "end": null,
+    "current": true
+   },
+   {
+    "institution": "Perimeter Inst. Theor. Phys.",
+    "start": "2024",
+    "end": "2025",
+    "current": false
+   },
+   {
+    "institution": "Balseiro Inst., San Carlos de Bariloche",
+    "start": "2021",
+    "end": "2023",
+    "current": false
+   }
+  ],
+  "advisors": [],
+  "arxiv_categories": [
+   "cond-mat",
+   "hep-th",
+   "quant-ph"
+  ],
+  "field_blob": "condensed matter physics string theory quantum gravity quantum information"
+ },
+ {
+  "name": "Franco A. Gigena",
+  "orcid": null,
+  "inspire_bai": "F.A.Gigena.1",
+  "current_institution": null,
+  "career": [],
+  "advisors": [],
+  "arxiv_categories": [],
+  "field_blob": ""
+ },
+ {
+  "name": "Franco Fiorini",
+  "orcid": null,
+  "inspire_bai": "F.Fiorini.1",
+  "current_institution": {
+   "name": "Buenos Aires, IAFE",
+   "city": "Buenos Aires",
+   "country": "Argentina",
+   "country_code": "AR",
+   "lat": -34.6036844,
+   "lon": -58.3815591
+  },
+  "career": [
+   {
+    "institution": "Buenos Aires, IAFE",
+    "start": null,
+    "end": null,
+    "current": true
+   }
+  ],
+  "advisors": [],
+  "arxiv_categories": [
+   "gr-qc"
+  ],
+  "field_blob": "general relativity gravitation"
+ },
+ {
+  "name": "G. Barbarán",
+  "orcid": null,
+  "inspire_bai": "G.Barbaran.1",
+  "current_institution": null,
+  "career": [],
+  "advisors": [],
+  "arxiv_categories": [],
+  "field_blob": ""
+ },
+ {
+  "name": "G. Hansen",
+  "orcid": null,
+  "inspire_bai": "G.Hansen.1",
+  "current_institution": null,
+  "career": [],
+  "advisors": [],
+  "arxiv_categories": [],
+  "field_blob": ""
+ },
+ {
+  "name": "G. Usaj",
+  "orcid": null,
+  "inspire_bai": "G.Usaj.1",
+  "current_institution": null,
+  "career": [],
+  "advisors": [],
+  "arxiv_categories": [],
+  "field_blob": ""
+ },
+ {
+  "name": "Geraldina T. Golup",
+  "orcid": "0000-0001-9471-8811",
+  "inspire_bai": "G.Golup.1",
+  "current_institution": {
+   "name": "Vrije U., Brussels",
+   "city": "Brussels",
+   "country": "Belgium",
+   "country_code": "BE",
+   "lat": 50.82297,
+   "lon": 4.3926167
+  },
+  "career": [
+   {
+    "institution": "Vrije U., Brussels",
+    "start": null,
+    "end": null,
+    "current": true
+   },
+   {
+    "institution": "Balseiro Inst., San Carlos de Bariloche",
+    "start": null,
+    "end": "2012",
+    "current": false
+   }
+  ],
+  "advisors": [
+   "Mollerach, Silvia"
+  ],
+  "arxiv_categories": [
+   "astro-ph"
+  ],
+  "field_blob": "astrophysics cosmology"
+ },
+ {
+  "name": "Gerardo Aldazabal",
+  "orcid": "0000-0002-9068-7816",
+  "inspire_bai": "G.Aldazabal.1",
+  "current_institution": {
+   "name": "Balseiro Inst., San Carlos de Bariloche",
+   "city": "San Carlos de Bariloche",
+   "country": "Argentina",
+   "country_code": "AR",
+   "lat": null,
+   "lon": null
+  },
+  "career": [
+   {
+    "institution": "Balseiro Inst., San Carlos de Bariloche",
+    "start": null,
+    "end": null,
+    "current": true
+   },
+   {
+    "institution": "Centro Atomico Bariloche",
+    "start": null,
+    "end": null,
+    "current": true
+   },
+   {
+    "institution": "Cuyo U.",
+    "start": null,
+    "end": null,
+    "current": false
+   },
+   {
+    "institution": "Buenos Aires, CONICET",
+    "start": null,
+    "end": null,
+    "current": false
+   }
+  ],
+  "advisors": [],
+  "arxiv_categories": [
+   "hep-ph",
+   "hep-th"
+  ],
+  "field_blob": "particle physics phenomenology string theory quantum gravity"
+ },
+ {
+  "name": "Gerardo Moreno",
+  "orcid": null,
+  "inspire_bai": "G.Moreno.1",
+  "current_institution": {
+   "name": "CINVESTAV, IPN",
+   "city": "Mexico City",
+   "country": "Mexico",
+   "country_code": "MX",
+   "lat": 19.5094789,
+   "lon": -99.1297045
+  },
+  "career": [
+   {
+    "institution": "CINVESTAV, IPN",
+    "start": null,
+    "end": null,
+    "current": false
+   }
+  ],
+  "advisors": [],
+  "arxiv_categories": [],
+  "field_blob": ""
+ },
+ {
+  "name": "Germán Malfatti",
+  "orcid": "0000-0001-8336-2936",
+  "inspire_bai": "G.Malfatti.1",
+  "current_institution": {
+   "name": "La Plata U.",
+   "city": "La Plata",
+   "country": "Argentina",
+   "country_code": "AR",
+   "lat": -34.9173012,
+   "lon": -57.9501305
+  },
+  "career": [
+   {
+    "institution": "La Plata U.",
+    "start": "2015",
+    "end": null,
+    "current": true
+   },
+   {
+    "institution": "Balseiro Inst., San Carlos de Bariloche",
+    "start": "2013",
+    "end": "2014",
+    "current": false
+   },
+   {
+    "institution": "Balseiro Inst., San Carlos de Bariloche",
+    "start": "2011",
+    "end": "2013",
+    "current": false
+   }
+  ],
+  "advisors": [],
+  "arxiv_categories": [
+   "astro-ph",
+   "hep-ph",
+   "hep-th"
+  ],
+  "field_blob": "astrophysics cosmology particle physics phenomenology string theory quantum gravity"
+ },
+ {
+  "name": "Gonzalo A. Alvarez",
+  "orcid": null,
+  "inspire_bai": "G.A.Alvarez.2",
+  "current_institution": null,
+  "career": [],
+  "advisors": [],
+  "arxiv_categories": [],
+  "field_blob": ""
+ },
+ {
+  "name": "Gonzalo Torroba",
+  "orcid": "0000-0003-2947-8705",
+  "inspire_bai": "G.Torroba.1",
+  "current_institution": {
+   "name": "Centro Atomico Bariloche",
+   "city": "Bariloche",
+   "country": "Argentina",
+   "country_code": "AR",
+   "lat": -34.7876585,
+   "lon": -58.6121593
+  },
+  "career": [
+   {
+    "institution": "Centro Atomico Bariloche",
+    "start": "2020",
+    "end": null,
+    "current": true
+   },
+   {
+    "institution": "Centro Atomico Bariloche",
+    "start": "2014",
+    "end": "2020",
+    "current": false
+   },
+   {
+    "institution": "Stanford U., Phys. Dept.",
+    "start": "2012",
+    "end": "2014",
+    "current": false
+   },
+   {
+    "institution": "SLAC",
+    "start": "2009",
+    "end": "2012",
+    "current": false
+   },
+   {
+    "institution": "Rutgers U., Piscataway",
+    "start": "2004",
+    "end": "2009",
+    "current": false
+   },
+   {
+    "institution": "Balseiro Inst., San Carlos de Bariloche",
+    "start": "2000",
+    "end": "2003",
+    "current": false
+   }
+  ],
+  "advisors": [
+   "Douglas, Michael R."
+  ],
+  "arxiv_categories": [
+   "hep-ph",
+   "hep-th",
+   "cond-mat"
+  ],
+  "field_blob": "particle physics phenomenology string theory quantum gravity condensed matter physics"
+ },
+ {
+  "name": "Gualberto Avila",
+  "orcid": null,
+  "inspire_bai": "G.Avila.1",
+  "current_institution": {
+   "name": "Pierre Auger Observ.",
+   "city": "San Carlos de Bariloche",
+   "country": "Argentina",
+   "country_code": "AR",
+   "lat": null,
+   "lon": null
+  },
+  "career": [
+   {
+    "institution": "Pierre Auger Observ.",
+    "start": null,
+    "end": null,
+    "current": true
+   },
+   {
+    "institution": "Centro Atomico Bariloche",
+    "start": null,
+    "end": null,
+    "current": false
+   }
+  ],
+  "advisors": [],
+  "arxiv_categories": [
+   "astro-ph"
+  ],
+  "field_blob": "astrophysics cosmology"
+ },
+ {
+  "name": "Guido van der Velde",
+  "orcid": null,
+  "inspire_bai": "G.Van.Der.Velde.1",
+  "current_institution": {
+   "name": "Centro Atomico Bariloche",
+   "city": "Bariloche",
+   "country": "Argentina",
+   "country_code": "AR",
+   "lat": -34.7876585,
+   "lon": -58.6121593
+  },
+  "career": [
+   {
+    "institution": "Centro Atomico Bariloche",
+    "start": null,
+    "end": null,
+    "current": true
+   }
+  ],
+  "advisors": [],
+  "arxiv_categories": [
+   "hep-th",
+   "gr-qc"
+  ],
+  "field_blob": "string theory quantum gravity general relativity gravitation"
+ },
+ {
+  "name": "Guillermo Ariel Silva",
+  "orcid": "0000-0003-3099-9145",
+  "inspire_bai": "G.A.Silva.1",
+  "current_institution": {
+   "name": "La Plata U.",
+   "city": "La Plata",
+   "country": "Argentina",
+   "country_code": "AR",
+   "lat": -34.9173012,
+   "lon": -57.9501305
+  },
+  "career": [
+   {
+    "institution": "La Plata U.",
+    "start": "2003",
+    "end": null,
+    "current": true
+   },
+   {
+    "institution": "U. Modena (main)",
+    "start": "2023",
+    "end": null,
+    "current": false
+   },
+   {
+    "institution": "Princeton, Inst. Advanced Study",
+    "start": "2016",
+    "end": null,
+    "current": false
+   },
+   {
+    "institution": "Cambridge U., DAMTP",
+    "start": "2001",
+    "end": "2003",
+    "current": false
+   },
+   {
+    "institution": "La Plata U.",
+    "start": "1998",
+    "end": "2001",
+    "current": false
+   },
+   {
+    "institution": "Balseiro Inst., San Carlos de Bariloche",
+    "start": "1991",
+    "end": "1994",
+    "current": false
+   }
+  ],
+  "advisors": [
+   "Schaposnik, Fidel A."
+  ],
+  "arxiv_categories": [
+   "hep-th"
+  ],
+  "field_blob": "string theory quantum gravity"
+ },
+ {
+  "name": "Gustavo M. Meneses A.",
+  "orcid": null,
+  "inspire_bai": "G.M.M.A.1",
+  "current_institution": null,
+  "career": [],
+  "advisors": [],
+  "arxiv_categories": [],
+  "field_blob": ""
+ },
+ {
+  "name": "H. Pastoriza",
+  "orcid": null,
+  "inspire_bai": "H.Pastoriza.1",
+  "current_institution": null,
+  "career": [],
+  "advisors": [],
+  "arxiv_categories": [],
+  "field_blob": ""
+ },
+ {
+  "name": "Hernán Gonzalo Asorey",
+  "orcid": "0000-0002-4559-8785",
+  "inspire_bai": "H.Asorey.1",
+  "current_institution": {
+   "name": "Santander Industrial U.",
+   "city": "Bucaramanga",
+   "country": "Colombia",
+   "country_code": "CO",
+   "lat": null,
+   "lon": null
+  },
+  "career": [
+   {
+    "institution": "Centro Atomico Bariloche",
+    "start": "2010",
+    "end": null,
+    "current": true
+   },
+   {
+    "institution": "Santander Industrial U.",
+    "start": "2013",
+    "end": null,
+    "current": true
+   },
+   {
+    "institution": "Centro Atomico Bariloche",
+    "start": "2006",
+    "end": "2012",
+    "current": false
+   },
+   {
+    "institution": "Cuyo U.",
+    "start": "2004",
+    "end": "2005",
+    "current": false
+   },
+   {
+    "institution": "Cuyo U.",
+    "start": "2002",
+    "end": "2004",
+    "current": false
+   }
+  ],
+  "advisors": [
+   "Allekotte, Ingo"
+  ],
+  "arxiv_categories": [
+   "astro-ph",
+   "physics.med-ph"
+  ],
+  "field_blob": "astrophysics cosmology physics.med-ph"
+ },
+ {
+  "name": "Horacio Casini",
+  "orcid": null,
+  "inspire_bai": "H.Casini.1",
+  "current_institution": {
+   "name": "Centro Atomico Bariloche",
+   "city": "Bariloche",
+   "country": "Argentina",
+   "country_code": "AR",
+   "lat": -34.7876585,
+   "lon": -58.6121593
+  },
+  "career": [
+   {
+    "institution": "Centro Atomico Bariloche",
+    "start": null,
+    "end": null,
+    "current": true
+   },
+   {
+    "institution": "Cuyo U.",
+    "start": null,
+    "end": null,
+    "current": false
+   }
+  ],
+  "advisors": [],
+  "arxiv_categories": [],
+  "field_blob": ""
+ },
+ {
+  "name": "Horacio S. Wio",
+  "orcid": null,
+  "inspire_bai": "H.S.Wio.1",
+  "current_institution": null,
+  "career": [],
+  "advisors": [],
+  "arxiv_categories": [],
+  "field_blob": ""
+ },
+ {
+  "name": "Hugo Montani",
+  "orcid": null,
+  "inspire_bai": "H.Montani.1",
+  "current_institution": null,
+  "career": [],
+  "advisors": [],
+  "arxiv_categories": [],
+  "field_blob": ""
+ },
+ {
+  "name": "I. Alekotte",
+  "orcid": null,
+  "inspire_bai": "I.Alekotte.1",
+  "current_institution": null,
+  "career": [],
+  "advisors": [],
+  "arxiv_categories": [],
+  "field_blob": ""
+ },
+ {
+  "name": "Ignacio Fabre",
+  "orcid": "0000-0001-6215-1806",
+  "inspire_bai": "I.Fabre.1",
+  "current_institution": {
+   "name": "Zurich U.",
+   "city": "Zurich",
+   "country": "Switzerland",
+   "country_code": "CH",
+   "lat": 47.397599,
+   "lon": 8.546739
+  },
+  "career": [
+   {
+    "institution": "Zurich U.",
+    "start": "2019",
+    "end": "2020",
+    "current": true
+   },
+   {
+    "institution": "ICAS, UNSAM, Buenos Aires",
+    "start": "2016",
+    "end": "2020",
+    "current": false
+   },
+   {
+    "institution": "Balseiro Inst., San Carlos de Bariloche",
+    "start": "2015",
+    "end": "2016",
+    "current": false
+   }
+  ],
+  "advisors": [
+   "de Florian, Daniel",
+   "Grazzini, Massimiliano"
+  ],
+  "arxiv_categories": [
+   "hep-ph"
+  ],
+  "field_blob": "particle physics phenomenology"
+ },
+ {
+  "name": "Ignacio Salazar Landea",
+  "orcid": "0000-0002-3196-8941",
+  "inspire_bai": "I.Salazar.Landea.1",
+  "current_institution": {
+   "name": "La Plata U.",
+   "city": "La Plata",
+   "country": "Argentina",
+   "country_code": "AR",
+   "lat": -34.9173012,
+   "lon": -57.9501305
+  },
+  "career": [
+   {
+    "institution": "La Plata U.",
+    "start": "2019",
+    "end": null,
+    "current": true
+   },
+   {
+    "institution": "Balseiro Inst., San Carlos de Bariloche",
+    "start": "2016",
+    "end": "2019",
+    "current": false
+   },
+   {
+    "institution": "La Plata U.",
+    "start": "2011",
+    "end": "2016",
+    "current": false
+   }
+  ],
+  "advisors": [
+   "Grandi, Nicolas Esteban"
+  ],
+  "arxiv_categories": [
+   "cond-mat",
+   "hep-th"
+  ],
+  "field_blob": "condensed matter physics string theory quantum gravity"
+ },
+ {
+  "name": "Ingo Allekotte",
+  "orcid": "0000-0002-9624-3044",
+  "inspire_bai": "I.Allekotte.1",
+  "current_institution": {
+   "name": "Centro Atomico Bariloche",
+   "city": "Bariloche",
+   "country": "Argentina",
+   "country_code": "AR",
+   "lat": -34.7876585,
+   "lon": -58.6121593
+  },
+  "career": [
+   {
+    "institution": "Centro Atomico Bariloche",
+    "start": null,
+    "end": null,
+    "current": true
+   },
+   {
+    "institution": "Cuyo U.",
+    "start": null,
+    "end": "1993",
+    "current": false
+   },
+   {
+    "institution": "Cuyo U.",
+    "start": null,
+    "end": null,
+    "current": false
+   }
+  ],
+  "advisors": [
+   "Aldazabal, Gerardo"
+  ],
+  "arxiv_categories": [
+   "astro-ph",
+   "hep-th"
+  ],
+  "field_blob": "astrophysics cosmology string theory quantum gravity"
+ },
+ {
+  "name": "Isabel Astrid Goos",
+  "orcid": "0009-0008-1479-539X",
+  "inspire_bai": "Isabel.Astrid.Goos.1",
+  "current_institution": {
+   "name": "Centro Atomico Bariloche",
+   "city": "Bariloche",
+   "country": "Argentina",
+   "country_code": "AR",
+   "lat": -34.7876585,
+   "lon": -58.6121593
+  },
+  "career": [
+   {
+    "institution": "Centro Atomico Bariloche",
+    "start": null,
+    "end": null,
+    "current": true
+   }
+  ],
+  "advisors": [],
+  "arxiv_categories": [
+   "astro-ph"
+  ],
+  "field_blob": "astrophysics cosmology"
+ },
+ {
+  "name": "Ivan Sidelnik",
+  "orcid": "0000-0003-4115-3129",
+  "inspire_bai": "I.Sidelnik.1",
+  "current_institution": {
+   "name": "CONICET",
+   "city": null,
+   "country": null,
+   "country_code": null,
+   "lat": null,
+   "lon": null
+  },
+  "career": [
+   {
+    "institution": "CONICET",
+    "start": "2015",
+    "end": null,
+    "current": true
+   },
+   {
+    "institution": "Departamento de Física de Neutrones, CAB, CNEA",
+    "start": "2014",
+    "end": null,
+    "current": true
+   },
+   {
+    "institution": "Buenos Aires, CONICET",
+    "start": "2007",
+    "end": "2012",
+    "current": false
+   }
+  ],
+  "advisors": [
+   "Etchegoyen, Alberto"
+  ],
+  "arxiv_categories": [
+   "astro-ph"
+  ],
+  "field_blob": "astrophysics cosmology"
+ },
+ {
+  "name": "Ivo Nicolas Naranjo",
+  "orcid": null,
+  "inspire_bai": "I.N.Naranjo.2",
+  "current_institution": {
+   "name": "Centro Atomico Bariloche",
+   "city": "Bariloche",
+   "country": "Argentina",
+   "country_code": "AR",
+   "lat": -34.7876585,
+   "lon": -58.6121593
+  },
+  "career": [
+   {
+    "institution": "Centro Atomico Bariloche",
+    "start": null,
+    "end": null,
+    "current": true
+   },
+   {
+    "institution": "Ecole Polytechnique",
+    "start": "2014",
+    "end": "2014",
+    "current": false
+   },
+   {
+    "institution": "Ecole Polytechnique",
+    "start": "2011",
+    "end": "2014",
+    "current": false
+   }
+  ],
+  "advisors": [],
+  "arxiv_categories": [],
+  "field_blob": ""
+ },
+ {
+  "name": "Iván Andrés Davidovich",
+  "orcid": null,
+  "inspire_bai": "I.A.Davidovich.1",
+  "current_institution": {
+   "name": "Cuyo U.",
+   "city": "Bariloche",
+   "country": "Argentina",
+   "country_code": "AR",
+   "lat": null,
+   "lon": null
+  },
+  "career": [
+   {
+    "institution": "Cuyo U.",
+    "start": null,
+    "end": "2011",
+    "current": false
+   }
+  ],
+  "advisors": [
+   "Fosco, Cesar Daniel"
+  ],
+  "arxiv_categories": [
+   "hep-th"
+  ],
+  "field_blob": "string theory quantum gravity"
+ },
+ {
+  "name": "J. Bonaparte",
+  "orcid": null,
+  "inspire_bai": "J.Bonaparte.1",
+  "current_institution": null,
+  "career": [],
+  "advisors": [],
+  "arxiv_categories": [],
+  "field_blob": ""
+ },
+ {
+  "name": "J. Dawidowski",
+  "orcid": null,
+  "inspire_bai": "J.Dawidowski.1",
+  "current_institution": null,
+  "career": [],
+  "advisors": [],
+  "arxiv_categories": [],
+  "field_blob": ""
+ },
+ {
+  "name": "J.-F. Pascual-Sanchez",
+  "orcid": null,
+  "inspire_bai": "J.F.Pascual.Sanchez.1",
+  "current_institution": {
+   "name": "Valladolid U.",
+   "city": "Valladolid",
+   "country": "Spain",
+   "country_code": "ES",
+   "lat": 41.6530417,
+   "lon": -4.7135268
+  },
+  "career": [
+   {
+    "institution": "Valladolid U.",
+    "start": null,
+    "end": null,
+    "current": true
+   }
+  ],
+  "advisors": [],
+  "arxiv_categories": [
+   "gr-qc",
+   "astro-ph"
+  ],
+  "field_blob": "general relativity gravitation astrophysics cosmology"
+ },
+ {
+  "name": "J.A. Bonetti",
+  "orcid": null,
+  "inspire_bai": "J.A.Bonetti.1",
+  "current_institution": null,
+  "career": [],
+  "advisors": [],
+  "arxiv_categories": [],
+  "field_blob": ""
+ },
+ {
+  "name": "J.J. Blostein",
+  "orcid": null,
+  "inspire_bai": "J.J.Blostein.2",
+  "current_institution": null,
+  "career": [],
+  "advisors": [],
+  "arxiv_categories": [],
+  "field_blob": ""
+ },
+ {
+  "name": "J.M. González",
+  "orcid": null,
+  "inspire_bai": "J.M.Gonzalez.2",
+  "current_institution": null,
+  "career": [],
+  "advisors": [],
+  "arxiv_categories": [],
+  "field_blob": ""
+ },
+ {
+  "name": "J.M. Lorenzi",
+  "orcid": null,
+  "inspire_bai": "J.M.Lorenzi.1",
+  "current_institution": null,
+  "career": [],
+  "advisors": [],
+  "arxiv_categories": [],
+  "field_blob": ""
+ },
+ {
+  "name": "Jaime Stiven Guzmán Guerrero",
+  "orcid": "0009-0008-6807-7107",
+  "inspire_bai": "Jaime.Stiven.Guzman.Guerrero.1",
+  "current_institution": {
+   "name": "Balseiro Inst., San Carlos de Bariloche",
+   "city": "San Carlos de Bariloche",
+   "country": "Argentina",
+   "country_code": "AR",
+   "lat": null,
+   "lon": null
+  },
+  "career": [
+   {
+    "institution": "Balseiro Inst., San Carlos de Bariloche",
+    "start": "2023",
+    "end": "2024",
+    "current": false
+   },
+   {
+    "institution": "UPTC, Tunja",
+    "start": "2015",
+    "end": "2022",
+    "current": false
+   }
+  ],
+  "advisors": [],
+  "arxiv_categories": [
+   "hep-ph",
+   "physics",
+   "quant-ph"
+  ],
+  "field_blob": "particle physics phenomenology physics quantum information"
+ },
+ {
+  "name": "Javier D. Fuhr",
+  "orcid": null,
+  "inspire_bai": "J.D.Fuhr.1",
+  "current_institution": null,
+  "career": [],
+  "advisors": [],
+  "arxiv_categories": [],
+  "field_blob": ""
+ },
+ {
+  "name": "Javier Magan",
+  "orcid": "0000-0003-0373-1987",
+  "inspire_bai": "J.Martinez.Magan.1",
+  "current_institution": {
+   "name": "Balseiro Inst., San Carlos de Bariloche",
+   "city": "San Carlos de Bariloche",
+   "country": "Argentina",
+   "country_code": "AR",
+   "lat": null,
+   "lon": null
+  },
+  "career": [
+   {
+    "institution": "Balseiro Inst., San Carlos de Bariloche",
+    "start": "2023",
+    "end": null,
+    "current": true
+   },
+   {
+    "institution": "UPenn, Philadelphia",
+    "start": "2020",
+    "end": "2022",
+    "current": false
+   },
+   {
+    "institution": "Balseiro Inst., San Carlos de Bariloche",
+    "start": "2016",
+    "end": "2020",
+    "current": false
+   },
+   {
+    "institution": "Utrecht U.",
+    "start": "2014",
+    "end": "2016",
+    "current": false
+   },
+   {
+    "institution": "Rio Grande do Norte U.",
+    "start": "2013",
+    "end": "2014",
+    "current": false
+   },
+   {
+    "institution": "Madrid, IFT",
+    "start": "2010",
+    "end": "2013",
+    "current": false
+   },
+   {
+    "institution": "Madrid U.",
+    "start": null,
+    "end": null,
+    "current": false
+   }
+  ],
+  "advisors": [
+   "Barbon, Jose L.F."
+  ],
+  "arxiv_categories": [
+   "hep-th"
+  ],
+  "field_blob": "string theory quantum gravity"
+ },
+ {
+  "name": "Jesús Huertas",
+  "orcid": "0000-0001-8230-9543",
+  "inspire_bai": "J.Huertas.2",
+  "current_institution": {
+   "name": "Balseiro Inst., San Carlos de Bariloche",
+   "city": "San Carlos de Bariloche",
+   "country": "Argentina",
+   "country_code": "AR",
+   "lat": null,
+   "lon": null
+  },
+  "career": [
+   {
+    "institution": "Balseiro Inst., San Carlos de Bariloche",
+    "start": "2025",
+    "end": null,
+    "current": true
+   },
+   {
+    "institution": "Harvard U., Phys. Dept.",
+    "start": "2024",
+    "end": "2024",
+    "current": false
+   },
+   {
+    "institution": "Madrid, IFT",
+    "start": "2021",
+    "end": "2025",
+    "current": false
+   },
+   {
+    "institution": "Madrid, Autonoma U.",
+    "start": "2020",
+    "end": "2021",
+    "current": false
+   },
+   {
+    "institution": "Madrid U.",
+    "start": "2016",
+    "end": "2020",
+    "current": false
+   }
+  ],
+  "advisors": [
+   "Uranga, Angel M."
+  ],
+  "arxiv_categories": [
+   "hep-th"
+  ],
+  "field_blob": "string theory quantum gravity"
+ },
+ {
+  "name": "Jonathan Pochon",
+  "orcid": null,
+  "inspire_bai": "J.Pochon.1",
+  "current_institution": {
+   "name": "IAC, La Laguna",
+   "city": "La Laguna",
+   "country": "Spain",
+   "country_code": "ES",
+   "lat": 42.4292639,
+   "lon": -2.5667378
+  },
+  "career": [
+   {
+    "institution": "IAC, La Laguna",
+    "start": null,
+    "end": null,
+    "current": true
+   },
+   {
+    "institution": "Buenos Aires, CONICET",
+    "start": null,
+    "end": null,
+    "current": false
+   },
+   {
+    "institution": "Annecy, LAPP",
+    "start": null,
+    "end": null,
+    "current": false
+   }
+  ],
+  "advisors": [],
+  "arxiv_categories": [
+   "astro-ph"
+  ],
+  "field_blob": "astrophysics cosmology"
+ },
+ {
+  "name": "Jose Alejandro Rosabal Rodriquez",
+  "orcid": "0000-0002-5848-4605",
+  "inspire_bai": "J.A.Rosabal.1",
+  "current_institution": {
+   "name": "Kyung Hee University",
+   "city": null,
+   "country": null,
+   "country_code": null,
+   "lat": null,
+   "lon": null
+  },
+  "career": [
+   {
+    "institution": "Kyung Hee University",
+    "start": "2026",
+    "end": null,
+    "current": true
+   },
+   {
+    "institution": "Murcia U.",
+    "start": "2022",
+    "end": "2025",
+    "current": false
+   },
+   {
+    "institution": "ITMP, Moscow",
+    "start": "2021",
+    "end": "2022",
+    "current": false
+   },
+   {
+    "institution": "APCTP, Pohang",
+    "start": "2019",
+    "end": "2020",
+    "current": false
+   },
+   {
+    "institution": "IBS, Daejeon",
+    "start": "2016",
+    "end": "2019",
+    "current": false
+   },
+   {
+    "institution": "U. Buenos Aires",
+    "start": "2014",
+    "end": "2016",
+    "current": false
+   },
+   {
+    "institution": "Balseiro Inst., San Carlos de Bariloche",
+    "start": "2009",
+    "end": "2014",
+    "current": false
+   },
+   {
+    "institution": "Balseiro Inst., San Carlos de Bariloche",
+    "start": "2006",
+    "end": "2008",
+    "current": false
+   },
+   {
+    "institution": "Oriente U.",
+    "start": "1999",
+    "end": "2004",
+    "current": false
+   }
+  ],
+  "advisors": [
+   "Aldazabal, Gerardo"
+  ],
+  "arxiv_categories": [
+   "hep-th"
+  ],
+  "field_blob": "string theory quantum gravity"
+ },
+ {
+  "name": "Jose E. Juknevich",
+  "orcid": null,
+  "inspire_bai": "J.E.Juknevich.1",
+  "current_institution": {
+   "name": "SISSA, Trieste",
+   "city": "Trieste",
+   "country": "Italy",
+   "country_code": "IT",
+   "lat": 45.7027101,
+   "lon": 13.7202786
+  },
+  "career": [
+   {
+    "institution": "SISSA, Trieste",
+    "start": "2013",
+    "end": null,
+    "current": true
+   },
+   {
+    "institution": "Weizmann Inst.",
+    "start": "2010",
+    "end": "2013",
+    "current": false
+   },
+   {
+    "institution": "Rutgers U., Piscataway",
+    "start": "2005",
+    "end": "2010",
+    "current": false
+   },
+   {
+    "institution": "Balseiro Inst., San Carlos de Bariloche",
+    "start": "2002",
+    "end": "2003",
+    "current": false
+   },
+   {
+    "institution": "Balseiro Inst., San Carlos de Bariloche",
+    "start": "2000",
+    "end": "2002",
+    "current": false
+   }
+  ],
+  "advisors": [
+   "Strassler, Matthew J."
+  ],
+  "arxiv_categories": [
+   "hep-ph",
+   "hep-th"
+  ],
+  "field_blob": "particle physics phenomenology string theory quantum gravity"
+ },
+ {
+  "name": "Jose Fulco",
+  "orcid": null,
+  "inspire_bai": "J.R.Fulco.1",
+  "current_institution": {
+   "name": "UC, Santa Barbara",
+   "city": "Santa Barbara",
+   "country": "United States",
+   "country_code": "US",
+   "lat": 34.41097681104632,
+   "lon": -119.8467149902461
+  },
+  "career": [
+   {
+    "institution": "UC, Santa Barbara",
+    "start": null,
+    "end": null,
+    "current": true
+   },
+   {
+    "institution": "Buenos Aires U.",
+    "start": null,
+    "end": "1962",
+    "current": false
+   },
+   {
+    "institution": "Balseiro Inst., San Carlos de Bariloche",
+    "start": null,
+    "end": null,
+    "current": false
+   }
+  ],
+  "advisors": [
+   "Chew, Geoffrey F."
+  ],
+  "arxiv_categories": [
+   "hep-lat",
+   "hep-th"
+  ],
+  "field_blob": "lattice field theory string theory quantum gravity"
+ },
+ {
+  "name": "José Lipovetzky",
+  "orcid": "0000-0001-7882-0576",
+  "inspire_bai": "Jose.Lipovetzky.1",
+  "current_institution": {
+   "name": "Fermilab",
+   "city": "Batavia",
+   "country": "United States",
+   "country_code": "US",
+   "lat": 41.83891412803674,
+   "lon": -88.2610273361206
+  },
+  "career": [
+   {
+    "institution": "Fermilab",
+    "start": null,
+    "end": null,
+    "current": true
+   }
+  ],
+  "advisors": [],
+  "arxiv_categories": [],
+  "field_blob": ""
+ },
+ {
+  "name": "João Carlos Costa dos Anjos",
+  "orcid": null,
+  "inspire_bai": "D.C.D.Anjos.1",
+  "current_institution": {
+   "name": "Rio de Janeiro Observ.",
+   "city": "Rio de Janeiro",
+   "country": "Brazil",
+   "country_code": "BR",
+   "lat": -22.8948911,
+   "lon": -43.2256358
+  },
+  "career": [
+   {
+    "institution": "Rio de Janeiro Observ.",
+    "start": null,
+    "end": null,
+    "current": true
+   },
+   {
+    "institution": "Rio de Janeiro, CBPF",
+    "start": "1977",
+    "end": null,
+    "current": false
+   },
+   {
+    "institution": "Paris U., VI-VII",
+    "start": "1970",
+    "end": "1997",
+    "current": false
+   },
+   {
+    "institution": "Rio de Janeiro Federal U.",
+    "start": "1964",
+    "end": "1968",
+    "current": false
+   }
+  ],
+  "advisors": [
+   "Morel, Andre"
+  ],
+  "arxiv_categories": [
+   "astro-ph",
+   "hep-ex"
+  ],
+  "field_blob": "astrophysics cosmology particle physics experiment"
+ },
+ {
+  "name": "Juan C. Palacios",
+  "orcid": null,
+  "inspire_bai": "J.C.Palacios.1",
+  "current_institution": null,
+  "career": [],
+  "advisors": [],
+  "arxiv_categories": [],
+  "field_blob": ""
+ },
+ {
+  "name": "Juan Cruz Estrada Vigil",
+  "orcid": "0000-0002-1527-7956",
+  "inspire_bai": "Juan.Cruz.Estrada.Vigil.1",
+  "current_institution": {
+   "name": "Fermilab",
+   "city": "Batavia",
+   "country": "United States",
+   "country_code": "US",
+   "lat": 41.83891412803674,
+   "lon": -88.2610273361206
+  },
+  "career": [
+   {
+    "institution": "Fermilab",
+    "start": null,
+    "end": null,
+    "current": true
+   },
+   {
+    "institution": "Rochester U.",
+    "start": null,
+    "end": "2001",
+    "current": false
+   }
+  ],
+  "advisors": [
+   "Ferbel, Thomas"
+  ],
+  "arxiv_categories": [
+   "hep-ex"
+  ],
+  "field_blob": "particle physics experiment"
+ },
+ {
+  "name": "Juan Manuel González",
+  "orcid": "0000-0003-3003-5063",
+  "inspire_bai": "J.M.Gonzalez.3",
+  "current_institution": {
+   "name": "Centro Atomico Bariloche",
+   "city": "Bariloche",
+   "country": "Argentina",
+   "country_code": "AR",
+   "lat": -34.7876585,
+   "lon": -58.6121593
+  },
+  "career": [
+   {
+    "institution": "Centro Atomico Bariloche",
+    "start": null,
+    "end": null,
+    "current": true
+   },
+   {
+    "institution": "Balseiro Inst., San Carlos de Bariloche",
+    "start": null,
+    "end": null,
+    "current": true
+   }
+  ],
+  "advisors": [],
+  "arxiv_categories": [],
+  "field_blob": ""
+ },
+ {
+  "name": "Juan Yepes Tamayo",
+  "orcid": "0000-0001-9221-9082",
+  "inspire_bai": "Juan.Yepes.Tamayo.1",
+  "current_institution": {
+   "name": "Santa Maria U., Valparaiso",
+   "city": "Valparaiso",
+   "country": "Chile",
+   "country_code": "CL",
+   "lat": -33.034459,
+   "lon": -71.5968267
+  },
+  "career": [
+   {
+    "institution": "Santa Maria U., Valparaiso",
+    "start": "2017",
+    "end": null,
+    "current": true
+   },
+   {
+    "institution": "Beijing, KITPC",
+    "start": "2014",
+    "end": "2016",
+    "current": false
+   },
+   {
+    "institution": "Madrid, IFT",
+    "start": "2011",
+    "end": "2014",
+    "current": false
+   },
+   {
+    "institution": "Balseiro Inst., San Carlos de Bariloche",
+    "start": "2009",
+    "end": "2010",
+    "current": false
+   },
+   {
+    "institution": "Antioquia U.",
+    "start": "2004",
+    "end": "2008",
+    "current": false
+   }
+  ],
+  "advisors": [
+   "Gavela Legazpi, Maria Belen"
+  ],
+  "arxiv_categories": [
+   "hep-ph",
+   "hep-th"
+  ],
+  "field_blob": "particle physics phenomenology string theory quantum gravity"
+ },
+ {
+  "name": "Karen A. Hallberg",
+  "orcid": null,
+  "inspire_bai": "K.Hallberg.1",
+  "current_institution": {
+   "name": "Balseiro Inst., San Carlos de Bariloche",
+   "city": "San Carlos de Bariloche",
+   "country": "Argentina",
+   "country_code": "AR",
+   "lat": null,
+   "lon": null
+  },
+  "career": [
+   {
+    "institution": "Balseiro Inst., San Carlos de Bariloche",
+    "start": null,
+    "end": null,
+    "current": true
+   }
+  ],
+  "advisors": [
+   "Balseiro, C."
+  ],
+  "arxiv_categories": [
+   "cond-mat",
+   "quant-ph"
+  ],
+  "field_blob": "condensed matter physics quantum information"
+ },
+ {
+  "name": "L. Martinez",
+  "orcid": null,
+  "inspire_bai": "L.Martinez.3",
+  "current_institution": null,
+  "career": [],
+  "advisors": [],
+  "arxiv_categories": [],
+  "field_blob": ""
+ },
+ {
+  "name": "L.A. Rodriguez Palomino",
+  "orcid": null,
+  "inspire_bai": "L.A.Rodriguez.Palomino.1",
+  "current_institution": null,
+  "career": [],
+  "advisors": [],
+  "arxiv_categories": [],
+  "field_blob": ""
+ },
+ {
+  "name": "Leandro Ariel Martinek",
+  "orcid": "0009-0001-7034-7953",
+  "inspire_bai": "Leandro.Martinek.1",
+  "current_institution": {
+   "name": "Balseiro Inst., San Carlos de Bariloche",
+   "city": "San Carlos de Bariloche",
+   "country": "Argentina",
+   "country_code": "AR",
+   "lat": null,
+   "lon": null
+  },
+  "career": [
+   {
+    "institution": "Balseiro Inst., San Carlos de Bariloche",
+    "start": "2024",
+    "end": "2030",
+    "current": true
+   },
+   {
+    "institution": "Balseiro Inst., San Carlos de Bariloche",
+    "start": "2022",
+    "end": "2023",
+    "current": false
+   },
+   {
+    "institution": "Balseiro Inst., San Carlos de Bariloche",
+    "start": "2020",
+    "end": "2022",
+    "current": false
+   }
+  ],
+  "advisors": [
+   "Casini, Horacio",
+   "Casini, Horacio"
+  ],
+  "arxiv_categories": [
+   "hep-th",
+   "math-ph"
+  ],
+  "field_blob": "string theory quantum gravity mathematical physics"
+ },
+ {
+  "name": "Leandro Da Rold",
+  "orcid": "0000-0001-9215-9198",
+  "inspire_bai": "L.Da.Rold.1",
+  "current_institution": {
+   "name": "Balseiro Inst., San Carlos de Bariloche",
+   "city": "San Carlos de Bariloche",
+   "country": "Argentina",
+   "country_code": "AR",
+   "lat": null,
+   "lon": null
+  },
+  "career": [
+   {
+    "institution": "Balseiro Inst., San Carlos de Bariloche",
+    "start": "2010",
+    "end": null,
+    "current": true
+   },
+   {
+    "institution": "CONICET",
+    "start": "2009",
+    "end": null,
+    "current": true
+   },
+   {
+    "institution": "Sao Paulo, IFT",
+    "start": "2006",
+    "end": "2009",
+    "current": false
+   },
+   {
+    "institution": "Barcelona, IFAE",
+    "start": "2002",
+    "end": "2006",
+    "current": false
+   }
+  ],
+  "advisors": [],
+  "arxiv_categories": [
+   "hep-ph"
+  ],
+  "field_blob": "particle physics phenomenology"
+ },
+ {
+  "name": "Leandro Stefanazzi",
+  "orcid": "0000-0001-9990-1981",
+  "inspire_bai": "Leandro.Stefanazzi.1",
+  "current_institution": {
+   "name": "Fermilab",
+   "city": "Batavia",
+   "country": "United States",
+   "country_code": "US",
+   "lat": 41.83891412803674,
+   "lon": -88.2610273361206
+  },
+  "career": [
+   {
+    "institution": "Fermilab",
+    "start": null,
+    "end": null,
+    "current": true
+   }
+  ],
+  "advisors": [],
+  "arxiv_categories": [],
+  "field_blob": ""
+ },
+ {
+  "name": "Leonardo Giuliano Trombetta",
+  "orcid": "0000-0001-7345-5100",
+  "inspire_bai": "L.G.Trombetta.1",
+  "current_institution": {
+   "name": "Centro Atomico Bariloche",
+   "city": "Bariloche",
+   "country": "Argentina",
+   "country_code": "AR",
+   "lat": -34.7876585,
+   "lon": -58.6121593
+  },
+  "career": [
+   {
+    "institution": "Centro Atomico Bariloche",
+    "start": "2026",
+    "end": null,
+    "current": true
+   },
+   {
+    "institution": "Prague, Inst. Phys.",
+    "start": "2020",
+    "end": "2026",
+    "current": false
+   },
+   {
+    "institution": "Pisa, Scuola Normale Superiore",
+    "start": "2017",
+    "end": "2020",
+    "current": false
+   },
+   {
+    "institution": "Centro Atomico Bariloche",
+    "start": "2016",
+    "end": "2017",
+    "current": false
+   },
+   {
+    "institution": "Buenos Aires U.",
+    "start": "2011",
+    "end": "2016",
+    "current": false
+   }
+  ],
+  "advisors": [
+   "Mazzitelli, Francisco Diego"
+  ],
+  "arxiv_categories": [
+   "gr-qc",
+   "hep-th"
+  ],
+  "field_blob": "general relativity gravitation string theory quantum gravity"
+ },
+ {
+  "name": "Lima Estrada",
+  "orcid": "0000-0003-3958-5694",
+  "inspire_bai": "Lima.Estrada.1",
+  "current_institution": {
+   "name": "Balseiro Inst., San Carlos de Bariloche",
+   "city": "San Carlos de Bariloche",
+   "country": "Argentina",
+   "country_code": "AR",
+   "lat": null,
+   "lon": null
+  },
+  "career": [
+   {
+    "institution": "Balseiro Inst., San Carlos de Bariloche",
+    "start": "2020",
+    "end": "2026",
+    "current": true
+   }
+  ],
+  "advisors": [
+   "Bertou, Xavier",
+   "Lipovetzky, José"
+  ],
+  "arxiv_categories": [
+   "hep-ex",
+   "physics"
+  ],
+  "field_blob": "particle physics experiment physics"
+ },
+ {
+  "name": "Lindber Salas",
+  "orcid": "0000-0002-2845-4923",
+  "inspire_bai": "L.Salas.3",
+  "current_institution": {
+   "name": "Balseiro Inst., San Carlos de Bariloche",
+   "city": "San Carlos de Bariloche",
+   "country": "Argentina",
+   "country_code": "AR",
+   "lat": null,
+   "lon": null
+  },
+  "career": [
+   {
+    "institution": "Balseiro Inst., San Carlos de Bariloche",
+    "start": "2026",
+    "end": null,
+    "current": true
+   },
+   {
+    "institution": "Barcelona, IFAE",
+    "start": null,
+    "end": "2025",
+    "current": false
+   }
+  ],
+  "advisors": [
+   "Pomarol, Alex",
+   "Quirós, Mariano"
+  ],
+  "arxiv_categories": [
+   "hep-ph",
+   "hep-th"
+  ],
+  "field_blob": "particle physics phenomenology string theory quantum gravity"
+ },
+ {
+  "name": "Luca Tosi",
+  "orcid": null,
+  "inspire_bai": "L.Tosi.1",
+  "current_institution": null,
+  "career": [],
+  "advisors": [],
+  "arxiv_categories": [],
+  "field_blob": ""
+ },
+ {
+  "name": "Lucas Daguerre",
+  "orcid": "0000-0002-8699-1452",
+  "inspire_bai": "Lucas.Daguerre.1",
+  "current_institution": {
+   "name": "Yale U. (main)",
+   "city": "New Haven",
+   "country": "United States",
+   "country_code": "US",
+   "lat": 41.3065186,
+   "lon": -72.9310714
+  },
+  "career": [
+   {
+    "institution": "Yale U. (main)",
+    "start": "2026",
+    "end": null,
+    "current": true
+   },
+   {
+    "institution": "UC, Davis",
+    "start": "2021",
+    "end": "2026",
+    "current": false
+   },
+   {
+    "institution": "Balseiro Inst., San Carlos de Bariloche",
+    "start": "2020",
+    "end": "2021",
+    "current": false
+   },
+   {
+    "institution": "Balseiro Inst., San Carlos de Bariloche",
+    "start": "2017",
+    "end": "2019",
+    "current": false
+   },
+   {
+    "institution": "UNLP, La Plata (main)",
+    "start": "2015",
+    "end": "2017",
+    "current": false
+   }
+  ],
+  "advisors": [
+   "Kim, Isaac H.",
+   "Torroba, Gonzalo"
+  ],
+  "arxiv_categories": [
+   "quant-ph"
+  ],
+  "field_blob": "quantum information"
+ },
+ {
+  "name": "Luis Horacio Arnaldi",
+  "orcid": "0000-0002-2370-4014",
+  "inspire_bai": "H.Arnaldi.1",
+  "current_institution": {
+   "name": "Fermilab",
+   "city": "Batavia",
+   "country": "United States",
+   "country_code": "US",
+   "lat": 41.83891412803674,
+   "lon": -88.2610273361206
+  },
+  "career": [
+   {
+    "institution": "Fermilab",
+    "start": "2025",
+    "end": null,
+    "current": true
+   },
+   {
+    "institution": "APC, Paris",
+    "start": "2023",
+    "end": "2025",
+    "current": false
+   },
+   {
+    "institution": "Centro Atomico Bariloche",
+    "start": "2010",
+    "end": null,
+    "current": false
+   },
+   {
+    "institution": "Instituto Balseiro",
+    "start": "2021",
+    "end": null,
+    "current": false
+   },
+   {
+    "institution": "Nordeste U.",
+    "start": "2001",
+    "end": "2009",
+    "current": false
+   }
+  ],
+  "advisors": [],
+  "arxiv_categories": [
+   "astro-ph",
+   "quant-ph"
+  ],
+  "field_blob": "astrophysics cosmology quantum information"
+ },
+ {
+  "name": "M. Famá",
+  "orcid": null,
+  "inspire_bai": "M.Fama.2",
+  "current_institution": null,
+  "career": [],
+  "advisors": [],
+  "arxiv_categories": [],
+  "field_blob": ""
+ },
+ {
+  "name": "M. Gatto",
+  "orcid": null,
+  "inspire_bai": "M.Gatto.1",
+  "current_institution": null,
+  "career": [],
+  "advisors": [],
+  "arxiv_categories": [],
+  "field_blob": ""
+ },
+ {
+  "name": "M. Mayo",
+  "orcid": null,
+  "inspire_bai": "M.Mayo.1",
+  "current_institution": null,
+  "career": [],
+  "advisors": [],
+  "arxiv_categories": [],
+  "field_blob": ""
+ },
+ {
+  "name": "M.C. Rodriguez",
+  "orcid": null,
+  "inspire_bai": "M.C.Rodriguez.1",
+  "current_institution": {
+   "name": "Fundacao U., Rio Grande",
+   "city": "Rio Grande",
+   "country": "Brazil",
+   "country_code": "BR",
+   "lat": null,
+   "lon": null
+  },
+  "career": [
+   {
+    "institution": "Fundacao U., Rio Grande",
+    "start": null,
+    "end": null,
+    "current": true
+   }
+  ],
+  "advisors": [],
+  "arxiv_categories": [
+   "hep-ph"
+  ],
+  "field_blob": "particle physics phenomenology"
+ },
+ {
+  "name": "M.L. Remaggi",
+  "orcid": null,
+  "inspire_bai": "M.L.Remaggi.1",
+  "current_institution": {
+   "name": "Balseiro Inst., San Carlos de Bariloche",
+   "city": "San Carlos de Bariloche",
+   "country": "Argentina",
+   "country_code": "AR",
+   "lat": null,
+   "lon": null
+  },
+  "career": [
+   {
+    "institution": "Balseiro Inst., San Carlos de Bariloche",
+    "start": null,
+    "end": null,
+    "current": true
+   },
+   {
+    "institution": "Cuyo U.",
+    "start": null,
+    "end": null,
+    "current": true
+   },
+   {
+    "institution": "Centro Atomico Bariloche",
+    "start": null,
+    "end": null,
+    "current": true
+   }
+  ],
+  "advisors": [],
+  "arxiv_categories": [
+   "hep-th"
+  ],
+  "field_blob": "string theory quantum gravity"
+ },
+ {
+  "name": "M.L. Remaggi",
+  "orcid": null,
+  "inspire_bai": "M.L.Remaggi.3",
+  "current_institution": null,
+  "career": [],
+  "advisors": [],
+  "arxiv_categories": [],
+  "field_blob": ""
+ },
+ {
+  "name": "Manuel Gonzalez",
+  "orcid": null,
+  "inspire_bai": "M.Gonzalez.2",
+  "current_institution": {
+   "name": "Centro Atomico Bariloche",
+   "city": "Bariloche",
+   "country": "Argentina",
+   "country_code": "AR",
+   "lat": -34.7876585,
+   "lon": -58.6121593
+  },
+  "career": [
+   {
+    "institution": "Centro Atomico Bariloche",
+    "start": null,
+    "end": null,
+    "current": true
+   },
+   {
+    "institution": "Balseiro Inst., San Carlos de Bariloche",
+    "start": "2013",
+    "end": null,
+    "current": false
+   },
+   {
+    "institution": "Balseiro Inst., San Carlos de Bariloche",
+    "start": "2012",
+    "end": "2013",
+    "current": false
+   }
+  ],
+  "advisors": [],
+  "arxiv_categories": [],
+  "field_blob": ""
+ },
+ {
+  "name": "Marcela Paz González",
+  "orcid": "0000-0003-3409-6816",
+  "inspire_bai": "Marcela.Gonzalez.1",
+  "current_institution": {
+   "name": "Valparaiso U.",
+   "city": "Valparaiso",
+   "country": "Chile",
+   "country_code": "CL",
+   "lat": null,
+   "lon": null
+  },
+  "career": [
+   {
+    "institution": "Valparaiso U.",
+    "start": null,
+    "end": null,
+    "current": true
+   },
+   {
+    "institution": "CCTVal, Valparaiso",
+    "start": null,
+    "end": null,
+    "current": false
+   },
+   {
+    "institution": "Santa Maria U., Valparaiso",
+    "start": null,
+    "end": null,
+    "current": false
+   }
+  ],
+  "advisors": [
+   "Kovalenko, Sergey G."
+  ],
+  "arxiv_categories": [
+   "hep-ph"
+  ],
+  "field_blob": "particle physics phenomenology"
+ },
+ {
+  "name": "Marcelo F. Ciappina",
+  "orcid": "0000-0002-1123-6460",
+  "inspire_bai": "M.F.Ciappina.1",
+  "current_institution": {
+   "name": "Prague, Inst. Phys.",
+   "city": "Prague",
+   "country": "Czechia",
+   "country_code": "CZ",
+   "lat": 50.1239503,
+   "lon": 14.4689537
+  },
+  "career": [
+   {
+    "institution": "Prague, Inst. Phys.",
+    "start": null,
+    "end": null,
+    "current": true
+   },
+   {
+    "institution": "ICFO, Barcelona",
+    "start": null,
+    "end": null,
+    "current": true
+   },
+   {
+    "institution": "Balseiro Inst., San Carlos de Bariloche",
+    "start": null,
+    "end": "2005",
+    "current": false
+   }
+  ],
+  "advisors": [],
+  "arxiv_categories": [
+   "physics.atom-ph"
+  ],
+  "field_blob": "physics.atom-ph"
+ },
+ {
+  "name": "Maria Clementina Medina",
+  "orcid": null,
+  "inspire_bai": "M.C.Medina.1",
+  "current_institution": {
+   "name": "Buenos Aires, CONICET",
+   "city": "Buenos Aires",
+   "country": "Argentina",
+   "country_code": "AR",
+   "lat": -34.6243095,
+   "lon": -58.4506455
+  },
+  "career": [
+   {
+    "institution": "Buenos Aires, CONICET",
+    "start": null,
+    "end": null,
+    "current": true
+   },
+   {
+    "institution": "LUTH, Meudon",
+    "start": null,
+    "end": null,
+    "current": false
+   }
+  ],
+  "advisors": [],
+  "arxiv_categories": [
+   "astro-ph"
+  ],
+  "field_blob": "astrophysics cosmology"
+ },
+ {
+  "name": "Maria Isabel Micheletti",
+  "orcid": "0000-0002-1063-9938",
+  "inspire_bai": "M.I.Micheletti.1",
+  "current_institution": {
+   "name": "Centro Atomico Bariloche",
+   "city": "Bariloche",
+   "country": "Argentina",
+   "country_code": "AR",
+   "lat": -34.7876585,
+   "lon": -58.6121593
+  },
+  "career": [
+   {
+    "institution": "Centro Atomico Bariloche",
+    "start": null,
+    "end": null,
+    "current": true
+   }
+  ],
+  "advisors": [],
+  "arxiv_categories": [
+   "astro-ph"
+  ],
+  "field_blob": "astrophysics cosmology"
+ },
+ {
+  "name": "Mariano Gomez Berisso",
+  "orcid": "0000-0001-5530-0180",
+  "inspire_bai": "M.Gomez.Berisso.1",
+  "current_institution": {
+   "name": "Buenos Aires, CONICET",
+   "city": "Buenos Aires",
+   "country": "Argentina",
+   "country_code": "AR",
+   "lat": -34.6243095,
+   "lon": -58.4506455
+  },
+  "career": [
+   {
+    "institution": "Buenos Aires, CONICET",
+    "start": null,
+    "end": null,
+    "current": true
+   },
+   {
+    "institution": "Centro Atomico Bariloche",
+    "start": null,
+    "end": null,
+    "current": false
+   }
+  ],
+  "advisors": [],
+  "arxiv_categories": [
+   "astro-ph"
+  ],
+  "field_blob": "astrophysics cosmology"
+ },
+ {
+  "name": "Marina Huerta",
+  "orcid": null,
+  "inspire_bai": "Marina.Huerta.1",
+  "current_institution": {
+   "name": "Centro Atomico Bariloche",
+   "city": "Bariloche",
+   "country": "Argentina",
+   "country_code": "AR",
+   "lat": -34.7876585,
+   "lon": -58.6121593
+  },
+  "career": [
+   {
+    "institution": "Centro Atomico Bariloche",
+    "start": null,
+    "end": null,
+    "current": true
+   }
+  ],
+  "advisors": [],
+  "arxiv_categories": [
+   "hep-th"
+  ],
+  "field_blob": "string theory quantum gravity"
+ },
+ {
+  "name": "Mario Solis",
+  "orcid": "0000-0001-6139-075X",
+  "inspire_bai": "M.Solis.1",
+  "current_institution": {
+   "name": "Wroclaw Tech. U.",
+   "city": "Wroclaw",
+   "country": "Poland",
+   "country_code": "PL",
+   "lat": null,
+   "lon": null
+  },
+  "career": [
+   {
+    "institution": "Wroclaw Tech. U.",
+    "start": "2025",
+    "end": null,
+    "current": true
+   },
+   {
+    "institution": "Centro Atomico Bariloche",
+    "start": "2018",
+    "end": "2024",
+    "current": false
+   },
+   {
+    "institution": "Centro Atomico Bariloche",
+    "start": "2015",
+    "end": "2016",
+    "current": false
+   },
+   {
+    "institution": "San Marcos Natl. U.",
+    "start": "2010",
+    "end": "2014",
+    "current": false
+   }
+  ],
+  "advisors": [
+   "Torroba, Gonzalo",
+   "Torroba, Gonzalo"
+  ],
+  "arxiv_categories": [
+   "cond-mat",
+   "hep-th",
+   "gr-qc"
+  ],
+  "field_blob": "condensed matter physics string theory quantum gravity general relativity gravitation"
+ },
+ {
+  "name": "María Magdalena González",
+  "orcid": "0000-0002-5209-5641",
+  "inspire_bai": "M.M.Gonzalez.1",
+  "current_institution": {
+   "name": "UNAM, Inst. Astron.",
+   "city": "Mexico",
+   "country": "Mexico",
+   "country_code": "MX",
+   "lat": 20.6742117,
+   "lon": -103.3269299
+  },
+  "career": [
+   {
+    "institution": "UNAM, Inst. Astron.",
+    "start": null,
+    "end": null,
+    "current": true
+   }
+  ],
+  "advisors": [],
+  "arxiv_categories": [
+   "astro-ph"
+  ],
+  "field_blob": "astrophysics cosmology"
+ },
+ {
+  "name": "Matias Ginzburg",
+  "orcid": null,
+  "inspire_bai": "M.Ginzburg.1",
+  "current_institution": null,
+  "career": [],
+  "advisors": [],
+  "arxiv_categories": [],
+  "field_blob": ""
+ },
+ {
+  "name": "Matias Mantiñan",
+  "orcid": "0009-0005-4380-9533",
+  "inspire_bai": "Matias.Mantinan.1",
+  "current_institution": {
+   "name": "Chicago U., EFI",
+   "city": "Chicago",
+   "country": "United States",
+   "country_code": "US",
+   "lat": 41.792429,
+   "lon": -87.601439
+  },
+  "career": [
+   {
+    "institution": "Chicago U., EFI",
+    "start": "2022",
+    "end": null,
+    "current": true
+   },
+   {
+    "institution": "Balseiro Inst., San Carlos de Bariloche",
+    "start": "2020",
+    "end": "2022",
+    "current": false
+   },
+   {
+    "institution": "Balseiro Inst., San Carlos de Bariloche",
+    "start": null,
+    "end": null,
+    "current": false
+   }
+  ],
+  "advisors": [
+   "Di Petrillo, Karri Folan",
+   "Mazzitelli, Francisco Diego"
+  ],
+  "arxiv_categories": [
+   "hep-ex"
+  ],
+  "field_blob": "particle physics experiment"
+ },
+ {
+  "name": "Mauro Elias",
+  "orcid": null,
+  "inspire_bai": "M.Elias.1",
+  "current_institution": null,
+  "career": [],
+  "advisors": [],
+  "arxiv_categories": [],
+  "field_blob": ""
+ },
+ {
+  "name": "Maximo Ave",
+  "orcid": null,
+  "inspire_bai": "M.Ave.1",
+  "current_institution": {
+   "name": "Chicago U., KICP",
+   "city": "Chicago",
+   "country": "United States",
+   "country_code": "US",
+   "lat": 41.793035,
+   "lon": -87.602937
+  },
+  "career": [
+   {
+    "institution": "Chicago U., KICP",
+    "start": null,
+    "end": null,
+    "current": true
+   }
+  ],
+  "advisors": [],
+  "arxiv_categories": [
+   "astro-ph"
+  ],
+  "field_blob": "astrophysics cosmology"
+ },
+ {
+  "name": "Miguel A.S. Martinez",
+  "orcid": null,
+  "inspire_bai": "M.A.S.Martinez.1",
+  "current_institution": null,
+  "career": [],
+  "advisors": [],
+  "arxiv_categories": [],
+  "field_blob": ""
+ },
+ {
+  "name": "Miguel Angel Hernández Morquecho",
+  "orcid": "0000-0001-8246-4463",
+  "inspire_bai": "M.Hernandez.1",
+  "current_institution": {
+   "name": "Guanajuato U.",
+   "city": "Guanajuato",
+   "country": "Mexico",
+   "country_code": "MX",
+   "lat": 21.0190145,
+   "lon": -101.2573586
+  },
+  "career": [
+   {
+    "institution": "Guanajuato U.",
+    "start": null,
+    "end": null,
+    "current": true
+   }
+  ],
+  "advisors": [],
+  "arxiv_categories": [],
+  "field_blob": ""
+ },
+ {
+  "name": "Miguel Francisco Sofo Haro",
+  "orcid": "0000-0001-9397-2922",
+  "inspire_bai": "Miguel.F.Sofo-Haro.1",
+  "current_institution": {
+   "name": "Cuyo U.",
+   "city": "Bariloche",
+   "country": "Argentina",
+   "country_code": "AR",
+   "lat": null,
+   "lon": null
+  },
+  "career": [
+   {
+    "institution": "Cuyo U.",
+    "start": null,
+    "end": null,
+    "current": true
+   }
+  ],
+  "advisors": [],
+  "arxiv_categories": [
+   "hep-ex"
+  ],
+  "field_blob": "particle physics experiment"
+ },
+ {
+  "name": "Nicolas Avalos",
+  "orcid": null,
+  "inspire_bai": "N.Avalos.1",
+  "current_institution": null,
+  "career": [],
+  "advisors": [],
+  "arxiv_categories": [],
+  "field_blob": ""
+ },
+ {
+  "name": "Nicolás Abate",
+  "orcid": "0009-0001-7175-4841",
+  "inspire_bai": "Nicolas.Abate.1",
+  "current_institution": {
+   "name": "Balseiro Inst., San Carlos de Bariloche",
+   "city": "San Carlos de Bariloche",
+   "country": "Argentina",
+   "country_code": "AR",
+   "lat": null,
+   "lon": null
+  },
+  "career": [
+   {
+    "institution": "Balseiro Inst., San Carlos de Bariloche",
+    "start": "2023",
+    "end": null,
+    "current": true
+   },
+   {
+    "institution": "U. Buenos Aires",
+    "start": "2017",
+    "end": "2022",
+    "current": false
+   }
+  ],
+  "advisors": [
+   "Torroba, Gonzalo"
+  ],
+  "arxiv_categories": [
+   "hep-th"
+  ],
+  "field_blob": "string theory quantum gravity"
+ },
+ {
+  "name": "Oscar Alejandro Taborda Pulgarin",
+  "orcid": "0000-0002-2081-9107",
+  "inspire_bai": "O.A.Taborda.1",
+  "current_institution": {
+   "name": "GSSI, Aquila",
+   "city": "L’Aquila",
+   "country": "Italy",
+   "country_code": "IT",
+   "lat": 42.3446253,
+   "lon": 13.3965524
+  },
+  "career": [
+   {
+    "institution": "GSSI, Aquila",
+    "start": "2023",
+    "end": null,
+    "current": true
+   },
+   {
+    "institution": "Buenos Aires, CONICET",
+    "start": "2014",
+    "end": "2019",
+    "current": false
+   }
+  ],
+  "advisors": [
+   "Mollerach, Silvia"
+  ],
+  "arxiv_categories": [
+   "astro-ph"
+  ],
+  "field_blob": "astrophysics cosmology"
+ },
+ {
+  "name": "Oscar Wainberg",
+  "orcid": null,
+  "inspire_bai": "O.Wainberg.1",
+  "current_institution": {
+   "name": "Centro Atomico Bariloche",
+   "city": "Bariloche",
+   "country": "Argentina",
+   "country_code": "AR",
+   "lat": -34.7876585,
+   "lon": -58.6121593
+  },
+  "career": [
+   {
+    "institution": "Centro Atomico Bariloche",
+    "start": null,
+    "end": null,
+    "current": true
+   }
+  ],
+  "advisors": [],
+  "arxiv_categories": [
+   "astro-ph"
+  ],
+  "field_blob": "astrophysics cosmology"
+ },
+ {
+  "name": "P. Scuracchio",
+  "orcid": null,
+  "inspire_bai": "P.Scuracchio.2",
+  "current_institution": null,
+  "career": [],
+  "advisors": [],
+  "arxiv_categories": [],
+  "field_blob": ""
+ },
+ {
+  "name": "Pablo Bueno Gomez",
+  "orcid": "0000-0002-9841-4169",
+  "inspire_bai": "P.Bueno.1",
+  "current_institution": {
+   "name": "Barcelona U.",
+   "city": "Barcelona",
+   "country": "Spain",
+   "country_code": "ES",
+   "lat": 41.4113755,
+   "lon": 2.2187213
+  },
+  "career": [
+   {
+    "institution": "Barcelona U.",
+    "start": "2025",
+    "end": null,
+    "current": true
+   },
+   {
+    "institution": "Barcelona U.",
+    "start": "2022",
+    "end": "2025",
+    "current": false
+   },
+   {
+    "institution": "CERN",
+    "start": "2021",
+    "end": "2022",
+    "current": false
+   },
+   {
+    "institution": "Balseiro Inst., San Carlos de Bariloche",
+    "start": "2018",
+    "end": "2021",
+    "current": false
+   },
+   {
+    "institution": "Amsterdam U.",
+    "start": "2016",
+    "end": "2016",
+    "current": false
+   },
+   {
+    "institution": "Leuven U.",
+    "start": "2015",
+    "end": "2018",
+    "current": false
+   },
+   {
+    "institution": "Perimeter Inst. Theor. Phys.",
+    "start": "2013",
+    "end": "2014",
+    "current": false
+   },
+   {
+    "institution": "Madrid, IFT",
+    "start": "2011",
+    "end": "2015",
+    "current": false
+   },
+   {
+    "institution": "Madrid, Autonoma U.",
+    "start": "2011",
+    "end": "2013",
+    "current": false
+   },
+   {
+    "institution": "Oviedo U.",
+    "start": "2006",
+    "end": "2011",
+    "current": false
+   }
+  ],
+  "advisors": [
+   "Ortin, Tomas"
+  ],
+  "arxiv_categories": [
+   "gr-qc",
+   "hep-th"
+  ],
+  "field_blob": "general relativity gravitation string theory quantum gravity"
+ },
+ {
+  "name": "Paolo M. Bonifacio",
+  "orcid": null,
+  "inspire_bai": "P.M.Bonifacio.2",
+  "current_institution": null,
+  "career": [],
+  "advisors": [],
+  "arxiv_categories": [],
+  "field_blob": ""
+ },
+ {
+  "name": "Pedro Castellini Grand",
+  "orcid": "0009-0005-4378-4399",
+  "inspire_bai": "Pedro.Castellini.Grand.1",
+  "current_institution": {
+   "name": "Stockholm U. (main)",
+   "city": "Stockholm",
+   "country": "Sweden",
+   "country_code": "SE",
+   "lat": 29.5505066,
+   "lon": -98.5350913
+  },
+  "career": [
+   {
+    "institution": "Stockholm U. (main)",
+    "start": "2025",
+    "end": null,
+    "current": true
+   },
+   {
+    "institution": "Balseiro Inst., San Carlos de Bariloche",
+    "start": "2023",
+    "end": "2024",
+    "current": false
+   },
+   {
+    "institution": "Balseiro Inst., San Carlos de Bariloche",
+    "start": "2021",
+    "end": "2023",
+    "current": false
+   },
+   {
+    "institution": "U. Buenos Aires",
+    "start": "2018",
+    "end": "2020",
+    "current": false
+   }
+  ],
+  "advisors": [],
+  "arxiv_categories": [
+   "hep-th",
+   "quant-ph"
+  ],
+  "field_blob": "string theory quantum gravity quantum information"
+ },
+ {
+  "name": "Pedro Jorge Martínez",
+  "orcid": "0000-0002-3459-8333",
+  "inspire_bai": "Pedro.Jorge.Martinez.1",
+  "current_institution": {
+   "name": "La Plata U.",
+   "city": "La Plata",
+   "country": "Argentina",
+   "country_code": "AR",
+   "lat": -34.9173012,
+   "lon": -57.9501305
+  },
+  "career": [
+   {
+    "institution": "La Plata U.",
+    "start": "2023",
+    "end": null,
+    "current": true
+   },
+   {
+    "institution": "Instituto Balseiro",
+    "start": "2020",
+    "end": "2023",
+    "current": false
+   },
+   {
+    "institution": "La Plata U.",
+    "start": "2015",
+    "end": "2020",
+    "current": false
+   }
+  ],
+  "advisors": [
+   "Silva, Guillermo Ariel",
+   "Botta Cantcheff, Marcelo A.N."
+  ],
+  "arxiv_categories": [
+   "hep-th"
+  ],
+  "field_blob": "string theory quantum gravity"
+ },
+ {
+  "name": "R. Luterstein",
+  "orcid": null,
+  "inspire_bai": "R.Luterstein.1",
+  "current_institution": null,
+  "career": [],
+  "advisors": [],
+  "arxiv_categories": [],
+  "field_blob": ""
+ },
+ {
+  "name": "R.O. Barrachina",
+  "orcid": null,
+  "inspire_bai": "R.O.Barrachina.1",
+  "current_institution": null,
+  "career": [],
+  "advisors": [],
+  "arxiv_categories": [],
+  "field_blob": ""
+ },
+ {
+  "name": "Rafael L. Montemayor",
+  "orcid": null,
+  "inspire_bai": "R.Montemayor.1",
+  "current_institution": {
+   "name": "Buenos Aires, CONICET",
+   "city": "Buenos Aires",
+   "country": "Argentina",
+   "country_code": "AR",
+   "lat": -34.6243095,
+   "lon": -58.4506455
+  },
+  "career": [
+   {
+    "institution": "Buenos Aires, CONICET",
+    "start": null,
+    "end": null,
+    "current": true
+   },
+   {
+    "institution": "Cuyo U.",
+    "start": null,
+    "end": null,
+    "current": true
+   },
+   {
+    "institution": "CNEA, Buenos Aires",
+    "start": null,
+    "end": null,
+    "current": false
+   }
+  ],
+  "advisors": [],
+  "arxiv_categories": [
+   "gr-qc",
+   "hep-ph",
+   "hep-th"
+  ],
+  "field_blob": "general relativity gravitation particle physics phenomenology string theory quantum gravity"
+ },
+ {
+  "name": "Raimel A. Medina",
+  "orcid": "0000-0002-5383-2869",
+  "inspire_bai": "Raimel.Medina.1",
+  "current_institution": {
+   "name": "IST, Austria",
+   "city": null,
+   "country": null,
+   "country_code": null,
+   "lat": null,
+   "lon": null
+  },
+  "career": [
+   {
+    "institution": "IST, Austria",
+    "start": "2019",
+    "end": "2024",
+    "current": true
+   },
+   {
+    "institution": "IST, Austria",
+    "start": "2019",
+    "end": "2019",
+    "current": false
+   },
+   {
+    "institution": "Balseiro Inst., San Carlos de Bariloche",
+    "start": "2017",
+    "end": "2018",
+    "current": false
+   },
+   {
+    "institution": "Balseiro Inst., San Carlos de Bariloche",
+    "start": "2015",
+    "end": "2017",
+    "current": false
+   }
+  ],
+  "advisors": [],
+  "arxiv_categories": [
+   "hep-th",
+   "cond-mat"
+  ],
+  "field_blob": "string theory quantum gravity condensed matter physics"
+ },
+ {
+  "name": "Riccardo C. Trinchero",
+  "orcid": "0000-0003-3400-8126",
+  "inspire_bai": "R.C.Trinchero.1",
+  "current_institution": {
+   "name": "INFN, Turin",
+   "city": "Turin",
+   "country": "Italy",
+   "country_code": "IT",
+   "lat": 45.0516025,
+   "lon": 7.6809273
+  },
+  "career": [
+   {
+    "institution": "INFN, Turin",
+    "start": "2015",
+    "end": null,
+    "current": false
+   }
+  ],
+  "advisors": [],
+  "arxiv_categories": [],
+  "field_blob": ""
+ },
+ {
+  "name": "Robert Carcasses Quevedo",
+  "orcid": null,
+  "inspire_bai": "R.Carcasses.Quevedo.1",
+  "current_institution": {
+   "name": "Porto U.",
+   "city": "Porto",
+   "country": "Portugal",
+   "country_code": "PT",
+   "lat": 41.5425986,
+   "lon": -8.440188
+  },
+  "career": [
+   {
+    "institution": "Porto U.",
+    "start": null,
+    "end": null,
+    "current": true
+   }
+  ],
+  "advisors": [],
+  "arxiv_categories": [
+   "hep-ph"
+  ],
+  "field_blob": "particle physics phenomenology"
+ },
+ {
+  "name": "Rolando D. Somma",
+  "orcid": "0000-0003-4335-2607",
+  "inspire_bai": "R.D.Somma.1",
+  "current_institution": {
+   "name": "Los Alamos",
+   "city": "Los Alamos",
+   "country": "United States",
+   "country_code": "US",
+   "lat": 35.891086,
+   "lon": -106.297727
+  },
+  "career": [
+   {
+    "institution": "Los Alamos",
+    "start": null,
+    "end": null,
+    "current": true
+   },
+   {
+    "institution": "Balseiro Inst., San Carlos de Bariloche",
+    "start": null,
+    "end": "2005",
+    "current": false
+   }
+  ],
+  "advisors": [],
+  "arxiv_categories": [
+   "quant-ph"
+  ],
+  "field_blob": "quantum information"
+ },
+ {
+  "name": "Santiago Capriotti",
+  "orcid": null,
+  "inspire_bai": "S.Capriotti.1",
+  "current_institution": {
+   "name": "Bahia Blanca, U. Natl. Del Sur",
+   "city": "Bahia Blanca",
+   "country": "Argentina",
+   "country_code": "AR",
+   "lat": null,
+   "lon": null
+  },
+  "career": [
+   {
+    "institution": "Bahia Blanca, U. Natl. Del Sur",
+    "start": null,
+    "end": null,
+    "current": true
+   }
+  ],
+  "advisors": [],
+  "arxiv_categories": [
+   "math"
+  ],
+  "field_blob": "math"
+ },
+ {
+  "name": "Santiago Ferreyra",
+  "orcid": null,
+  "inspire_bai": "S.Ferreyra.1",
+  "current_institution": null,
+  "career": [],
+  "advisors": [],
+  "arxiv_categories": [],
+  "field_blob": ""
+ },
+ {
+  "name": "Shaorui Li",
+  "orcid": null,
+  "inspire_bai": "Shaorui.Li.1",
+  "current_institution": {
+   "name": "Fermilab",
+   "city": "Batavia",
+   "country": "United States",
+   "country_code": "US",
+   "lat": 41.83891412803674,
+   "lon": -88.2610273361206
+  },
+  "career": [
+   {
+    "institution": "Fermilab",
+    "start": "2020",
+    "end": null,
+    "current": true
+   },
+   {
+    "institution": "Brookhaven",
+    "start": "2009",
+    "end": "2020",
+    "current": false
+   },
+   {
+    "institution": "Columbia U.",
+    "start": null,
+    "end": "2005",
+    "current": false
+   },
+   {
+    "institution": "Tsinghua U., Beijing",
+    "start": null,
+    "end": "2000",
+    "current": false
+   },
+   {
+    "institution": "Xian Jiaotong U.",
+    "start": null,
+    "end": "1997",
+    "current": false
+   }
+  ],
+  "advisors": [
+   "Tsividis, Yannis"
+  ],
+  "arxiv_categories": [],
+  "field_blob": ""
+ },
+ {
+  "name": "Silvia Mollerach",
+  "orcid": "0000-0002-9339-5317",
+  "inspire_bai": "S.Mollerach.1",
+  "current_institution": {
+   "name": "Buenos Aires, CONICET",
+   "city": "Buenos Aires",
+   "country": "Argentina",
+   "country_code": "AR",
+   "lat": -34.6243095,
+   "lon": -58.4506455
+  },
+  "career": [
+   {
+    "institution": "Buenos Aires, CONICET",
+    "start": null,
+    "end": null,
+    "current": true
+   },
+   {
+    "institution": "Fermilab",
+    "start": null,
+    "end": null,
+    "current": false
+   }
+  ],
+  "advisors": [],
+  "arxiv_categories": [
+   "astro-ph"
+  ],
+  "field_blob": "astrophysics cosmology"
+ },
+ {
+  "name": "Simon Gustavsson",
+  "orcid": null,
+  "inspire_bai": "S.Gustavsson.1",
+  "current_institution": null,
+  "career": [],
+  "advisors": [],
+  "arxiv_categories": [],
+  "field_blob": ""
+ },
+ {
+  "name": "Tanay Kibe",
+  "orcid": "0000-0002-0571-1712",
+  "inspire_bai": "Tanay.Kibe.1",
+  "current_institution": {
+   "name": "Balseiro Inst., San Carlos de Bariloche",
+   "city": "San Carlos de Bariloche",
+   "country": "Argentina",
+   "country_code": "AR",
+   "lat": null,
+   "lon": null
+  },
+  "career": [
+   {
+    "institution": "Balseiro Inst., San Carlos de Bariloche",
+    "start": "2026",
+    "end": null,
+    "current": true
+   },
+   {
+    "institution": "Witwatersrand U.",
+    "start": "2024",
+    "end": "2026",
+    "current": false
+   },
+   {
+    "institution": "Indian Inst. Tech., Madras",
+    "start": "2019",
+    "end": "2024",
+    "current": false
+   }
+  ],
+  "advisors": [
+   "Mukhopadhyay, Ayan"
+  ],
+  "arxiv_categories": [
+   "hep-th",
+   "gr-qc",
+   "quant-ph"
+  ],
+  "field_blob": "string theory quantum gravity general relativity gravitation quantum information"
+ },
+ {
+  "name": "Tomas Dominguez",
+  "orcid": null,
+  "inspire_bai": "T.Dominguez.1",
+  "current_institution": null,
+  "career": [],
+  "advisors": [],
+  "arxiv_categories": [],
+  "field_blob": ""
+ },
+ {
+  "name": "Valentin Benedetti",
+  "orcid": "0000-0002-0919-5954",
+  "inspire_bai": "Valentin.Benedetti.1",
+  "current_institution": {
+   "name": "ICTP, Trieste",
+   "city": "Trieste",
+   "country": "Italy",
+   "country_code": "IT",
+   "lat": 45.7032553,
+   "lon": 13.7180135
+  },
+  "career": [
+   {
+    "institution": "ICTP, Trieste",
+    "start": "2024",
+    "end": null,
+    "current": true
+   },
+   {
+    "institution": "Centro Atomico Bariloche",
+    "start": "2019",
+    "end": null,
+    "current": false
+   },
+   {
+    "institution": "Rosario U.",
+    "start": "2014",
+    "end": "2019",
+    "current": false
+   }
+  ],
+  "advisors": [
+   "Casini, Horacio"
+  ],
+  "arxiv_categories": [
+   "hep-th"
+  ],
+  "field_blob": "string theory quantum gravity"
+ },
+ {
+  "name": "Valentín Reparaz",
+  "orcid": null,
+  "inspire_bai": "V.Reparaz.1",
+  "current_institution": null,
+  "career": [],
+  "advisors": [],
+  "arxiv_categories": [],
+  "field_blob": ""
+ },
+ {
+  "name": "Victor A. Penas",
+  "orcid": "0000-0003-0866-586X",
+  "inspire_bai": "V.A.Penas.1",
+  "current_institution": {
+   "name": "Centro Atomico Bariloche",
+   "city": "Bariloche",
+   "country": "Argentina",
+   "country_code": "AR",
+   "lat": -34.7876585,
+   "lon": -58.6121593
+  },
+  "career": [
+   {
+    "institution": "Centro Atomico Bariloche",
+    "start": "2017",
+    "end": "2019",
+    "current": true
+   },
+   {
+    "institution": "Groningen U.",
+    "start": "2014",
+    "end": "2016",
+    "current": false
+   },
+   {
+    "institution": "Buenos Aires U.",
+    "start": "2011",
+    "end": "2014",
+    "current": false
+   }
+  ],
+  "advisors": [],
+  "arxiv_categories": [
+   "hep-th"
+  ],
+  "field_blob": "string theory quantum gravity"
+ },
+ {
+  "name": "Victor Hugo Ponce",
+  "orcid": null,
+  "inspire_bai": "V.H.Ponce.1",
+  "current_institution": {
+   "name": "Buenos Aires, CONICET",
+   "city": "Buenos Aires",
+   "country": "Argentina",
+   "country_code": "AR",
+   "lat": -34.6243095,
+   "lon": -58.4506455
+  },
+  "career": [
+   {
+    "institution": "Buenos Aires, CONICET",
+    "start": null,
+    "end": null,
+    "current": true
+   }
+  ],
+  "advisors": [],
+  "arxiv_categories": [
+   "astro-ph"
+  ],
+  "field_blob": "astrophysics cosmology"
+ },
+ {
+  "name": "Victor Purrello",
+  "orcid": "0000-0003-1365-9982",
+  "inspire_bai": "V.Purrello.1",
+  "current_institution": {
+   "name": "Centro Atomico Bariloche",
+   "city": "Bariloche",
+   "country": "Argentina",
+   "country_code": "AR",
+   "lat": -34.7876585,
+   "lon": -58.6121593
+  },
+  "career": [
+   {
+    "institution": "Centro Atomico Bariloche",
+    "start": null,
+    "end": null,
+    "current": true
+   }
+  ],
+  "advisors": [],
+  "arxiv_categories": [
+   "astro-ph"
+  ],
+  "field_blob": "astrophysics cosmology"
+ },
+ {
+  "name": "Xavier Bertou",
+  "orcid": "0000-0002-6179-8496",
+  "inspire_bai": "Xavier.Bertou.1",
+  "current_institution": {
+   "name": "IJCLab, Orsay",
+   "city": "Orsay",
+   "country": "France",
+   "country_code": "FR",
+   "lat": null,
+   "lon": null
+  },
+  "career": [
+   {
+    "institution": "IJCLab, Orsay",
+    "start": "2024",
+    "end": null,
+    "current": true
+   },
+   {
+    "institution": "Centro Atomico Bariloche",
+    "start": "2005",
+    "end": "2024",
+    "current": false
+   },
+   {
+    "institution": "Pierre Auger Observ.",
+    "start": "2001",
+    "end": "2005",
+    "current": false
+   },
+   {
+    "institution": "Paris U., VI-VII",
+    "start": "1998",
+    "end": "2001",
+    "current": false
+   },
+   {
+    "institution": "Ecole Normale Superieure",
+    "start": null,
+    "end": null,
+    "current": false
+   }
+  ],
+  "advisors": [
+   "Billoir, Pierre"
+  ],
+  "arxiv_categories": [
+   "astro-ph",
+   "hep-ex"
+  ],
+  "field_blob": "astrophysics cosmology particle physics experiment"
+ }
+]

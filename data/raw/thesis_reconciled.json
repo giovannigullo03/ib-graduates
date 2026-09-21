@@ -1,0 +1,31 @@
+[
+ {
+  "openalex_id": "A5101977893",
+  "name": "Pablo A. Aguirre",
+  "name_alts": [
+   "Pablo Aguirre"
+  ],
+  "orcid": "0000-0003-4350-2118",
+  "works_count": 32,
+  "h_index": 4,
+  "concepts": [],
+  "balseiro_years": [
+   2019
+  ],
+  "career_start": 2019,
+  "current_institution": {
+   "name": "Universidad de Santiago de Chile",
+   "country_code": "CL",
+   "ror": "https://ror.org/02ma57s91",
+   "openalex_id": "I10457146",
+   "type": "education"
+  },
+  "review_score": 6.0,
+  "via": "thesis->openalex",
+  "matched_work": {
+   "title": "Estudio de técnicas de machine learning aplicadas a la clasificación de cultivo en imágenes satelitales.",
+   "year": 2019,
+   "type": "dissertation"
+  }
+ }
+]

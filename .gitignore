@@ -1,0 +1,46 @@
+__pycache__/
+*.pyc
+.DS_Store
+
+# Secrets — never commit (this repo is public)
+.env
+*.env
+data/ads_token.txt
+*token*.txt
+*.secret
+*_key
+*_apikey*
+credentials*.json
+
+# Per-request API response blobs (thousands of files) — pure cache.
+data/raw/*
+# ...but keep the consolidated per-source datasets, so a fresh clone builds
+# the site without re-hitting every API (and without burning OpenAlex's budget).
+!data/raw/wikidata_alumni.json
+!data/raw/orcid_alumni.json
+!data/raw/openalex_authors.json
+!data/raw/openalex_orcid_ids.json
+!data/raw/wikipedia_alumni.json
+!data/raw/ricabib_theses.json
+!data/raw/thesis_orcid.json
+!data/raw/thesis_reconciled.json
+!data/raw/inspire_authors.json
+!data/raw/ads_authors.json
+!data/raw/lens_inventors.json
+
+# site/data/alumni.json is committed (GitHub Pages serves it).
+# The pretty-printed copy is a local debugging aid only.
+site/data/alumni.pretty.json
+
+# Local source list of IB graduates — not for the public repo.
+egresadosGradoIB1958-2014.docx
+*.docx
+
+# Working ledger for the "unmatched graduates" enrichment pass (local only).
+data/enrichment/
+
+# LinkedIn profile exports and their normalised form. Personal data about
+# private individuals — local only, never committed to a public repo.
+# (data/raw/linkedin_profiles.json is already covered by the data/raw/* rule
+# above and is deliberately NOT whitelisted back in.)
+data/linkedin/

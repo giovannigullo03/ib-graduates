@@ -1,0 +1,8 @@
+# One name per line. Anyone whose name matches (accent/case-insensitive) is
+# dropped from the final dataset — use it to remove false positives that the
+# automatic sources (mostly OpenAlex) pick up, e.g. Pierre Auger Observatory
+# co-authors who never studied at Balseiro.
+#
+# Example:
+# John Smith
+Riccardo C. Trinchero   # INFN Turin electronics researcher; not the IB physicist Roberto Trinchero (added to manual_alumni.csv)
