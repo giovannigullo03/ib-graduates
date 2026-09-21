@@ -120,6 +120,31 @@ Note that career-history stops are geocoded at most 150 new ones per run (they
 are only used to draw trajectory lines, so they are not worth a long wait). Just
 re-run `build_dataset.py` a few times until it stops saying "budget reached".
 
+### `data/institutions.csv` — placing employers the geocoder cannot find
+
+Nominatim only knows places that exist in OpenStreetMap, so a company name on
+its own ("Rather Labs, Inc", "Skyloom Global") resolves to nothing, and
+INSPIRE's `City, Acronym` style ("Madrid, IFT") resolves to the wrong thing.
+Add a row with the city and country and the builder geocodes
+`<institution>, <city>, <country>`, falling back to the city alone — so the
+coordinates still come from OpenStreetMap rather than being typed in by hand.
+
+`institution` is a *matching key*, not a display name: matching ignores case,
+accents, punctuation and word order, and a row matches when its words are a
+subset of the stop's, so `FUESMEN` also catches `FUESMEN - Fundación Escuela de
+Medicina Nuclear`. Where the data shares no word with the real name, key the
+row on the acronym.
+
+Two guards keep this from doing damage. Acronyms are reused worldwide, so a row
+never relocates a stop whose own country disagrees with it — "Madrid, IFT" and
+"Sao Paulo, IFT" are different institutes. And that same rule means someone
+working **remotely** for a foreign employer stays unplaced rather than being
+moved to a head office they have never visited; LinkedIn records their own
+country, and that is better evidence than the company's address.
+
+Leave a row out rather than guess: an institution placed in the wrong city is
+worse than one left off the map.
+
 ### `data/review_candidates.csv` — vetting the inferred entries
 
 Every run regenerates this file with mid-confidence people OpenAlex thinks

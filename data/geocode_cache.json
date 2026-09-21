@@ -11820,5 +11820,81 @@
   "display_name": "Universidad Nacional de Villa Mercedes, Juan Llerena, Los Poetas, Municipio de Villa Mercedes, General Pedernera, San Luis, D5730, Argentina",
   "country": "Argentina",
   "country_code": "AR"
- }
+ },
+ "CONICET Patagonia Norte, San Carlos de Bariloche, Argentina": {},
+ "Fundación INTECNUS, San Carlos de Bariloche, Argentina": {},
+ "Autoridad Regulatoria Nuclear, Buenos Aires, Argentina": {},
+ "Centro Brasileiro de Pesquisas Físicas, Rio de Janeiro, Brazil": {
+  "lat": -22.9540668,
+  "lon": -43.1740023,
+  "display_name": "Centro Brasileiro de Pesquisas Físicas, 150, Rua Doutor Xavier Sigaud, Botafogo, Rio de Janeiro, Região Sudeste, 22290-180, Brasil",
+  "country": "Brasil",
+  "country_code": "BR"
+ },
+ "Laboratoire de Physique Subatomique et de Cosmologie, Grenoble, France": {
+  "lat": 45.205614,
+  "lon": 5.6989979,
+  "display_name": "Laboratoire de physique subatomique et de cosmologie, 53, Avenue des Martyrs, Polygone Scientifique, Secteur 1, Grenoble, Isère, Auvergne-Rhône-Alpes, France métropolitaine, 38000, France",
+  "country": "France",
+  "country_code": "FR"
+ },
+ "Rather Labs, Buenos Aires, Argentina": {},
+ "Tecpetrol, Buenos Aires, Argentina": {},
+ "Skyloom Global, Denver, United States": {},
+ "ASAPP, New York, United States": {},
+ "Scale AI, San Francisco, United States": {},
+ "Marvell Technology, Santa Clara, United States": {},
+ "AtkinsRéalis, Montreal, Canada": {},
+ "Jampp, Buenos Aires, Argentina": {},
+ "Teramot, Buenos Aires, Argentina": {},
+ "Denver, United States": {
+  "lat": 39.7392364,
+  "lon": -104.984862,
+  "display_name": "Denver, Colorado, United States",
+  "country": "United States",
+  "country_code": "US"
+ },
+ "New York, United States": {
+  "lat": 40.7127281,
+  "lon": -74.0060152,
+  "display_name": "New York, United States",
+  "country": "United States",
+  "country_code": "US"
+ },
+ "San Francisco, United States": {
+  "lat": 37.7879363,
+  "lon": -122.4075201,
+  "display_name": "San Francisco, California, United States",
+  "country": "United States",
+  "country_code": "US"
+ },
+ "Santa Clara, United States": {
+  "lat": 37.2333253,
+  "lon": -121.6846349,
+  "display_name": "Santa Clara County, California, United States",
+  "country": "United States",
+  "country_code": "US"
+ },
+ "Montreal, Canada": {
+  "lat": 45.5031824,
+  "lon": -73.5698065,
+  "display_name": "Montréal, Agglomération de Montréal, Montréal (région administrative), Québec, Canada",
+  "country": "Canada",
+  "country_code": "CA"
+ },
+ "IFT, Madrid, Spain": {
+  "lat": 40.5496477,
+  "lon": -3.6874113,
+  "display_name": "Instituto de Física Teórica - IFT, 13, Calle Nicolás Cabrera, El Goloso, Fuencarral-El Pardo, Madrid, Comunidad de Madrid, 28049, España",
+  "country": "España",
+  "country_code": "ES"
+ },
+ "CBPF, Rio de Janeiro, Brazil": {
+  "lat": -22.9540232,
+  "lon": -43.1742677,
+  "display_name": "CBPF - Prédio Mário D'Almeida, Rua Lauro Müller, Botafogo, Rio de Janeiro, Região Sudeste, 22290-160, Brasil",
+  "country": "Brasil",
+  "country_code": "BR"
+ },
+ "Madrid, IFT, Madrid, Spain": {}
 }

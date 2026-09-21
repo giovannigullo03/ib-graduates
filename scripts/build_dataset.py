@@ -51,6 +51,7 @@ MANUAL_CSV = DATA / "manual_alumni.csv"
 FOUND_CSV = DATA / "found_alumni.csv"   # auto-researched locations for previously-unmatched graduates
 REVIEW_CSV = DATA / "review_candidates.csv"
 BLOCKLIST = DATA / "blocklist.txt"
+INSTITUTIONS_CSV = DATA / "institutions.csv"  # hand-placed org -> city/country
 
 # OpenAlex review_score thresholds (see collect_openalex._score):
 OA_AUTO_KEEP = 5.5      # >= this: added straight to the map, tagged 'openalex'
@@ -1032,9 +1033,15 @@ EMPLOYER_ALIASES = [
     (r"centro atomico ezeiza", "Centro Atómico Ezeiza"),
     # the English renderings come from OpenAlex/ADS and are misspelled about as
     # often as not ("Comission", "Commision"), hence the loose spelling
-    (r"^cnea$|comision nacional de energia atomica"
+    (r"^cnea\b|comision nacional de energia atomica"
      r"|national atomic energy com|national comm?is?s?ion of atomic energy",
      "Comisión Nacional de Energía Atómica (CNEA)"),
+    # faculty/department fragments of universities already on the map
+    (r"^universidad de buenos aires\b|^facultad de ciencias exactas y naturales, uba$"
+     r"|^.*\buba\b.*facultad|^fcen[ -]uba$",
+     "Universidad de Buenos Aires"),
+    (r"^universidad nacional de cordoba\b|famaf", "Universidad Nacional de Córdoba"),
+    (r"^universidad nacional de la pampa\b|unlpam", "Universidad Nacional de La Pampa"),
     # "Buenos Aires, CONICET" is a place-prefixed form of the same employer.
     # The prefix is deliberately restricted to a short plain-words city name:
     # a longer or punctuated one means a named sub-institute ("Instituto de
@@ -1069,6 +1076,19 @@ def _inst_key(name):
     s = strip_accents((name or "").lower())
     s = re.sub(r"[^a-z0-9 ]", " ", s)
     return frozenset(t for t in s.split() if t not in _INST_STOP and len(t) > 2)
+
+
+def _hand_key(name):
+    """Like _inst_key, but keeps two-letter words.
+
+    The hand table matches on a subset of the stop's words, so a key of a
+    single common word is dangerous: "Scale AI" reduced to {scale} under
+    _inst_key and happily matched "Center for Atomic-scale Materials Physics".
+    Keeping "ai" makes the row demand both words.
+    """
+    s = strip_accents((name or "").lower())
+    s = re.sub(r"[^a-z0-9 ]", " ", s)
+    return frozenset(t for t in s.split() if t not in _INST_STOP and len(t) > 1)
 
 
 def _alias(name):
@@ -1142,6 +1162,103 @@ def _canonicalise_employers(idx):
           f"{folded} people onto a canonical spelling")
 
 
+def _hand_placed_institutions(idx):
+    """Place career stops listed in data/institutions.csv.
+
+    Nominatim cannot resolve a bare organisation name that is not itself a
+    mapped place, and mis-resolves INSPIRE's "City, Acronym" style. The CSV
+    supplies the city, so the builder can ask a question OSM can answer —
+    the coordinates are still geocoded, not typed in. Explicit lat/lon in the
+    CSV wins over geocoding when given.
+    """
+    if not INSTITUTIONS_CSV.exists():
+        return
+    entries = []
+    with INSTITUTIONS_CSV.open(encoding="utf-8") as fh:
+        for row in csv.DictReader(l for l in fh if not l.lstrip().startswith("#")):
+            row = {k: (v or "").strip() for k, v in row.items() if k}
+            if not row.get("institution"):
+                continue
+            entries.append(row)
+    if not entries:
+        return
+
+    placed: dict = {}
+    queries = {}
+    for row in entries:
+        try:
+            if row.get("lat") and row.get("lon"):
+                placed[_hand_key(row["institution"])] = (
+                    float(row["lat"]), float(row["lon"]),
+                    row.get("city") or None, row.get("country") or None)
+                continue
+        except ValueError:
+            pass
+        # Try the organisation itself first; most companies are not mapped
+        # features, so fall back to the city they sit in. City precision is
+        # honest — it is where the person actually worked — and it is what the
+        # main location pass already does for everyone else.
+        chain = _chain(
+            ", ".join(b for b in (row["institution"], row.get("city"),
+                                  row.get("country")) if b),
+            ", ".join(b for b in (row.get("city"), row.get("country")) if b),
+            row.get("country"),
+        )
+        if chain:
+            queries[tuple(chain)] = row
+
+    if queries:
+        resolved = geocode_many([q for chain in queries for q in chain])
+        for chain, row in queries.items():
+            for q in chain:
+                hit = resolved.get(q)
+                if hit and hit.get("lat") is not None:
+                    placed[_hand_key(row["institution"])] = (
+                        hit["lat"], hit["lon"],
+                        row.get("city") or None,
+                        row.get("country") or hit.get("country"))
+                    break
+            else:
+                print(f"  ! could not place {row['institution']!r} — no query resolved")
+
+    # Unlike the automatic fold, a hand-written row may name the institution
+    # more briefly than the data does ("FUESMEN" for "FUESMEN - Fundación
+    # Escuela de Medicina Nuclear"), so a row matches when its words are a
+    # subset of the stop's. The most specific matching row wins, so a short
+    # acronym row never shadows a fuller one.
+    by_size = sorted(placed.items(), key=lambda kv: -len(kv[0]))
+
+    def _lookup(name, stop_country):
+        key = _hand_key(name)
+        if not key:
+            return None
+        for cand, val in by_size:
+            if not cand <= key:
+                continue
+            # Never relocate a stop to a country the data already contradicts:
+            # acronyms are reused across the world ("IFT" is a physics
+            # institute in both Madrid and São Paulo).
+            if stop_country and val[3] and stop_country != val[3]:
+                continue
+            return val
+        return None
+
+    filled = 0
+    for rec in idx.values():
+        for s in rec["career"]:
+            if s.get("lat") is not None or not s.get("institution"):
+                continue
+            hit = _lookup(s["institution"], s.get("country"))
+            if not hit:
+                continue
+            s["lat"], s["lon"] = hit[0], hit[1]
+            s["city"] = s.get("city") or hit[2]
+            s["country"] = s.get("country") or hit[3]
+            filled += 1
+    print(f"  placed {filled} career stops from data/institutions.csv "
+          f"({len(placed)}/{len(entries)} rows usable)")
+
+
 def _backfill_stop_coords(idx):
     """Give un-geocoded career stops the coordinates of the same institution
     resolved elsewhere in the dataset.
@@ -1173,6 +1290,14 @@ def _backfill_stop_coords(idx):
                 continue
             hit = known.get(_inst_key(s["institution"]))
             if not hit:
+                continue
+            # Same guard as the hand table: a stop whose own country disagrees
+            # with where the institution sits is usually someone working
+            # remotely for a foreign employer. Their dot belongs where they
+            # are, not at a head office they may never have visited — and
+            # since we have no city for them, the honest answer is to leave
+            # the stop unplaced rather than move them abroad.
+            if s.get("country") and hit[3] and s["country"] != hit[3]:
                 continue
             s["lat"], s["lon"] = hit[0], hit[1]
             s["city"] = s.get("city") or hit[2]
@@ -1319,7 +1444,9 @@ def build():
     # after geocoding: both spellings resolve to the same place anyway, and the
     # cache means nothing is re-fetched
     _canonicalise_employers(idx)
-    # needs the canonical names, so it runs after the fold
+    # both need the canonical names, so they run after the fold; the hand table
+    # is authoritative and goes first
+    _hand_placed_institutions(idx)
     _backfill_stop_coords(idx)
 
     # ---- finalise records --------------------------------------------------#

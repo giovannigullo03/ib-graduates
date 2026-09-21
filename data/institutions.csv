@@ -1,0 +1,43 @@
+# Hand-placed institutions.
+#
+# Nominatim cannot resolve a bare organisation name that is not a mapped place
+# ("Rather Labs, Inc", "Skyloom Global"), and it mis-resolves INSPIRE's
+# "City, Acronym" style ("Madrid, IFT"). Giving the city and country here is
+# enough: the builder geocodes "<institution>, <city>, <country>", so the
+# coordinates still come from OpenStreetMap rather than being typed in by hand.
+#
+# `institution` is a MATCHING KEY, not a display name: matching ignores case,
+# accents, punctuation and word order, and a row matches when its words are a
+# subset of the stop's, so "FUESMEN" also catches "FUESMEN - Fundación Escuela
+# de Medicina Nuclear". Where the data shares no word with the real name
+# (INSPIRE writes "Rio de Janeiro, CBPF"), key the row on the acronym.
+# Only `institution` and one of (city+country) or (lat+lon) are required.
+#
+# Add a row for any career stop you care about that the map is missing; run
+# `python3 scripts/build_dataset.py` afterwards. Leave a row out rather than
+# guess — an institution placed in the wrong city is worse than one left off.
+institution,city,country,lat,lon,notes
+# --- Argentine nuclear sector ---------------------------------------------
+Nucleoeléctrica Argentina S.A.,Buenos Aires,Argentina,,,operates Atucha I/II and Embalse; HQ in CABA
+CONICET Patagonia Norte,San Carlos de Bariloche,Argentina,,,CCT CONICET Patagonia Norte
+Fundación INTECNUS,San Carlos de Bariloche,Argentina,,,nuclear medicine centre next to Balseiro
+FUESMEN,Mendoza,Argentina,,,Fundación Escuela de Medicina Nuclear
+Autoridad Regulatoria Nuclear,Buenos Aires,Argentina,,,ARN — the nuclear regulator
+# --- physics institutes ----------------------------------------------------
+Abdus Salam International Centre for Theoretical Physics,Trieste,Italy,,,ICTP
+"Madrid, IFT",Madrid,Spain,,,"Instituto de Física Teórica UAM-CSIC; INSPIRE writes it ""Madrid, IFT"""
+CBPF,Rio de Janeiro,Brazil,,,"Centro Brasileiro de Pesquisas Físicas; INSPIRE writes it ""Rio de Janeiro, CBPF"""
+Laboratoire de Physique Subatomique et de Cosmologie,Grenoble,France,,,LPSC
+CNRS Délégation Ile-de-France Sud,Gif-sur-Yvette,France,,,
+Technical University of Berlin,Berlin,Germany,,,TU Berlin
+# --- companies -------------------------------------------------------------
+Rather Labs,Buenos Aires,Argentina,,,Argentine software consultancy
+Tecpetrol,Buenos Aires,Argentina,,,Techint group
+Skyloom Global,Denver,United States,,,optical space communications
+ASAPP,New York,United States,,,
+Scale AI,San Francisco,United States,,,
+Marvell Technology,Santa Clara,United States,,,
+AtkinsRéalis,Montreal,Canada,,,formerly SNC-Lavalin
+Jampp,Buenos Aires,Argentina,,,
+ZoomAgri,Buenos Aires,Argentina,,,
+Teramot,Buenos Aires,Argentina,,,
