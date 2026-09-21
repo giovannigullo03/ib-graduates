@@ -48,6 +48,7 @@ const state = {
   view: 'map',
   sort: { key: 'name', dir: 1 },
   selected: null,           // the person whose trajectory is drawn, if any
+  flows: false,             // aggregate Balseiro -> destination arcs
 };
 
 /* ------------------------------------------------------------------ */
@@ -130,6 +131,23 @@ function initMap() {
     },
   });
   map.addControl(new ZoomBtn());
+
+  const FlowBtn = L.Control.extend({
+    options: { position: 'topleft' },
+    onAdd() {
+      const b = L.DomUtil.create('button', 'leaflet-bar flow-btn');
+      b.title = 'Show aggregate flows out of Balseiro';
+      b.textContent = '✈';
+      L.DomEvent.on(b, 'click', e => {
+        L.DomEvent.stop(e);
+        state.flows = !state.flows;
+        b.classList.toggle('on', state.flows);
+        drawFlows();
+      });
+      return b;
+    },
+  });
+  map.addControl(new FlowBtn());
 }
 
 const IB_LATLON = [-41.1335, -71.4281];
@@ -141,6 +159,75 @@ const IB_LATLON = [-41.1335, -71.4281];
    trying to see all of it. */
 let selectionLayer = null;
 const TRAJ = '#d64545';
+
+/* ------------------------------------------------------------------ */
+/* aggregate flows: Balseiro -> where people ended up                  */
+/* ------------------------------------------------------------------ */
+let flowLayer = null;
+
+// Each destination country's centre is the mean position of the people
+// actually there, so the arc lands on the cluster rather than on some
+// nominal centroid in the middle of a country nobody works in.
+function destinations(list) {
+  const acc = new Map();
+  for (const p of list) {
+    if (!p.located || !p.country || p.country === 'Argentina') continue;
+    const d = acc.get(p.country) || { lat: 0, lon: 0, n: 0 };
+    d.lat += p.lat; d.lon += p.lon; d.n++;
+    acc.set(p.country, d);
+  }
+  return [...acc.entries()]
+    .map(([country, d]) => ({ country, n: d.n, lat: d.lat / d.n, lon: d.lon / d.n }))
+    .sort((a, b) => b.n - a.n);
+}
+
+// A quadratic Bézier standing in for a great-circle arc: bent perpendicular to
+// the straight line so overlapping routes stay individually readable.
+function arcPoints(from, to, bend = 0.22, steps = 44) {
+  const [y1, x1] = from;
+  let [y2, x2] = to;
+  // take the short way round rather than straight across the whole map
+  if (Math.abs(x2 - x1) > 180) x2 += x2 > x1 ? -360 : 360;
+  const cx = (x1 + x2) / 2 - (y2 - y1) * bend;
+  const cy = (y1 + y2) / 2 + (x2 - x1) * bend;
+  const pts = [];
+  for (let i = 0; i <= steps; i++) {
+    const t = i / steps, u = 1 - t;
+    pts.push([u * u * y1 + 2 * u * t * cy + t * t * y2,
+              u * u * x1 + 2 * u * t * cx + t * t * x2]);
+  }
+  return pts;
+}
+
+function drawFlows() {
+  if (flowLayer) { map.removeLayer(flowLayer); flowLayer = null; }
+  const key = document.getElementById('flow-legend');
+  if (key) key.hidden = !state.flows;
+  if (!state.flows) return;
+  const dests = destinations(filtered(null));
+  if (!dests.length) return;
+
+  const peak = dests[0].n;
+  const layers = [];
+  for (const d of dests) {
+    // sqrt keeps the United States from dwarfing everything else
+    const w = 1.2 + Math.sqrt(d.n / peak) * 7;
+    const pts = arcPoints(IB_LATLON, [d.lat, d.lon]);
+    const label = `${d.n} ${d.n === 1 ? 'person' : 'people'} → ${esc(d.country)}`;
+    layers.push(L.polyline(pts, {
+      color: '#000', opacity: 0.16, weight: w + 2.5, interactive: false,
+    }));
+    layers.push(L.polyline(pts, {
+      color: '#e0a458', weight: w, opacity: 0.6, lineCap: 'round',
+    }).bindTooltip(label, { sticky: true }));
+    layers.push(L.circleMarker([d.lat, d.lon], {
+      radius: 2 + Math.sqrt(d.n) * 1.1, weight: 1,
+      color: '#c98432', fillColor: '#e0a458', fillOpacity: 0.85,
+    }).bindTooltip(label, { direction: 'top' }));
+  }
+  flowLayer = L.layerGroup(layers).addTo(map);
+  if (selectionLayer) selectionLayer.bringToFront();
+}
 
 // Career stops with known coordinates, oldest first (IB itself is added as
 // the implicit starting point everywhere, so callers never need to include it).
@@ -540,15 +627,25 @@ function wireControls() {
   document.getElementById('view-map').appendChild(mfb);
 }
 
+// view id -> the renderer that fills it (the map has no renderer; it is a
+// live Leaflet layer that only needs its size revalidated)
+const VIEWS = {
+  map: null,
+  hires: renderHires,
+  studied: renderStudied,
+  return: renderReturn,
+  list: renderList,
+};
+
 function setView(v) {
   state.view = v;
-  document.querySelectorAll('#view-tabs button').forEach(b => b.classList.toggle('active', b.dataset.view === v));
-  document.getElementById('view-map').hidden = v !== 'map';
-  document.getElementById('view-insights').hidden = v !== 'insights';
-  document.getElementById('view-list').hidden = v !== 'list';
+  document.querySelectorAll('#view-tabs button')
+    .forEach(b => b.classList.toggle('active', b.dataset.view === v));
+  Object.keys(VIEWS).forEach(k => {
+    document.getElementById(`view-${k}`).hidden = k !== v;
+  });
   if (v === 'map') setTimeout(() => map.invalidateSize(), 50);
-  if (v === 'insights') renderInsights();
-  if (v === 'list') renderList();
+  else if (VIEWS[v]) VIEWS[v]();
 }
 
 /* ------------------------------------------------------------------ */
@@ -575,9 +672,9 @@ function refresh() {
   document.getElementById('result-count').textContent =
     `${res.length} ${res.length === 1 ? 'person' : 'people'}`;
 
+  drawFlows();
   updateFacetCounts();
-  if (state.view === 'insights') renderInsights();
-  if (state.view === 'list') renderList();
+  if (VIEWS[state.view]) VIEWS[state.view]();
 }
 
 function zoomToResults() {
@@ -604,7 +701,7 @@ function barChart(rows, { max, cls, onClick, facet }) {
   const peak = top.length ? top[0][1] : 1;
   return top.map(([label, n]) => `
     <div class="bar-row">
-      <span class="bl" ${onClick ? `data-filter="${esc(label)}"` : ''}${
+      <span class="bl" title="${esc(label)}: ${n}" ${onClick ? `data-filter="${esc(label)}"` : ''}${
         facet ? ` data-facet-key="${esc(facet)}"` : ''}>${esc(label)}</span>
       <span class="bar-track"><span class="bar-fill ${cls || ''}" style="width:${(n / peak * 100).toFixed(1)}%"></span></span>
       <span class="bv">${n}</span>
@@ -642,117 +739,29 @@ function migrationStats(list) {
   return out;
 }
 
-function renderInsights() {
-  const list = filtered(null);
-  const host = document.getElementById('view-insights');
+/* Each analytical view answers one question the site exists to answer, rather
+   than exposing a chart format. Shared chrome first, then one renderer per
+   question. */
+function splitBar(parts) {
+  const total = parts.reduce((s, [, n]) => s + n, 0) || 1;
+  return `<div class="split">${parts.map(([lbl, n, color]) =>
+    `<span style="flex:${n};background:${color}" title="${esc(lbl)}: ${n}">${
+      n / total > 0.08 ? n : ''}</span>`).join('')}</div>`;
+}
 
-  const withCountry = list.filter(p => p.country);
-  const inAR = withCountry.filter(p => p.country === 'Argentina').length;
-  const abroad = withCountry.length - inAR;
-  const pctAbroad = withCountry.length ? Math.round(abroad / withCountry.length * 100) : 0;
+function viewIntro(question, answer) {
+  return `<header class="view-intro">
+    <h2>${question}</h2>
+    <p>${answer}</p>
+  </header>`;
+}
 
-  const countries = tally(list, p => p.country);
-  const employers = tally(list, p => p.employer);
-  const disciplines = tally(list, p => p.discipline);
-  const sectors = tally(list, p => p.sector);
-  const decades = tally(list, p => p.grad_decade ? p.grad_decade + 's' : null)
-    .sort((a, b) => a[0].localeCompare(b[0]));
-  const multiEmployers = employers.filter(([, n]) => n >= 2);
-  const skills = tally(list, p => p.skills || []);
-  const mig = migrationStats(list);
-  // share of the people who actually went abroad that are back in Argentina
-  const migLeft = mig.returned + mig.abroad;
-  const migPct = migLeft ? Math.round(mig.returned / migLeft * 100) : 0;
-
-  const splitBar = (parts) => {
-    const total = parts.reduce((s, [, n]) => s + n, 0) || 1;
-    return `<div class="split">${parts.map(([lbl, n, color]) =>
-      `<span style="flex:${n};background:${color}" title="${esc(lbl)}: ${n}">${n / total > 0.08 ? n : ''}</span>`).join('')}</div>`;
-  };
-
-  host.innerHTML = `
-   <div class="insights-grid">
-    <div class="card">
-      <h3>Argentina vs. abroad</h3>
-      <p class="sub">of ${withCountry.length} people with a known current country</p>
-      <div class="big-figure">${pctAbroad}%</div>
-      <p class="callout">work outside Argentina${state.q || anyFacet() ? ' (within the current filter)' : ''}.</p>
-      ${splitBar([['In Argentina', inAR, 'var(--argentina)'], ['Abroad', abroad, 'var(--abroad)']])}
-    </div>
-
-    <div class="card">
-      <h3>Top destination countries</h3>
-      <p class="sub">click a bar to filter the map</p>
-      ${barChart(countries, { max: 12, onClick: true })}
-    </div>
-
-    <div class="card">
-      <h3>Where they work — employers</h3>
-      <p class="sub">${multiEmployers.length} institutions employ 2+ alumni · click to filter</p>
-      ${barChart(employers, { max: 14, onClick: true })}
-    </div>
-
-    <div class="card">
-      <h3>Research fields</h3>
-      ${barChart(disciplines, { max: 12 })}
-    </div>
-
-    <div class="card">
-      <h3>Type of employer</h3>
-      ${barChart(sectors, { max: 8 })}
-    </div>
-
-    <div class="card">
-      <h3>When they graduated</h3>
-      <p class="sub">${list.filter(p => p.grad_year).length} with a known graduation year</p>
-      ${barChart(decades, {})}
-    </div>
-
-    <div class="card">
-      <h3>Leaving and coming back</h3>
-      <p class="sub">${mig.tracked} people with a graduation year and a traceable
-        career after it${migLeft ? ` · ${migLeft} of them worked abroad` : ''}</p>
-      ${mig.tracked ? `
-        <div class="big-figure">${migPct}%</div>
-        <p class="callout">of the ${migLeft} who went abroad are back in Argentina.</p>
-        ${splitBar([
-          ['Never left Argentina', mig.stayed, 'var(--argentina)'],
-          ['Went abroad, came back', mig.returned, 'var(--returned, #d99a2b)'],
-          ['Abroad now', mig.abroad, 'var(--abroad)'],
-        ])}
-        <p class="sub legend-line">
-          <span class="key" style="background:var(--argentina)"></span> never left
-          <span class="key" style="background:var(--returned, #d99a2b)"></span> returned
-          <span class="key" style="background:var(--abroad)"></span> abroad now
-        </p>`
-      : `<p class="callout">No traceable career histories in this selection.</p>`}
-    </div>
-
-    <div class="card">
-      <h3>First stop abroad</h3>
-      <p class="sub">first country worked in after graduating · click to filter</p>
-      ${mig.firstAbroad.size
-        ? barChart([...mig.firstAbroad.entries()].sort((a, b) => b[1] - a[1]),
-                   { max: 10, onClick: true, facet: 'career_country' })
-        : `<p class="callout">Nobody in this selection has a recorded stop abroad.</p>`}
-    </div>
-
-    <div class="card">
-      <h3>Most common skills</h3>
-      <p class="sub">self-reported · ${list.filter(p => p.skills).length} people list any · click to filter</p>
-      ${skills.length
-        ? barChart(skills, { max: 14, onClick: true, facet: 'skills' })
-        : `<p class="callout">No skills recorded in this selection.</p>`}
-    </div>
-   </div>`;
-
+// Turns every [data-filter] bar in a rendered view into a filter control.
+function wireBarFilters(host, fallbackKey) {
   host.querySelectorAll('[data-filter]').forEach(el => {
     el.addEventListener('click', () => {
       const val = el.dataset.filter;
-      // a bar can name its own facet ("first stop abroad" -> country even when
-      // nobody currently works there); otherwise fall back to detection
-      const key = el.dataset.facetKey
-        || (countries.some(([c]) => c === val) ? 'country' : null);
+      const key = el.dataset.facetKey || fallbackKey;
       if (key && state.facets[key]) {
         state.facets[key].clear();
         state.facets[key].add(val);
@@ -766,6 +775,172 @@ function renderInsights() {
       setTimeout(zoomToResults, 150);
     });
   });
+}
+
+/* ---- Who hires them? ---------------------------------------------- */
+function renderHires() {
+  const list = filtered(null);
+  const host = document.getElementById('view-hires');
+  const employers = tally(list, p => p.employer);
+  const sectors = tally(list, p => p.sector);
+  const skills = tally(list, p => p.skills || []);
+  const multi = employers.filter(([, n]) => n >= 2);
+  const withEmployer = list.filter(p => p.employer).length;
+  const industry = list.filter(p => p.sector === 'Industry / company'
+    || p.sector === 'Self-employed / freelance').length;
+  const academic = list.filter(p => p.sector === 'University / academia'
+    || p.sector === 'Research institute / council'
+    || p.sector === 'Government & national lab').length;
+  const placed = industry + academic;
+  const pctIndustry = placed ? Math.round(industry / placed * 100) : 0;
+
+  host.innerHTML = viewIntro('Who hires them?',
+    `${withEmployer} of ${list.length} people in this selection have a known
+     current employer. ${multi.length} organisations employ more than one.`) +
+   `<div class="insights-grid">
+    <div class="card">
+      <h3>Industry or academia</h3>
+      <p class="sub">of ${placed} people whose employer could be classified</p>
+      <div class="big-figure">${pctIndustry}%</div>
+      <p class="callout">work in industry or for themselves; the rest are in
+        universities, research institutes or national labs.</p>
+      ${splitBar([['Industry / self-employed', industry, 'var(--abroad)'],
+                  ['Academia / research / state', academic, 'var(--argentina)']])}
+    </div>
+
+    <div class="card">
+      <h3>Employers hiring more than one</h3>
+      <p class="sub">click a bar to filter</p>
+      ${barChart(employers, { max: 16, onClick: true })}
+    </div>
+
+    <div class="card">
+      <h3>Type of employer</h3>
+      ${barChart(sectors, { max: 8, onClick: true, facet: 'sector' })}
+    </div>
+
+    <div class="card">
+      <h3>Skills they advertise</h3>
+      <p class="sub">self-reported · ${list.filter(p => p.skills).length} people
+        list any · click to filter</p>
+      ${skills.length ? barChart(skills, { max: 16, onClick: true, facet: 'skills' })
+        : `<p class="callout">No skills recorded in this selection.</p>`}
+    </div>
+   </div>`;
+  wireBarFilters(host, null);
+}
+
+/* ---- What did they study? ----------------------------------------- */
+function renderStudied() {
+  const list = filtered(null);
+  const host = document.getElementById('view-studied');
+  const disciplines = tally(list, p => p.discipline);
+  const levels = tally(list, p => p.levels || []);
+  const programs = tally(list, p => p.program);
+  const decades = tally(list, p => p.grad_decade ? p.grad_decade + 's' : null)
+    .sort((a, b) => a[0].localeCompare(b[0]));
+  const withYear = list.filter(p => p.grad_year).length;
+  const named = disciplines.filter(([d]) => d !== 'Not specified');
+  const top = named[0];
+
+  host.innerHTML = viewIntro('What did they study?',
+    `${withYear} of ${list.length} people have a known graduation year.` +
+    (top ? ` The largest research field here is ${esc(top[0])} (${top[1]} people).` : '')) +
+   `<div class="insights-grid">
+    <div class="card">
+      <h3>Research field</h3>
+      <p class="sub">click a bar to filter</p>
+      ${barChart(disciplines, { max: 14, onClick: true, facet: 'discipline' })}
+    </div>
+
+    <div class="card">
+      <h3>Degree taken at Balseiro</h3>
+      <p class="sub">people with more than one degree are counted once per degree</p>
+      ${levels.length ? barChart(levels, { max: 8, onClick: true, facet: 'levels' })
+        : `<p class="callout">No degree level recorded in this selection.</p>`}
+    </div>
+
+    <div class="card">
+      <h3>When they graduated</h3>
+      <p class="sub">${withYear} with a known graduation year</p>
+      ${barChart(decades, { onClick: true, facet: 'grad_decade' })}
+    </div>
+
+    <div class="card">
+      <h3>Degree subject</h3>
+      <p class="sub">as written on the diploma · click to filter</p>
+      ${programs.length ? barChart(programs, { max: 14, onClick: true, facet: 'program' })
+        : `<p class="callout">No degree subject recorded in this selection.</p>`}
+    </div>
+   </div>`;
+  wireBarFilters(host, null);
+}
+
+/* ---- Do they come back? ------------------------------------------- */
+function renderReturn() {
+  const list = filtered(null);
+  const host = document.getElementById('view-return');
+  const withCountry = list.filter(p => p.country);
+  const inAR = withCountry.filter(p => p.country === 'Argentina').length;
+  const abroad = withCountry.length - inAR;
+  const pctAbroad = withCountry.length ? Math.round(abroad / withCountry.length * 100) : 0;
+  const countries = tally(list, p => p.country);
+  const mig = migrationStats(list);
+  const migLeft = mig.returned + mig.abroad;
+  const migPct = migLeft ? Math.round(mig.returned / migLeft * 100) : 0;
+
+  host.innerHTML = viewIntro('Do they come back?',
+    `${pctAbroad}% of the ${withCountry.length} people with a known current
+     country work outside Argentina` +
+    (migLeft ? `, and of the ${migLeft} whose career history shows a stint
+     abroad, ${migPct}% are back.` : '.')) +
+   `<div class="insights-grid">
+    <div class="card">
+      <h3>Argentina vs. abroad, right now</h3>
+      <p class="sub">of ${withCountry.length} people with a known current country</p>
+      <div class="big-figure">${pctAbroad}%</div>
+      <p class="callout">work outside Argentina${
+        state.q || anyFacet() ? ' (within the current filter)' : ''}.</p>
+      ${splitBar([['In Argentina', inAR, 'var(--argentina)'],
+                  ['Abroad', abroad, 'var(--abroad)']])}
+    </div>
+
+    <div class="card">
+      <h3>Leaving and coming back</h3>
+      <p class="sub">${mig.tracked} people with a graduation year and a traceable
+        career after it${migLeft ? ` · ${migLeft} of them worked abroad` : ''}</p>
+      ${mig.tracked ? `
+        <div class="big-figure">${migPct}%</div>
+        <p class="callout">of the ${migLeft} who went abroad are back in Argentina.</p>
+        ${splitBar([
+          ['Never left Argentina', mig.stayed, 'var(--argentina)'],
+          ['Went abroad, came back', mig.returned, 'var(--returned)'],
+          ['Abroad now', mig.abroad, 'var(--abroad)'],
+        ])}
+        <p class="sub legend-line">
+          <span class="key" style="background:var(--argentina)"></span> never left
+          <span class="key" style="background:var(--returned)"></span> returned
+          <span class="key" style="background:var(--abroad)"></span> abroad now
+        </p>`
+      : `<p class="callout">No traceable career histories in this selection.</p>`}
+    </div>
+
+    <div class="card">
+      <h3>Where they are now</h3>
+      <p class="sub">current country · click to filter</p>
+      ${barChart(countries, { max: 14, onClick: true, facet: 'country' })}
+    </div>
+
+    <div class="card">
+      <h3>First stop abroad</h3>
+      <p class="sub">first country worked in after graduating · click to filter</p>
+      ${mig.firstAbroad.size
+        ? barChart([...mig.firstAbroad.entries()].sort((a, b) => b[1] - a[1]),
+                   { max: 12, onClick: true, facet: 'career_country' })
+        : `<p class="callout">Nobody in this selection has a recorded stop abroad.</p>`}
+    </div>
+   </div>`;
+  wireBarFilters(host, null);
 }
 
 function anyFacet() { return Object.values(state.facets).some(s => s.size); }

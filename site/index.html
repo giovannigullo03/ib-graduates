@@ -60,9 +60,11 @@
 
       <main id="main">
         <div id="view-tabs" class="view-tabs">
-          <button data-view="map" class="active" type="button">Map</button>
-          <button data-view="insights" type="button">Insights</button>
-          <button data-view="list" type="button">List</button>
+          <button data-view="map" class="active" type="button">Where did they go?</button>
+          <button data-view="hires" type="button">Who hires them?</button>
+          <button data-view="studied" type="button">What did they study?</button>
+          <button data-view="return" type="button">Do they come back?</button>
+          <button data-view="list" type="button">Everyone</button>
           <span id="result-count" class="result-count"></span>
         </div>
 
@@ -74,11 +76,15 @@
             <span><i class="dot abroad"></i> Abroad</span>
             <span><i class="dot home"></i> Instituto Balseiro</span>
             <span><i class="dot faint"></i> Inferred (unconfirmed)</span>
+            <span id="flow-legend" hidden><i class="dash"></i> Flow out of Balseiro
+              (thickness = people)</span>
           </div>
           <p id="unmapped-note" class="unmapped-note"></p>
         </section>
 
-        <section id="view-insights" class="view" hidden></section>
+        <section id="view-hires" class="view" hidden></section>
+        <section id="view-studied" class="view" hidden></section>
+        <section id="view-return" class="view" hidden></section>
 
         <section id="view-list" class="view" hidden>
           <div id="list-container"></div>
