@@ -12,11 +12,14 @@ Steps
 4. Resolve each person's *current* location (institution -> lat/lon) from
    coordinates already in Wikidata / OpenAlex, else geocoding "<org>, <city>,
    <country>" via Nominatim (cached in data/geocode_cache.json).
-5. Classify research field + employer sector; tag confidence.
+5. Fold employer spelling variants onto one canonical name per institution
+   (every source names them differently), classify research field + employer
+   sector, tag confidence.
 6. Write site/data/alumni.json (list + meta) — the only file the site loads.
 """
 from __future__ import annotations
 
+import collections
 import csv
 import datetime as dt
 import hashlib
@@ -1010,6 +1013,135 @@ def _resolve_location(rec):
         return
 
 
+# --------------------------------------------------------------------------- #
+# Employer name canonicalisation
+# --------------------------------------------------------------------------- #
+# Every source names the same institution differently: RICABIB is in Spanish,
+# INSPIRE abbreviates ("Balseiro Inst."), OpenAlex translates ("Balseiro
+# Institute"), LinkedIn carries whatever the person typed. Left alone, the
+# employer ranking splits one institution across a dozen rows.
+#
+# Layer 1: explicit rules, for cases no string comparison can catch — a
+# translation, an abbreviation, or a compound affiliation that names a parent
+# and a child institution together.
+EMPLOYER_ALIASES = [
+    # the Balseiro / Centro Atómico Bariloche family: one campus, many namings
+    (r"balseiro", "Instituto Balseiro"),
+    (r"centro atomico bariloche|bariloche atomic", "Centro Atómico Bariloche"),
+    (r"centro atomico constituyentes", "Centro Atómico Constituyentes"),
+    (r"centro atomico ezeiza", "Centro Atómico Ezeiza"),
+    # the English renderings come from OpenAlex/ADS and are misspelled about as
+    # often as not ("Comission", "Commision"), hence the loose spelling
+    (r"^cnea$|comision nacional de energia atomica"
+     r"|national atomic energy com|national comm?is?s?ion of atomic energy",
+     "Comisión Nacional de Energía Atómica (CNEA)"),
+    # "Buenos Aires, CONICET" is a place-prefixed form of the same employer.
+    # The prefix is deliberately restricted to a short plain-words city name:
+    # a longer or punctuated one means a named sub-institute ("Instituto de
+    # Física del Sur (IFISUR), ..., CONICET"), which must stay on its own.
+    (r"^conicet$|^[a-z ]{1,20}, conicet$"
+     r"|consejo nacional de investigaciones cientificas"
+     r"|scientific and technical research council",
+     "CONICET"),
+    (r"conicet.*patagonia norte|patagonia norte.*conicet", "CONICET Patagonia Norte"),
+    (r"nanociencia y nanotecnologia|instituto de nanociencia",
+     "Instituto de Nanociencia y Nanotecnología (CNEA–CONICET)"),
+    (r"^invap\b", "INVAP"),
+    (r"^ypf\b", "YPF"),
+    (r"nucleoelectrica argentina", "Nucleoeléctrica Argentina S.A."),
+    (r"^profesional independiente$|^autonomo$|^self employed$|^freelance$",
+     "Self-employed"),
+]
+EMPLOYER_ALIASES = [(re.compile(p), c) for p, c in EMPLOYER_ALIASES]
+
+# Words that carry no distinguishing information, so "Universidad Nacional de
+# Cuyo" and "National University of Cuyo" reduce to the same key.
+_INST_STOP = {
+    "de", "del", "la", "el", "los", "las", "y", "of", "the", "for", "and", "in",
+    "at", "a", "en", "nacional", "national", "universidad", "university", "univ",
+    "instituto", "institute", "inst", "centro", "center", "centre", "research",
+    "laboratory", "lab", "labs", "sa", "se", "srl", "ltd", "inc", "gmbh",
+}
+
+
+def _inst_key(name):
+    """Order-independent fingerprint of an institution name."""
+    s = strip_accents((name or "").lower())
+    s = re.sub(r"[^a-z0-9 ]", " ", s)
+    return frozenset(t for t in s.split() if t not in _INST_STOP and len(t) > 2)
+
+
+def _alias(name):
+    if not name:
+        return name
+    flat = re.sub(r"\s+", " ", strip_accents(name.lower())).strip()
+    for pattern, canonical in EMPLOYER_ALIASES:
+        if pattern.search(flat):
+            return canonical
+    return name
+
+
+# INSPIRE writes institutions in a clipped house style ("Madrid, Autonoma U.",
+# "Balseiro Inst."). Those spellings can easily be the most numerous, but they
+# make a poor label, so well-formed names win regardless of frequency.
+_CLIPPED = re.compile(r"\b(U|Inst|Ctr|Lab|Natl|Univ|Tech|Dept)\.", re.I)
+
+
+def _spelling_rank(name, count):
+    presentable = not _CLIPPED.search(name) and name != name.lower()
+    return (presentable, count, len(name), name)
+
+
+def _canonicalise_employers(idx):
+    """Fold spelling variants of one institution onto a single name.
+
+    Layer 1 applies the explicit rules above. Layer 2 then groups whatever is
+    left by `_inst_key` and elects the most common spelling as canonical, which
+    absorbs accent, case, punctuation and word-order variants — including ones
+    nobody has seen yet, so a new batch of profiles does not reintroduce the
+    problem. Grouping needs an *identical* token set, so distinct institutions
+    that merely share a word ("Max Planck Institute for Physics" vs "... for
+    Chemistry") are never merged; the failure mode is leaving two names apart,
+    not collapsing two real institutions into one.
+    """
+    for rec in idx.values():
+        rec["employer_name"] = _alias(rec["employer_name"])
+        for stop in rec["career"]:
+            stop["institution"] = _alias(stop.get("institution"))
+
+    counts: dict = {}
+    for rec in idx.values():
+        names = [rec["employer_name"]] + [s.get("institution") for s in rec["career"]]
+        for name in names:
+            if not name:
+                continue
+            key = _inst_key(name)
+            if key:
+                counts.setdefault(key, collections.Counter())[name] += 1
+
+    canonical = {
+        key: max(spellings.items(), key=lambda kv: _spelling_rank(*kv))[0]
+        for key, spellings in counts.items()
+    }
+
+    folded = 0
+    for rec in idx.values():
+        name = rec["employer_name"]
+        if name:
+            best = canonical.get(_inst_key(name), name)
+            if best != name:
+                folded += 1
+            rec["employer_name"] = best
+        for stop in rec["career"]:
+            inst = stop.get("institution")
+            if inst:
+                stop["institution"] = canonical.get(_inst_key(inst), inst)
+
+    distinct = len({rec["employer_name"] for rec in idx.values() if rec["employer_name"]})
+    print(f"employers: {distinct} distinct names after folding "
+          f"{folded} people onto a canonical spelling")
+
+
 def _nice_role(rec):
     occ = sorted(rec["occupations"])  # sorted -> deterministic across builds
     for pref in ("professor", "physicist", "researcher", "university teacher", "engineer"):
@@ -1143,6 +1275,11 @@ def build():
     common._save_geocache(geo_cache)
     print(f"  located {n_stop_geo} career-history stops ({new_lookups} new lookups this run"
           + (", budget reached -- rerun to continue)" if new_lookups >= CAREER_GEOCODE_BUDGET else ")"))
+
+    # ---- fold employer spelling variants -----------------------------------#
+    # after geocoding: both spellings resolve to the same place anyway, and the
+    # cache means nothing is re-fetched
+    _canonicalise_employers(idx)
 
     # ---- finalise records --------------------------------------------------#
     out = []
