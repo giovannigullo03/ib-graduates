@@ -38,6 +38,17 @@ resolves each person's location from Wikidata/OpenAlex coordinates or
 [Nominatim](https://nominatim.org) geocoding (cached), classifies research field
 and employer sector, tags `confidence`, and writes a single `site/data/alumni.json`.
 
+Career stops are placed by whichever source has the best claim, in order:
+coordinates the source already carried, then Nominatim, then
+`data/institutions.csv`, then institutions located elsewhere in the dataset,
+and last [ROR](https://ror.org) — the open registry of research organisations.
+ROR goes last deliberately: it matches on names, and names collide across the
+world (asking it about "CNEA" returns a Chinese nuclear body), so it may only
+ever fill a gap, never overwrite a placement someone else already made. The one
+exception is correcting a country: when a name belongs to exactly one
+organisation worldwide, a registry entry outranks a scraped affiliation, which
+is what moved Universidad Nacional de Cuyo back from the Philippines.
+
 ## Setup
 
 ```bash

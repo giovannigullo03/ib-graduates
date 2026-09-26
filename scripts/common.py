@@ -256,3 +256,164 @@ def is_initials_form(name: str) -> bool:
 
 def clean_name(name: str) -> str:
     return re.sub(r"\s+", " ", (name or "").strip()).title() if (name or "").isupper() else re.sub(r"\s+", " ", (name or "").strip())
+
+
+# --------------------------------------------------------------------------- #
+# ROR — Research Organization Registry
+# --------------------------------------------------------------------------- #
+# Most places this project fails to locate are institutions, not addresses, and
+# an address geocoder is the wrong tool for them: it returns a city centroid at
+# best and nonsense at worst. ROR is a free, open registry of ~100k research
+# organisations with coordinates, so it answers the institution question
+# directly and precisely.
+#
+# The catch is that ROR's search is fuzzy and *always* returns something —
+# "Rather Labs" comes back as a laboratory in Bologna. Everything below the
+# request is about refusing bad matches.
+_ROR_CACHE = DATA / "ror_cache.json"
+
+# Words that say "this is an organisation" rather than *which* organisation.
+_ORG_STOP = {
+    "de", "del", "la", "el", "los", "las", "y", "of", "the", "for", "and", "in",
+    "at", "a", "en", "der", "die", "das", "und", "di", "da", "do", "des",
+    "universidad", "university", "universite", "universitat", "universita",
+    "universiteit", "universidade", "univ", "instituto", "institute", "institut",
+    "instituut", "inst", "centro", "center", "centre", "zentrum", "national",
+    "nacional", "nationale", "research", "investigaciones", "laboratory",
+    "laboratoire", "laboratorio", "lab", "labs", "sa", "se", "srl", "ltd",
+    "inc", "gmbh", "llc", "college", "school", "escuela", "facultad", "faculty",
+    "department", "departamento", "dept", "group", "grupo", "foundation",
+    "fundacion", "academy", "academia", "society", "council", "consejo",
+}
+
+
+# Words that are distinctive enough to survive _ORG_STOP but still say nothing
+# about *which* organisation: an overlap made only of these is not evidence.
+# "Family Business" matched a Glasgow trade body, and "CANDOIT Engineering &
+# Technology" matched a Peruvian university, on exactly this.
+_ORG_GENERIC = {
+    "business", "technology", "technologies", "tecnologia", "tecnologica",
+    "engineering", "ingenieria", "science", "sciences", "ciencias", "cientificas",
+    "energy", "energia", "nuclear", "systems", "sistemas", "solutions",
+    "services", "servicios", "industrial", "industria", "industries",
+    "automation", "global", "international", "internacional", "superior",
+    "tecnico", "tecnica", "technical", "applied", "aplicada", "aplicadas",
+    "advanced", "studies", "estudios", "development", "desarrollo", "innovation",
+    "innovacion", "management", "consulting", "consultora", "digital", "data",
+    "software", "computing", "medicine", "medicina", "health", "salud",
+    "physics", "fisica", "chemistry", "quimica", "materials", "materiales",
+    "mathematics", "matematica", "biology", "biologia", "regional", "general",
+}
+
+
+def _org_tokens(name: str, distinctive: bool = True) -> frozenset:
+    s = strip_accents(_clean_unicode(name or "")).lower()
+    s = re.sub(r"[^a-z0-9 ]", " ", s)
+    toks = [t for t in s.split() if len(t) > 1]
+    if distinctive:
+        toks = [t for t in toks if t not in _ORG_STOP]
+    return frozenset(toks)
+
+
+def _load_ror_cache() -> dict:
+    if _ROR_CACHE.exists():
+        return json.loads(_ROR_CACHE.read_text(encoding="utf-8"))
+    return {}
+
+
+def _save_ror_cache(cache: dict) -> None:
+    _ROR_CACHE.write_text(json.dumps(cache, indent=1, ensure_ascii=False), encoding="utf-8")
+
+
+def _ror_match(query: str, names: list[str]) -> str | None:
+    """How well an ROR record's names match the string we asked about.
+
+    "exact"  — the full word sets agree; the strongest evidence there is.
+    "partial"— the distinctive words of one contain those of the other, so
+               "Facultad de Ingeniería Química Universidad Nacional del
+               Litoral" still reaches its parent university.
+    None     — no relation worth acting on.
+    """
+    q_dist, q_full = _org_tokens(query), _org_tokens(query, distinctive=False)
+    if not q_dist:
+        return None
+    best = None
+    for n in names:
+        c_dist, c_full = _org_tokens(n), _org_tokens(n, distinctive=False)
+        if not c_dist:
+            continue
+        if q_full == c_full:
+            return "exact"
+        # a containment relation alone is not enough: what the two names share
+        # has to include something that actually names an organisation
+        if (q_dist <= c_dist or c_dist <= q_dist) and (q_dist & c_dist) - _ORG_GENERIC:
+            best = "partial"
+    return best
+
+
+def ror_lookup(name: str, country: str | None = None, *, cache: dict | None = None):
+    """Resolve an institution name to {lat, lon, city, country, ror_id}.
+
+    Returns None when nothing matches confidently; the miss is cached so the
+    same name is not asked about twice.
+    """
+    own = cache is None
+    cache = cache if cache is not None else _load_ror_cache()
+    q = re.sub(r"\s+", " ", (name or "")).strip()
+    if not q:
+        return None
+    key = f"{q}||{country or ''}"
+    if key in cache:
+        return cache[key] or None
+
+    result = None
+    try:
+        data = cached_get("https://api.ror.org/v2/organizations",
+                          params={"query": q}, throttle_key="ror",
+                          min_interval=0.25, ttl_days=365)
+        exact, partial, exact_ids = None, [], set()
+        for item in (data.get("items") or [])[:5]:
+            names = [n.get("value") for n in item.get("names", []) if n.get("value")]
+            loc = ((item.get("locations") or [{}])[0].get("geonames_details") or {})
+            lat, lng = loc.get("lat"), loc.get("lng")
+            if lat is None or lng is None:
+                continue
+            cand_country = loc.get("country_name")
+            # a country we already know is the cheapest way to throw out the
+            # wrong Córdoba, the wrong Cambridge, the wrong Santiago
+            if country and cand_country and country != cand_country:
+                continue
+            hit = {
+                "lat": float(lat), "lon": float(lng),
+                "city": loc.get("name"), "country": cand_country,
+                "ror_id": item.get("id"), "name": names[0] if names else None,
+            }
+            kind = _ror_match(q, names)
+            hit["match"] = kind
+            if kind == "exact":
+                exact_ids.add(item.get("id"))
+                if exact is None:
+                    exact = hit
+            elif kind == "partial":
+                partial.append(hit)
+        # An exact name match wins. Failing that a partial one is only safe
+        # when it is the *only* candidate that fits: two organisations sharing
+        # the distinctive word ("Córdoba") means we cannot tell them apart, and
+        # guessing would put someone on the wrong continent.
+        if exact is not None:
+            # An exact name match is not the same as a unique one: several
+            # countries have a "Universidad Tecnológica Nacional" and an
+            # "École normale supérieure". Callers that intend to overrule
+            # existing data check this before trusting the answer.
+            exact["unique"] = len(exact_ids) == 1
+            result = exact
+        elif len({h["ror_id"] for h in partial}) == 1:
+            result = partial[0]
+    except Exception as exc:  # noqa: BLE001 - best effort, like geocoding
+        print(f"  ! ROR error for {q!r}: {exc}")
+        result = None
+
+    cache[key] = result or {}
+    if own:
+        _save_ror_cache(cache)
+    return result

@@ -27,6 +27,7 @@ import json
 import re
 
 from common import (DATA, SITE_DATA, ROOT, geocode, geocode_many, name_key, strip_accents,
+                    ror_lookup,
                     initial_key, is_initials_form)
 import common
 import collect_openalex
@@ -68,6 +69,15 @@ COUNTRY_BY_CODE = {
     "IE": "Ireland", "NZ": "New Zealand", "SG": "Singapore", "ZA": "South Africa",
 }
 
+
+# Strings people put in an employer field that name no institution at all.
+# ROR will happily match "Family Business" to a Glasgow trade body.
+NOT_AN_INSTITUTION = {
+    "self employed", "selfemployed", "freelance", "freelancer", "autonomo",
+    "independiente", "profesional independiente", "family business",
+    "emprendimiento propio", "proyecto personal", "particular", "varios",
+    "none", "n a", "home", "casa", "remoto", "remote",
+}
 
 # Extra ISO codes so a geocoded country can be resolved by code rather than by
 # whatever language Nominatim answered in.
@@ -1319,6 +1329,82 @@ def _hand_placed_institutions(idx):
           f"({len(placed)}/{len(entries)} rows usable)")
 
 
+def _ror_stop_coords(idx):
+    """Last resort for career stops: ask ROR, the research-organisation registry.
+
+    This runs *after* every other method on purpose. ROR matches on names, and
+    a name can collide across the world — asking it about "Comisión Nacional de
+    Energía Atómica (CNEA)" returns a Chinese nuclear body, which an earlier
+    version of this cheerfully believed and moved 19,000 km. Running last means
+    ROR only ever fills a genuine gap and can never overwrite a placement some
+    better-evidenced method already made.
+
+    The second guard is a country hint. A stop usually knows its own country;
+    when it does not, the person's employer and their other stops are strong
+    evidence about which "CNEA" is meant. Handing that to ROR filters the
+    candidates before any of them can win.
+    """
+    cache = common._load_ror_cache()
+    targets = [(rec, s) for rec in idx.values() for s in rec["career"]
+               if s.get("lat") is None and s.get("institution")
+               and _norm_inst(s["institution"]) not in NOT_AN_INSTITUTION]
+    if not targets:
+        return
+    print(f"asking ROR about {len({s['institution'] for _, s in targets})} "
+          f"institutions nothing else could place ...")
+
+    def _hint(rec, stop):
+        if stop.get("country"):
+            return stop["country"]
+        if rec.get("employer_country"):
+            return rec["employer_country"]
+        seen = collections.Counter(c["country"] for c in rec["career"]
+                                   if c.get("country") and c.get("lat") is not None)
+        return seen.most_common(1)[0][0] if seen else None
+
+    found = 0
+    for i, (rec, stop) in enumerate(targets, 1):
+        hit = ror_lookup(stop["institution"], _hint(rec, stop), cache=cache)
+        if hit:
+            stop["lat"], stop["lon"] = round(hit["lat"], 5), round(hit["lon"], 5)
+            stop["city"] = stop.get("city") or hit.get("city")
+            stop["country"] = stop.get("country") or _country_en(hit.get("country"))
+            found += 1
+        if i % 100 == 0:
+            common._save_ror_cache(cache)
+
+    # Correcting what other sources got wrong. INSPIRE records the country of
+    # an affiliation, and it is sometimes simply wrong — "Universidad Industrial
+    # de Santander, Mexico", "Universidad Nacional de Cuyo, Philippines". The
+    # geocoder then faithfully places the university in the wrong country. A
+    # registry entry whose *full name* matches is better evidence than a
+    # scraped country field, so it is allowed to overrule one. Only exact
+    # name matches qualify; a partial one is never enough to move a pin that
+    # already exists.
+    fixed = 0
+    placed_stops = [(rec, s) for rec in idx.values() for s in rec["career"]
+                    if s.get("lat") is not None and s.get("institution")
+                    and _norm_inst(s["institution"]) not in NOT_AN_INSTITUTION]
+    for i, (rec, stop) in enumerate(placed_stops, 1):
+        hit = ror_lookup(stop["institution"], None, cache=cache)
+        # ...and only when that name belongs to exactly one organisation
+        # worldwide. Otherwise the "correction" is a coin flip: it moved 42
+        # Universidad Tecnológica Nacional stops from Argentina to the
+        # Dominican Republic before this check existed.
+        if not hit or hit.get("match") != "exact" or not hit.get("unique"):
+            continue
+        ror_country = _country_en(hit.get("country"))
+        if ror_country and stop.get("country") and ror_country != stop["country"]:
+            stop["lat"], stop["lon"] = round(hit["lat"], 5), round(hit["lon"], 5)
+            stop["city"], stop["country"] = hit.get("city"), ror_country
+            fixed += 1
+        if i % 100 == 0:
+            common._save_ror_cache(cache)
+    common._save_ror_cache(cache)
+    print(f"  located {found} more career stops via ROR"
+          + (f", corrected {fixed} placed in the wrong country" if fixed else ""))
+
+
 def _backfill_stop_coords(idx):
     """Give un-geocoded career stops the coordinates of the same institution
     resolved elsewhere in the dataset.
@@ -1514,6 +1600,7 @@ def build():
     # is authoritative and goes first
     _hand_placed_institutions(idx)
     _backfill_stop_coords(idx)
+    _ror_stop_coords(idx)
 
     # ---- normalise country names -------------------------------------------#
     # last line of defence: a country may also arrive already-named from ORCID,
