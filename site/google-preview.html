@@ -207,6 +207,42 @@ function keyFromAnywhere() {
   try { return localStorage.getItem('gmapsKey') || ''; } catch (e) { return ''; }
 }
 
+function fail(title, detail) {
+  const gate = document.getElementById('gate');
+  gate.hidden = false;
+  gate.querySelector('.card').innerHTML = `
+    <h2>${esc(title)}</h2>
+    <div class="warn" style="border-left-color:#d64545">${detail}</div>
+    <div class="keyrow">
+      <input id="key-input" type="text" placeholder="AIza…" autocomplete="off" spellcheck="false" />
+      <button id="key-go" type="button">Try again</button>
+    </div>`;
+  try { gate.querySelector('#key-input').value = localStorage.getItem('gmapsKey') || ''; } catch (e) {}
+  gate.querySelector('#key-go').addEventListener('click', useKey);
+  document.getElementById('pill').textContent = 'not loaded';
+}
+
+// Google calls this itself when the key is rejected. Without it the only clue
+// is a console message most people never open.
+window.gm_authFailure = function () {
+  fail('Google rejected this key', `
+    The key loaded but Google refused it. It is almost always one of these,
+    in this order of likelihood:
+    <ul style="margin:8px 0 0;padding-left:18px">
+      <li><b>Billing is not enabled on the project.</b> The Maps JavaScript API
+          needs an active billing account even to use the free monthly
+          allowance. Cloud Console → Billing → link a billing account.</li>
+      <li><b>The referrer restriction does not cover this page.</b> You are on
+          <code>${esc(location.origin)}</code>, so the allowed list needs
+          <code>${esc(location.origin)}/*</code>. Saving one can take a few
+          minutes to take effect.</li>
+      <li><b>The key is restricted to other APIs.</b> Under "API restrictions",
+          Maps JavaScript API has to be among the allowed ones.</li>
+    </ul>
+    The exact reason is in the browser console (F12) as
+    <code>…MapError</code> — that name says which of the three it is.`);
+};
+
 function loadGoogle(key) {
   document.getElementById('pill').textContent = 'loading Google Maps…';
   const s = document.createElement('script');
@@ -220,19 +256,24 @@ function loadGoogle(key) {
   document.head.appendChild(s);
 }
 
-document.getElementById('key-go').addEventListener('click', () => {
-  const k = document.getElementById('key-input').value.trim();
+function useKey() {
+  const el = document.getElementById('key-input');
+  const k = (el && el.value || '').trim();
   if (!k) return;
   try { localStorage.setItem('gmapsKey', k); } catch (e) {}
   document.getElementById('gate').hidden = true;
   loadGoogle(k);
-});
-document.getElementById('key-input').addEventListener('keydown', e => {
-  if (e.key === 'Enter') document.getElementById('key-go').click();
+}
+document.getElementById('key-go').addEventListener('click', useKey);
+document.addEventListener('keydown', e => {
+  if (e.key === 'Enter' && e.target.id === 'key-input') useKey();
 });
 
 /* ---- map ---------------------------------------------------------- */
+let clustererReady = null;   // resuelve cuando la libreria de clustering cargo
+
 window.initMap = async function () {
+ try {
   const dark = window.matchMedia('(prefers-color-scheme: dark)').matches;
   document.getElementById('style-sel').value = dark ? 'dark' : 'muted';
   map = new google.maps.Map(document.getElementById('map'), {
@@ -242,8 +283,20 @@ window.initMap = async function () {
   });
   document.getElementById('gate').hidden = true;
   await loadData();
+  // The clustering library is a separate script. Waiting for it here is the
+  // difference between a map and a blank panel: an earlier version called
+  // drawMarkers() the moment Google was ready and threw if this had not
+  // landed yet.
+  await clustererReady;
   drawMarkers();
   wire();
+ } catch (err) {
+  console.error(err);
+  fail('The map could not be built', `
+    Google loaded, but something went wrong afterwards:
+    <br><br><code>${esc(String(err && err.message || err))}</code><br><br>
+    This is a bug in the page rather than a problem with your key.`);
+ }
 };
 
 async function loadData() {
@@ -273,7 +326,13 @@ function drawMarkers() {
     m.addListener('click', () => selectPerson(p));
     return m;
   });
-  clusterer = new markerClusterer.MarkerClusterer({ map, markers });
+  if (window.markerClusterer && markerClusterer.MarkerClusterer) {
+    clusterer = new markerClusterer.MarkerClusterer({ map, markers });
+  } else {
+    // better an uncluttered failure than none: show the markers plain
+    markers.forEach(m => m.setMap(map));
+    console.warn('marker clustering unavailable — showing markers unclustered');
+  }
 
   new google.maps.Marker({
     position: IB, map,
@@ -412,9 +471,13 @@ function wire() {
 
 /* ---- boot ---------------------------------------------------------- */
 (function () {
-  const mc = document.createElement('script');
-  mc.src = 'https://cdn.jsdelivr.net/npm/@googlemaps/markerclusterer@2.5.3/dist/index.umd.js';
-  document.head.appendChild(mc);
+  clustererReady = new Promise(resolve => {
+    const mc = document.createElement('script');
+    mc.src = 'https://cdn.jsdelivr.net/npm/@googlemaps/markerclusterer@2.5.3/dist/index.umd.js';
+    mc.onload = resolve;
+    mc.onerror = () => { console.warn('clustering library failed to load'); resolve(); };
+    document.head.appendChild(mc);
+  });
   const k = keyFromAnywhere();
   if (k) {
     document.getElementById('key-input').value = k;
