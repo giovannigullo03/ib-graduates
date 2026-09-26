@@ -243,7 +243,23 @@ window.gm_authFailure = function () {
     <code>…MapError</code> — that name says which of the three it is.`);
 };
 
+// The Maps API can only be injected once per page: a second <script> makes it
+// redefine its own custom elements and warn that it was loaded twice. Pressing
+// Enter and then clicking the button was enough to do it, so the guard lives
+// here rather than on each caller.
+let googleRequested = null;
+
 function loadGoogle(key) {
+  if (googleRequested) {
+    if (googleRequested !== key) {
+      fail('Reload the page to use a different key', `
+        Google Maps is already running on this page with an earlier key, and
+        the API cannot be re-initialised in place. The new key is saved — just
+        reload (<code>Ctrl+Shift+R</code>) and it will be used.`);
+    }
+    return;
+  }
+  googleRequested = key;
   document.getElementById('pill').textContent = 'loading Google Maps…';
   const s = document.createElement('script');
   s.src = 'https://maps.googleapis.com/maps/api/js?key=' + encodeURIComponent(key)
@@ -260,6 +276,8 @@ function useKey() {
   const el = document.getElementById('key-input');
   const k = (el && el.value || '').trim();
   if (!k) return;
+  const btn = document.getElementById('key-go');
+  if (btn) { btn.disabled = true; btn.textContent = 'Loading…'; }
   try { localStorage.setItem('gmapsKey', k); } catch (e) {}
   document.getElementById('gate').hidden = true;
   loadGoogle(k);
