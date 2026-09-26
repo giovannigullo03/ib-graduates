@@ -23,6 +23,12 @@
 # guess — an institution placed in the wrong city is worse than one left off.
 institution,city,country,lat,lon,approx,notes
 # --- Argentine nuclear sector ---------------------------------------------
+# Balseiro and the Centro Atómico share one campus on Av. Bustillo. Pinned by
+# coordinate rather than geocoded: the geocoder returned four different answers
+# for the same place, two of them province and country centroids, and the
+# city-level ones drift into Lake Nahuel Huapi.
+Instituto Balseiro,San Carlos de Bariloche,Argentina,-41.1335,-71.4281,,Centro Atómico Bariloche campus
+Centro Atómico Bariloche,San Carlos de Bariloche,Argentina,-41.1335,-71.4281,,same campus
 Nucleoeléctrica Argentina S.A.,Buenos Aires,Argentina,,,,operates Atucha I/II and Embalse; HQ in CABA
 CONICET Patagonia Norte,San Carlos de Bariloche,Argentina,,,,CCT CONICET Patagonia Norte
 Fundación INTECNUS,San Carlos de Bariloche,Argentina,,,,nuclear medicine centre next to Balseiro

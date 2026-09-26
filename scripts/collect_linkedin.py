@@ -515,23 +515,23 @@ def normalise(row: dict) -> dict | None:
         if c.get("institution") and _norm(c["institution"]) in remote_orgs:
             c["modality"] = "remote"
 
-    onsite = next((c for c in reversed(career)
-                   if c.get("modality") in ("onsite", "hybrid") and c.get("country")), None)
-    home = place if place.get("country") or place.get("city") else None
-    fallback = home or ({"city": onsite["city"], "country": onsite["country"],
-                         "country_code": onsite["country_code"]} if onsite else None)
+    # Only the profile's own city is trusted here. Anything else is decided
+    # later, in build_dataset, once every stop has real coordinates: choosing
+    # between raw strings at this point picked "Provincia de Río Negro" over
+    # an employer that sits in Bariloche, and geocoding a province lands in
+    # the empty middle of it.
+    fallback = place if place.get("city") else None
     n_remote = 0
     for c in career:
         if c.get("modality") != "remote":
             continue
         n_remote += 1
-        if fallback:
-            c["city"] = fallback.get("city")
-            c["country"] = fallback.get("country")
-            c["country_code"] = fallback.get("country_code")
-        else:
-            # nothing to put in its place: better unknown than wrong
-            c["city"] = c["country"] = c["country_code"] = None
+        # the employer's address is not the person's; drop it either way
+        c["from_profile"] = bool(fallback)      # the person said so themselves
+        c["city"] = fallback.get("city") if fallback else None
+        c["country"] = fallback.get("country") if fallback else place.get("country")
+        c["country_code"] = (fallback.get("country_code") if fallback
+                             else place.get("country_code"))
     # The profile's own location field is a home town; the current job's
     # location is the better "where do they work" signal when both exist.
     default_job = next((c for c in career if c["is_default"]), None)

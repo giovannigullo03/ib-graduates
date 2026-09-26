@@ -24027,5 +24027,57 @@
   "display_name": "Uttar Radhanagar, Gocharan-Dhamua Road, Baniber, Kolkata Metropolitan Area, Magrahat - II, South 24 Parganas, West Bengal, 743610, India",
   "country": "India",
   "country_code": "IN"
- }
+ },
+ "Superhuman, Provincia de Río Negro, Argentina": {},
+ "Calden Consultoría, Córdoba, Argentina": {},
+ "AST SpaceMobile, Río Negro, Argentina": {},
+ "Rather Labs, Inc, Dubái, United Arab Emirates": {},
+ "Rather Labs, Inc, United Arab Emirates": {},
+ "MRM Analytics, Provincia de Río Negro, Argentina": {},
+ "Portero.ai, Provincia de Neuquén, Argentina": {},
+ "Jampp, Provincia de Río Negro, Argentina": {},
+ "Rather Labs, Inc, Buenos Aires, Argentina": {},
+ "AB InBev, Buenos Aires, Argentina": {},
+ "Membrane, Dubái, United Arab Emirates": {},
+ "Membrane, United Arab Emirates": {},
+ "Silverloom SRL, Tucumán, Argentina": {},
+ "Loka, Buenos Aires, Argentina": {},
+ "Improving, California, United States": {
+  "lat": 37.7715027,
+  "lon": -122.3984481,
+  "display_name": "Improving Water Quality at Mission Creek, Berry Street, Mission Bay, San Francisco, California, 94107, United States",
+  "country": "United States",
+  "country_code": "US"
+ },
+ "Taxfix, California, United States": {},
+ "Taxfix, United States": {},
+ "Turing, Florida, United States": {},
+ "GPAI, Río Negro Province, Argentina": {},
+ "Alamo Analytics, Buenos Aires, Argentina": {},
+ "Monsoft Solutions, Flandes, Belgium": {},
+ "Monsoft Solutions, Belgium": {},
+ "Flandes, Belgium": {
+  "lat": 51.0377778,
+  "lon": 4.2405556,
+  "display_name": "Vlaanderen, België / Belgique / Belgien",
+  "country": "België / Belgique / Belgien",
+  "country_code": "BE"
+ },
+ "Quantit, Cyberspace": {},
+ "Outlier, Provincia de Río Negro, Argentina": {},
+ "Iquall Networks, Provincia de Río Negro, Argentina": {},
+ "Aligned Labs, Delaware, United States": {},
+ "Aligned Labs, United States": {},
+ "Delaware, United States": {
+  "lat": 38.6920451,
+  "lon": -75.4013315,
+  "display_name": "Delaware, United States",
+  "country": "United States",
+  "country_code": "US"
+ },
+ "AccelOne, Provincia de Neuquén, Argentina": {},
+ "MRM Analytics, Río Negro Province, Argentina": {},
+ "Portero.ai, Salta, Argentina": {},
+ "Iquall Networks, Córdoba, Argentina": {},
+ "AccelOne, Salta, Argentina": {}
 }

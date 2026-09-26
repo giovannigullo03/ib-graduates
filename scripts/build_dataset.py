@@ -1425,7 +1425,7 @@ def _hand_placed_institutions(idx):
     # already had coordinates — wrong ones, pointing at whichever of the thirty
     # regional faculties the geocoder preferred — so a gap-filling pass never
     # reached them.
-    filled = cleared = 0
+    filled = cleared = people_placed = 0
     for rec in idx.values():
         for s in rec["career"]:
             if not s.get("institution"):
@@ -1446,7 +1446,27 @@ def _hand_placed_institutions(idx):
                 # the seat, not the campus — say so rather than imply precision
                 s["approx"] = True
             filled += 1
-    print(f"  placed {filled} career stops from data/institutions.csv "
+    # The same table should place *people*, not only their career stops. A
+    # person whose employer is in here but whose own location is known no
+    # better than "Argentina" was being dropped at the country's centroid,
+    # which is empty Pampa, while the table knew the employer sits in Buenos
+    # Aires. Only applied when we have nothing more precise already.
+    for rec in idx.values():
+        if rec.get("loc_precision") in ("institution", "city"):
+            continue
+        if not rec.get("employer_name") or _is_unplaceable(rec["employer_name"]):
+            continue
+        hit = _lookup(rec["employer_name"], rec.get("employer_country"))
+        if not hit:
+            continue
+        rec["lat"], rec["lon"] = hit[0], hit[1]
+        rec["employer_city"] = rec.get("employer_city") or hit[2]
+        rec["employer_country"] = rec.get("employer_country") or hit[3]
+        rec["loc_precision"] = "city"
+        people_placed += 1
+
+    print(f"  placed {filled} career stops and {people_placed} people "
+          f"from data/institutions.csv "
           f"({len(placed)}/{len(entries)} rows usable)"
           + (f", left {cleared} deliberately unplaced" if cleared else ""))
 
@@ -1526,6 +1546,41 @@ def _ror_stop_coords(idx):
     common._save_ror_cache(cache)
     print(f"  located {found} more career stops via ROR"
           + (f", corrected {fixed} placed in the wrong country" if fixed else ""))
+
+
+def _place_remote_stops(idx):
+    """Put a remote stint where the person was, using coordinates not strings.
+
+    Doing this in the collector meant choosing between raw location fields, and
+    the best one available was often a province — "Provincia de Río Negro"
+    geocodes to empty steppe. By now every on-site stop has been resolved, so
+    the most recent one the person actually travelled to is a far better answer:
+    for someone whose on-site jobs are Instituto Balseiro and INVAP, that is
+    Bariloche, which is where they are.
+    """
+    moved = 0
+    for rec in idx.values():
+        # Not just the unplaced ones. A remote job has no location of its own,
+        # so whatever the geocoder made of it — usually the country's centroid,
+        # via a bare "Argentina" — is worth less than where the person
+        # demonstrably was. The exception is a stop whose city came from the
+        # person's own profile: they said it themselves.
+        remote = [s for s in rec["career"]
+                  if s.get("modality") == "remote" and not s.get("from_profile")]
+        if not remote:
+            continue
+        ref = next((s for s in reversed(rec["career"])
+                    if s.get("modality") != "remote" and s.get("lat") is not None), None)
+        if not ref:
+            continue
+        for s in remote:
+            if s.get("lat") == ref.get("lat"):
+                continue
+            s["lat"], s["lon"] = ref["lat"], ref["lon"]
+            s["city"], s["country"] = ref.get("city"), ref.get("country")
+            moved += 1
+    if moved:
+        print(f"  placed {moved} remote stops where the person actually works")
 
 
 def _backfill_stop_coords(idx):
@@ -1654,7 +1709,10 @@ def build():
                 # so nudge those apart with a deterministic sub-degree jitter.
                 if i > 0:
                     h = int(hashlib.sha1((rec["name"] or q).encode()).hexdigest(), 16)
-                    span = 0.06 if i < len(rec["_geo_chain"]) - 1 else 0.9
+                    # Enough to keep overlapping pins apart, no more. At 0.06
+                    # (~3 km) people placed at Bariloche city level were landing
+                    # in the middle of Lake Nahuel Huapi.
+                    span = 0.02 if i < len(rec["_geo_chain"]) - 1 else 0.9
                     lat += ((h & 0xFFFF) / 0xFFFF - 0.5) * span
                     lon += (((h >> 16) & 0xFFFF) / 0xFFFF - 0.5) * span
                     rec["loc_precision"] = "city" if i < len(rec["_geo_chain"]) - 1 else "country"
@@ -1759,8 +1817,26 @@ def build():
     # both need the canonical names, so they run after the fold; the hand table
     # is authoritative and goes first
     _hand_placed_institutions(idx)
+    _place_remote_stops(idx)
     _backfill_stop_coords(idx)
     _ror_stop_coords(idx)
+
+    # Someone whose current job is remote should not be pinned at their
+    # employer's city either, nor at their country's centroid when a stop of
+    # their own says better.
+    for rec in idx.values():
+        if rec.get("loc_precision") in ("institution", "city"):
+            continue
+        cur = next((s for s in reversed(rec["career"])
+                    if s.get("modality") == "remote"), None)
+        if not cur:
+            continue
+        ref = next((s for s in reversed(rec["career"])
+                    if s.get("modality") != "remote" and s.get("lat") is not None), None)
+        if ref:
+            rec["lat"], rec["lon"] = ref["lat"], ref["lon"]
+            rec["employer_city"] = ref.get("city") or rec.get("employer_city")
+            rec["loc_precision"] = "city"
 
     # ---- normalise country names -------------------------------------------#
     # last line of defence: a country may also arrive already-named from ORCID,
