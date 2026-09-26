@@ -245,8 +245,9 @@ function stopLabel(c) {
   // an institution placed at its seat because the record does not say which
   // campus — the map should not pretend to know
   const approx = c.approx ? ' · exact campus unknown' : '';
+  const amb = c.ambiguous ? ' · location unknown' : '';
   const remote = c.modality === 'remote' ? ' · worked remotely' : '';
-  return esc(c.institution) + esc(yr) + tag + approx + remote;
+  return esc(c.institution) + esc(yr) + tag + approx + amb + remote;
 }
 
 // Every point the trajectory should pass through: Balseiro, then each dated

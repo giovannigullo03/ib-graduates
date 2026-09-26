@@ -66,10 +66,15 @@ Facultad Regional La Plata,La Plata,Argentina,,,,UTN
 Facultad Regional Bahía Blanca,Bahía Blanca,Argentina,,,,UTN
 Facultad Regional Tucumán,San Miguel de Tucumán,Argentina,,,,UTN
 # ...and the bare name, which says nothing about which of the thirty it was.
-# Placed at the rectorado and flagged, rather than guessed at: before this it
-# was landing on whichever faculty the geocoder happened to like, sending a
-# graduate from Santa Fe to Tierra del Fuego.
-Universidad Tecnológica Nacional,Buenos Aires,Argentina,,,yes,rectorado — regional faculty unknown
+# Left with no location on purpose: that is this file's way of saying the name
+# cannot be placed honestly. The rectorado would be no more where most of these
+# people studied than the faculty the geocoder used to pick at random, which is
+# how a graduate from Santa Fe ended up in Tierra del Fuego. The stop still
+# appears in the person's history, just not as a point on the map.
+# Matching here is exact, so each ambiguous spelling needs its own row.
+Universidad Tecnológica Nacional,,,,,,ambiguous — thirty regional faculties, record does not say which
+Universidad Tecnológica Nacional (UTN),,,,,,same, written with the acronym
+UTN,,,,,,same, acronym only
 # --- other institutions the geocoder could not find -------------------------
 Universidad Nacional del Litoral,Santa Fe,Argentina,,,,covers its Facultad de Ingeniería Química
 Universidad de la Defensa Nacional,Buenos Aires,Argentina,,,,UNDEF

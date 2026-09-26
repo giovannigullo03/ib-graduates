@@ -1305,6 +1305,21 @@ def _canonicalise_employers(idx):
           f"{folded} people onto a canonical spelling")
 
 
+_UNPLACEABLE: set = set()
+
+
+def _is_unplaceable(name):
+    """Exact match only, unlike the placing rows which match on a subset.
+
+    "Never place this" is a statement about one spelling, and a subset rule
+    made it contagious: the bare key {tecnologica} swallowed the named
+    regional faculties that *can* be placed, and Chile's CONICYT along with
+    them. Each ambiguous spelling gets its own row instead.
+    """
+    key = _hand_key(name)
+    return bool(key) and key in _UNPLACEABLE
+
+
 def _is_yes(v):
     return str(v or "").strip().lower() in ("y", "yes", "1", "true", "x", "si", "sí")
 
@@ -1332,6 +1347,18 @@ def _hand_placed_institutions(idx):
 
     placed: dict = {}
     queries = {}
+    # A row with no location at all is not an omission: it is the CSV saying
+    # "this name cannot be placed honestly". "Universidad Tecnológica Nacional"
+    # names thirty regional faculties and the record never says which; an
+    # online course has no campus. Those stops are actively cleared, because
+    # leaving them to the geocoder is how a Santa Fe graduate ended up in
+    # Tierra del Fuego.
+    unplaceable = {_hand_key(r["institution"]) for r in entries
+                   if not (r.get("city") or r.get("country")
+                           or (r.get("lat") and r.get("lon")))}
+    unplaceable.discard(frozenset())
+    _UNPLACEABLE.clear()
+    _UNPLACEABLE.update(unplaceable)
     for row in entries:
         try:
             if row.get("lat") and row.get("lon"):
@@ -1398,10 +1425,16 @@ def _hand_placed_institutions(idx):
     # already had coordinates — wrong ones, pointing at whichever of the thirty
     # regional faculties the geocoder preferred — so a gap-filling pass never
     # reached them.
-    filled = 0
+    filled = cleared = 0
     for rec in idx.values():
         for s in rec["career"]:
             if not s.get("institution"):
+                continue
+            if _is_unplaceable(s["institution"]):
+                if s.get("lat") is not None:
+                    cleared += 1
+                s["lat"] = s["lon"] = s["city"] = None
+                s["ambiguous"] = True
                 continue
             hit = _lookup(s["institution"], s.get("country"))
             if not hit:
@@ -1414,7 +1447,8 @@ def _hand_placed_institutions(idx):
                 s["approx"] = True
             filled += 1
     print(f"  placed {filled} career stops from data/institutions.csv "
-          f"({len(placed)}/{len(entries)} rows usable)")
+          f"({len(placed)}/{len(entries)} rows usable)"
+          + (f", left {cleared} deliberately unplaced" if cleared else ""))
 
 
 def _ror_stop_coords(idx):
@@ -1435,7 +1469,8 @@ def _ror_stop_coords(idx):
     cache = common._load_ror_cache()
     targets = [(rec, s) for rec in idx.values() for s in rec["career"]
                if s.get("lat") is None and s.get("institution")
-               and _norm_inst(s["institution"]) not in NOT_AN_INSTITUTION]
+               and _norm_inst(s["institution"]) not in NOT_AN_INSTITUTION
+               and not _is_unplaceable(s["institution"])]
     if not targets:
         return
     print(f"asking ROR about {len({s['institution'] for _, s in targets})} "
@@ -1522,7 +1557,8 @@ def _backfill_stop_coords(idx):
     filled = 0
     for rec in idx.values():
         for s in rec["career"]:
-            if s.get("lat") is not None or not s.get("institution"):
+            if (s.get("lat") is not None or not s.get("institution")
+                    or _is_unplaceable(s["institution"])):
                 continue
             hit = known.get(_inst_key(s["institution"]))
             if not hit:

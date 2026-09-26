@@ -24020,5 +24020,12 @@
   "display_name": "Alan Turing, Pinares de Claret, Apeadero La Tablada, Córdoba, Municipio de Córdoba, Pedanía Capital, Departamento Capital, Córdoba, X5022, Argentina",
   "country": "Argentina",
   "country_code": "AR"
+ },
+ "UTN": {
+  "lat": 22.2691877,
+  "lon": 88.3838183,
+  "display_name": "Uttar Radhanagar, Gocharan-Dhamua Road, Baniber, Kolkata Metropolitan Area, Magrahat - II, South 24 Parganas, West Bengal, 743610, India",
+  "country": "India",
+  "country_code": "IN"
  }
 }
