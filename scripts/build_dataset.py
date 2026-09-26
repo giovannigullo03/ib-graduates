@@ -118,7 +118,9 @@ COUNTRY_ALIASES = {
     "ישראל": "Israel", "भारत": "India", "россия": "Russia",
     "україна": "Ukraine", "ελλάδα": "Greece",
     "السعودية": "Saudi Arabia", "الإمارات العربية المتحدة": "United Arab Emirates",
-    "مصر": "Egypt", "المغرب": "Morocco",
+    "مصر": "Egypt", "المغرب": "Morocco", "ليبيا": "Libya",
+    "հայաստան": "Armenia", "नेपाल": "Nepal", "ไทย": "Thailand",
+    "საქართველო": "Georgia", "қазақстан": "Kazakhstan",
 }
 
 
@@ -131,9 +133,16 @@ def _country_en(name, code=None):
     if not name:
         return name
     raw = str(name).strip()
-    return (COUNTRY_ALIASES.get(raw.lower())
-            or COUNTRY_ALIASES.get(strip_accents(raw).lower())
-            or raw)
+    hit = (COUNTRY_ALIASES.get(raw.lower())
+           or COUNTRY_ALIASES.get(strip_accents(raw).lower()))
+    if hit:
+        return hit
+    # Nominatim sometimes answers with several scripts at once
+    # ("ⵍⵉⴱⵢⴰ ليبيا Libya"); take the Latin part if there is one.
+    latin = " ".join(w for w in raw.split() if re.fullmatch(r"[A-Za-z.'-]+", w))
+    if latin and latin != raw:
+        return COUNTRY_ALIASES.get(latin.lower(), latin)
+    return raw
 
 
 DISCIPLINE_RULES = [
@@ -300,6 +309,69 @@ def _orcid_career_entry(e):
     }
 
 
+# --------------------------------------------------------------------------- #
+# INSPIRE writes institutions in a clipped house style — "Stanford U., Phys.
+# Dept.", "Prague, Inst. Phys.", "Cambridge U., DAMTP". Nothing downstream can
+# do anything with those: OpenStreetMap has never heard of them and ROR cannot
+# match them either, so places as famous as Harvard and the Weizmann Institute
+# were sitting unplaced. Expanding them is what makes the rest of the pipeline
+# able to answer.
+_INSPIRE_ABBR = [(re.compile(r"\b" + a + r"\."), b) for a, b in [
+    ("Univ", "University"), ("U", "University"), ("Inst", "Institute"),
+    ("Observ", "Observatory"), ("Coll", "College"), ("Natl", "National"),
+    ("Lab", "Laboratory"), ("Tech", "Technology"), ("Polytech", "Polytechnic"),
+    ("Phys", "Physics"), ("Astron", "Astronomy"), ("Astrophys", "Astrophysics"),
+    ("Dept", "Department"), ("Ctr", "Center"), ("Sci", "Science"),
+    ("Acad", "Academy"), ("Nucl", "Nuclear"), ("Res", "Research"),
+    ("Math", "Mathematics"), ("Chem", "Chemistry"), ("Eng", "Engineering"),
+]]
+# Argentine company and school names use dots too ("DABIAN S.A.", "Escuela ...
+# Ing. Arboit"). Expanding those would mangle them for no gain, so they opt out.
+_NOT_INSPIRE = re.compile(
+    r"\b(S\.?A\.?|S\.?R\.?L\.?|Ltda|Inc|Corp|L\.P\.|Ing\.|Dr\.|Hno\.|Nro\.|I\.P\.E\.T)\b", re.I)
+_INST_WORD = re.compile(
+    r"\b(University|Institute|College|Observatory|Laboratory|Academy|Politec"
+    r"|Universidad|Instituto)\b", re.I)
+# what INSPIRE appends after the institution: a department, a sub-institute,
+# a faculty. None of it helps locate the place.
+_SUBUNIT = re.compile(
+    r"\b(Department|Dept|Faculty|Facultad|Departamento|Division|Group|Grupo"
+    r"|Section|Chair|Campus|Sede|School of)\b", re.I)
+_INSPIRE_TIDY = [(re.compile(a), b) for a, b in [
+    (r"\bIndian Institute Technology\b", "Indian Institute of Technology"),
+    (r"\bInstitute Physics\b", "Institute of Physics"),
+    (r"\bInstitute Advanced Study\b", "Institute for Advanced Study"),
+    (r"\bUniversity Basque Country\b", "University of the Basque Country"),
+]]
+
+
+def _expand_inspire(name):
+    """"Stanford U., Phys. Dept." -> "Stanford University"."""
+    if not name or _NOT_INSPIRE.search(name):
+        return name
+    s = name
+    for pat, rep in _INSPIRE_ABBR:
+        s = pat.sub(rep, s)
+    s = re.sub(r"\s*\((?i:main)\)\s*$", "", s)
+    parts = [p.strip() for p in s.split(",") if p.strip()]
+    if len(parts) >= 2:
+        head, tail = parts[0], parts[-1]
+        if _SUBUNIT.search(tail) or re.fullmatch(r"[A-Z]{2,8}|[IVX]+([-/][IVX]+)*", tail):
+            # a department, an institute acronym or a campus number: noise. The
+            # parent institution is the thing that has coordinates.
+            s = head
+        elif _INST_WORD.search(head):
+            # "Indian Institute of Technology, Madras" — the trailing city is
+            # the whole point. Dropping it sent that one to the United States.
+            s = f"{head}, {tail}"
+        elif _INST_WORD.search(tail):
+            # "Prague, Institute of Physics" is written city-first; flip it
+            s = f"{tail}, {head}"
+    for pat, rep in _INSPIRE_TIDY:
+        s = pat.sub(rep, s)
+    return re.sub(r"\s+", " ", s).strip(" ,.")
+
+
 def _norm_inst(name):
     """Normalise an institution name for dedupe matching across sources."""
     s = strip_accents((name or "").lower())
@@ -315,9 +387,10 @@ def _merge_career(rec):
     stops, seen = [], {}
     for entry in ((rec.get("career") or []) + (rec.get("_orcid_career") or [])
                   + (rec.get("_linkedin_career") or [])):
-        inst = entry.get("institution")
+        inst = _expand_inspire(entry.get("institution"))
         if not inst:
             continue
+        entry = dict(entry, institution=inst)
         nk = _norm_inst(inst)
         if nk in seen:
             existing = seen[nk]
@@ -1163,6 +1236,7 @@ def _hand_key(name):
 def _alias(name):
     if not name:
         return name
+    name = _expand_inspire(name)
     flat = re.sub(r"\s+", " ", strip_accents(name.lower())).strip()
     for pattern, canonical in EMPLOYER_ALIASES:
         if pattern.search(flat):
@@ -1419,13 +1493,15 @@ def _backfill_stop_coords(idx):
     known: dict = {}
     for rec in idx.values():
         if (rec["employer_name"] and rec["lat"] is not None
-                and rec.get("loc_precision") == "institution"):
+                and rec.get("loc_precision") == "institution"
+                and _norm_inst(rec["employer_name"]) not in NOT_AN_INSTITUTION):
             known.setdefault(_inst_key(rec["employer_name"]),
                              (rec["lat"], rec["lon"],
                               rec["employer_city"], rec["employer_country"]))
     for rec in idx.values():
         for s in rec["career"]:
-            if s.get("lat") is not None and s.get("institution"):
+            if (s.get("lat") is not None and s.get("institution")
+                    and _norm_inst(s["institution"]) not in NOT_AN_INSTITUTION):
                 known.setdefault(_inst_key(s["institution"]),
                                  (s["lat"], s["lon"], s.get("city"), s.get("country")))
 
@@ -1503,6 +1579,14 @@ def build():
     # ---- resolve locations (batch-geocode, first hit in each chain wins) -- #
     for rec in idx.values():
         _resolve_location(rec)
+        # "Self-employed" is an answer about employment, not about geography.
+        # Geocoding it put one person in Guinea-Bissau and, through the
+        # backfill that copies located institutions, eight career stops after
+        # her. For these rows only the city can say anything.
+        if _norm_inst(rec["employer_name"] or "") in NOT_AN_INSTITUTION:
+            rec["_geo_chain"] = _chain(
+                ", ".join(b for b in [rec["employer_city"], rec["employer_country"]] if b),
+                rec["employer_country"] or "")
     all_queries = [q for rec in idx.values() for q in rec.get("_geo_chain", [])]
     print(f"geocoding {len(set(all_queries))} distinct places "
           f"(fallback chains, city-level allowed) ...")
@@ -1570,20 +1654,41 @@ def build():
           f"(cached lookups are instant; capped at {CAREER_GEOCODE_BUDGET} new ones this run)...")
     n_stop_geo = new_lookups = done = 0
     for rec, stop in all_stops:
+        # "Self-employed" is not a place. Geocoding it put eight stops in
+        # Guinea-Bissau; for these rows only the city can say anything.
+        usable_inst = (stop.get("institution")
+                       if _norm_inst(stop.get("institution") or "") not in NOT_AN_INSTITUTION
+                       else None)
+        city_query = ", ".join(b for b in [stop.get("city"), stop.get("country")] if b)
         for q in _chain(
-                ", ".join(b for b in [stop.get("institution"), stop.get("city"), stop.get("country")] if b),
-                ", ".join(b for b in [stop.get("institution"), stop.get("country")] if b) if stop.get("country") else "",
-                stop.get("institution") or "",
+                ", ".join(b for b in [usable_inst, stop.get("city"), stop.get("country")] if b),
+                ", ".join(b for b in [usable_inst, stop.get("country")] if b) if stop.get("country") else "",
+                usable_inst or "",
                 # The employer may be a company OSM has never heard of, but we
                 # often know the city it sat in. Falling back to that places
                 # the stop where the person actually was, which is all a
                 # trajectory dot needs — and it costs nothing.
-                ", ".join(b for b in [stop.get("city"), stop.get("country")] if b)):
+                city_query):
             is_new = q not in geo_cache
             if is_new and new_lookups >= CAREER_GEOCODE_BUDGET:
                 continue  # leave it for the next run; nothing wasted
             hit = geocode(q, cache=geo_cache)
             new_lookups += is_new
+            # A bare institution name matches anything, anywhere: "Vanwa" in
+            # Mendoza landed in Vancouver, "Rucon" in Buenos Aires Province in
+            # Slovakia. When the stop already states its country, a hit that
+            # disagrees is wrong by definition — skip it and try the next,
+            # looser query rather than believing it.
+            hit_country = _country_en(hit.get("country"), hit.get("country_code")) if hit else None
+            if hit and stop.get("country") and hit_country and hit_country != stop["country"]:
+                # The city is more specific evidence than the country field,
+                # which LinkedIn fills with where the *person* is: a job at
+                # Equifax in Atlanta arrives labelled Argentina. When the
+                # winning query named the city, believe the city and relabel.
+                if stop.get("city") and stop["city"].lower() in q.lower():
+                    stop["country"] = hit_country
+                else:
+                    continue
             if hit and hit.get("lat") is not None:
                 stop["lat"], stop["lon"] = round(hit["lat"], 5), round(hit["lon"], 5)
                 stop["country"] = stop.get("country") or _country_en(

@@ -22706,5 +22706,1000 @@
   "display_name": "Leverkusen, Nordrhein-Westfalen, Deutschland",
   "country": "Deutschland",
   "country_code": "DE"
+ },
+ "Instituto de Física Interdisciplinaria y Aplicada, Buenos Aires, Argentina": {},
+ "Instituto de Física Interdisciplinaria y Aplicada, Argentina": {},
+ "Instituto de Física Interdisciplinaria y Aplicada": {},
+ "Balseiro Institute": {},
+ "Santiago de Compostela University": {
+  "lat": 42.890507,
+  "lon": -8.5439221,
+  "display_name": "Residencia Universitaria O Burgo das Nacións, Avenida do Burgo das Nacións, Guadalupe, Vite, Santiago de Compostela, Santiago, A Coruña, Galicia, 15782, España",
+  "country": "España",
+  "country_code": "ES"
+ },
+ "Instituto de Física, Universidade de Sao Paulo, Sao Paulo, Brazil": {},
+ "Instituto de Física, Universidade de Sao Paulo, Brazil": {},
+ "Instituto de Física, Universidade de Sao Paulo": {},
+ "Instituto de Ciencias Básicas y Experimentales, Morón, Argentina": {},
+ "Instituto de Ciencias Básicas y Experimentales, Argentina": {},
+ "Instituto de Ciencias Básicas y Experimentales": {},
+ "Instituto de Ciencias Polares, Ushuaia, Argentina": {},
+ "Instituto de Ciencias Polares, Argentina": {},
+ "Instituto de Ciencias Polares": {},
+ "Nordeste University": {
+  "lat": -3.7579563,
+  "lon": -38.5568134,
+  "display_name": "FATENE Faculdade de Tecnologia do Nordeste, 1626, Rua Matos Vasconcelos, Damas, Fortaleza, Ceará, Região Nordeste, 60442-101, Brasil",
+  "country": "Brasil",
+  "country_code": "BR"
+ },
+ "Cuyo University": {
+  "lat": -32.8795365,
+  "lon": -68.8801735,
+  "display_name": "Campus Universidad Nacional de Cuyo, Avenida del Libertador, Barrio Flores Oeste, Ciudad de Mendoza, Sección 9ª Parque General San Martín, Departamento Capital, Mendoza, M5500EPA, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "Santander Industrial University": {
+  "lat": 7.1409311,
+  "lon": -73.1198652,
+  "display_name": "Universidad Industrial de Santander, 27-01, Calle 9, Mutualidad, Comuna 3 - San Francisco, Perímetro Urbano Bucaramanga, Bucaramanga, Metropolitana, Santander, RAP Gran Santander, 680001, Colombia",
+  "country": "Colombia",
+  "country_code": "CO"
+ },
+ "Instituto de Ciencias Físicas, Cuernavaca, Mexico": {
+  "lat": 18.9820114,
+  "lon": -99.2350015,
+  "display_name": "Instituto de Ciencias Físicas, Circuito Universidad, Buena Vista, Chamilpa, Cuernavaca, Morelos, 62130, México",
+  "country": "México",
+  "country_code": "MX"
+ },
+ "Instituto de Física, Ciudad de Mexico, Mexico": {
+  "lat": 19.3248323,
+  "lon": -99.1768459,
+  "display_name": "Instituto de Física, Circuito de la Investigación Científica, Copilco, Ciudad de México, Coyoacán, Ciudad Universitaria, Ciudad de México, 04360, México",
+  "country": "México",
+  "country_code": "MX"
+ },
+ "Institute of Physics, Prague": {
+  "lat": 50.1254775,
+  "lon": 14.4654713,
+  "display_name": "Ústav fyziky plazmatu AV ČR, v.v.i., 2525/1a, U Slovanky, Kobylisy, Praha 8, obvod Praha 8, Praha, 182 00, Česko",
+  "country": "Česko",
+  "country_code": "CZ"
+ },
+ "Instituto de Física del Sur (IFISUR), Bahía Blanca B8000BCP, Argentina": {},
+ "Instituto de Física del Sur (IFISUR), Argentina": {},
+ "Instituto de Física del Sur (IFISUR)": {},
+ "Nijmegen University": {
+  "lat": 51.8215173,
+  "lon": 5.8634329,
+  "display_name": "Radboud Universiteit, Parkzoom, Brakkenstein, Nijmegen-Zuid, Nijmegen, Gelderland, Nederland, 6525 PC, Nederland",
+  "country": "Nederland",
+  "country_code": "NL"
+ },
+ "University of the Basque Country": {
+  "lat": 43.3092116,
+  "lon": -2.0107938,
+  "display_name": "Euskal Herriko Unibertsitatea, Ibaeta Campusa, Maria de Maeztu kalea, Campus, Ibaeta, Mendebaldea, Donostia / San Sebastián, Gipuzkoa, Euskadi, 20008, España",
+  "country": "España",
+  "country_code": "ES"
+ },
+ "Naturales y Agrimensura de la Universidad Nacional del Nordeste, Facultad de Ciencias Exactas, Corrientes, Argentina": {},
+ "Naturales y Agrimensura de la Universidad Nacional del Nordeste, Facultad de Ciencias Exactas, Argentina": {},
+ "Naturales y Agrimensura de la Universidad Nacional del Nordeste, Facultad de Ciencias Exactas": {},
+ "Río Cuarto National University": {
+  "lat": -33.1145141,
+  "lon": -64.3016674,
+  "display_name": "Universidad Nacional de Río Cuarto, 601, Ruta Nacional 36, Barrio Universidad, Las Higueras, Municipio de Las Higueras, Pedanía Río Cuarto, Departamento Río Cuarto, Córdoba, X5804BYA, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "Antioquia University": {
+  "lat": 6.2679795,
+  "lon": -75.5687589,
+  "display_name": "Universidad de Antioquia, 53-108, Calle 67, Ciudad Universitaria, Comuna 4 - Aranjuez, Perímetro Urbano Medellín, Medellín, Valle de Aburrá, Antioquia, RAP del Agua y la Montaña, 050010, Colombia",
+  "country": "Colombia",
+  "country_code": "CO"
+ },
+ "University Brussels": {
+  "lat": 50.8137605,
+  "lon": 4.3789118,
+  "display_name": "Solvay Brussels School of Economics & Management, Chemin Henri Storck, Petite Suisse - Klein-Zwitserland, south extension of Brussels, Bruxelles - Brussel, Brussel-Hoofdstad - Bruxelles-Capitale, Région de Bruxelles-Capitale - Brussels Hoofdstedelijk Gewest, 1050, België / Belgique / Belgien",
+  "country": "België / Belgique / Belgien",
+  "country_code": "BE"
+ },
+ "British Columbia University": {
+  "lat": 53.8925662,
+  "lon": -122.8147159,
+  "display_name": "University of Northern British Columbia, Tyner Boulevard, College Heights, Prince George, Regional District of Fraser-Fort George, British Columbia, V2N 4Z9, Canada",
+  "country": "Canada",
+  "country_code": "CA"
+ },
+ "Universidad de Buenos Aires - Facultad de Ciencias Exactas, Buenos Aires, Argentina": {},
+ "Universidad de Buenos Aires - Facultad de Ciencias Exactas, Argentina": {},
+ "Universidad de Buenos Aires - Facultad de Ciencias Exactas": {},
+ "IAFE, Buenos Aires": {
+  "lat": -34.544795,
+  "lon": -58.4406768,
+  "display_name": "Instituto de Astronomía y Física del Espacio, Reforma Universitaria de 1918, Belgrano, Buenos Aires, Comuna 13, Ciudad Autónoma de Buenos Aires, C1428EHA, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "University Buenos Aires": {
+  "lat": -37.3285798,
+  "lon": -59.1385728,
+  "display_name": "Unicen, 399, General Pinto, Centro, Cuatro Avenidas, Tandil, Partido de Tandil, Buenos Aires, 7000, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "CONICET, Buenos Aires, Buenos Aires, Argentina": {
+  "lat": -34.5826124,
+  "lon": -58.4291436,
+  "display_name": "CONICET, Guatemala, Palermo, Buenos Aires, Distrito Audiovisual, Comuna 14, Ciudad Autónoma de Buenos Aires, C1425, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "Freiburg Institute for Advanced Studies (FRIAS), Freiburg, Germany": {},
+ "Freiburg Institute for Advanced Studies (FRIAS), Germany": {},
+ "Freiburg Institute for Advanced Studies (FRIAS)": {},
+ "VTT Technical Research Centre of Finland Ltd, Espoo, Finland": {},
+ "VTT Technical Research Centre of Finland Ltd, Finland": {
+  "lat": 61.4463027,
+  "lon": 23.8601153,
+  "display_name": "Teknologian tutkimuskeskus VTT Oy, 6, Sinitaival, Hermia, Itä-Hervanta, Hervanta, Kaakkoinen suuralue, Tampere, Tampereen seutukunta, Pirkanmaa, Manner-Suomi, 33720, Suomi / Finland",
+  "country": "Suomi / Finland",
+  "country_code": "FI"
+ },
+ "Vrije University": {
+  "lat": 52.3340539,
+  "lon": 4.8651882,
+  "display_name": "Vrije Universiteit Amsterdam, 1105, De Boelelaan, VU-kwartier, Zuidas, Zuid, Amsterdam, Noord-Holland, Nederland, 1081 HV, Nederland",
+  "country": "Nederland",
+  "country_code": "NL"
+ },
+ "University of Burgos, SWIFT research Group, Burgos, Spain": {},
+ "University of Burgos, SWIFT research Group, Spain": {},
+ "University of Burgos, SWIFT research Group": {},
+ "Balseiro Institute, Río Negro, Argentina": {},
+ "Balseiro Institute, Argentina": {},
+ "Zurich University": {
+  "lat": 47.3971752,
+  "lon": 8.5491779,
+  "display_name": "Universität Zürich Irchel, Frohburgstrasse, Oberstrass, Kreis 6, Zürich, Bezirk Zürich, Zürich, 8057, Schweiz/Suisse/Svizzera/Svizra",
+  "country": "Schweiz/Suisse/Svizzera/Svizra",
+  "country_code": "CH"
+ },
+ "CONICET, Buenos Aires": {
+  "lat": -34.5826124,
+  "lon": -58.4291436,
+  "display_name": "CONICET, Godoy Cruz, Palermo Hollywood, Palermo, Buenos Aires, Distrito Audiovisual, Comuna 14, Ciudad Autónoma de Buenos Aires, C1425, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "CNEA, Departamento de Física de Neutrones": {},
+ "Catalonia Institute for Energy Research, Catalonia, Spain": {},
+ "Catalonia Institute for Energy Research, Spain": {},
+ "Catalonia Institute for Energy Research": {},
+ "Oriente University": {
+  "lat": 39.8755074,
+  "lon": 32.7855305,
+  "display_name": "Orta Doğu Teknik Üniversitesi, Muhsin Yazıcıoğlu Caddesi, 100. Yıl, İşçi Blokları Mahallesi, Ankara, Çankaya, Ankara, İç Anadolu Bölgesi, 06530, Türkiye",
+  "country": "Türkiye",
+  "country_code": "TR"
+ },
+ "Murcia University": {
+  "lat": 37.9912577,
+  "lon": -1.1852019,
+  "display_name": "UCAM - Universidad Católica San Antonio de Murcia, Costera Norte, Los Jeronimos, Guadalupe, La Ñora, Murcia, Área Metropolitana de Murcia, Región de Murcia, 30107, España",
+  "country": "España",
+  "country_code": "ES"
+ },
+ "Instituto de Nanociencia y Nanotecnología CNEA/CONICET: San Martín, Buenos Aires, Argentina": {},
+ "Instituto de Nanociencia y Nanotecnología CNEA/CONICET: San Martín, Argentina": {},
+ "Instituto de Nanociencia y Nanotecnología CNEA/CONICET: San Martín": {},
+ "Universidad Nacional de Cuyo, Facultad de Ciencias Exactas y Naturales, Mendoza, Argentina": {},
+ "Universidad Nacional de Cuyo, Facultad de Ciencias Exactas y Naturales, Argentina": {},
+ "Universidad Nacional de Cuyo, Facultad de Ciencias Exactas y Naturales": {},
+ "CNRS, Laboratoire de Photonique et de Nanostructures, Marcoussis, France": {},
+ "CNRS, Laboratoire de Photonique et de Nanostructures, France": {},
+ "CNRS, Laboratoire de Photonique et de Nanostructures": {},
+ "Humboldt University in Berlin, Berlin, Germany": {
+  "lat": 52.5185793,
+  "lon": 13.3935975,
+  "display_name": "Humboldt-Universität zu Berlin - Campus Mitte, Dorotheenstraße, Dorotheenstadt, Mitte, Berlin, 10117, Deutschland",
+  "country": "Deutschland",
+  "country_code": "DE"
+ },
+ "SL, Innomerics, Madrid, Spain": {},
+ "SL, Innomerics, Spain": {},
+ "SL, Innomerics": {},
+ "Oviedo University": {
+  "lat": 43.3617559,
+  "lon": -5.8462835,
+  "display_name": "Edificio Histórico Universidad de Oviedo, 3, Calle San Francisco, La Escandalera, Antiguo, Oviedo / Uviéu, Oviedo, Asturias / Asturies, 33003, España",
+  "country": "España",
+  "country_code": "ES"
+ },
+ "IFT, Madrid": {
+  "lat": 40.5496477,
+  "lon": -3.6874113,
+  "display_name": "Instituto de Física Teórica - IFT, 13, Calle Nicolás Cabrera, El Goloso, Fuencarral-El Pardo, Madrid, Comunidad de Madrid, 28049, España",
+  "country": "España",
+  "country_code": "ES"
+ },
+ "Autonoma University, Madrid": {
+  "lat": 40.5453765,
+  "lon": -3.6949578,
+  "display_name": "Universidad Autónoma de Madrid (U.A.M.) Campus de Cantoblanco, Calle Kant, El Goloso, Fuencarral-El Pardo, Madrid, Comunidad de Madrid, 28049, España",
+  "country": "España",
+  "country_code": "ES"
+ },
+ "Amsterdam University": {
+  "lat": 52.3681334,
+  "lon": 4.8898042,
+  "display_name": "Universiteit van Amsterdam, Singel, Centrum, Amsterdam, Noord-Holland, Nederland, 1017 AW, Nederland",
+  "country": "Nederland",
+  "country_code": "NL"
+ },
+ "Barcelona University": {
+  "lat": 41.3868595,
+  "lon": 2.1634784,
+  "display_name": "Universitat de Barcelona, Plaça de la Universitat, Sant Antoni, l'Eixample, Barcelona, Barcelonès, Barcelona, Catalunya, 08007, España",
+  "country": "España",
+  "country_code": "ES"
+ },
+ "Instituto de Ciencias del Cosmos, Barcelona, Spain": {},
+ "Instituto de Ciencias del Cosmos, Spain": {},
+ "Instituto de Ciencias del Cosmos": {},
+ "Independent Consulting. Clients include: Santa Fe Liquidaciones, Socrates Startup, Scale AI, Buenos Aires, Argentina": {},
+ "Independent Consulting. Clients include: Santa Fe Liquidaciones, Socrates Startup, Scale AI, Argentina": {},
+ "Independent Consulting. Clients include: Santa Fe Liquidaciones, Socrates Startup, Scale AI": {},
+ "Porto University": {
+  "lat": 41.1785423,
+  "lon": -8.6022233,
+  "display_name": "Universidade do Porto, Rua da Sociedade Nacional dos Fósforos, Aleixo, Lordelo do Ouro, Lordelo do Ouro e Massarelos, Porto, 4150-004, Portugal",
+  "country": "Portugal",
+  "country_code": "PT"
+ },
+ "Universidad Nacional de Rio Negro, San Carlos de Bariloche, Argentina": {
+  "lat": -41.1331761,
+  "lon": -71.3072191,
+  "display_name": "Universidad Nacional de Río Negro, 147, General Villegas, Centro, San Carlos de Bariloche, Municipio de San Carlos de Bariloche, Departamento Bariloche, Río Negro, R8400, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "University National Del Sur, Bahia Blanca": {
+  "lat": -38.7014172,
+  "lon": -62.2693641,
+  "display_name": "Universidad Nacional del Sur, 1253, Avenida Alem, Centro Norte, Bahía Blanca, Cuartel I, Partido de Bahía Blanca, Buenos Aires, 8000, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "Indian Institute Technology": {
+  "lat": 39.4829201,
+  "lon": -87.3241582,
+  "display_name": "Rose-Hulman Institute of Technology, 5500, Wabash Avenue, Terre Haute, Vigo County, Indiana, 47803, United States",
+  "country": "United States",
+  "country_code": "US"
+ },
+ "Instituto de Física Rosario, Rosario, Argentina": {
+  "lat": -32.9701547,
+  "lon": -60.6243726,
+  "display_name": "Instituto de Física Rosario, Bulevar 27 de Febrero, República de la Sexta, Distrito Centro, Rosario, Municipio de Rosario, Gran Rosario, Departamento Rosario, Santa Fe, S2000, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "Walter Schottky Institute, Baviera, Germany": {},
+ "Walter Schottky Institute, Germany": {},
+ "Walter Schottky Institute": {},
+ "University of Maryland, Baltimore, United States": {
+  "lat": 39.252377,
+  "lon": -76.7089181,
+  "display_name": "University of Maryland Baltimore County, 1000, Hilltop Circle, Baltimore, Baltimore County, Maryland, 21250, United States",
+  "country": "United States",
+  "country_code": "US"
+ },
+ "Universidad Austral, Santa Fe, Argentina": {},
+ "QFR Capital Management, L.P": {},
+ "JPMorgan Chase & Co, Buenos Aires, Argentina": {},
+ "JPMorgan Chase & Co, Argentina": {},
+ "JPMorgan Chase & Co": {
+  "lat": 40.1473186,
+  "lon": -82.990684,
+  "display_name": "JPMorgan Chase & Co., Columbus, Delaware County, Ohio, 43240, United States",
+  "country": "United States",
+  "country_code": "US"
+ },
+ "Universidad Austral": {
+  "lat": -39.8067322,
+  "lon": -73.2530353,
+  "display_name": "Universidad Austral, Isla Teja, Valdivia, Provincia de Valdivia, Región de Los Ríos, 5110196, Chile",
+  "country": "Chile",
+  "country_code": "CL"
+ },
+ "universidad Pierre et Marie Curie, CONICET, Bariloche (Argentina), France": {},
+ "universidad Pierre et Marie Curie, CONICET, France": {},
+ "universidad Pierre et Marie Curie, CONICET": {},
+ "Havana University": {
+  "lat": 49.8780289,
+  "lon": 8.6603702,
+  "display_name": "Havana, 42, Lauteschlägerstraße, Universitätsviertel, Martinsviertel-West, Darmstadt-Nord, Darmstadt, Hessen, 64289, Deutschland",
+  "country": "Deutschland",
+  "country_code": "DE"
+ },
+ "UBA, Facultad de Ciencias Exactas y Naturales": {},
+ "Campinas State University": {},
+ "CBPF, Rio de Janeiro": {
+  "lat": -22.9540232,
+  "lon": -43.1742677,
+  "display_name": "CBPF - Prédio Mário D'Almeida, Rua Lauro Müller, Botafogo, Rio de Janeiro, Região Sudeste, 22290-160, Brasil",
+  "country": "Brasil",
+  "country_code": "BR"
+ },
+ "Hamburg University": {
+  "lat": 53.5909051,
+  "lon": 9.9753758,
+  "display_name": "Universität Hamburg, Rothenburgsort, Hamburg-Mitte, Hamburg, 20539, Deutschland",
+  "country": "Deutschland",
+  "country_code": "DE"
+ },
+ "Purdue University": {
+  "lat": 40.430028,
+  "lon": -86.9264211,
+  "display_name": "Purdue University, 610, West Lafayette, Tippecanoe County, Indiana, 47907, United States",
+  "country": "United States",
+  "country_code": "US"
+ },
+ "Max Planck Institute, Munich": {
+  "lat": 48.2620107,
+  "lon": 11.6736045,
+  "display_name": "Max-Planck Institute, Walther-von-Dyck-Straße, Hochschul- und Forschungszentrum, Garching bei München, Landkreis München, Bayern, 85748, Deutschland",
+  "country": "Deutschland",
+  "country_code": "DE"
+ },
+ "Chicago University": {
+  "lat": 41.7913274,
+  "lon": -87.6008421,
+  "display_name": "The University of Chicago, 5801, South Ellis Avenue, Hyde Park, Chicago, Hyde Park Township, Cook County, Illinois, 60637, United States",
+  "country": "United States",
+  "country_code": "US"
+ },
+ "Mexico University": {
+  "lat": 19.321597,
+  "lon": -99.1849259,
+  "display_name": "Universidad Nacional Autónoma de México, Avenida Pedro Henríquez Ureña, Fraccionamiento Copilco Universidad, Copilco, Ciudad de México, Coyoacán, Ciudad Universitaria, Ciudad de México, 04360, México",
+  "country": "México",
+  "country_code": "MX"
+ },
+ "Brandeis University": {
+  "lat": 42.3665095,
+  "lon": -71.2580196,
+  "display_name": "Brandeis University, 415, South Street, Waltham, Middlesex County, Massachusetts, 02453, United States",
+  "country": "United States",
+  "country_code": "US"
+ },
+ "Cartagena Politecnica University": {},
+ "CIEMAT, Madrid": {
+  "lat": 40.4554552,
+  "lon": -3.7262761,
+  "display_name": "Centro de Investigaciones Energéticas, Medio-Ambientales y Tecnológicas, 40, Ciudad Universitaria, Moncloa-Aravaca, Madrid, Comunidad de Madrid, 28040, España",
+  "country": "España",
+  "country_code": "ES"
+ },
+ "Imperial College": {
+  "lat": 51.4989595,
+  "lon": -0.1756407,
+  "display_name": "Imperial College London, Exhibition Road, Knightsbridge, City of Westminster, Greater London, England, SW7 2AZ, United Kingdom",
+  "country": "United Kingdom",
+  "country_code": "GB"
+ },
+ "Padua University": {
+  "lat": 45.4066496,
+  "lon": 11.8774407,
+  "display_name": "Università di Padova, 2, Via Otto Febbraio, San Giuseppe, Padova, Veneto, 35122, Italia",
+  "country": "Italia",
+  "country_code": "IT"
+ },
+ "Buenos Aires University": {
+  "lat": -37.3285798,
+  "lon": -59.1385728,
+  "display_name": "Unicen, 399, General Pinto, Centro, Cuatro Avenidas, Tandil, Partido de Tandil, Buenos Aires, 7000, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "NIHE, Limerick": {},
+ "Open University": {
+  "lat": 52.0245378,
+  "lon": -0.7092748,
+  "display_name": "The Open University, Ring Road West, Walton, Monkston, Milton Keynes, City of Milton Keynes, England, MK7 6AE, United Kingdom",
+  "country": "United Kingdom",
+  "country_code": "GB"
+ },
+ "Perimeter Institute Theor. Physics": {},
+ "Rutgers University": {
+  "lat": 40.5204169,
+  "lon": -74.4645303,
+  "display_name": "Rutgers University, Honors Plaza, Piscataway Township, Middlesex County, New Jersey, 08899, United States",
+  "country": "United States",
+  "country_code": "US"
+ },
+ "Pierre Auger Observatory": {
+  "lat": -35.4633159,
+  "lon": -69.5848159,
+  "display_name": "Observatorio Pierre Auger, 304, Avenida San Martín (Norte), Malargüe, Distrito Ciudad de Malargüe, Departamento Malargüe, Mendoza, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "La Plata University": {
+  "lat": -27.4753036,
+  "lon": -58.8526788,
+  "display_name": "Universidad de la Cuenca del Plata, 50, Lavalle, Barrio Arazaty, Seccional 2°, Corrientes, Departamento Capital, Corrientes, 3400, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "Cambridge University": {
+  "lat": 52.2068904,
+  "lon": 0.1151126,
+  "display_name": "Trinity College (University of Cambridge), Trinity Street, Newnham, Cambridge, Cambridgeshire, Cambridgeshire and Peterborough, England, CB2 1TQ, United Kingdom",
+  "country": "United Kingdom",
+  "country_code": "GB"
+ },
+ "Institute for Advanced Study, Princeton": {
+  "lat": 40.3322547,
+  "lon": -74.6657877,
+  "display_name": "Institute for Advanced Study, Einstein Drive, Institute Area, Princeton, Mercer County, New Jersey, 08544, United States",
+  "country": "United States",
+  "country_code": "US"
+ },
+ "University Modena": {
+  "lat": 44.6578463,
+  "lon": 10.9332004,
+  "display_name": "Data Center - Modena Innovation Hub, 30, Via Ermanno Gorrieri, Sacca, Crocetta-San Lazzaro-Modena Est, Modena, Emilia-Romagna, 41122, Italia",
+  "country": "Italia",
+  "country_code": "IT"
+ },
+ "Valladolid University": {
+  "lat": 41.6629651,
+  "lon": -4.7050172,
+  "display_name": "Escuela de Ingeniería Informática de Valladolid, 15, Paseo de Belén, Los Viveros, San Pedro Regalado, Valladolid, Castilla y León, 47011, España",
+  "country": "España",
+  "country_code": "ES"
+ },
+ "Madrid University": {
+  "lat": 40.5453765,
+  "lon": -3.6949578,
+  "display_name": "Universidad Autónoma de Madrid (U.A.M.) Campus de Cantoblanco, M-616, El Goloso, Fuencarral-El Pardo, Madrid, Comunidad de Madrid, 28049, España",
+  "country": "España",
+  "country_code": "ES"
+ },
+ "Rio Grande do Norte University": {
+  "lat": -5.8377994,
+  "lon": -35.2039783,
+  "display_name": "UFRN - Campus Central, Rua das Biociências, Lagoa Nova, Zona Sul, Natal, Rio Grande do Norte, Região Nordeste, 59082-000, Brasil",
+  "country": "Brasil",
+  "country_code": "BR"
+ },
+ "LAPP, Annecy": {
+  "lat": 45.9210728,
+  "lon": 6.1599955,
+  "display_name": "Laboratoire d'Annecy de physique des particules et de physique théorique (LAPP, LAPTh), 9, Chemin de Bellevue, Le Clos des Arts, Annecy-le-Vieux, Annecy, Haute-Savoie, Auvergne-Rhône-Alpes, France métropolitaine, 74941, France",
+  "country": "France",
+  "country_code": "FR"
+ },
+ "Weizmann Institute": {
+  "lat": 31.9040163,
+  "lon": 34.8075739,
+  "display_name": "מכון ויצמן, הרצל, מעונות וולפסון, רחובות, נפת רחובות, מחוז המרכז, 7670609, ישראל",
+  "country": "ישראל",
+  "country_code": "IL"
+ },
+ "Rio de Janeiro Observatory": {},
+ "Rio de Janeiro Federal University": {
+  "lat": -22.8533498,
+  "lon": -43.2331703,
+  "display_name": "Universidade Federal do Rio de Janeiro, Rua Octávio Cantanhede, Cidade Universitária, Rio de Janeiro, Região Sudeste, 21941-904, Brasil",
+  "country": "Brasil",
+  "country_code": "BR"
+ },
+ "Paris University": {
+  "lat": 48.8473977,
+  "lon": 2.3455085,
+  "display_name": "Université Paris 1 Panthéon-Sorbonne, 2, Rue Cujas, Quartier de la Sorbonne, Paris 5e Arrondissement, Paris, Île-de-France, France métropolitaine, 75005, France",
+  "country": "France",
+  "country_code": "FR"
+ },
+ "Rochester University": {
+  "lat": 43.129864,
+  "lon": -77.628784,
+  "display_name": "University of Rochester River Campus, Patriot Hill, Mount Hope, City of Rochester, Monroe County, New York, 14642, United States",
+  "country": "United States",
+  "country_code": "US"
+ },
+ "KITPC, Beijing": {},
+ "Santa Maria University": {
+  "lat": -25.282843,
+  "lon": -57.6625536,
+  "display_name": "university, Itá Pytã Punta, Asunción, Distrito Capital, Región Oriental, Paraguay / Paraguái",
+  "country": "Paraguay / Paraguái",
+  "country_code": "PY"
+ },
+ "IFAE, Barcelona": {
+  "lat": 41.5011472,
+  "lon": 2.1097838,
+  "display_name": "Institut de Física d'Altes Energies (IFAE), c5 parell, Carrer de Can Magrans, Cerdanyola del Vallès, Vallès Occidental, Barcelona, Catalunya, 08193, España",
+  "country": "España",
+  "country_code": "ES"
+ },
+ "IFT, Sao Paulo": {
+  "lat": -23.5243367,
+  "lon": -46.6654717,
+  "display_name": "Instituto de Física Teórica, 271 Bloco II, Rua Doutor Bento Teobaldo Ferraz, Barra Funda, São Paulo, Região Sudeste, 01140-070, Brasil",
+  "country": "Brasil",
+  "country_code": "BR"
+ },
+ "Fundacao University": {
+  "lat": -23.5451082,
+  "lon": -46.6629404,
+  "display_name": "Fundação Armando Alvares Penteado, 903, Rua Alagoas, Higienópolis, Consolação, São Paulo, Região Sudeste, 01242-902, Brasil",
+  "country": "Brasil",
+  "country_code": "BR"
+ },
+ "Valparaiso University": {
+  "lat": 41.4629628,
+  "lon": -87.044689,
+  "display_name": "Valparaiso University, East Lincolnway, Valparaiso, Porter County, Indiana, 46383, United States",
+  "country": "United States",
+  "country_code": "US"
+ },
+ "Institute Astronomy, UNAM": {},
+ "Guanajuato University": {
+  "lat": 21.060753,
+  "lon": -101.5711841,
+  "display_name": "Universidad de Guanajuato Campus León, Boulevard Cañaveral, Valle Del Roble, León, Guanajuato, 37544, México",
+  "country": "México",
+  "country_code": "MX"
+ },
+ "Columbia University": {
+  "lat": 40.8077507,
+  "lon": -73.9624901,
+  "display_name": "Columbia University, West 116th Street, Harlem, Manhattan Community Board 10, Manhattan, New York County, New York, 10027, United States",
+  "country": "United States",
+  "country_code": "US"
+ },
+ "Tsinghua University": {
+  "lat": 40.0022905,
+  "lon": 116.320963,
+  "display_name": "清华大学, 30, 双清路, 东升镇, 海淀区, 北京市, 100084, 中国",
+  "country": "中国",
+  "country_code": "CN"
+ },
+ "Xian Jiaotong University": {
+  "lat": 34.2476753,
+  "lon": 108.9789725,
+  "display_name": "西安交通大学兴庆校区, 28, 咸宁西路, 曹家巷社区, 东关南街街道, 碑林区, 西安市, 陕西省, 710049, 中国",
+  "country": "中国",
+  "country_code": "CN"
+ },
+ "Groningen University": {
+  "lat": 53.2194416,
+  "lon": 6.5629863,
+  "display_name": "Rijksuniversiteit Groningen, Rodeweeshuisstraat, Binnenstad-noord, Binnenstad, Centrum, Groningen, Nederland, 9712 ES, Nederland",
+  "country": "Nederland",
+  "country_code": "NL"
+ },
+ "University of California": {
+  "lat": 37.8707751,
+  "lon": -122.2656754,
+  "display_name": "University of California, The Crescent, Downtown Berkeley, Berkeley, Alameda County, California, 94704, United States",
+  "country": "United States",
+  "country_code": "US"
+ },
+ "Secretaria de Ambiente y Cambio Climático, Provincia de Río Negro, Argentina": {},
+ "Secretaria de Ambiente y Cambio Climático, Argentina": {},
+ "Secretaria de Ambiente y Cambio Climático": {},
+ "Centro Atómico Consituyentes. CNEA. División Química de Reactores. DQPIN, Provincia de Buenos Aires, Argentina": {},
+ "Centro Atómico Consituyentes. CNEA. División Química de Reactores. DQPIN, Argentina": {},
+ "Centro Atómico Consituyentes. CNEA. División Química de Reactores. DQPIN": {},
+ "IDOM, C.A": {
+  "lat": 47.7522676,
+  "lon": 18.525588,
+  "display_name": "Idom utca, Nyergesújfalu, Esztergomi járás, Komárom-Esztergom vármegye, Közép-Dunántúl, Dunántúl, 2536, Magyarország",
+  "country": "Magyarország",
+  "country_code": "HU"
+ },
+ "University of California, California, United States": {
+  "lat": 37.8707751,
+  "lon": -122.2656754,
+  "display_name": "University of California, The Crescent, Downtown Berkeley, Berkeley, Alameda County, California, 94704, United States",
+  "country": "United States",
+  "country_code": "US"
+ },
+ "Universidad Austral, Provincia de Buenos Aires, Argentina": {
+  "lat": -34.4599547,
+  "lon": -58.859555,
+  "display_name": "Universidad Austral - Campus del Pilar, Avenida Juan Domingo Perón, Barrio La Delfina, Presidente Derqui, Partido del Pilar, Buenos Aires, B1631, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "ALTEC Telecomunicaciones y Sistemas S.E, Provincia de Río Negro, Argentina": {},
+ "ALTEC Telecomunicaciones y Sistemas S.E, Argentina": {},
+ "ALTEC Telecomunicaciones y Sistemas S.E": {},
+ "Compañía Industrial Cervecera S. A, Salta, Argentina": {},
+ "Compañía Industrial Cervecera S. A, Argentina": {},
+ "Compañía Industrial Cervecera S. A": {},
+ "Universidad de Ciencias Exactas": {
+  "lat": 40.4219661,
+  "lon": -3.7015263,
+  "display_name": "Real Academia de Ciencias Exactas, Físicas y Naturales, Calle de Valverde, Malasaña, Universidad, Centro, Madrid, Comunidad de Madrid, 28004, España",
+  "country": "España",
+  "country_code": "ES"
+ },
+ "UBA, Maestria en Ciencia de Datos": {},
+ "LLC, Allegro MicroSystems, Argentina": {},
+ "LLC, Allegro MicroSystems": {},
+ "Instituto de Microelectrónica de Barcelona (IMB-CNM, Cataluña, Spain": {},
+ "Instituto de Microelectrónica de Barcelona (IMB-CNM, Spain": {},
+ "Instituto de Microelectrónica de Barcelona (IMB-CNM": {},
+ "Pasantía en INVAP S.E. a través de Universidad Nacional de La Pampa (UNLPam), La Pampa, Argentina": {},
+ "Pasantía en INVAP S.E. a través de Universidad Nacional de La Pampa (UNLPam), Argentina": {},
+ "Pasantía en INVAP S.E. a través de Universidad Nacional de La Pampa (UNLPam)": {},
+ "Instituto de Energía Electrica": {
+  "lat": -31.5344629,
+  "lon": -68.5432644,
+  "display_name": "Instituto de Energía Eléctrica, Avenida Libertador General San Martín, Desamparados, San Juan, Capital, San Juan, J5402DKV, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "University of Cambridge, Department of Applied Mathematics and Theoretical Physics": {},
+ "IPN, CINVESTAV": {},
+ "Instituto Nacional De Cancerología E.S.E, Bogotá, Colombia": {
+  "lat": 4.5892003,
+  "lon": -74.0845359,
+  "display_name": "Instituto Nacional de Cancerología - E.S.E., Calle 1, Las Cruces, UPZs de Bogotá, Localidad Santa Fé, Bogotá ciudad, Bogotá, Distrito Capital, RAP (Especial) Central, 110321, Colombia",
+  "country": "Colombia",
+  "country_code": "CO"
+ },
+ "University of Havana, Department of Theoretical Physics, La Habana, Cuba": {},
+ "University of Havana, Department of Theoretical Physics, Cuba": {},
+ "University of Havana, Department of Theoretical Physics": {},
+ "Sapienza University of Rome, ISC-CNR and Department of Physics, Italy": {},
+ "Sapienza University of Rome, ISC-CNR and Department of Physics": {},
+ "Instituto Balseiro, Optical Communications Group, Provincia de Río Negro, Argentina": {},
+ "Instituto Balseiro, Optical Communications Group, Argentina": {},
+ "Instituto Balseiro, Optical Communications Group": {},
+ "Lic. Graciela Román. Asesora, formación y capacitación de seguros, Provincia de Buenos Aires, Argentina": {},
+ "Lic. Graciela Román. Asesora, formación y capacitación de seguros, Argentina": {},
+ "Lic. Graciela Román. Asesora, formación y capacitación de seguros": {},
+ "Unitec Bio S. A": {
+  "lat": -32.663172,
+  "lon": -60.7457139,
+  "display_name": "Unitec Bio, S/N, Puerto General San Martín, Municipio de Puerto General San Martín, Gran Rosario, Departamento San Lorenzo, Santa Fe, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "EN.RE, Catamarca, Argentina": {},
+ "EN.RE, Argentina": {},
+ "EN.RE": {
+  "lat": 45.9584309,
+  "lon": 5.3595099,
+  "display_name": "Ambérieu-en-Bugey, Belley, Ain, Auvergne-Rhône-Alpes, France métropolitaine, 01500, France",
+  "country": "France",
+  "country_code": "FR"
+ },
+ "Dirección General de Energía, Hidrocarburos y Minas, San Salvador, El Salvador": {},
+ "Dirección General de Energía, Hidrocarburos y Minas, El Salvador": {},
+ "Dirección General de Energía, Hidrocarburos y Minas": {},
+ "IFEG, Grupo Fisica de la Atmosfera, Córdoba, Argentina": {},
+ "IFEG, Grupo Fisica de la Atmosfera, Argentina": {},
+ "IFEG, Grupo Fisica de la Atmosfera": {},
+ "YMCA \"UniversityE Don Teodoro Gubaira\", Estado Carabobo, Venezuela": {},
+ "YMCA \"UniversityE Don Teodoro Gubaira\", Venezuela": {},
+ "YMCA \"UniversityE Don Teodoro Gubaira\"": {},
+ "INVAP S.E, San Carlos de Bariloche, Argentina": {
+  "lat": -41.1240134,
+  "lon": -71.2433971,
+  "display_name": "INVAP SE, 4950, Villaverde, San Carlos de Bariloche, Municipio de San Carlos de Bariloche, Departamento Bariloche, Río Negro, R8403CPV, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "Asociación de Cooperativas Argentinas C.L, La Pampa, Argentina": {},
+ "Asociación de Cooperativas Argentinas C.L, Argentina": {},
+ "Asociación de Cooperativas Argentinas C.L": {},
+ "Universidad Argentina de la Empresa, UADE, Buenos Aires, Argentina": {},
+ "Universidad Argentina de la Empresa, UADE, Argentina": {},
+ "Universidad Argentina de la Empresa, UADE": {},
+ "Facultad de Ciencias, UNAM": {},
+ "University of Colorado Boulder, PhET Interactive Simulations": {},
+ "University of Alberta, Faculty of Engineering": {},
+ "Hospital Universitario de Maternidad y Neonatología (H.UniversityM.N.) | F.C.M, Córdoba, Argentina": {},
+ "Hospital Universitario de Maternidad y Neonatología (H.UniversityM.N.) | F.C.M, Argentina": {},
+ "Hospital Universitario de Maternidad y Neonatología (H.UniversityM.N.) | F.C.M": {},
+ "Universidad Tecnológica de La Habana \"José Antonio Echeverría\"​": {
+  "lat": 23.0513707,
+  "lon": -82.4159767,
+  "display_name": "Universidad Tecnológica de la Habana \"José Antonio Echeverría\" (CUJAE), 11901, 114, CAI Los Ángeles, Marianao, La Habana, 11500, Cuba",
+  "country": "Cuba",
+  "country_code": "CU"
+ },
+ "Institute Dámaso Centeno": {},
+ "Pragma | Consultoría de Negocios, Ingeniería de Software y Tecnología de la Información": {},
+ "TALLERES BLANCHADELL S.L": {},
+ "UBA, Facultad de Ciencias Exactas y Naturales, Provincia de Buenos Aires, Argentina": {},
+ "UBA, Facultad de Ciencias Exactas y Naturales, Argentina": {},
+ "JPMorgan Chase & Co, Inglaterra, United Kingdom": {},
+ "JPMorgan Chase & Co, United Kingdom": {},
+ "Instituto politécnico José Toschke": {},
+ "UBA, Facultad de Ciencias Exactas y Naturales, Buenos Aires, Argentina": {},
+ "Balseiro Institute, San Carlos de Bariloche": {},
+ "Instituto de Ciencias Polares, Universidad Nacional de Tierra del Fuego (UNTDF), Ushuaia, Argentina": {},
+ "Instituto de Ciencias Polares, Universidad Nacional de Tierra del Fuego (UNTDF), Argentina": {},
+ "Instituto de Ciencias Polares, Universidad Nacional de Tierra del Fuego (UNTDF)": {},
+ "Instituto Balseiro, CAB/CNEA": {},
+ "University of the Basque Country, Leioa": {},
+ "Buenos Aires": {
+  "lat": -34.6095579,
+  "lon": -58.3887904,
+  "display_name": "Buenos Aires, Comuna 1, Ciudad Autónoma de Buenos Aires, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "IFIBA-CONICET": {},
+ "Vrije University, Brussels": {
+  "lat": 50.8225504,
+  "lon": 4.3954969,
+  "display_name": "Vrije Universiteit Brussel – Campus Etterbeek, Avenue du Deuxième Régiment de Lanciers - Tweede Lansiers Regimentlaan, Ixelles - Elsene, Brussel-Hoofdstad - Bruxelles-Capitale, Région de Bruxelles-Capitale - Brussels Hoofdstedelijk Gewest, 1040, België / Belgique / Belgien",
+  "country": "België / Belgique / Belgien",
+  "country_code": "BE"
+ },
+ "Balseiro Institute, San Carlos de Bariloche, Río Negro, Argentina": {},
+ "Balseiro Institute, San Carlos de Bariloche, Argentina": {},
+ "Departamento de Física de Neutrones": {
+  "lat": -41.1224799,
+  "lon": -71.4140385,
+  "display_name": "Grupo Física de Neutrones, 9500, Puente estilo romano, Perito Moreno, San Carlos de Bariloche, Municipio de San Carlos de Bariloche, Departamento Bariloche, Río Negro, 8400, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "Innomerics, Madrid, Spain": {},
+ "Innomerics, Spain": {},
+ "Innomerics": {},
+ "Madrid": {
+  "lat": 40.416782,
+  "lon": -3.703507,
+  "display_name": "Madrid, Comunidad de Madrid, España",
+  "country": "España",
+  "country_code": "ES"
+ },
+ "Indian Institute of Technology, Madras": {
+  "lat": 12.9941561,
+  "lon": 80.2366826,
+  "display_name": "Indian Institute of Technology - Madras, Adayar, Ward 174, Zone 13 Adyar, Chennai Corporation, Chennai, Tamil Nadu, 600036, India",
+  "country": "India",
+  "country_code": "IN"
+ },
+ "Facultad de Ciencias Exactas y Naturales": {
+  "lat": -34.5419716,
+  "lon": -58.442406,
+  "display_name": "Facultad de Ciencias Exactas y Naturales, 2160, Intendente Güiraldes, Belgrano, Buenos Aires, Comuna 13, Ciudad Autónoma de Buenos Aires, C1428EGA, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "Rio de Janeiro": {
+  "lat": -22.9110137,
+  "lon": -43.2093727,
+  "display_name": "Rio de Janeiro, Região Sudeste, Brasil",
+  "country": "Brasil",
+  "country_code": "BR"
+ },
+ "Imperial College, London": {
+  "lat": 51.4989595,
+  "lon": -0.1756407,
+  "display_name": "Imperial College London, Exhibition Road, Knightsbridge, City of Westminster, Greater London, England, SW7 2AZ, United Kingdom",
+  "country": "United Kingdom",
+  "country_code": "GB"
+ },
+ "Limerick": {
+  "lat": 52.661252,
+  "lon": -8.6301239,
+  "display_name": "Limerick, County Limerick, Munster, Éire / Ireland",
+  "country": "Éire / Ireland",
+  "country_code": "IE"
+ },
+ "Open University, England": {
+  "lat": 52.0245378,
+  "lon": -0.7092748,
+  "display_name": "The Open University, Howard Drive, Kents Hill, Kents Hill, Monkston and Brinklow, Monkston, Milton Keynes, City of Milton Keynes, England, MK7 6FB, United Kingdom",
+  "country": "United Kingdom",
+  "country_code": "GB"
+ },
+ "Rutgers University, Piscataway": {
+  "lat": 40.5204169,
+  "lon": -74.4645303,
+  "display_name": "Rutgers University, Snowdrift Drive, Piscataway Township, Middlesex County, New Jersey, 08854, United States",
+  "country": "United States",
+  "country_code": "US"
+ },
+ "Annecy": {
+  "lat": 45.8992348,
+  "lon": 6.1288847,
+  "display_name": "Annecy, Haute-Savoie, Auvergne-Rhône-Alpes, France métropolitaine, France",
+  "country": "France",
+  "country_code": "FR"
+ },
+ "Beijing": {
+  "lat": 39.9057136,
+  "lon": 116.3912972,
+  "display_name": "北京市, 中国",
+  "country": "中国",
+  "country_code": "CN"
+ },
+ "Santa Maria University, Valparaiso": {
+  "lat": -33.0351828,
+  "lon": -71.5952743,
+  "display_name": "Universidad Técnica Federico Santa María, 1680, Avenida España, La Puntilla, Cerro Barón, Almendral, Valparaíso, Provincia de Valparaíso, Región de Valparaíso, 2390382, Chile",
+  "country": "Chile",
+  "country_code": "CL"
+ },
+ "Barcelona": {
+  "lat": 41.3825802,
+  "lon": 2.177073,
+  "display_name": "Barcelona, Barcelonès, Barcelona, Catalunya, España",
+  "country": "España",
+  "country_code": "ES"
+ },
+ "Sao Paulo": {
+  "lat": -23.5506507,
+  "lon": -46.6333824,
+  "display_name": "São Paulo, Região Sudeste, Brasil",
+  "country": "Brasil",
+  "country_code": "BR"
+ },
+ "Fundacao University, Rio Grande": {
+  "lat": -30.0446023,
+  "lon": -51.2162895,
+  "display_name": "FAEPESUL, Rua Doutor Sebastião Leão, Azenha, Porto Alegre, Rio Grande do Sul, Região Sul, 90050-110, Brasil",
+  "country": "Brasil",
+  "country_code": "BR"
+ },
+ "Tsinghua University, Beijing": {
+  "lat": 40.0022905,
+  "lon": 116.320963,
+  "display_name": "清华大学, 30, 双清路, 东升镇, 海淀区, 北京市, 100084, 中国",
+  "country": "中国",
+  "country_code": "CN"
+ },
+ "Maestria en Ciencia de Datos": {},
+ "Allegro MicroSystems, Argentina": {
+  "lat": -34.5472021,
+  "lon": -58.491125,
+  "display_name": "Allegro Microsystems, Tronador, Saavedra, Buenos Aires, Comuna 12, Ciudad Autónoma de Buenos Aires, C1430DAK, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "CINVESTAV": {
+  "lat": 21.0218721,
+  "lon": -89.6268505,
+  "display_name": "CINVESTAV, Avenida Tecnológico, Mérida, Yucatán, 97111, México",
+  "country": "México",
+  "country_code": "MX"
+ },
+ "Grupo Fisica de la Atmosfera, Córdoba, Argentina": {},
+ "Grupo Fisica de la Atmosfera, Argentina": {},
+ "Grupo Fisica de la Atmosfera": {},
+ "Facultad de Ciencias Exactas y Naturales, Provincia de Buenos Aires, Argentina": {},
+ "Facultad de Ciencias Exactas y Naturales, Argentina": {
+  "lat": -34.5419716,
+  "lon": -58.442406,
+  "display_name": "Facultad de Ciencias Exactas y Naturales, 2160, Intendente Güiraldes, Belgrano, Buenos Aires, Comuna 13, Ciudad Autónoma de Buenos Aires, C1428EGA, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "Instituto politécnico José Toschke, Argentina": {},
+ "Facultad de Ciencias Exactas y Naturales, Buenos Aires, Argentina": {
+  "lat": -34.5419716,
+  "lon": -58.442406,
+  "display_name": "Facultad de Ciencias Exactas y Naturales, 2160, Intendente Güiraldes, Belgrano, Buenos Aires, Comuna 13, Ciudad Autónoma de Buenos Aires, C1428EGA, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "Sunchales, Argentina": {
+  "lat": -30.9450891,
+  "lon": -61.5608072,
+  "display_name": "Municipio de Sunchales, Departamento Castellanos, Santa Fe, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "LEUVEN, Belgium": {
+  "lat": 50.879202,
+  "lon": 4.7011675,
+  "display_name": "Leuven, Vlaams-Brabant, Vlaanderen, België / Belgique / Belgien",
+  "country": "België / Belgique / Belgien",
+  "country_code": "BE"
+ },
+ "Atlántico, Colombia": {
+  "lat": 10.6773422,
+  "lon": -74.9718666,
+  "display_name": "Atlántico, RAP Caribe, Colombia",
+  "country": "Colombia",
+  "country_code": "CO"
+ },
+ "UK, Spain": {
+  "lat": 51.5028822,
+  "lon": -0.0015435,
+  "display_name": "Spain, Blackwall Tunnel, Blackwall Reach, Greenwich Peninsula, Royal Borough of Greenwich, Greater London, England, E14 9PB, United Kingdom",
+  "country": "United Kingdom",
+  "country_code": "GB"
+ },
+ "capital federal, Argentina": {
+  "lat": -34.6095579,
+  "lon": -58.3887904,
+  "display_name": "Buenos Aires, Comuna 1, Ciudad Autónoma de Buenos Aires, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "Uruguay, Paraguay": {
+  "lat": -34.8877829,
+  "lon": -56.1943993,
+  "display_name": "Paraguay, Arroyo Seco, Montevideo, 11800, Uruguay",
+  "country": "Uruguay",
+  "country_code": "UY"
+ },
+ "ABB": {
+  "lat": 22.5478712,
+  "lon": 88.1995212,
+  "display_name": "Abada, Sankrail Station Road, Sankrail, Kolkata Metropolitan Area, Sankrail, Howrah, West Bengal, 711302, India",
+  "country": "India",
+  "country_code": "IN"
+ },
+ "Carro's SH": {
+  "lat": 2.3471442,
+  "lon": 44.7055168,
+  "display_name": "Carro Tuur, Wanle Weyne ونلوين, Shabeellaha Hoose شبيلي السفلى, Koonfur Galbeed جنوب غرب, Soomaaliya الصومال",
+  "country": "Soomaaliya الصومال",
+  "country_code": "SO"
+ },
+ "Chaco, Argentina": {
+  "lat": -26.3829647,
+  "lon": -60.8816092,
+  "display_name": "Chaco, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "Los Lagos, Chile": {
+  "lat": -42.300844,
+  "lon": -73.105387,
+  "display_name": "Región de Los Lagos, Chile",
+  "country": "Chile",
+  "country_code": "CL"
+ },
+ "Provincia de Córdoba, Argentina": {
+  "lat": -32.022249,
+  "lon": -63.9698736,
+  "display_name": "Córdoba, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "Holanda Meridional, Netherlands": {
+  "lat": 51.9966792,
+  "lon": 4.5597397,
+  "display_name": "Zuid-Holland, Nederland",
+  "country": "Nederland",
+  "country_code": "NL"
+ },
+ "NAMUR": {
+  "lat": 50.4665284,
+  "lon": 4.8661892,
+  "display_name": "Namur, Wallonie, België / Belgique / Belgien",
+  "country": "België / Belgique / Belgien",
+  "country_code": "BE"
+ },
+ "Valparaíso, Chile": {
+  "lat": -33.0458456,
+  "lon": -71.6196749,
+  "display_name": "Valparaíso, Provincia de Valparaíso, Región de Valparaíso, Chile",
+  "country": "Chile",
+  "country_code": "CL"
  }
 }
