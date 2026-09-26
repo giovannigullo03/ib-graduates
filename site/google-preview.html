@@ -1,0 +1,427 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Google Maps preview — Balseiro Alumni Atlas</title>
+<link rel="icon" type="image/png" href="favicon.png" />
+<style>
+  :root {
+    --bg: #f4f6f8; --surface: #fff; --surface-2: #eef1f4; --border: #d8dee6;
+    --text: #1b2733; --text-dim: #5c6b7a; --accent: #0e7c86; --accent-soft: #d7ecee;
+    --traj: #d64545; --abroad: #e0a458; --argentina: #6c9bd1;
+    --shadow: 0 1px 3px rgba(20,35,50,.08), 0 8px 24px rgba(20,35,50,.06);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #10161d; --surface: #182029; --surface-2: #1e2833; --border: #2b3844;
+      --text: #e6ecf2; --text-dim: #93a2b2; --accent: #2bb7c4; --accent-soft: #16323a;
+      --shadow: 0 1px 3px rgba(0,0,0,.4), 0 10px 30px rgba(0,0,0,.35);
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; margin: 0; }
+  body {
+    background: var(--bg); color: var(--text);
+    font: 15px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  #app { display: flex; flex-direction: column; height: 100vh; }
+  header {
+    display: flex; align-items: center; gap: 16px; flex-wrap: wrap;
+    padding: 10px 18px; background: var(--surface);
+    border-bottom: 1px solid var(--border);
+  }
+  header h1 { margin: 0; font-size: 17px; }
+  header .sub { margin: 0; color: var(--text-dim); font-size: 13px; }
+  .pill {
+    margin-left: auto; font-size: 12.5px; color: var(--text-dim);
+    border: 1px solid var(--border); border-radius: 999px; padding: 4px 12px;
+  }
+  .toolbar { display: flex; gap: 6px; align-items: center; flex-wrap: wrap; }
+  .toolbar button, .toolbar select {
+    font: inherit; font-size: 13px; cursor: pointer; color: var(--text);
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 7px; padding: 5px 11px;
+  }
+  .toolbar button.on { background: var(--accent); border-color: var(--accent); color: #fff; }
+  #wrap { flex: 1; min-height: 0; position: relative; }
+  #map { position: absolute; inset: 0; background: var(--surface-2); }
+
+  #gate {
+    position: absolute; inset: 0; z-index: 10; overflow-y: auto;
+    display: flex; align-items: flex-start; justify-content: center;
+    padding: 40px 20px; background: var(--bg);
+  }
+  .card {
+    max-width: 640px; width: 100%; background: var(--surface);
+    border: 1px solid var(--border); border-radius: 10px;
+    padding: 22px 26px; box-shadow: var(--shadow);
+  }
+  .card h2 { margin: 0 0 6px; font-size: 19px; }
+  .card p { color: var(--text-dim); font-size: 14px; }
+  .card ol { color: var(--text-dim); font-size: 14px; padding-left: 20px; }
+  .card li { margin-bottom: 7px; }
+  .card code {
+    background: var(--surface-2); padding: 1px 5px; border-radius: 4px; font-size: 13px;
+  }
+  .keyrow { display: flex; gap: 8px; margin-top: 16px; }
+  .keyrow input {
+    flex: 1; padding: 9px 12px; border-radius: 8px; font: inherit;
+    border: 1px solid var(--border); background: var(--bg); color: var(--text);
+  }
+  .keyrow button {
+    font: inherit; padding: 9px 18px; border-radius: 8px; cursor: pointer;
+    background: var(--accent); color: #fff; border: 0; font-weight: 600;
+  }
+  .warn {
+    margin-top: 18px; padding: 11px 14px; font-size: 13px; line-height: 1.5;
+    border-left: 3px solid var(--abroad); background: var(--surface-2); color: var(--text-dim);
+  }
+  #panel {
+    position: absolute; top: 12px; right: 12px; width: 300px; z-index: 5;
+    max-height: calc(100% - 24px); overflow-y: auto;
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 10px; box-shadow: var(--shadow); padding: 14px 16px;
+    font-size: 13.5px;
+  }
+  #panel[hidden] { display: none; }
+  #panel .nm { font-weight: 650; font-size: 15px; }
+  #panel .ro { color: var(--text-dim); font-size: 13px; margin-bottom: 8px; }
+  #panel .chain { font-size: 12px; color: var(--text-dim); line-height: 1.65; margin-top: 8px; }
+  #panel .yr { opacity: .65; }
+  #panel .close {
+    float: right; border: 1px solid var(--border); background: var(--surface);
+    color: var(--text); border-radius: 6px; cursor: pointer; padding: 2px 8px; font: inherit;
+  }
+  #status {
+    position: absolute; left: 12px; bottom: 12px; z-index: 5;
+    background: var(--surface); border: 1px solid var(--border); border-radius: 7px;
+    padding: 6px 11px; font-size: 12.5px; color: var(--text-dim); box-shadow: var(--shadow);
+  }
+</style>
+</head>
+<body>
+<div id="app">
+  <header>
+    <div>
+      <h1>Google Maps preview</h1>
+      <p class="sub">Same dataset, same layers — rendered on Google instead of Leaflet + Esri.</p>
+    </div>
+    <div class="toolbar">
+      <button id="btn-flows" type="button">✈ Flows</button>
+      <button id="btn-random" type="button">Random trajectory</button>
+      <select id="style-sel">
+        <option value="muted">Muted (matches the site)</option>
+        <option value="default">Google default</option>
+        <option value="dark">Dark</option>
+      </select>
+    </div>
+    <span class="pill" id="pill">not loaded</span>
+  </header>
+
+  <div id="wrap">
+    <div id="map"></div>
+    <aside id="panel" hidden></aside>
+    <div id="status" hidden></div>
+
+    <div id="gate">
+      <div class="card">
+        <h2>This preview needs your own Google Maps API key</h2>
+        <p>A key can only be created from a Google Cloud account with billing
+           enabled, so it has to come from you — paste it below and the map
+           loads immediately. It is kept in this browser only
+           (<code>localStorage</code>), never sent anywhere else and never
+           committed.</p>
+        <ol>
+          <li>Open <code>console.cloud.google.com</code> → create or pick a project.</li>
+          <li>Enable <b>Maps JavaScript API</b> (that is the only one this page uses).</li>
+          <li>APIs &amp; Services → Credentials → <b>Create credentials → API key</b>.</li>
+          <li>Restrict it to HTTP referrers <code>localhost:*</code> and your
+              Pages domain, so a leaked key is useless elsewhere.</li>
+        </ol>
+        <div class="keyrow">
+          <input id="key-input" type="text" placeholder="AIza…" autocomplete="off" spellcheck="false" />
+          <button id="key-go" type="button">Load map</button>
+        </div>
+        <div class="warn">
+          <b>What changes if you adopt this.</b> The current map costs nothing:
+          Leaflet is open source and the Esri basemap is free without a key.
+          Google's Maps JavaScript API bills per <i>map load</i>. There is a
+          monthly free allowance that a personal project stays inside easily,
+          but a public site that gets shared widely can start accruing charges,
+          and the key sits in client-side code where anyone can read it —
+          referrer restrictions are what stop it being abused.
+          <br><br>
+          The upside is not the basemap. It is that adopting Google removes the
+          terms-of-service obstacle to using <b>Google Places</b> for the 308
+          career stops that carry only a company name and no city — the ones
+          neither OpenStreetMap nor ROR can find.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+'use strict';
+
+const IB = { lat: -41.1335, lng: -71.4281 };
+let ALUMNI = [], map, clusterer, markers = [], trajLayers = [], flowLayers = [], flowsOn = false;
+
+const STYLES = {
+  default: [],
+  muted: [
+    { elementType: 'geometry', stylers: [{ color: '#f4f6f8' }] },
+    { elementType: 'labels.text.fill', stylers: [{ color: '#5c6b7a' }] },
+    { elementType: 'labels.text.stroke', stylers: [{ color: '#ffffff' }] },
+    { featureType: 'administrative', elementType: 'geometry.stroke', stylers: [{ color: '#d8dee6' }] },
+    { featureType: 'poi', stylers: [{ visibility: 'off' }] },
+    { featureType: 'road', elementType: 'geometry', stylers: [{ color: '#e6eaef' }] },
+    { featureType: 'road', elementType: 'labels', stylers: [{ visibility: 'off' }] },
+    { featureType: 'transit', stylers: [{ visibility: 'off' }] },
+    { featureType: 'water', elementType: 'geometry', stylers: [{ color: '#dce3ea' }] },
+    { featureType: 'landscape', elementType: 'geometry', stylers: [{ color: '#f7f9fa' }] },
+  ],
+  dark: [
+    { elementType: 'geometry', stylers: [{ color: '#182029' }] },
+    { elementType: 'labels.text.fill', stylers: [{ color: '#93a2b2' }] },
+    { elementType: 'labels.text.stroke', stylers: [{ color: '#10161d' }] },
+    { featureType: 'administrative', elementType: 'geometry.stroke', stylers: [{ color: '#2b3844' }] },
+    { featureType: 'poi', stylers: [{ visibility: 'off' }] },
+    { featureType: 'road', stylers: [{ visibility: 'off' }] },
+    { featureType: 'transit', stylers: [{ visibility: 'off' }] },
+    { featureType: 'water', elementType: 'geometry', stylers: [{ color: '#0d1218' }] },
+    { featureType: 'landscape', elementType: 'geometry', stylers: [{ color: '#1b232c' }] },
+  ],
+};
+
+function esc(s) {
+  return String(s == null ? '' : s).replace(/[&<>"']/g, c =>
+    ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+}
+
+/* ---- key handling ------------------------------------------------- */
+function keyFromAnywhere() {
+  const u = new URLSearchParams(location.search).get('key');
+  if (u) { try { localStorage.setItem('gmapsKey', u); } catch (e) {} return u; }
+  try { return localStorage.getItem('gmapsKey') || ''; } catch (e) { return ''; }
+}
+
+function loadGoogle(key) {
+  document.getElementById('pill').textContent = 'loading Google Maps…';
+  const s = document.createElement('script');
+  s.src = 'https://maps.googleapis.com/maps/api/js?key=' + encodeURIComponent(key)
+        + '&callback=initMap&loading=async';
+  s.async = true;
+  s.onerror = () => {
+    document.getElementById('pill').textContent = 'failed to load — check the key';
+    document.getElementById('gate').hidden = false;
+  };
+  document.head.appendChild(s);
+}
+
+document.getElementById('key-go').addEventListener('click', () => {
+  const k = document.getElementById('key-input').value.trim();
+  if (!k) return;
+  try { localStorage.setItem('gmapsKey', k); } catch (e) {}
+  document.getElementById('gate').hidden = true;
+  loadGoogle(k);
+});
+document.getElementById('key-input').addEventListener('keydown', e => {
+  if (e.key === 'Enter') document.getElementById('key-go').click();
+});
+
+/* ---- map ---------------------------------------------------------- */
+window.initMap = async function () {
+  const dark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  document.getElementById('style-sel').value = dark ? 'dark' : 'muted';
+  map = new google.maps.Map(document.getElementById('map'), {
+    center: { lat: 10, lng: -20 }, zoom: 2, minZoom: 2,
+    mapTypeControl: false, streetViewControl: false, fullscreenControl: false,
+    styles: STYLES[dark ? 'dark' : 'muted'],
+  });
+  document.getElementById('gate').hidden = true;
+  await loadData();
+  drawMarkers();
+  wire();
+};
+
+async function loadData() {
+  const r = await fetch('data/alumni.json');
+  const payload = await r.json();
+  ALUMNI = (payload.alumni || []).filter(p => p.confidence === 'confirmed');
+  document.getElementById('pill').textContent =
+    `${ALUMNI.length} confirmed · ${ALUMNI.filter(p => p.located).length} on the map`;
+}
+
+function dot(color, stroke, r) {
+  return {
+    path: google.maps.SymbolPath.CIRCLE, scale: r,
+    fillColor: color, fillOpacity: 0.85, strokeColor: stroke, strokeWeight: 1.5,
+  };
+}
+
+function drawMarkers() {
+  const located = ALUMNI.filter(p => p.located);
+  markers = located.map(p => {
+    const abroad = p.country && p.country !== 'Argentina';
+    const m = new google.maps.Marker({
+      position: { lat: p.lat, lng: p.lon },
+      icon: dot(abroad ? '#e0a458' : '#6c9bd1', abroad ? '#c98432' : '#3f6fae', 5),
+      title: p.name,
+    });
+    m.addListener('click', () => selectPerson(p));
+    return m;
+  });
+  clusterer = new markerClusterer.MarkerClusterer({ map, markers });
+
+  new google.maps.Marker({
+    position: IB, map,
+    icon: dot('#d64545', '#a51f1f', 7),
+    title: 'Instituto Balseiro — San Carlos de Bariloche',
+    zIndex: 999,
+  });
+}
+
+/* ---- trajectory --------------------------------------------------- */
+function stops(p) {
+  return (p.career || []).filter(c => c.lat != null && c.lon != null)
+    .slice().sort((a, b) => (a.start || '') > (b.start || '') ? 1 : -1);
+}
+
+function clearTraj() { trajLayers.forEach(l => l.setMap(null)); trajLayers = []; }
+
+function selectPerson(p) {
+  clearTraj();
+  const st = stops(p);
+  const pts = [IB, ...st.map(s => ({ lat: s.lat, lng: s.lon }))];
+  if (p.lat != null) {
+    const last = pts[pts.length - 1];
+    if (last.lat !== p.lat || last.lng !== p.lon) pts.push({ lat: p.lat, lng: p.lon });
+  }
+  if (pts.length > 1) {
+    trajLayers.push(new google.maps.Polyline({
+      path: pts, map, strokeColor: '#000', strokeOpacity: 0.18, strokeWeight: 6, zIndex: 5,
+    }));
+    trajLayers.push(new google.maps.Polyline({
+      path: pts, map, strokeColor: '#d64545', strokeOpacity: 0, strokeWeight: 2.5, zIndex: 6,
+      icons: [{ icon: { path: 'M 0,-1 0,1', strokeOpacity: 1, strokeColor: '#d64545', scale: 2.5 },
+                offset: '0', repeat: '11px' }],
+    }));
+  }
+  st.forEach(s => {
+    const edu = s.kind === 'education';
+    trajLayers.push(new google.maps.Marker({
+      position: { lat: s.lat, lng: s.lon }, map, zIndex: 10,
+      icon: dot(edu ? '#ffffff' : '#f2a6a6', '#d64545', edu ? 5 : 5),
+      title: `${s.institution}${s.start ? ` (${s.start}${s.current ? '–now' : s.end ? '–' + s.end : ''})` : ''}`
+             + (edu ? ' · studied here' : ''),
+    }));
+  });
+  if (p.lat != null) {
+    trajLayers.push(new google.maps.Marker({
+      position: { lat: p.lat, lng: p.lon }, map, zIndex: 11,
+      icon: { path: google.maps.SymbolPath.CIRCLE, scale: 8, fillColor: '#fff',
+              fillOpacity: 0.95, strokeColor: '#d64545', strokeWeight: 3 },
+      title: `${p.name} — now`,
+    }));
+  }
+  const b = new google.maps.LatLngBounds();
+  pts.forEach(pt => b.extend(pt));
+  if (pts.length > 1) map.fitBounds(b, { top: 40, bottom: 40, left: 40, right: 340 });
+
+  const chain = st.map(c => {
+    const yr = c.start ? `${c.start}${c.current ? '–now' : c.end ? '–' + c.end : ''}` : '';
+    return (c.kind === 'education' ? '🎓 ' : '') + esc(c.institution)
+           + (yr ? ` <span class="yr">${esc(yr)}</span>` : '');
+  }).join(' → ');
+  const panel = document.getElementById('panel');
+  panel.hidden = false;
+  panel.innerHTML = `<button class="close" type="button">✕</button>
+    <div class="nm">${esc(p.name)}</div>
+    <div class="ro">${esc(p.role || p.description || '')}</div>
+    <div><b>${esc(p.employer || 'Unknown employer')}</b><br>
+      ${esc([p.city, p.country].filter(Boolean).join(', '))}</div>
+    ${chain ? `<div class="chain">${chain}</div>` : ''}`;
+  panel.querySelector('.close').addEventListener('click', () => {
+    panel.hidden = true; clearTraj();
+  });
+}
+
+/* ---- aggregate flows ---------------------------------------------- */
+function destinations() {
+  const acc = new Map();
+  for (const p of ALUMNI) {
+    if (!p.located || !p.country || p.country === 'Argentina') continue;
+    const d = acc.get(p.country) || { lat: 0, lon: 0, n: 0 };
+    d.lat += p.lat; d.lon += p.lon; d.n++;
+    acc.set(p.country, d);
+  }
+  return [...acc.entries()]
+    .map(([country, d]) => ({ country, n: d.n, lat: d.lat / d.n, lon: d.lon / d.n }))
+    .sort((a, b) => b.n - a.n);
+}
+
+function arc(from, to, bend = 0.22, steps = 44) {
+  const y1 = from.lat, x1 = from.lng;
+  let y2 = to.lat, x2 = to.lng;
+  if (Math.abs(x2 - x1) > 180) x2 += x2 > x1 ? -360 : 360;
+  const cx = (x1 + x2) / 2 - (y2 - y1) * bend;
+  const cy = (y1 + y2) / 2 + (x2 - x1) * bend;
+  const out = [];
+  for (let i = 0; i <= steps; i++) {
+    const t = i / steps, u = 1 - t;
+    out.push({ lat: u * u * y1 + 2 * u * t * cy + t * t * y2,
+               lng: u * u * x1 + 2 * u * t * cx + t * t * x2 });
+  }
+  return out;
+}
+
+function drawFlows() {
+  flowLayers.forEach(l => l.setMap(null)); flowLayers = [];
+  const st = document.getElementById('status');
+  if (!flowsOn) { st.hidden = true; return; }
+  const d = destinations();
+  const peak = d.length ? d[0].n : 1;
+  d.forEach(x => {
+    const w = 1.2 + Math.sqrt(x.n / peak) * 7;
+    flowLayers.push(new google.maps.Polyline({
+      path: arc(IB, { lat: x.lat, lng: x.lon }), map,
+      strokeColor: '#e0a458', strokeOpacity: 0.6, strokeWeight: w, zIndex: 2,
+    }));
+  });
+  st.hidden = false;
+  st.textContent = `${d.length} destination countries · thickness = people`;
+}
+
+/* ---- controls ------------------------------------------------------ */
+function wire() {
+  document.getElementById('btn-flows').addEventListener('click', e => {
+    flowsOn = !flowsOn;
+    e.currentTarget.classList.toggle('on', flowsOn);
+    drawFlows();
+  });
+  document.getElementById('btn-random').addEventListener('click', () => {
+    const rich = ALUMNI.filter(p => stops(p).length >= 2);
+    if (rich.length) selectPerson(rich[Math.floor(Math.random() * rich.length)]);
+  });
+  document.getElementById('style-sel').addEventListener('change', e => {
+    map.setOptions({ styles: STYLES[e.target.value] });
+  });
+}
+
+/* ---- boot ---------------------------------------------------------- */
+(function () {
+  const mc = document.createElement('script');
+  mc.src = 'https://cdn.jsdelivr.net/npm/@googlemaps/markerclusterer@2.5.3/dist/index.umd.js';
+  document.head.appendChild(mc);
+  const k = keyFromAnywhere();
+  if (k) {
+    document.getElementById('key-input').value = k;
+    document.getElementById('gate').hidden = true;
+    loadGoogle(k);
+  }
+})();
+</script>
+</body>
+</html>
