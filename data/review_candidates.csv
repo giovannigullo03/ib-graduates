@@ -3,7 +3,7 @@ keep,name,score,grad_year,current_institution,country,city,employer,lat,lon,degr
 ,A. López,5.0,1974,Universidad de Santiago de Chile,Chile,,,,,,,Condensed matter physics; Quantum,69,https://openalex.org/A5044332510,A5044332510
 ,A. Muthig,5.0,2000,,,,,,,,,Ion; Electron; Nuclear physics,14,https://openalex.org/A5040754766,A5040754766
 ,A.A. Ghilarducci,5.0,1991,Boise State University,United States,,,,,,,Metallurgy,69,https://openalex.org/A5029678684,A5029678684
-,Alexander D. Hernández,5.0,2002,University of Havana,CU,,,,,,,Condensed matter physics; Superconductivity; Magnetic field,22,https://openalex.org/A5109952910,A5109952910
+,Alexander D. Hernández,5.0,2002,University of Havana,Cuba,,,,,,,Condensed matter physics; Superconductivity; Magnetic field,22,https://openalex.org/A5109952910,A5109952910
 ,Ana Montemayor-Borsinger,5.0,2003,,,,,,,,,Linguistics,9,https://openalex.org/A5084490485,A5084490485
 ,Bruno Guillet,5.0,1985,Centre National de la Recherche Scientifique,France,,,,,,,Optoelectronics; Optics,165,https://openalex.org/A5045417338,A5045417338
 ,C. Fainstein,5.0,1982,Bariloche Atomic Centre,Argentina,,,,,,,Condensed matter physics,52,https://openalex.org/A5026957330,A5026957330
@@ -64,7 +64,7 @@ keep,name,score,grad_year,current_institution,country,city,employer,lat,lon,degr
 ,V. H. Ponce,5.0,1980,Balseiro Institute,Argentina,,,,,,,Electron; Nuclear physics,14,https://openalex.org/A5074074388,A5074074388
 ,A. Martinez,4.5,1993,NOAA National Marine Fisheries Service,United States,,,,,,,,73,https://openalex.org/A5065011148,A5065011148
 ,A. Ridner,4.5,1975,Universidad Nacional de Cuyo,Argentina,,,,,,,Superconductivity; Condensed matter physics,8,https://openalex.org/A5051817260,A5051817260
-,Alberto Alape‐Girón,4.5,1996,Universidad de Costa Rica,CR,,,,,,,Venom; Enzyme; Genetics,77,https://openalex.org/A5054613513,A5054613513
+,Alberto Alape‐Girón,4.5,1996,Universidad de Costa Rica,Costa Rica,,,,,,,Venom; Enzyme; Genetics,77,https://openalex.org/A5054613513,A5054613513
 ,B.A. Talagañis,4.5,2007,Consejo Nacional de Investigaciones Científicas y Técnicas,Argentina,,,,,,,Hydrogen,9,https://openalex.org/A5019555769,A5019555769
 ,Bautista Arenaza,4.5,2024,Balseiro Institute,Argentina,,,,,,,Statistical physics; Probability distribution; Entropy (arrow of time); Statistics,7,https://openalex.org/A5093664777,A5093664777
 ,C. Arciprete,4.5,1998,Balseiro Institute,Argentina,,,,,,,,16,https://openalex.org/A5017953457,A5017953457
@@ -130,7 +130,6 @@ keep,name,score,grad_year,current_institution,country,city,employer,lat,lon,degr
 ,Miguel Alvarez Perez,4.5,2017,Institut de Microelectrònica de Barcelona,Spain,,,,,,,Optoelectronics; Optics,9,https://openalex.org/A5020489471,A5020489471
 ,N. Aucar Boidi,4.5,2021,The Abdus Salam International Centre for Theoretical Physics (ICTP),Italy,,,,,,,Hubbard model; Condensed matter physics,10,https://openalex.org/A5007886155,A5007886155
 ,N. R. Cejas Bolecek,4.5,2011,Consejo Nacional de Investigaciones Científicas y Técnicas,Argentina,,,,,,,Vortex; Condensed matter physics,16,https://openalex.org/A5010245951,A5010245951
-,Nicolás Vattuone,4.5,2016,Balseiro Institute,Argentina,,,,,,,Chromatic scale; Artificial intelligence,6,https://openalex.org/A5079235955,A5079235955
 ,Octavio Cabrera,4.5,2014,Sapienza University of Rome,Italy,,,,,,,Telecommunications,12,https://openalex.org/A5090239452,A5090239452
 ,Omar V. M. Lopez Cabrera,4.5,2023,Balseiro Institute,Argentina,,,,,,,Electronic engineering,4,https://openalex.org/A5098739537,A5098739537
 ,Osvaldo Matías Velarde,4.5,2017,City College of New York,United States,,,,,,,Artificial intelligence; Machine learning,15,https://openalex.org/A5085293802,A5085293802
@@ -138,7 +137,6 @@ keep,name,score,grad_year,current_institution,country,city,employer,lat,lon,degr
 ,P. Schlottmann,4.5,1972,Florida State University,United States,,,,,,,Condensed matter physics; Electron,562,https://openalex.org/A5010630308,A5010630308
 ,P. Sesin,4.5,2015,Comisión Nacional de Energía Atómica,Argentina,,,,,,,Optoelectronics; Optics; Condensed matter physics,11,https://openalex.org/A5046740510,A5046740510
 ,Pablo Costanzo Caso,4.5,2015,Balseiro Institute,Argentina,,,,,,,Optics; Optical fiber,5,https://openalex.org/A5069246479,A5069246479
-,Pablo Jiménez,4.5,2021,Balseiro Institute,Argentina,,,,,,,Nuclear magnetic resonance,13,https://openalex.org/A5087878007,A5087878007
 ,Paola A. Córdoba,4.5,2012,Hospital Universitario San Rafael,Spain,,,,,,,Natural convection,15,https://openalex.org/A5027483196,A5027483196
 ,Paola D’Adamo,4.5,2000,Consejo Nacional de Investigaciones Científicas y Técnicas,Argentina,,,,,,,Hymenoptera; Ecology; Zoology,54,https://openalex.org/A5050336507,A5050336507
 ,R. J. Liotta,4.5,1967,KTH Royal Institute of Technology,Sweden,,,,,,,Nuclear physics,139,https://openalex.org/A5041832682,A5041832682
@@ -180,7 +178,7 @@ keep,name,score,grad_year,current_institution,country,city,employer,lat,lon,degr
 ,Eizi Morikawa,4.0,1998,Okayama University,Japan,,,,,,,Optics,76,https://openalex.org/A5085860422,A5085860422
 ,Elizabeth Robello,4.0,2003,Universidad de Buenos Aires,Argentina,,,,,,,Oxidative stress,17,https://openalex.org/A5078165050,A5078165050
 ,Ernesto M. Nicola,4.0,1997,Institute for Cross-Disciplinary Physics and Complex Systems,Spain,,,,,,,Statistical physics,19,https://openalex.org/A5019803806,A5019803806
-,Esteban Sánchez,4.0,2006,National Polytechnic School,EC,,,,,,,,11,https://openalex.org/A5104091989,A5104091989
+,Esteban Sánchez,4.0,2006,National Polytechnic School,Ecuador,,,,,,,,11,https://openalex.org/A5104091989,A5104091989
 ,Evelin Battocchio,4.0,2015,Balseiro Institute,Argentina,,,,,,,Communications system,3,https://openalex.org/A5051692414,A5051692414
 ,F. Pardo,4.0,1996,Nokia (United States),United States,,,,,,,Optics; Optoelectronics,118,https://openalex.org/A5011527356,A5011527356
 ,F. Saule,4.0,1995,Balseiro Institute,Argentina,,,,,,,Martensite; Crystallography,3,https://openalex.org/A5042840258,A5042840258
@@ -227,7 +225,6 @@ keep,name,score,grad_year,current_institution,country,city,employer,lat,lon,degr
 ,M. Tallis,4.0,2022,Consejo Nacional de Investigaciones Científicas y Técnicas,Argentina,,,,,,,Embedded system,4,https://openalex.org/A5012607355,A5012607355
 ,M. Vénere,4.0,2000,Kulicke & Soffa (Singapore),Singapore,,,,,,,Artificial intelligence; Algorithm,47,https://openalex.org/A5085174139,A5085174139
 ,M.A. Vicente-Alvarez,4.0,2010,Bariloche Atomic Centre,Argentina,,,,,,,Diffraction; Optics,3,https://openalex.org/A5080224846,A5080224846
-,Martín Mayo,4.0,2017,Consejo Nacional de Investigaciones Científicas y Técnicas,Argentina,,,,,,,String field theory; Mathematical physics,4,https://openalex.org/A5061749729,A5061749729
 ,Marvin Bustillos,4.0,2020,Consejo Nacional de Investigaciones Científicas y Técnicas,Argentina,,,,,,,Silicon nitride; Optoelectronics; Optics,2,https://openalex.org/A5081618231,A5081618231
 ,María L. Grasso,4.0,2018,Bariloche Atomic Centre,Argentina,,,,,,,Chemical engineering,11,https://openalex.org/A5028791675,A5028791675
 ,Melisa L Gimenez,4.0,2024,Balseiro Institute,Argentina,,,,,,,Modulation (music),3,https://openalex.org/A5039378732,A5039378732
@@ -285,14 +282,14 @@ keep,name,score,grad_year,current_institution,country,city,employer,lat,lon,degr
 ,Jason P. Hodges,3.5,2000,Knoxville College,United States,,,,,,,Optics; Crystallography,86,https://openalex.org/A5067485536,A5067485536
 ,Joaquin F. Rodriguez-Nieva,3.5,2011,,,,,,,,,Graphene; Condensed matter physics,64,https://openalex.org/A5072482071,A5072482071
 ,José Ignacio Márquez Damián,3.5,2010,European Spallation Source,Sweden,,,,,,,Neutron; Neutron scattering; Nuclear physics,91,https://openalex.org/A5081194576,A5081194576
-,José Marı́a Gutiérrez,3.5,1996,Universidad de Costa Rica,CR,,,,,,,Venom; Snake venom,880,https://openalex.org/A5079027751,A5079027751
+,José Marı́a Gutiérrez,3.5,1996,Universidad de Costa Rica,Costa Rica,,,,,,,Venom; Snake venom,880,https://openalex.org/A5079027751,A5079027751
 ,Liliana Arrachea,3.5,1994,Balseiro Institute,Argentina,,,,,,,Condensed matter physics; Quantum,152,https://openalex.org/A5037383532,A5037383532
 ,M. Avignon,3.5,1998,Institut polytechnique de Grenoble,France,,,,,,,Condensed matter physics; Electron,146,https://openalex.org/A5110036593,A5110036593
 ,M. Chandrasekaran,3.5,1981,Sejong University,South Korea,,,,,,,Metallurgy,217,https://openalex.org/A5062104014,A5062104014
 ,M. De Seta,3.5,2003,Roma Tre University,Italy,,,,,,,Condensed matter physics; Optoelectronics,172,https://openalex.org/A5057307491,A5057307491
 ,M. Sergio Moreno,3.5,2001,Consejo Nacional de Investigaciones Científicas y Técnicas,Argentina,,,,,,,,154,https://openalex.org/A5009142278,A5009142278
 ,M.C.G. Passeggi,3.5,1971,Universidad Nacional del Litoral,Argentina,,,,,,,,183,https://openalex.org/A5082810067,A5082810067
-,Marietta Flores-Dı́az,3.5,2000,Universidad de Costa Rica,CR,,,,,,,Clostridium perfringens; Bacteria; Genetics,50,https://openalex.org/A5091346393,A5091346393
+,Marietta Flores-Dı́az,3.5,2000,Universidad de Costa Rica,Costa Rica,,,,,,,Clostridium perfringens; Bacteria; Genetics,50,https://openalex.org/A5091346393,A5091346393
 ,N. R. Arista,3.5,1975,Bariloche Atomic Centre,Argentina,,,,,,,Ion,233,https://openalex.org/A5073985248,A5073985248
 ,Oscar García Peyrano,3.5,2022,,,,,,,,,Bearing (navigation); Turbine; Mechanical engineering,9,https://openalex.org/A5039740927,A5039740927
 ,R D Rivarola,3.5,1987,National University of Rosario,Argentina,,,,,,,Ion; Electron,290,https://openalex.org/A5002535567,A5002535567

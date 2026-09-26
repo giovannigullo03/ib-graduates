@@ -68,6 +68,64 @@ COUNTRY_BY_CODE = {
     "IE": "Ireland", "NZ": "New Zealand", "SG": "Singapore", "ZA": "South Africa",
 }
 
+
+# Extra ISO codes so a geocoded country can be resolved by code rather than by
+# whatever language Nominatim answered in.
+COUNTRY_BY_CODE.update({
+    "SK": "Slovakia", "SI": "Slovenia", "HU": "Hungary", "HR": "Croatia",
+    "GR": "Greece", "TR": "Turkey", "RU": "Russia", "UA": "Ukraine",
+    "RO": "Romania", "BG": "Bulgaria", "RS": "Serbia", "EE": "Estonia",
+    "LV": "Latvia", "LT": "Lithuania", "IS": "Iceland", "LU": "Luxembourg",
+    "BO": "Bolivia", "PY": "Paraguay", "EC": "Ecuador", "VE": "Venezuela",
+    "CR": "Costa Rica", "PA": "Panama", "GT": "Guatemala", "CU": "Cuba",
+    "SV": "El Salvador", "DO": "Dominican Republic", "HN": "Honduras",
+    "AE": "United Arab Emirates", "SA": "Saudi Arabia", "EG": "Egypt",
+    "MA": "Morocco", "TN": "Tunisia", "NG": "Nigeria", "KE": "Kenya",
+    "MY": "Malaysia", "PH": "Philippines", "TH": "Thailand", "ID": "Indonesia",
+    "VN": "Vietnam", "TW": "Taiwan", "HK": "Hong Kong", "PK": "Pakistan",
+    "BD": "Bangladesh", "IR": "Iran", "QA": "Qatar", "JO": "Jordan",
+})
+
+# Nominatim answers in the local language, so the same country arrives as
+# "Germany" from one lookup and "Deutschland" from the next — which splits the
+# country facet and the flow map in two. Everything is normalised to English:
+# by ISO code where we have one, else by this table.
+COUNTRY_ALIASES = {
+    "deutschland": "Germany", "osterreich": "Austria", "sverige": "Sweden",
+    "suomi": "Finland", "suomi / finland": "Finland", "norge": "Norway",
+    "danmark": "Denmark", "island": "Iceland", "espana": "Spain",
+    "italia": "Italy", "schweiz": "Switzerland", "suisse": "Switzerland",
+    "svizzera": "Switzerland", "belgie": "Belgium", "belgique": "Belgium",
+    "nederland": "Netherlands", "the netherlands": "Netherlands",
+    "letzebuerg": "Luxembourg", "luxemburg": "Luxembourg",
+    "slovenija": "Slovenia", "slovensko": "Slovakia", "cesko": "Czechia",
+    "polska": "Poland", "magyarorszag": "Hungary", "hrvatska": "Croatia",
+    "brasil": "Brazil", "mexico": "Mexico", "panama": "Panama",
+    "peru": "Peru", "paraguay / paraguai": "Paraguay",
+    "turkiye": "Turkey", "ellada": "Greece",
+    # non-Latin scripts cannot be accent-folded, so they are keyed verbatim
+    "日本": "Japan", "中国": "China", "대한민국": "South Korea",
+    "ישראל": "Israel", "भारत": "India", "россия": "Russia",
+    "україна": "Ukraine", "ελλάδα": "Greece",
+    "السعودية": "Saudi Arabia", "الإمارات العربية المتحدة": "United Arab Emirates",
+    "مصر": "Egypt", "المغرب": "Morocco",
+}
+
+
+def _country_en(name, code=None):
+    """Canonical English name for a country, from its ISO code where possible."""
+    if code:
+        hit = COUNTRY_BY_CODE.get(str(code).upper())
+        if hit:
+            return hit
+    if not name:
+        return name
+    raw = str(name).strip()
+    return (COUNTRY_ALIASES.get(raw.lower())
+            or COUNTRY_ALIASES.get(strip_accents(raw).lower())
+            or raw)
+
+
 DISCIPLINE_RULES = [
     ("Particle & high-energy physics", r"particle physic|high[- ]energy|quantum field|standard model|collider|hadron|neutrino|lhc\b|atlas experiment"),
     ("String theory & gravitation", r"string theory|superstring|supergravit|gravitation|holograph|ads/cft|black hole|cosmolog|general relativ|quantum gravity"),
@@ -1216,7 +1274,8 @@ def _hand_placed_institutions(idx):
                     placed[_hand_key(row["institution"])] = (
                         hit["lat"], hit["lon"],
                         row.get("city") or None,
-                        row.get("country") or hit.get("country"))
+                        row.get("country") or _country_en(
+                            hit.get("country"), hit.get("country_code")))
                     break
             else:
                 print(f"  ! could not place {row['institution']!r} — no query resolved")
@@ -1381,7 +1440,8 @@ def build():
                 else:
                     rec["loc_precision"] = "institution"
                 rec["lat"], rec["lon"] = lat, lon
-                rec["employer_country"] = rec["employer_country"] or hit.get("country")
+                rec["employer_country"] = rec["employer_country"] or _country_en(
+                    hit.get("country"), hit.get("country_code"))
                 rec["employer_country_code"] = rec["employer_country_code"] or hit.get("country_code")
                 located_by_chain += 1
                 break
@@ -1430,7 +1490,8 @@ def build():
             new_lookups += is_new
             if hit and hit.get("lat") is not None:
                 stop["lat"], stop["lon"] = round(hit["lat"], 5), round(hit["lon"], 5)
-                stop["country"] = stop.get("country") or hit.get("country")
+                stop["country"] = stop.get("country") or _country_en(
+                    hit.get("country"), hit.get("country_code"))
                 n_stop_geo += 1
                 break
         done += 1
@@ -1448,6 +1509,17 @@ def build():
     # is authoritative and goes first
     _hand_placed_institutions(idx)
     _backfill_stop_coords(idx)
+
+    # ---- normalise country names -------------------------------------------#
+    # last line of defence: a country may also arrive already-named from ORCID,
+    # INSPIRE or a hand-edited CSV, so fold every one of them, not just the
+    # geocoded ones.
+    for rec in idx.values():
+        rec["employer_country"] = _country_en(rec["employer_country"],
+                                              rec["employer_country_code"])
+        for stop in rec["career"]:
+            stop["country"] = _country_en(stop.get("country"),
+                                          stop.get("country_code"))
 
     # ---- finalise records --------------------------------------------------#
     out = []
