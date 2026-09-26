@@ -334,3 +334,5 @@ table.people .subtle { color: var(--text-dim); }
   background: var(--surface); color: var(--text-dim);
 }
 .flow-btn.on { background: var(--accent); color: #fff; border-color: var(--accent); }
+
+.pp-career .cap { opacity: .7; font-size: 11px; }

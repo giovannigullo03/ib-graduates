@@ -506,9 +506,10 @@ def _merge_linkedin(idx, by_name):
 
         # --- career + current job ------------------------------------------ #
         rec["_linkedin_career"] = [
-            {k: v for k, v in c.items() if k not in ("is_default", "url")}
+            dict({k: v for k, v in c.items() if k not in ("is_default", "url")},
+                 kind="job")
             for c in (p.get("career") or [])
-        ]
+        ] + list(p.get("education_stops") or [])
         if p.get("current_employer"):
             rec["_linkedin_current"] = {
                 "org": p["current_employer"],
@@ -1474,15 +1475,19 @@ def build():
     # structured address, or a fuller INSPIRE institution record) before
     # attempting a lookup; otherwise leave the stop undotted rather than risk
     # a wrong-country match on the trajectory line.
+    # An institution name on its own is worth a lookup: universities are mapped
+    # places, and the pre-Balseiro education stops arrive with nothing else.
     all_stops = [(rec, stop) for rec in idx.values() for stop in rec["career"]
-                 if stop.get("lat") is None and (stop.get("city") or stop.get("country"))]
+                 if stop.get("lat") is None
+                 and (stop.get("city") or stop.get("country") or stop.get("institution"))]
     print(f"geocoding up to {len(all_stops)} career-history stops "
           f"(cached lookups are instant; capped at {CAREER_GEOCODE_BUDGET} new ones this run)...")
     n_stop_geo = new_lookups = done = 0
     for rec, stop in all_stops:
         for q in _chain(
                 ", ".join(b for b in [stop.get("institution"), stop.get("city"), stop.get("country")] if b),
-                ", ".join(b for b in [stop.get("institution"), stop.get("country")] if b) if stop.get("country") else ""):
+                ", ".join(b for b in [stop.get("institution"), stop.get("country")] if b) if stop.get("country") else "",
+                stop.get("institution") or ""):
             is_new = q not in geo_cache
             if is_new and new_lookups >= CAREER_GEOCODE_BUDGET:
                 continue  # leave it for the next run; nothing wasted
@@ -1588,7 +1593,7 @@ def build():
             "h_index": rec["h_index"],
             "thesis": ({"title": rec["thesis_title"], "year": rec["thesis_year"]}
                        if rec["thesis_title"] else None),
-            "career": rec["career"] or None,
+            "career": [dict(c, kind=c.get("kind") or "job") for c in rec["career"]] or None,
             "advisors": sorted(rec["advisors"]) or None,
             "confidence": ("confirmed" if rec["wikidata_alumnus"] or rec["ib_trained"]
                            or {"orcid", "wikipedia", "manual", "ricabib", "reviewed"} & rec["sources"]

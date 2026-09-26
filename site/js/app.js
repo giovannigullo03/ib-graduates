@@ -28,7 +28,8 @@ const FACETS = [
   { key: 'country',    label: 'Country (now)',       values: p => p.country ? [p.country] : [],       open: true },
   // anywhere their career took them, not just where they are today
   { key: 'career_country', label: 'Country (ever worked in)', open: false,
-    values: p => [...new Set((p.career || []).map(c => c.country).filter(Boolean))] },
+    values: p => [...new Set((p.career || [])
+      .filter(c => c.kind !== 'education').map(c => c.country).filter(Boolean))] },
   { key: 'levels',     label: 'Degree at Balseiro',  values: p => p.levels || [],                     open: true },
   { key: 'program',    label: 'Degree subject',      values: p => p.program ? [p.program] : [],       open: false },
   // Self-reported skills (LinkedIn). Thousands of distinct values, so only the
@@ -240,7 +241,8 @@ function trajectoryStops(p) {
 
 function stopLabel(c) {
   const yr = c.start ? ` (${c.start}${c.current ? '–now' : c.end ? '–' + c.end : ''})` : '';
-  return esc(c.institution) + esc(yr);
+  const tag = c.kind === 'education' ? ' · studied here' : '';
+  return esc(c.institution) + esc(yr) + tag;
 }
 
 // Every point the trajectory should pass through: Balseiro, then each dated
@@ -293,9 +295,10 @@ function drawSelection(p) {
   }).bindTooltip('Instituto Balseiro — where the trajectory starts', { direction: 'top' }));
 
   stops.forEach(s => layers.push(
-    L.circleMarker([s.lat, s.lon], {
-      radius: 5, weight: 1.5, color: TRAJ, fillColor: '#f2a6a6', fillOpacity: 0.95,
-    }).bindTooltip(stopLabel(s), { direction: 'top', sticky: true })
+    L.circleMarker([s.lat, s.lon], s.kind === 'education'
+      ? { radius: 5, weight: 2, color: TRAJ, fillColor: '#fff', fillOpacity: 0.85, dashArray: '2 2' }
+      : { radius: 5, weight: 1.5, color: TRAJ, fillColor: '#f2a6a6', fillOpacity: 0.95 }
+    ).bindTooltip(stopLabel(s), { direction: 'top', sticky: true })
   ));
 
   if (p.lat != null && p.lon != null) {
@@ -406,7 +409,8 @@ function popupHtml(p) {
     const stops = p.career.slice().sort((a, b) => (a.start || '') > (b.start || '') ? 1 : -1)
       .map(c => {
         const yr = c.start ? c.start + (c.current ? '–now' : c.end ? '–' + c.end : '') : '';
-        return `${esc(c.institution)}${yr ? ` <span class="yr">${esc(yr)}</span>` : ''}`;
+        const cap = c.kind === 'education' ? '<span class="cap">🎓</span> ' : '';
+        return `${cap}${esc(c.institution)}${yr ? ` <span class="yr">${esc(yr)}</span>` : ''}`;
       });
     careerLine = `<div class="pp-line pp-career">${stops.join(' → ')}</div>`;
   }
@@ -720,6 +724,7 @@ function migrationStats(list) {
   for (const p of list) {
     if (!p.grad_year) continue;
     const stops = (p.career || [])
+      .filter(c => c.kind !== 'education')
       .filter(c => c.country && (!c.start || +c.start >= p.grad_year))
       .sort((a, b) => (a.start || '') > (b.start || '') ? 1 : -1);
     if (!stops.length) continue;

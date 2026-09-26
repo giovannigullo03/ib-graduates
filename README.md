@@ -28,7 +28,7 @@ dropped into `data/linkedin/` by hand (see *LinkedIn exports* below).
 | Thesis reconciliation (`reconcile_theses.py`) | For thesis-roster people with no location: an ORCID name search (kept only when Balseiro is in the record), then a match of the exact thesis title to its OpenAlex `dissertation` work → that author's current institution. | confirmed |
 | Wikipedia | Curated *Alumnado / Profesores del Instituto Balseiro* categories — bios and portraits | confirmed |
 | IB thesis repository (RICABIB, harvested via the public [NUCLEA](https://nuclea.cnea.gob.ar) mirror) | Author + year + title of ~1,000 IB theses — the authoritative roster. No employer, so many are confirmed-but-unmapped. | confirmed |
-| LinkedIn exports (`data/linkedin/`) | Self-reported current employer + city, the **full position history** with locations and dates, degree and graduation year, skills and languages. Confirmed when the person lists Instituto Balseiro in their own education history. Local only — never committed. | confirmed / enrichment-only |
+| LinkedIn exports (`data/linkedin/`) | Self-reported current employer + city, the **full position history** with locations and dates, **where they studied before Balseiro**, degree and graduation year, skills and languages. Confirmed when the person lists Instituto Balseiro in their own education history. Local only — never committed. | confirmed / enrichment-only |
 | `data/manual_alumni.csv` | Anyone **you** add by hand | confirmed |
 
 The site shows **confirmed people by default** (toggle "Include inferred (OpenAlex-only) entries" in the sidebar for the rest).
