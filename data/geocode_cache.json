@@ -22024,5 +22024,687 @@
   "display_name": "Escuela Cooperativa Técnica Los Andes, 5715, Paseo de Los Carpinteros, Pinar del Lago, San Carlos de Bariloche, Municipio de San Carlos de Bariloche, Departamento Bariloche, Río Negro, 8400, Argentina",
   "country": "Argentina",
   "country_code": "AR"
+ },
+ "World": {
+  "lat": 38.8988373,
+  "lon": -77.0425667,
+  "display_name": "World Bank (MC Building), 1818, H Street Northwest, Golden Triangle, Ward 2, Washington, District of Columbia, 20037, United States",
+  "country": "United States",
+  "country_code": "US"
+ },
+ "Getafe, Spain": {
+  "lat": 40.3070639,
+  "lon": -3.7331808,
+  "display_name": "Getafe, Comunidad de Madrid, España",
+  "country": "España",
+  "country_code": "ES"
+ },
+ "Niteroi, Brazil": {
+  "lat": -22.8884,
+  "lon": -43.1147,
+  "display_name": "Niterói, Rio de Janeiro, Região Sudeste, Brasil",
+  "country": "Brasil",
+  "country_code": "BR"
+ },
+ "Pereira, Colombia": {
+  "lat": 4.7854606,
+  "lon": -75.788322,
+  "display_name": "Pereira, Risaralda, RAP Eje Cafetero, Colombia",
+  "country": "Colombia",
+  "country_code": "CO"
+ },
+ "Tunja, Colombia": {
+  "lat": 5.5324313,
+  "lon": -73.3616014,
+  "display_name": "Tunja, Centro, Boyacá, RAP (Especial) Central, 150001, Colombia",
+  "country": "Colombia",
+  "country_code": "CO"
+ },
+ "Lausanne, Switzerland": {
+  "lat": 46.5218269,
+  "lon": 6.6327025,
+  "display_name": "Lausanne, District de Lausanne, Vaud, Schweiz/Suisse/Svizzera/Svizra",
+  "country": "Schweiz/Suisse/Svizzera/Svizra",
+  "country_code": "CH"
+ },
+ "Thun, Switzerland": {
+  "lat": 46.7582827,
+  "lon": 7.628086,
+  "display_name": "Thun, Verwaltungskreis Thun, Verwaltungsregion Oberland, Bern/Berne, Schweiz/Suisse/Svizzera/Svizra",
+  "country": "Schweiz/Suisse/Svizzera/Svizra",
+  "country_code": "CH"
+ },
+ "Gauteng, South Africa": {
+  "lat": -25.9363439,
+  "lon": 28.0813105,
+  "display_name": "Gauteng, South Africa",
+  "country": "South Africa",
+  "country_code": "ZA"
+ },
+ "San Miguel de Tucumán, Argentina": {
+  "lat": -26.8303703,
+  "lon": -65.2038133,
+  "display_name": "San Miguel de Tucumán, Departamento Capital, Tucumán, T4000, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "CABA, Argentina": {
+  "lat": -34.6161231,
+  "lon": -58.4356212,
+  "display_name": "Ciudad Autónoma de Buenos Aires, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "Río Negro, Argentina": {
+  "lat": -40.4811973,
+  "lon": -67.6145911,
+  "display_name": "Río Negro, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "Buenos Aires Province, Argentina": {
+  "lat": -34.5121516,
+  "lon": -58.5248182,
+  "display_name": "Unilever Argentina, 4191, Alférez Hipólito Bouchard, Munro, Partido de Vicente López, Buenos Aires, B1605BNA, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "Caracas, Venezuela": {
+  "lat": 10.5060934,
+  "lon": -66.9146008,
+  "display_name": "Caracas, Parroquia Catedral, Municipio Libertador, Distrito Metropolitano de Caracas, Distrito Capital, Venezuela",
+  "country": "Venezuela",
+  "country_code": "VE"
+ },
+ "Sao Jose dos Campos, Brazil": {
+  "lat": -23.1867782,
+  "lon": -45.8854538,
+  "display_name": "São José dos Campos, Eugênio de Melo, São Paulo, Região Sudeste, Brasil",
+  "country": "Brasil",
+  "country_code": "BR"
+ },
+ "Saint Paul lez Durance, France": {
+  "lat": 43.6869938,
+  "lon": 5.7077225,
+  "display_name": "Saint-Paul-lès-Durance, Aix-en-Provence, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France métropolitaine, 13115, France",
+  "country": "France",
+  "country_code": "FR"
+ },
+ "Rio Cuarto, Argentina": {
+  "lat": -33.1237585,
+  "lon": -64.3489782,
+  "display_name": "Río Cuarto, Municipio de Río Cuarto, Pedanía Río Cuarto, Departamento Río Cuarto, Córdoba, X5800, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "Moscow, Russia": {
+  "lat": 55.625578,
+  "lon": 37.6063916,
+  "display_name": "Москва, Центральный федеральный округ, Россия",
+  "country": "Россия",
+  "country_code": "RU"
+ },
+ "San Martín, Argentina": {
+  "lat": -34.5771577,
+  "lon": -58.5377237,
+  "display_name": "Ciudad del Libertador General San Martín, Partido de General San Martín, Buenos Aires, B1650, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "Popayán, Colombia": {
+  "lat": 2.4431455,
+  "lon": -76.5463299,
+  "display_name": "Popayán, Centro, Cauca, RAP Pacífico, Colombia",
+  "country": "Colombia",
+  "country_code": "CO"
+ },
+ "1050, Belgium": {
+  "lat": 50.8215435,
+  "lon": 4.3770825,
+  "display_name": "1050, Ixelles - Elsene, Brussel-Hoofdstad - Bruxelles-Capitale, Région de Bruxelles-Capitale - Brussels Hoofdstedelijk Gewest, België / Belgique / Belgien",
+  "country": "België / Belgique / Belgien",
+  "country_code": "BE"
+ },
+ "Annandale, United States": {
+  "lat": 45.2627428,
+  "lon": -94.1244271,
+  "display_name": "Annandale, Wright County, Minnesota, 55302, United States",
+  "country": "United States",
+  "country_code": "US"
+ },
+ "Lyngby, Denmark": {
+  "lat": 55.7718649,
+  "lon": 12.5051413,
+  "display_name": "Kongens Lyngby, Lyngby-Taarbæk Kommune, Region Hovedstaden, 2800, Danmark",
+  "country": "Danmark",
+  "country_code": "DK"
+ },
+ "Surrey, United Kingdom": {
+  "lat": 51.2715316,
+  "lon": -0.3414524,
+  "display_name": "Surrey, England, United Kingdom",
+  "country": "United Kingdom",
+  "country_code": "GB"
+ },
+ "Harwell Campus": {
+  "lat": 51.579546,
+  "lon": -1.3081827,
+  "display_name": "Harwell Campus, Harwell, Vale of White Horse, Oxfordshire, England, OX11 0QG, United Kingdom",
+  "country": "United Kingdom",
+  "country_code": "GB"
+ },
+ "Riad": {
+  "lat": 24.638916,
+  "lon": 46.7160104,
+  "display_name": "الرياض, محافظة الرياض, منطقة الرياض, 12643, السعودية",
+  "country": "السعودية",
+  "country_code": "SA"
+ },
+ "Pittsburgh, United States": {
+  "lat": 40.4406968,
+  "lon": -80.0025666,
+  "display_name": "Pittsburgh, Allegheny County, Pennsylvania, United States",
+  "country": "United States",
+  "country_code": "US"
+ },
+ "Asunción, Paraguay": {
+  "lat": -25.2800459,
+  "lon": -57.6343814,
+  "display_name": "Asunción, Distrito Capital, Región Oriental, 001013, Paraguay / Paraguái",
+  "country": "Paraguay / Paraguái",
+  "country_code": "PY"
+ },
+ "Mataró, Spain": {
+  "lat": 41.5399994,
+  "lon": 2.4448577,
+  "display_name": "Mataró, Maresme, Barcelona, Catalunya, España",
+  "country": "España",
+  "country_code": "ES"
+ },
+ "Florianopolis, Brazil": {
+  "lat": -27.5973002,
+  "lon": -48.5496098,
+  "display_name": "Florianópolis, Santa Catarina, Região Sul, Brasil",
+  "country": "Brasil",
+  "country_code": "BR"
+ },
+ "Leioa, Spain": {
+  "lat": 43.3271048,
+  "lon": -2.9846079,
+  "display_name": "Leioa, Bizkaia, Euskadi, 48940, España",
+  "country": "España",
+  "country_code": "ES"
+ },
+ "Victoria, Australia": {
+  "lat": -36.5986096,
+  "lon": 144.6780052,
+  "display_name": "Victoria, Australia",
+  "country": "Australia",
+  "country_code": "AU"
+ },
+ "Haldensleben, Germany": {
+  "lat": 52.2911243,
+  "lon": 11.4132719,
+  "display_name": "Haldensleben, Börde, Sachsen-Anhalt, Deutschland",
+  "country": "Deutschland",
+  "country_code": "DE"
+ },
+ "Entre Ríos, Argentina": {
+  "lat": -32.1290686,
+  "lon": -59.5077664,
+  "display_name": "Entre Ríos, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "campamento de plaza, Argentina": {
+  "lat": -38.9213382,
+  "lon": -69.1798126,
+  "display_name": "Campamento 1, Plaza Huincul, Municipio de Plaza Huincul, Departamento Confluencia, Neuquén, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "Plaza de mulas": {
+  "lat": -32.648756,
+  "lon": -70.0579685,
+  "display_name": "Plaza de Mulas, Distrito Las Cuevas, Departamento Las Heras, Mendoza, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "Bariloche (Argentina), France": {},
+ "Illinois, United States": {
+  "lat": 40.0796606,
+  "lon": -89.4337288,
+  "display_name": "Illinois, United States",
+  "country": "United States",
+  "country_code": "US"
+ },
+ "Jujuy Province, Argentina": {
+  "lat": -38.9511933,
+  "lon": -68.0673322,
+  "display_name": "Unión de Trabajadores del Turismo, Hoteleros y Gastronómicos de la República Argentina, 353, Jujuy, 14 de Septiembre, Auca Mahuida, Área Centro Oeste, Neuquén, Municipio de Neuquén, Departamento Confluencia, Neuquén, Q8300, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "Jujuy, Argentina": {
+  "lat": -23.1546219,
+  "lon": -66.1110913,
+  "display_name": "Jujuy, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "Quebec, Canada": {
+  "lat": 52.4760892,
+  "lon": -71.8258668,
+  "display_name": "Québec, Canada",
+  "country": "Canada",
+  "country_code": "CA"
+ },
+ "San Luis, Argentina": {
+  "lat": -33.8985562,
+  "lon": -66.0614179,
+  "display_name": "San Luis, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "Buenos Aires - Toronto, Argentina": {},
+ "Riyadh": {
+  "lat": 24.638916,
+  "lon": 46.7160104,
+  "display_name": "الرياض, محافظة الرياض, منطقة الرياض, 12643, السعودية",
+  "country": "السعودية",
+  "country_code": "SA"
+ },
+ "Ciudad Autonoma de Buenos Aires, Argentina": {
+  "lat": -34.6161231,
+  "lon": -58.4356212,
+  "display_name": "Ciudad Autónoma de Buenos Aires, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "Cali, Colombia": {
+  "lat": 3.4108435,
+  "lon": -76.5812127,
+  "display_name": "Cali, Sur, Valle del Cauca, RAP Pacífico, Colombia",
+  "country": "Colombia",
+  "country_code": "CO"
+ },
+ "Valle del Cauca, Colombia": {
+  "lat": 3.6984053,
+  "lon": -76.5501996,
+  "display_name": "Valle del Cauca, RAP Pacífico, Colombia",
+  "country": "Colombia",
+  "country_code": "CO"
+ },
+ "Santiago": {
+  "lat": 9.8694792,
+  "lon": -83.7980749,
+  "display_name": "Santiago, Paraíso, Cartago, 30202, Costa Rica",
+  "country": "Costa Rica",
+  "country_code": "CR"
+ },
+ "Magallanes Y Antartica Chilena, Chile": {
+  "lat": -53.3527518,
+  "lon": -71.5547782,
+  "display_name": "Región de Magallanes y de la Antártica Chilena, Chile",
+  "country": "Chile",
+  "country_code": "CL"
+ },
+ "CAREM Project": {},
+ "Yacimiento el Tordillo - Sector Almacenes": {},
+ "Comodoro Rivadavia, Argentina": {
+  "lat": -45.8632024,
+  "lon": -67.4752615,
+  "display_name": "Municipio de Comodoro Rivadavia, Departamento Escalante, Chubut, U9000, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "Helsinki, Finland": {
+  "lat": 60.1666204,
+  "lon": 24.9435408,
+  "display_name": "Helsinki, Helsingin seutukunta, Uusimaa, Manner-Suomi, Suomi / Finland",
+  "country": "Suomi / Finland",
+  "country_code": "FI"
+ },
+ "Tumbes, Peru": {
+  "lat": -3.833333,
+  "lon": -80.5,
+  "display_name": "Tumbes, Perú",
+  "country": "Perú",
+  "country_code": "PE"
+ },
+ "Lima - Buenos Aries, Argentina": {},
+ "Espacio Económico Europeo": {},
+ "País del Loira, France": {
+  "lat": 47.6594864,
+  "lon": -0.8186143,
+  "display_name": "Pays de la Loire, France métropolitaine, France",
+  "country": "France",
+  "country_code": "FR"
+ },
+ "Tripoli": {
+  "lat": 32.896672,
+  "lon": 13.1777923,
+  "display_name": "طرابلس, ⵟⵔⴰⴱⵍⵙ طرابلس Tripoli, ⵍⵉⴱⵢⴰ ليبيا Libya",
+  "country": "ⵍⵉⴱⵢⴰ ليبيا Libya",
+  "country_code": "LY"
+ },
+ "Turingia, Germany": {
+  "lat": 50.9036654,
+  "lon": 11.026404,
+  "display_name": "Thüringen, Deutschland",
+  "country": "Deutschland",
+  "country_code": "DE"
+ },
+ "Formosa, Argentina": {
+  "lat": -24.5955306,
+  "lon": -60.4289718,
+  "display_name": "Formosa, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "Provincia de Formosa, Argentina": {
+  "lat": -24.5955306,
+  "lon": -60.4289718,
+  "display_name": "Formosa, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "Argentina, Ecuador": {
+  "lat": -2.2350434,
+  "lon": -79.0899754,
+  "display_name": "Argentina, Cumanda, Chimborazo, 020201, Ecuador",
+  "country": "Ecuador",
+  "country_code": "EC"
+ },
+ "Santa Cruz, Argentina": {
+  "lat": -49.0468648,
+  "lon": -70.27054,
+  "display_name": "Santa Cruz, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "Rio Negro & Buenos Aires, Argentina": {
+  "lat": -36.8963373,
+  "lon": -60.2857828,
+  "display_name": "Rio Negro, Olavarría, Partido de Olavarría, Buenos Aires, 7450, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "Argentina & Maracaibo, Venezuela": {
+  "lat": 10.6501643,
+  "lon": -71.5945924,
+  "display_name": "Helados La Argentina, Vereda del Lago, Valle Frío, Santa Lucía, Parroquia Santa Lucía, Municipio Maracaibo, Zulia, 4000, Venezuela",
+  "country": "Venezuela",
+  "country_code": "VE"
+ },
+ "Buenos Aires Office, Argentina": {},
+ "Buenos Aires Florencio Varela, Argentina": {
+  "lat": -34.7861407,
+  "lon": -58.2820635,
+  "display_name": "La Argentina, San Eduardo, San Juan Bautista, Partido de Florencio Varela, Buenos Aires, 1886, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "Nueva Hampshire, United States": {
+  "lat": 43.4849133,
+  "lon": -71.6553992,
+  "display_name": "New Hampshire, United States",
+  "country": "United States",
+  "country_code": "US"
+ },
+ "Emilia-Romaña, Italy": {
+  "lat": 44.525696,
+  "lon": 11.039437,
+  "display_name": "Emilia-Romagna, Italia",
+  "country": "Italia",
+  "country_code": "IT"
+ },
+ "Pereira": {
+  "lat": 4.7854606,
+  "lon": -75.788322,
+  "display_name": "Pereira, Risaralda, RAP Eje Cafetero, Colombia",
+  "country": "Colombia",
+  "country_code": "CO"
+ },
+ "Armenia": {
+  "lat": 40.7696272,
+  "lon": 44.6736646,
+  "display_name": "Հայաստան",
+  "country": "Հայաստան",
+  "country_code": "AM"
+ },
+ "Cartagena": {
+  "lat": 37.6155018,
+  "lon": -0.987511,
+  "display_name": "Cartagena, Campo de Cartagena y Mar Menor, Región de Murcia, España",
+  "country": "España",
+  "country_code": "ES"
+ },
+ "tandil, Argentina": {
+  "lat": -37.3282887,
+  "lon": -59.1356957,
+  "display_name": "Tandil, Partido de Tandil, Buenos Aires, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "Lombardía, Italy": {
+  "lat": 45.5703694,
+  "lon": 9.7732524,
+  "display_name": "Lombardia, Italia",
+  "country": "Italia",
+  "country_code": "IT"
+ },
+ "Universitat Politècnica de Catalunya, Germany": {},
+ "Brandeburgo, Germany": {
+  "lat": 52.8455492,
+  "lon": 13.2461296,
+  "display_name": "Brandenburg, Deutschland",
+  "country": "Deutschland",
+  "country_code": "DE"
+ },
+ "Nariño, Colombia": {
+  "lat": 1.5842268,
+  "lon": -77.8585766,
+  "display_name": "Nariño, RAP Pacífico, Colombia",
+  "country": "Colombia",
+  "country_code": "CO"
+ },
+ "Cyberspace": {
+  "lat": 52.2697902,
+  "lon": 104.3032766,
+  "display_name": "Cyberspace, 28, улица 25 Октября, Лисиха, Октябрьский административный округ, Иркутск, городской округ Иркутск, Иркутская область, Сибирский федеральный округ, 664022, Россия",
+  "country": "Россия",
+  "country_code": "RU"
+ },
+ "The, Netherlands": {
+  "lat": 51.0045727,
+  "lon": 0.9750492,
+  "display_name": "Netherlands, Coast Drive, St. Mary in the Marsh, St Marys Bay, Folkestone and Hythe, Kent, England, TN29 0HN, United Kingdom",
+  "country": "United Kingdom",
+  "country_code": "GB"
+ },
+ "ICTP": {
+  "lat": 45.7072636,
+  "lon": 13.7142339,
+  "display_name": "ICTP Adriatico Guest House, Riva Massimiliano e Carlotta, Roiano-Gretta-Barcola-Cologna-Scorcola, Grignano / Grljan, Trieste, Friuli-Venezia Giulia, 34010, Italia",
+  "country": "Italia",
+  "country_code": "IT"
+ },
+ "Toulouse, France": {
+  "lat": 43.6044638,
+  "lon": 1.4442433,
+  "display_name": "Toulouse, Haute-Garonne, Occitanie, France métropolitaine, France",
+  "country": "France",
+  "country_code": "FR"
+ },
+ "Condado de Galway, Ireland": {},
+ "Galway, Ireland": {
+  "lat": 53.2744122,
+  "lon": -9.0490601,
+  "display_name": "Cathair na Gaillimhe, County Galway, Connacht, Éire / Ireland",
+  "country": "Éire / Ireland",
+  "country_code": "IE"
+ },
+ "UAE (Dubai)": {
+  "lat": 25.0742823,
+  "lon": 55.1885624,
+  "display_name": "دبي, الإمارات العربية المتحدة",
+  "country": "الإمارات العربية المتحدة",
+  "country_code": "AE"
+ },
+ "Baja Sajonia, Germany": {
+  "lat": 52.8398531,
+  "lon": 9.075962,
+  "display_name": "Niedersachsen, Deutschland",
+  "country": "Deutschland",
+  "country_code": "DE"
+ },
+ "Provincia del Chubut, Argentina": {
+  "lat": -43.7128356,
+  "lon": -68.7461817,
+  "display_name": "Chubut, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "Estado Carabobo, Venezuela": {
+  "lat": 10.1686583,
+  "lon": -68.0350028,
+  "display_name": "Carabobo, Venezuela",
+  "country": "Venezuela",
+  "country_code": "VE"
+ },
+ "San Isidro": {
+  "lat": -34.4739792,
+  "lon": -58.5264866,
+  "display_name": "San Isidro, Partido de San Isidro, Buenos Aires, 1642, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "Pinamar": {
+  "lat": -37.1099492,
+  "lon": -56.8539007,
+  "display_name": "Pinamar, Partido de Pinamar, Buenos Aires, 7167, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "England, United Kingdom": {
+  "lat": 52.5310214,
+  "lon": -1.2649062,
+  "display_name": "England, United Kingdom",
+  "country": "United Kingdom",
+  "country_code": "GB"
+ },
+ "Fortín de piedra": {
+  "lat": -38.4572917,
+  "lon": -69.0285526,
+  "display_name": "Planta Central de Procesamiento de Gas Fortín de Piedra, Departamento Añelo, Neuquén, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "Central Nuclear Embalse, Argentina": {
+  "lat": -32.2381408,
+  "lon": -64.4724264,
+  "display_name": "Central Nuclear Embalse, Municipio de Embalse, Pedanía Cañada de Álvarez, Departamento Calamuchita, Córdoba, X5191, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "Este, France": {
+  "lat": 48.4845157,
+  "lon": 6.113035,
+  "display_name": "Grand Est, France métropolitaine, France",
+  "country": "France",
+  "country_code": "FR"
+ },
+ "Nouvelle-Aquitaine, France": {
+  "lat": 45.4039367,
+  "lon": 0.3756199,
+  "display_name": "Nouvelle-Aquitaine, France métropolitaine, France",
+  "country": "France",
+  "country_code": "FR"
+ },
+ "http://www.candoit.com.ar": {},
+ "Provenza-Alpes-Costa Azul, France": {
+  "lat": 44.0580563,
+  "lon": 6.0638506,
+  "display_name": "Provence-Alpes-Côte d'Azur, France métropolitaine, France",
+  "country": "France",
+  "country_code": "FR"
+ },
+ "Houston, United States": {
+  "lat": 29.7589382,
+  "lon": -95.3676974,
+  "display_name": "Houston, Harris County, Texas, United States",
+  "country": "United States",
+  "country_code": "US"
+ },
+ "S.C de Bariloche": {
+  "lat": 40.4678942,
+  "lon": -3.5904192,
+  "display_name": "Calle de Bariloche, Corralejos, Barajas, Madrid, Comunidad de Madrid, 28042, España",
+  "country": "España",
+  "country_code": "ES"
+ },
+ "Brooklyn": {
+  "lat": 40.6526006,
+  "lon": -73.9497211,
+  "display_name": "Brooklyn, Kings County, New York, United States",
+  "country": "United States",
+  "country_code": "US"
+ },
+ "Dublín, Ireland": {
+  "lat": 53.3493795,
+  "lon": -6.2605593,
+  "display_name": "Dublin, County Dublin, Leinster, Éire / Ireland",
+  "country": "Éire / Ireland",
+  "country_code": "IE"
+ },
+ "Centurion, South Africa": {
+  "lat": -25.836389,
+  "lon": 28.180278,
+  "display_name": "Centurion, City of Tshwane Metropolitan Municipality, Gauteng, 0246, South Africa",
+  "country": "South Africa",
+  "country_code": "ZA"
+ },
+ "Medellín, Colombia": {
+  "lat": 6.2697324,
+  "lon": -75.6025597,
+  "display_name": "Medellín, Valle de Aburrá, Antioquia, RAP del Agua y la Montaña, 0500, Colombia",
+  "country": "Colombia",
+  "country_code": "CO"
+ },
+ "Picardy, France": {
+  "lat": 49.601756,
+  "lon": 2.8716339,
+  "display_name": "Picardie, France métropolitaine, France",
+  "country": "France",
+  "country_code": "FR"
+ },
+ "Stockholm County, Sweden": {
+  "lat": 59.3948653,
+  "lon": 18.6660073,
+  "display_name": "Stockholms län, Sverige",
+  "country": "Sverige",
+  "country_code": "SE"
+ },
+ "Latium, Italy": {
+  "lat": 41.9801648,
+  "lon": 12.7667971,
+  "display_name": "Lazio, Italia",
+  "country": "Italia",
+  "country_code": "IT"
+ },
+ "San Justo": {
+  "lat": 42.1607213,
+  "lon": -6.6214177,
+  "display_name": "San Justo, Zamora, Castilla y León, 49358, España",
+  "country": "España",
+  "country_code": "ES"
+ },
+ "Leverkusen, Germany": {
+  "lat": 51.0324743,
+  "lon": 6.9881194,
+  "display_name": "Leverkusen, Nordrhein-Westfalen, Deutschland",
+  "country": "Deutschland",
+  "country_code": "DE"
  }
 }

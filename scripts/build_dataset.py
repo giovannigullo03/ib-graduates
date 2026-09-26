@@ -1573,7 +1573,12 @@ def build():
         for q in _chain(
                 ", ".join(b for b in [stop.get("institution"), stop.get("city"), stop.get("country")] if b),
                 ", ".join(b for b in [stop.get("institution"), stop.get("country")] if b) if stop.get("country") else "",
-                stop.get("institution") or ""):
+                stop.get("institution") or "",
+                # The employer may be a company OSM has never heard of, but we
+                # often know the city it sat in. Falling back to that places
+                # the stop where the person actually was, which is all a
+                # trajectory dot needs — and it costs nothing.
+                ", ".join(b for b in [stop.get("city"), stop.get("country")] if b)):
             is_new = q not in geo_cache
             if is_new and new_lookups >= CAREER_GEOCODE_BUDGET:
                 continue  # leave it for the next run; nothing wasted
