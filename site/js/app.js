@@ -242,7 +242,11 @@ function trajectoryStops(p) {
 function stopLabel(c) {
   const yr = c.start ? ` (${c.start}${c.current ? '–now' : c.end ? '–' + c.end : ''})` : '';
   const tag = c.kind === 'education' ? ' · studied here' : '';
-  return esc(c.institution) + esc(yr) + tag;
+  // an institution placed at its seat because the record does not say which
+  // campus — the map should not pretend to know
+  const approx = c.approx ? ' · exact campus unknown' : '';
+  const remote = c.modality === 'remote' ? ' · worked remotely' : '';
+  return esc(c.institution) + esc(yr) + tag + approx + remote;
 }
 
 // Every point the trajectory should pass through: Balseiro, then each dated

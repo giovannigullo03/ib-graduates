@@ -13,31 +13,74 @@
 # (INSPIRE writes "Rio de Janeiro, CBPF"), key the row on the acronym.
 # Only `institution` and one of (city+country) or (lat+lon) are required.
 #
+# `approx` marks a row as the institution's seat rather than the exact campus:
+# use it when a name is genuinely ambiguous, as "Universidad Tecnológica
+# Nacional" is — it has some thirty regional faculties and the data rarely says
+# which. The stop is labelled as approximate so the map does not claim to know.
+#
 # Add a row for any career stop you care about that the map is missing; run
 # `python3 scripts/build_dataset.py` afterwards. Leave a row out rather than
 # guess — an institution placed in the wrong city is worse than one left off.
-institution,city,country,lat,lon,notes
+institution,city,country,lat,lon,approx,notes
 # --- Argentine nuclear sector ---------------------------------------------
-Nucleoeléctrica Argentina S.A.,Buenos Aires,Argentina,,,operates Atucha I/II and Embalse; HQ in CABA
-CONICET Patagonia Norte,San Carlos de Bariloche,Argentina,,,CCT CONICET Patagonia Norte
-Fundación INTECNUS,San Carlos de Bariloche,Argentina,,,nuclear medicine centre next to Balseiro
-FUESMEN,Mendoza,Argentina,,,Fundación Escuela de Medicina Nuclear
-Autoridad Regulatoria Nuclear,Buenos Aires,Argentina,,,ARN — the nuclear regulator
+Nucleoeléctrica Argentina S.A.,Buenos Aires,Argentina,,,,operates Atucha I/II and Embalse; HQ in CABA
+CONICET Patagonia Norte,San Carlos de Bariloche,Argentina,,,,CCT CONICET Patagonia Norte
+Fundación INTECNUS,San Carlos de Bariloche,Argentina,,,,nuclear medicine centre next to Balseiro
+FUESMEN,Mendoza,Argentina,,,,Fundación Escuela de Medicina Nuclear
+Autoridad Regulatoria Nuclear,Buenos Aires,Argentina,,,,ARN — the nuclear regulator
 # --- physics institutes ----------------------------------------------------
-Abdus Salam International Centre for Theoretical Physics,Trieste,Italy,,,ICTP
-"Madrid, IFT",Madrid,Spain,,,"Instituto de Física Teórica UAM-CSIC; INSPIRE writes it ""Madrid, IFT"""
-CBPF,Rio de Janeiro,Brazil,,,"Centro Brasileiro de Pesquisas Físicas; INSPIRE writes it ""Rio de Janeiro, CBPF"""
-Laboratoire de Physique Subatomique et de Cosmologie,Grenoble,France,,,LPSC
-CNRS Délégation Ile-de-France Sud,Gif-sur-Yvette,France,,,
-Technical University of Berlin,Berlin,Germany,,,TU Berlin
+Abdus Salam International Centre for Theoretical Physics,Trieste,Italy,,,,ICTP
+"Madrid, IFT",Madrid,Spain,,,,"Instituto de Física Teórica UAM-CSIC; INSPIRE writes it ""Madrid, IFT"""
+CBPF,Rio de Janeiro,Brazil,,,,"Centro Brasileiro de Pesquisas Físicas; INSPIRE writes it ""Rio de Janeiro, CBPF"""
+Laboratoire de Physique Subatomique et de Cosmologie,Grenoble,France,,,,LPSC
+CNRS Délégation Ile-de-France Sud,Gif-sur-Yvette,France,,,,
+Technical University of Berlin,Berlin,Germany,,,,TU Berlin
 # --- companies -------------------------------------------------------------
-Rather Labs,Buenos Aires,Argentina,,,Argentine software consultancy
-Tecpetrol,Buenos Aires,Argentina,,,Techint group
-Skyloom Global,Denver,United States,,,optical space communications
-ASAPP,New York,United States,,,
-Scale AI,San Francisco,United States,,,
-Marvell Technology,Santa Clara,United States,,,
-AtkinsRéalis,Montreal,Canada,,,formerly SNC-Lavalin
-Jampp,Buenos Aires,Argentina,,,
-ZoomAgri,Buenos Aires,Argentina,,,
-Teramot,Buenos Aires,Argentina,,,
+Rather Labs,Buenos Aires,Argentina,,,,Argentine software consultancy
+Tecpetrol,Buenos Aires,Argentina,,,,Techint group
+Skyloom Global,Denver,United States,,,,optical space communications
+ASAPP,New York,United States,,,,
+Scale AI,San Francisco,United States,,,,
+Marvell Technology,Santa Clara,United States,,,,
+AtkinsRéalis,Montreal,Canada,,,,formerly SNC-Lavalin
+Jampp,Buenos Aires,Argentina,,,,
+ZoomAgri,Buenos Aires,Argentina,,,,
+Teramot,Buenos Aires,Argentina,,,,
+# --- UTN: named regional faculties. Keyed on "Facultad Regional <city>" so the
+# row matches whether the record says "UTN ..." or "Universidad Tecnológica
+# Nacional ...". These are exact, not approximate.
+Facultad Regional Buenos Aires,Buenos Aires,Argentina,,,,UTN FRBA
+UTN FRBA,Buenos Aires,Argentina,,,,covers "Centro de e-Learning UTN FRBA"
+Facultad Regional Delta,Campana,Argentina,,,,UTN
+Facultad Regional Haedo,Haedo,Argentina,,,,UTN
+Facultad Regional Córdoba,Córdoba,Argentina,,,,UTN
+Facultad Regional Resistencia,Resistencia,Argentina,,,,UTN
+Facultad Regional San Rafael,San Rafael,Argentina,,,,UTN
+Facultad Regional Paraná,Paraná,Argentina,,,,UTN
+Facultad Regional San Nicolás,San Nicolás de los Arroyos,Argentina,,,,UTN
+UTN San Nicolás,San Nicolás de los Arroyos,Argentina,,,,UTN
+Facultad Regional Santa Fe,Santa Fe,Argentina,,,,UTN
+Facultad Regional Rosario,Rosario,Argentina,,,,UTN
+Facultad Regional Mendoza,Mendoza,Argentina,,,,UTN
+Facultad Regional La Plata,La Plata,Argentina,,,,UTN
+Facultad Regional Bahía Blanca,Bahía Blanca,Argentina,,,,UTN
+Facultad Regional Tucumán,San Miguel de Tucumán,Argentina,,,,UTN
+# ...and the bare name, which says nothing about which of the thirty it was.
+# Placed at the rectorado and flagged, rather than guessed at: before this it
+# was landing on whichever faculty the geocoder happened to like, sending a
+# graduate from Santa Fe to Tierra del Fuego.
+Universidad Tecnológica Nacional,Buenos Aires,Argentina,,,yes,rectorado — regional faculty unknown
+# --- other institutions the geocoder could not find -------------------------
+Universidad Nacional del Litoral,Santa Fe,Argentina,,,,covers its Facultad de Ingeniería Química
+Universidad de la Defensa Nacional,Buenos Aires,Argentina,,,,UNDEF
+IAE Business School,Pilar,Argentina,,,,Universidad Austral
+UNESP,São Paulo,Brazil,,,,Universidade Estadual Paulista
+Instituto Politécnico Superior General San Martín,Rosario,Argentina,,,,UNR
+Centro Oncológico Pergamino,Pergamino,Argentina,,,,
+Instituto Nacional de Aviación Civil,Buenos Aires,Argentina,,,,INAC
+Honorable Cámara de Diputados de la Nación,Buenos Aires,Argentina,,,,
+Universidad Internacional de Valencia,Valencia,Spain,,,,VIU
+Universidad de Bogotá Jorge Tadeo Lozano,Bogotá,Colombia,,,,
+UWC Adriatic,Duino,Italy,,,,Collegio del Mondo Unito dell'Adriatico
+Positronpharma,Santiago,Chile,,,,
+Neuromatch Academy,,,,,,online only — deliberately left unplaced

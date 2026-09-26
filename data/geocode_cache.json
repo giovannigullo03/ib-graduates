@@ -23701,5 +23701,324 @@
   "display_name": "Valparaíso, Provincia de Valparaíso, Región de Valparaíso, Chile",
   "country": "Chile",
   "country_code": "CL"
+ },
+ "Capgemini, Comunidad de Madrid, Spain": {},
+ "Capgemini, Spain": {
+  "lat": 41.4038908,
+  "lon": 2.1912367,
+  "display_name": "Capgemini, 199, Avinguda Diagonal, el Parc i la Llacuna del Poblenou, Sant Martí, Barcelona, Barcelonès, Barcelona, Catalunya, 08018, España",
+  "country": "España",
+  "country_code": "ES"
+ },
+ "Factored, Provincia de Río Negro, Argentina": {},
+ "Factored, Argentina": {},
+ "Superhuman, San Francisco, Argentina": {},
+ "San Francisco, Argentina": {
+  "lat": -31.4249815,
+  "lon": -62.0840299,
+  "display_name": "San Francisco, Municipio de San Francisco, Pedanía Juárez Celman, Departamento San Justo, Córdoba, X2400, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "Infolytics, Buenos Aires, Argentina": {},
+ "AB InBev, Argentina": {},
+ "Membrane, Argentina": {},
+ "GlobalPassport™, Provincia de Buenos Aires, Argentina": {},
+ "GlobalPassport™, Argentina": {},
+ "Silverloom SRL, Argentina": {},
+ "CAEN SpA, Londres, Italy": {},
+ "Londres, Italy": {
+  "lat": 51.5234062,
+  "lon": -0.1098991,
+  "display_name": "Little Italy, Clerkenwell, London Borough of Islington, Greater London, England, United Kingdom",
+  "country": "United Kingdom",
+  "country_code": "GB"
+ },
+ "Skyloom Global, Provincia de Buenos Aires, Argentina": {},
+ "CANDOIT Engineering & Technology, Provincia de Buenos Aires, Argentina": {},
+ "SigTech, Provincia de Buenos Aires, Argentina": {},
+ "SigTech, Argentina": {},
+ "Loka, Argentina": {
+  "lat": -27.3761615,
+  "lon": -55.8986665,
+  "display_name": "Loka Linda, 2800, Avenida Uruguay, El Palomar, Delegacion Municipal Villa Urquiza, Posadas, Municipio de Posadas, Departamento Capital, Misiones, 3300, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "Rather Labs, Inc, Friul-Venecia Julia, Italy": {},
+ "Rather Labs, Inc, Italy": {},
+ "Scale AI, Provincia de Río Negro, Argentina": {},
+ "Spacebee Technologies, Salta, Argentina": {},
+ "Neuromatch Academy, Comunidad de Madrid, Spain": {},
+ "Neuromatch Academy, Spain": {},
+ "Membrane Labs, Cataluña, Spain": {},
+ "Membrane Labs, Spain": {},
+ "Rather Labs, Inc, Cataluña, Spain": {},
+ "Rather Labs, Inc, Spain": {},
+ "Salomea Solutions, Provincia de Río Negro, Argentina": {},
+ "Cortical, Provincia de Buenos Aires, Argentina": {},
+ "Cortical, Argentina": {
+  "lat": -27.4496261,
+  "lon": -58.986167,
+  "display_name": "Despojamiento cortical, 98, Marcelo Torcuato de Alvear, Resistencia, Municipio de Resistencia, Departamento San Fernando, Chaco, 3500, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "Improving, Argentina": {},
+ "Taxfix, Argentina": {},
+ "GPAI, Argentina": {},
+ "TranscribeMe, Provincia de Río Negro, Argentina": {},
+ "Alamo Analytics, Argentina": {},
+ "Monsoft Solutions, Spain": {},
+ "Quantit, Peru": {},
+ "Soul Labs, Provincia de Neuquén, Argentina": {},
+ "Soul Labs, Argentina": {},
+ "Universidad Nacional de Santiago del Estero, Córdoba, Argentina": {},
+ "Universidad Nacional de Santiago del Estero, Argentina": {
+  "lat": -27.8014255,
+  "lon": -64.2509327,
+  "display_name": "Universidad Nacional de Santiago del Estero, 1912, Avenida Belgrano Sur, Barrio Ramón Carrillo, Santiago del Estero, Municipio de Santiago del Estero, Departamento Juan Francisco Borges, Santiago del Estero, 4200, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "Iquall Networks, Argentina": {},
+ "Scale AI, Provincia de Buenos Aires, Argentina": {},
+ "Julius Technologies, Provincia de Río Negro, Argentina": {},
+ "Julius Technologies, Argentina": {},
+ "Rather Labs, Inc, Santa Fe, Argentina": {},
+ "ANT Automation, Santa Fe, Argentina": {},
+ "ANT Automation, Argentina": {},
+ "CANDOIT Engineering & Technology, Provincia de Río Negro, Argentina": {},
+ "NPCx, Provincia de Río Negro, Argentina": {},
+ "NPCx, Argentina": {},
+ "FairWinds Animation, Provincia de Río Negro, Argentina": {},
+ "FairWinds Animation, Argentina": {},
+ "Coequiper.com, Provincia de Río Negro, Argentina": {},
+ "Coequiper.com, Argentina": {},
+ "Facultad de Ingeniería - UBA, Provincia de Río Negro, Argentina": {},
+ "Aligned Labs, Spain": {},
+ "AccelOne, Argentina": {},
+ "BOEHMERT & BOEHMERT, Argentina": {},
+ "Hidrógeno Sur (H2Sur), Región Metropolitana de Santiago, United States": {},
+ "Región Metropolitana de Santiago, United States": {
+  "lat": -33.4123598,
+  "lon": -70.6047199,
+  "display_name": "Embajada de los Estados Unidos de America, 2800, Avenida Andrés Bello, Sanhattan, Las Condes, Santiago, Provincia de Santiago, Región Metropolitana de Santiago, 8320000, Chile",
+  "country": "Chile",
+  "country_code": "CL"
+ },
+ "Facultad Regional Buenos Aires, Buenos Aires, Argentina": {
+  "lat": -33.3321965,
+  "lon": -60.2055929,
+  "display_name": "Universidad Tecnológica Nacional - Facultad Regional San Nicolás, 332, Cristóbal Colón, San Nicolás de los Arroyos, Partido de San Nicolás, Buenos Aires, 2900, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "UTN FRBA, Buenos Aires, Argentina": {
+  "lat": -34.6597168,
+  "lon": -58.4680186,
+  "display_name": "FRBA UTN, Mozart, Villa Lugano, Buenos Aires, Distrito del Deporte, Comuna 8, Ciudad Autónoma de Buenos Aires, C1407IVT, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "Facultad Regional Delta, Campana, Argentina": {
+  "lat": -34.1787856,
+  "lon": -58.9624232,
+  "display_name": "UTN - Facultad Regional Delta, San Martín, Villa Nueva, Campana, Partido de Campana, Buenos Aires, 2804, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "Campana, Argentina": {
+  "lat": -34.1636631,
+  "lon": -58.9586837,
+  "display_name": "Campana, Partido de Campana, Buenos Aires, 2804, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "Facultad Regional Haedo, Haedo, Argentina": {},
+ "Haedo, Argentina": {
+  "lat": -34.6431369,
+  "lon": -58.5947185,
+  "display_name": "Haedo, Partido de Morón, Buenos Aires, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "Facultad Regional Córdoba, Córdoba, Argentina": {
+  "lat": -32.4092538,
+  "lon": -63.2168716,
+  "display_name": "Universidad Tecnológica Nacional - Facultad Regional Villa María, Avenida Universidad, Bello Horizonte, Villa María, Municipio de Villa María, Pedanía Villa María, Departamento General San Martín, Córdoba, X5900, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "Facultad Regional Resistencia, Resistencia, Argentina": {
+  "lat": -27.4512309,
+  "lon": -58.9790529,
+  "display_name": "Universidad Tecnológica Nacional - Facultad Regional Resistencia, 414, French, Villa San Martín, Resistencia, Municipio de Resistencia, Departamento San Fernando, Chaco, H3500ALD, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "Resistencia, Argentina": {
+  "lat": -27.6048829,
+  "lon": -59.1932003,
+  "display_name": "Municipio de Resistencia, Departamento San Fernando, Chaco, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "Facultad Regional San Rafael, San Rafael, Argentina": {
+  "lat": -34.6009166,
+  "lon": -68.3277891,
+  "display_name": "Universidad Tecnologica Nacional - Facultad Regional San Rafael, Avenida Urquiza, San Rafael, Distrito Ciudad de San Rafael, Departamento San Rafael, Mendoza, 5600, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "Facultad Regional Paraná, Paraná, Argentina": {
+  "lat": -31.7496256,
+  "lon": -60.5040263,
+  "display_name": "Universidad Técnologica Nacional Facultad Regional Paraná (UTN FRP), Francia, Barrio 19 de Septiembre, Paraná, Municipio de Paraná, Distrito Sauce, Departamento Paraná, Entre Ríos, 3102, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "Paraná, Argentina": {
+  "lat": -27.4210173,
+  "lon": -56.6011693,
+  "display_name": "Rio Paraná, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "Facultad Regional San Nicolás, San Nicolás de los Arroyos, Argentina": {
+  "lat": -33.3321965,
+  "lon": -60.2055929,
+  "display_name": "Universidad Tecnológica Nacional - Facultad Regional San Nicolás, 332, Cristóbal Colón, San Nicolás de los Arroyos, Partido de San Nicolás, Buenos Aires, 2900, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "San Nicolás de los Arroyos, Argentina": {
+  "lat": -33.3277089,
+  "lon": -60.2165909,
+  "display_name": "San Nicolás de los Arroyos, Partido de San Nicolás, Buenos Aires, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "UTN San Nicolás, San Nicolás de los Arroyos, Argentina": {
+  "lat": -33.3322755,
+  "lon": -60.2065514,
+  "display_name": "Estacionamiento UTN FRSN, Avenida Juan Ramón Falcón, Comisión Calle Italia, Centro, San Nicolás de los Arroyos, Partido de San Nicolás, Buenos Aires, 2900, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "Facultad Regional Santa Fe, Santa Fe, Argentina": {
+  "lat": -31.6167562,
+  "lon": -60.6752372,
+  "display_name": "Universidad Tecnológica Nacional Santa Fe, 610, Lavaisse, Barrio Villa Setubal, Villa Setúbal, Santa Fe, Santa Fe Capital, Departamento La Capital, Santa Fe, S3000, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "Facultad Regional Rosario, Rosario, Argentina": {
+  "lat": -32.9547078,
+  "lon": -60.6437761,
+  "display_name": "Universidad Tecnológica Nacional - Facultad Regional Rosario, 1341, Zeballos, Parque, Rosario Centro, Distrito Centro, Rosario, Municipio de Rosario, Gran Rosario, Departamento Rosario, Santa Fe, 2000, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "Facultad Regional Mendoza, Mendoza, Argentina": {
+  "lat": -32.89712,
+  "lon": -68.8529394,
+  "display_name": "Universidad Tecnológica Nacional - Facultad Regional Mendoza, 273, Cnel. Juan Esteban Rodríguez, Ciudad de Mendoza, Sección 5ª Residencial Sur, Departamento Capital, Mendoza, 5500, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "Facultad Regional La Plata, La Plata, Argentina": {},
+ "Facultad Regional Bahía Blanca, Bahía Blanca, Argentina": {
+  "lat": -38.7103815,
+  "lon": -62.264365,
+  "display_name": "UTN Facultad Regional Bahía Blanca, 461, 11 de Abril, Centro Norte, Bahía Blanca, Cuartel I, Partido de Bahía Blanca, Buenos Aires, 8000, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "Facultad Regional Tucumán, San Miguel de Tucumán, Argentina": {},
+ "Universidad Tecnológica Nacional, Buenos Aires, Argentina": {
+  "lat": -35.9858984,
+  "lon": -62.7268404,
+  "display_name": "Universidad Tecnológica Nacional, 298, Racedo, Neira, Trenque Lauquen, Partido de Trenque Lauquen, Buenos Aires, 6400, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "Universidad de la Defensa Nacional, Buenos Aires, Argentina": {},
+ "IAE Business School, Pilar, Argentina": {},
+ "Pilar, Argentina": {
+  "lat": -34.4570918,
+  "lon": -58.9141609,
+  "display_name": "Pilar, Partido del Pilar, Buenos Aires, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "UNESP, São Paulo, Brazil": {
+  "lat": -22.3957568,
+  "lon": -47.5441355,
+  "display_name": "Universidade Estadual Paulista, 1515, Avenida Vinte e Quatro A, Vila Alemã, Bela Vista, Rio Claro, São Paulo, Região Sudeste, 13506-900, Brasil",
+  "country": "Brasil",
+  "country_code": "BR"
+ },
+ "Instituto Politécnico Superior General San Martín, Rosario, Argentina": {
+  "lat": -32.9587024,
+  "lon": -60.6290711,
+  "display_name": "Instituto Politécnico Superior, 1667, Ayacucho, Martin, Rosario Centro, Distrito Centro, Rosario, Municipio de Rosario, Gran Rosario, Departamento Rosario, Santa Fe, 2000, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "Centro Oncológico Pergamino, Pergamino, Argentina": {
+  "lat": -33.9102013,
+  "lon": -60.5879324,
+  "display_name": "Centro Oncológico Pergamino, Monteagudo, Villa Fernandez, Pergamino, Partido de Pergamino, Buenos Aires, B2700KIU, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "Pergamino, Argentina": {
+  "lat": -33.897495,
+  "lon": -60.575046,
+  "display_name": "Pergamino, Partido de Pergamino, Buenos Aires, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
+ },
+ "Instituto Nacional de Aviación Civil, Buenos Aires, Argentina": {},
+ "Honorable Cámara de Diputados de la Nación, Buenos Aires, Argentina": {},
+ "Universidad Internacional de Valencia, Valencia, Spain": {
+  "lat": 39.4715227,
+  "lon": -0.3720148,
+  "display_name": "Universidad Internacional de Valencia, 21, Carrer del Pintor Sorolla, la Xerea, Ciutat Vella, València, Comarca de València, València / Valencia, Comunitat Valenciana, 46002, España",
+  "country": "España",
+  "country_code": "ES"
+ },
+ "Valencia, Spain": {
+  "lat": 39.4697065,
+  "lon": -0.3763353,
+  "display_name": "València, Comarca de València, València / Valencia, Comunitat Valenciana, España",
+  "country": "España",
+  "country_code": "ES"
+ },
+ "Universidad de Bogotá Jorge Tadeo Lozano, Bogotá, Colombia": {
+  "lat": 4.607911,
+  "lon": -74.0673108,
+  "display_name": "Casa de los Deportes, Universidad de Bogota Jorge Tadeo Lozano, Cancha Multiple, Casa de los Deportes, Modulo 22, Universidad de Bogota Jorge Tadeo Lozano, UPZs de Bogotá, Localidad Santa Fé, Bogotá ciudad, Bogotá, Distrito Capital, RAP (Especial) Central, 110311, Colombia",
+  "country": "Colombia",
+  "country_code": "CO"
+ },
+ "UWC Adriatic, Duino, Italy": {},
+ "Duino, Italy": {
+  "lat": 45.7733917,
+  "lon": 13.6044847,
+  "display_name": "Duino / Devin, Duino Aurisina / Devin - Nabrežina, Trieste, Friuli-Venezia Giulia, 34011, Italia",
+  "country": "Italia",
+  "country_code": "IT"
+ },
+ "Positronpharma, Santiago, Chile": {},
+ "CAEN SpA, Londres, United Kingdom": {},
+ "CAEN SpA, United Kingdom": {},
+ "Turing, Argentina": {
+  "lat": -31.3495664,
+  "lon": -64.2381243,
+  "display_name": "Alan Turing, Pinares de Claret, Apeadero La Tablada, Córdoba, Municipio de Córdoba, Pedanía Capital, Departamento Capital, Córdoba, X5022, Argentina",
+  "country": "Argentina",
+  "country_code": "AR"
  }
 }

@@ -1305,6 +1305,10 @@ def _canonicalise_employers(idx):
           f"{folded} people onto a canonical spelling")
 
 
+def _is_yes(v):
+    return str(v or "").strip().lower() in ("y", "yes", "1", "true", "x", "si", "sí")
+
+
 def _hand_placed_institutions(idx):
     """Place career stops listed in data/institutions.csv.
 
@@ -1333,7 +1337,8 @@ def _hand_placed_institutions(idx):
             if row.get("lat") and row.get("lon"):
                 placed[_hand_key(row["institution"])] = (
                     float(row["lat"]), float(row["lon"]),
-                    row.get("city") or None, row.get("country") or None)
+                    row.get("city") or None, row.get("country") or None,
+                    _is_yes(row.get("approx")))
                 continue
         except ValueError:
             pass
@@ -1360,7 +1365,8 @@ def _hand_placed_institutions(idx):
                         hit["lat"], hit["lon"],
                         row.get("city") or None,
                         row.get("country") or _country_en(
-                            hit.get("country"), hit.get("country_code")))
+                            hit.get("country"), hit.get("country_code")),
+                        _is_yes(row.get("approx")))
                     break
             else:
                 print(f"  ! could not place {row['institution']!r} — no query resolved")
@@ -1387,17 +1393,25 @@ def _hand_placed_institutions(idx):
             return val
         return None
 
+    # A hand-written row outranks the geocoder, so it *overrides* rather than
+    # merely filling a gap. The bare "Universidad Tecnológica Nacional" rows
+    # already had coordinates — wrong ones, pointing at whichever of the thirty
+    # regional faculties the geocoder preferred — so a gap-filling pass never
+    # reached them.
     filled = 0
     for rec in idx.values():
         for s in rec["career"]:
-            if s.get("lat") is not None or not s.get("institution"):
+            if not s.get("institution"):
                 continue
             hit = _lookup(s["institution"], s.get("country"))
             if not hit:
                 continue
             s["lat"], s["lon"] = hit[0], hit[1]
-            s["city"] = s.get("city") or hit[2]
-            s["country"] = s.get("country") or hit[3]
+            s["city"] = hit[2] or s.get("city")
+            s["country"] = hit[3] or s.get("country")
+            if len(hit) > 4 and hit[4]:
+                # the seat, not the campus — say so rather than imply precision
+                s["approx"] = True
             filled += 1
     print(f"  placed {filled} career stops from data/institutions.csv "
           f"({len(placed)}/{len(entries)} rows usable)")

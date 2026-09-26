@@ -209,6 +209,27 @@ def _norm(s: str) -> str:
     return re.sub(r"\s+", " ", strip_accents(s or "").lower()).strip(" .,")
 
 
+# LinkedIn puts the work arrangement after a "·": "San Francisco, California,
+# Estados Unidos · En remoto". Stripping that threw away the one field that
+# says the company's address is NOT where the person is.
+_REMOTE_WORDS = re.compile(r"\b(en remoto|remoto|remote|a distancia|teletrabajo)\b", re.I)
+_HYBRID_WORDS = re.compile(r"\b(h[ií]brido|hybrid)\b", re.I)
+_ONSITE_WORDS = re.compile(r"\b(presencial|on[- ]?site)\b", re.I)
+
+
+def parse_modality(raw: str):
+    """'remote' | 'hybrid' | 'onsite' | None — how the job was actually done."""
+    s = (raw or "")
+    tail = s.split("·", 1)[1] if "·" in s else s
+    if _REMOTE_WORDS.search(tail):
+        return "remote"
+    if _HYBRID_WORDS.search(tail):
+        return "hybrid"
+    if _ONSITE_WORDS.search(tail):
+        return "onsite"
+    return None
+
+
 def clean_place(raw: str) -> str:
     """Strip LinkedIn's modality suffix and its metro-area wrappers."""
     s = _MODALITY.sub("", raw or "").strip()
@@ -367,7 +388,9 @@ def parse_positions(row: dict) -> list[dict]:
             continue
         start = parse_year(row.get(f"organization_start_{i}"))
         end = parse_year(row.get(f"organization_end_{i}"))
-        place = parse_place(row.get(f"organization_location_{i}") or "")
+        raw_loc = row.get(f"organization_location_{i}") or ""
+        place = parse_place(raw_loc)
+        modality = parse_modality(raw_loc)
         is_default = (row.get(f"position_is_default_{i}") or "").lower() == "true"
         stops.append({
             "institution": org,
@@ -380,6 +403,7 @@ def parse_positions(row: dict) -> list[dict]:
             # "current" = still running (no end date), which is also how the
             # ORCID/INSPIRE career entries are tagged.
             "current": bool(not end and start),
+            "modality": modality,
             "is_default": is_default,
             "url": (row.get(f"organization_url_{i}") or "").strip() or None,
         })
@@ -471,6 +495,43 @@ def normalise(row: dict) -> dict | None:
         })
 
     place = parse_place(row.get("location_name") or "")
+
+    # A remote job's address is the company's, not the person's. Someone in
+    # Bariloche working remotely for a company in San Francisco was being drawn
+    # in California. Where LinkedIn says the work was remote, the employer's
+    # city is discarded and replaced by where the person actually is: their own
+    # profile location first, and failing that the nearest job they did say was
+    # on-site. Positions that say nothing are left alone — most people never
+    # fill the field in, and assuming remote would be far more wrong than
+    # assuming the default.
+    # People split one stint at an employer across several rows (a promotion,
+    # a title change) and annotate only one of them. Agustín Bernardo has two
+    # Superhuman rows: one says "En remoto", the other just "San Francisco".
+    # Merging them later mixed a San Francisco city with an Argentine country.
+    # If any row at an employer says remote, the whole stint there was.
+    remote_orgs = {_norm(c["institution"]) for c in career
+                   if c.get("modality") == "remote" and c.get("institution")}
+    for c in career:
+        if c.get("institution") and _norm(c["institution"]) in remote_orgs:
+            c["modality"] = "remote"
+
+    onsite = next((c for c in reversed(career)
+                   if c.get("modality") in ("onsite", "hybrid") and c.get("country")), None)
+    home = place if place.get("country") or place.get("city") else None
+    fallback = home or ({"city": onsite["city"], "country": onsite["country"],
+                         "country_code": onsite["country_code"]} if onsite else None)
+    n_remote = 0
+    for c in career:
+        if c.get("modality") != "remote":
+            continue
+        n_remote += 1
+        if fallback:
+            c["city"] = fallback.get("city")
+            c["country"] = fallback.get("country")
+            c["country_code"] = fallback.get("country_code")
+        else:
+            # nothing to put in its place: better unknown than wrong
+            c["city"] = c["country"] = c["country_code"] = None
     # The profile's own location field is a home town; the current job's
     # location is the better "where do they work" signal when both exist.
     default_job = next((c for c in career if c["is_default"]), None)
@@ -513,6 +574,7 @@ def normalise(row: dict) -> dict | None:
         "skills": parse_skills(row.get("skills") or "")[:25],
         "languages": parse_languages(row.get("languages") or ""),
         "balseiro_evidence": evidence,
+        "remote_positions": n_remote,
         "asof": asof,
     }
 
